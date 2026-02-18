@@ -2103,3 +2103,56 @@ country_event = {
 		custom_effect_tooltip = CHI_hualian_invade3_tt
 	}
 }
+country_event = {
+	id = ROC.55
+	title = ROC.55.t
+	desc = ROC.55.d
+	#picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC.55.a
+		ai_chance = {
+			base = 10
+		}
+		set_politics = {
+			ruling_party = conservative 
+       			elections_allowed = yes
+        		last_election = "2022.5.9"
+       			election_frequency = 72
+		}
+		add_popularity = { ideology = conservative popularity = 0.15 }
+	}
+	option = {
+		name = ROC.55.b
+		ai_chance = {
+			base = 10
+		}
+		set_politics = {
+			ruling_party = social_liberal 
+       			elections_allowed = yes
+        		last_election = "2022.5.9"
+       			election_frequency = 72
+		}
+		add_popularity = { ideology = social_liberal popularity = 0.15 }
+	}
+	option = {
+		name = ROC.55.c
+		ai_chance = {
+			base = 10
+		}
+		set_politics = {
+			ruling_party = social_democrat 
+       			elections_allowed = yes
+        		last_election = "2022.5.9"
+       			election_frequency = 72
+		}
+		add_popularity = { ideology = social_democrat popularity = 0.15 }
+	}
+}
