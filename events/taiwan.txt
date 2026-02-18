@@ -664,9 +664,8 @@ country_event = {
 	}
 	option = {
 		name = ROC.14.a
-			load_focus_tree = CHI_taihai_focus_tree
-			set_country_flag = CHI_taihai_will
 			set_country_flag = CHI_taihai_war
+			load_focus_tree = CHI_taihai_war_focus_tree
 			mark_focus_tree_layout_dirty = yes
 	}
 }
