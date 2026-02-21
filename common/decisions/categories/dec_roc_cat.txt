@@ -133,4 +133,19 @@ The_CCP_Difficulty_Selection = {
 		}
 	}
 }
+EastAsia_taiwan_war_dec = {
+	visible_when_empty = yes
+	priority = 99
+	
+	visible = {
+		has_global_flag = PRC_ongoing_taiwan_war
+	}
+	
+	allowed = {
+		or = {
+		original_tag = PRC
+		original_tag = CHI
+		}
+	}
+}
 
