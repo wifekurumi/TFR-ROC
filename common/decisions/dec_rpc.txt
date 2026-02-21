@@ -4701,6 +4701,78 @@ The_CCP_Difficulty_Selection = {
 		}
 	}
 }
+EastAsia_taiwan_war_dec = {
+	THEPRC_taiwan_war_countdown = {
+		#icon = GFX_decision_generic_crossed_guns
+		allowed = {
+			tag = PRC
+		}
+		activation = {
+			always = no
+		}
+		available = {
+		OR = {
+			PRC = {
+				524 = {is_fully_controlled_by = PRC}
+				1150 = {is_fully_controlled_by = PRC}
+				1149 = {is_fully_controlled_by = PRC}
+				1148 = {is_fully_controlled_by = PRC}
+				648 = {is_fully_controlled_by = PRC}
+					}
+			has_war = no
+		}
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 14
+		timeout_effect = {
+        EADI_taiwan_war = yes
+    }
+	}
+	THECHI_taiwan_war_countdown = {
+		#icon = GFX_decision_generic_crossed_guns
+		allowed = {
+			tag = CHI
+		}
+		activation = {
+			always = no
+		}
+		available = { 
+			CHI = {
+				is_ally_with = PRC
+			}
+			has_war = no
+			}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 14
+		timeout_effect = {
+        PDTO_taiwan_war = yes
+    }
+	}
+	THEJAP_taiwan_war_countdown = {
+		#icon = GFX_decision_generic_crossed_guns
+		allowed = {
+			tag = CHI
+		}
+		activation = {
+			always = no
+		}
+		available = { 
+			CHI = {
+				is_ally_with = PRC
+			}
+			has_war = no
+			}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 14
+		timeout_effect = {
+        PDTO2_taiwan_war = yes
+    }
+	}
+	
+}
 
 
 
