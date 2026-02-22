@@ -2926,4 +2926,48 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = ROC.63
+	title = china.68.t
+	desc = china.68.d
+	picture = GFX_PRC_xinjiang3
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			SHZ = {
+				transfer_state = 1395
+				add_state_core = 1395
+
+			}
+			HKN = {
+				transfer_state = 326
+				add_state_core = 326
+				set_cosmetic_tag = HKN_revolution
+				load_oob = HKN_revolt
+			}
+			326 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_hong_kong
+				}
+			}
+		}
+	}
+	trigger = {
+		has_war_with = CHI
+	}
+	option = {
+		name = china.68.a
+		hidden_effect = {
+			SHZ = {
+				declare_war_on = {
+					target = HKN
+					type = annex_everything
+				}
+			}
+			news_event = china.69
+		}
+	}
+}
+
 
