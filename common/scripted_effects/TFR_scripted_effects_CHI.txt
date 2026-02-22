@@ -1518,6 +1518,10 @@ PDTO2_taiwan_war = {
 		    target = HKN
 		    transfer_troops = no
 		}
+		annex_country = {
+		    target = SHZ
+		    transfer_troops = no
+		}
 		326 = {
 			add_dynamic_modifier = {
 				modifier = PRC_hong_kong
