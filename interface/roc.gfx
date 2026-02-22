@@ -320,7 +320,17 @@ spriteTypes = {
 		texturefile = "gfx/texticons/banners/CHI/GFX_CHI_ideology_chiang.png"
 		legacy_lazy_load = no
     }
+	spriteType = {
+		name = "GFX_ideology_CHI_Shina_Destructionism"
+		texturefile = "gfx/texticons/CHI/tuzhi.png"
+    }
+	spriteType = {
+		name = "GFX_HI_Shina_Destructionism_banner"
+		texturefile = "gfx/texticons/banners/CHI/tuzhi2.png"
+		legacy_lazy_load = no
+    }
 }
+
 
 
 
