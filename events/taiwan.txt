@@ -582,8 +582,8 @@ country_event = {
 				days = 20
 			}
 			country_event = {
-				id = china.39
-				days = 45
+				id = ROC.59
+				days = 35
 			}
 			country_event = {
 				id = china.430
@@ -2800,6 +2800,130 @@ country_event = {
        			election_frequency = 72
 		}
 		add_popularity = { ideology = social_democrat popularity = 0.15 }
+	}
+}
+country_event = {
+	id = ROC.59
+	title = ROC.59.t
+	desc = ROC.59.d
+	picture = GFX_PRC_tibet3
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = ROC.59.a
+		add_stability = -0.05
+		add_war_support = -0.1
+		set_temp_variable = {
+			var = poverty_development_var_temp
+			value = -0.15
+		}
+		add_poverty_development = yes
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = -0.35
+		}
+		add_society_development = yes
+		set_temp_variable = {
+			var = industrial_development_var_temp
+			value = -0.25
+		}
+		add_industrial_development = yes
+		hidden_effect = {
+			news_event = {
+				id = ROC.60
+				days = 3
+			}
+			TAR = {
+			set_cosmetic_tag = TAR_tib_military_district
+			transfer_state = 1156
+			transfer_state = 322
+			transfer_state = 1152
+			add_state_core = 1156
+			add_state_core = 1132
+			add_state_core = 1152
+			add_state_core = 1155
+			add_state_core = 1153
+			set_capital = {
+					state = 1156
+				}
+			load_oob = TAR_revolt
+		}
+		TIB = {
+			transfer_state = 1155
+			transfer_state = 1153
+			add_state_core = 1156
+			add_state_core = 1132
+			add_state_core = 1152
+			add_state_core = 1155
+			add_state_core = 1153
+			set_capital = {
+					state = 1153
+				}
+				load_oob = TIB_revolt
+		}
+		TAR = {
+			declare_war_on = {
+				target = TIB
+				type = annex_everything
+			}
+		}
+		}
+	}
+}
+country_event = {
+	id = ROC.60
+	title = ROC.60.t
+	desc = ROC.60.d
+	picture = GFX_PRC_tibet1
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			TAR = {
+			declare_war_on = {
+				target = TIB
+				type = annex_everything
+			}
+		}
+		}
+	}
+	option = {
+		name = ROC.60.a
+	}
+}
+country_event = {
+	id = ROC.61
+	title = ROC.61.t
+	desc = ROC.61.d
+	picture = GFX_Chinese_soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ROC.61.a
+		add_stability = 0.05
+		annex_country = {
+			target = TAR
+			transfer_troops = yes
+		}
+	}
+}
+country_event = {
+	id = ROC.62
+	title = ROC.62.t
+	desc = ROC.62.d
+	picture = GFX_PRC_xinjiang3
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ROC.62.a
+		PRC = {
+			declare_war_on = {
+				target = TIB
+				type = annex_everything
+			}
+		}
 	}
 }
 
