@@ -2,6 +2,66 @@ on_actions = {
 on_capitulation = {
 		effect = {
 			if = {
+					limit = {
+						FROM = {
+							OR = {
+							    original_tag = SHZ
+							}
+						}
+						ROOT = {
+							OR = {
+							    original_tag = HKN
+							}
+						}
+					}
+					SHZ = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+					}
+					PRC = {
+							annex_country = {
+							target = HKN
+							transfer_troops = yes
+						}
+						annex_country = {
+							target = SHZ
+							transfer_troops = yes
+						}
+						}
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+						FROM = {
+							OR = {
+							    original_tag = HKN
+							}
+						}
+						ROOT = {
+							OR = {
+							    original_tag = SHZ
+							}
+						}
+					}
+					HKN = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+					}
+					PRC = {
+							declare_war_on = {
+					target = HKN
+					type = annex_everything
+				}
+						}
+					set_global_flag = skip_default_capitulation
+				}
+			if = {
 				limit = {
 					has_global_flag = PRC_ongoing_taiwan_war
 					FROM = {
@@ -468,4 +528,5 @@ set_popularities = {
 		}
 	}
 }
+
 
