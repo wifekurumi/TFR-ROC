@@ -145,6 +145,10 @@ spriteTypes = {
 	#美國內戰
 	SpriteType = {
 		name = "GFX_focus_CHI_Pacific_War"
-		texturefile = "gfx/interface/goals/CHI/GFX_focus_CHI_Pacific_War.png"
+		texturefile = "gfx/interface/goals/CHI/CHI_Pacific_War.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_emergency_financial_controls"
+		texturefile = "gfx/interface/goals/CHI/CHI_emergency_financial_controls.png"
 	}
 }

@@ -1483,9 +1483,9 @@ focus_tree = {
 		# 整治武備廢弛
 		id = Rectify_weakening_military_preparedness
 		icon = GFX_Rectify_weakening_military_preparedness
-		relative_position_id = CHI_election
-		x = -3
-		y = 5
+		relative_position_id = Pacific_War
+		x = 10
+		y = 0
 		cost = 4
 		allow_branch = {
 			has_country_flag = CHIMilitarreform
@@ -2120,12 +2120,11 @@ focus_tree = {
 		id = Pacific_War
 		icon = GFX_focus_CHI_Pacific_War
 		cost = 1
-		x = 2
+		x = -6
 		y = 5
 		allow_branch = {
 			has_country_flag = American_Civil_War_happen_flg
 		}
-		relative_position_id = third_oil_crisis
 		completion_reward = {
 			custom_effect_tooltip = Pacific_War_tooltip
 			hidden_effect = {
