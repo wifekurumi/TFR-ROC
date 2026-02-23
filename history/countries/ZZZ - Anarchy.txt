@@ -32,7 +32,6 @@ set_popularities = {
 	social_democrat_drift = 2
 }
 set_country_flag = CHI_lfy_flag
-add_ideas = CHI_low_mainland_influence_idea
 add_dynamic_modifier = {
     	modifier = CHI_influence_KMT_dynamic
 	}
@@ -184,5 +183,6 @@ PHI = {
 		days = 1200
 	}
 }
+
 
 
