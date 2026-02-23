@@ -1,5 +1,85 @@
 ideas = {
 	country = {
+		CHI_farplanning_infrastructure1 = {
+			name = CHI_farplanning_infrastructure
+			picture = CHI_farplanning_infrastructure
+			allowed = {
+				always = no
+			}
+			cancel = {
+				is_puppet_of = PRC
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_speed_infrastructure_factor = 0.15
+				production_speed_rail_way_factor = 0.05
+				industrial_development_monthly = 0.02
+			}
+		}
+		CHII_taiwanese_independence_movement_idea2 = {
+			name = CHI_taiwanese_independence_movement_idea
+			picture = TAI_taiwanese_independence_movements
+			allowed = {
+				always = no
+			}
+			cancel = {
+				is_puppet_of = PRC
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				war_support_factor = 0.1
+			}
+		}
+		CHII_taiwanese_independence_movement_idea1 = {
+			name = CHI_taiwanese_independence_movement_idea
+			picture = TAI_taiwanese_independence_movements
+			allowed = {
+				always = no
+			}
+			cancel = {
+				is_puppet_of = PRC
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		CHI_mobilize_balckbear_1 = {
+				picture = CHI_mobilize_balckbear
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+				
+				cancel = {
+					is_puppet_of = PRC
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					political_power_cost = 0.05
+					war_support_factor = 0.05
+				}
+				
+		}
 		CHI_oil_crash1 = {
 			picture = CHI_oil_crash
 		    traits = {
@@ -4638,6 +4718,7 @@ CHI_TaiHai_IDEA_25 = {
 }
 	}
 }
+
 
 
 

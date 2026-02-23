@@ -458,6 +458,9 @@ focus_tree = {
 				country_event = {
 					id = ROC.22
 				}
+				country_event = {
+					id = ROC_CHI.1
+				}
 			}
 			declare_war_on = {
 				target = CHI

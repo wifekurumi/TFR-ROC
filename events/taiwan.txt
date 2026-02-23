@@ -3,6 +3,94 @@ add_namespace = ROC_CHI
 add_namespace = ROC_PRC
 add_namespace = ROC_JAP
 country_event = {
+	id = ROC_CHI.1
+	title = ROC_CHI.1.t
+	desc = ROC_CHI.1.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_CHI.1.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.2
+	title = ROC_CHI.2.t
+	desc = ROC_CHI.2.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_CHI.2.a
+		add_stability = -0.001
+		add_war_support = 0.001
+		1149 = {
+			add_manpower = -73
+		}
+		hidden_effect = {
+			country_event = {
+				id = ROC_CHI.3
+				days = 4
+			}
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.3
+	title = ROC_CHI.3.t
+	desc = ROC_CHI.3.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_CHI.3.a
+		hidden_effect = {
+			country_event = {
+				id = ROC_CHI.4
+				days = 5
+			}
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.4
+	title = ROC_CHI.4.t
+	desc = ROC_CHI.4.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_CHI.4.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.5
+	title = ROC_CHI.5.t
+	desc = ROC_CHI.5.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_CHI.5.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
 	id = ROC_PRC.1
 	title = ROC_PRC.1.t
 	desc = ROC_PRC.1.d
@@ -2969,5 +3057,6 @@ country_event = {
 		}
 	}
 }
+
 
 

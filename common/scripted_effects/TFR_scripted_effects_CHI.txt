@@ -1288,14 +1288,14 @@ PDTO_taiwan_war = {
         	remove_idea = CHI_TaiHai_IDEA_1
         	add_idea = CHI_TaiHai_IDEA_2
     		}
-				#country_event = {id = CHI_TaiHai_IDEA.1}	
+				country_event = {id = CHI_TaiHai_IDEA.5}	
 			}
 			if = {
 				limit = {
 					NOT = {has_idea = CHI_TaiHai_IDEA_1}
 				}
 				add_ideas = CHI_TaiHai_IDEA_1	
-				#country_event = {id = CHI_TaiHai_IDEA.1}	
+				country_event = {id = CHI_TaiHai_IDEA.2}	
 			}
 }
 PDTO2_taiwan_war = {
