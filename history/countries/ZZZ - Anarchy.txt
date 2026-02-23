@@ -26,10 +26,10 @@ set_popularities = {
 	conservative = 40
 	social_liberal = 45
 	market_liberal  = 7
-	totalitarian_socialist_drift = 1
-	communist_drift = 3
-	libertarian_socialist_drift = 2
-	social_democrat_drift = 2
+	totalitarian_socialist = 1
+	communist = 3
+	libertarian_socialist = 2
+	social_democrat = 2
 }
 set_country_flag = CHI_lfy_flag
 add_dynamic_modifier = {
@@ -183,6 +183,7 @@ PHI = {
 		days = 1200
 	}
 }
+
 
 
 
