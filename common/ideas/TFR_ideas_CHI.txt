@@ -123,6 +123,9 @@ ideas = {
 				research_speed_factor = 0.15
 				production_speed_energy_farm_factor = 0.15
 			}
+				on_remove = {
+				add_idaes = CHI_farplanning_infrastructure1
+			}
 		}
 		CHI_ROC_army = {
 			picture = CHI_ROC_army
