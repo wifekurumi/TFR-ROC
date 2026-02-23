@@ -455,17 +455,17 @@ ideologies = {
 			CHI_Taiwanese_Progressivism = {
 				can_be_randomly_selected = no
 				color = {
-					90
-                    226
-                    122
+					168
+                    255
+                    0
 				}
 			}
 			CHI_Taiwanese_Progressivism2 = {
 				can_be_randomly_selected = no
 				color = {
-					90
-                    226
-                    122
+					168
+                    255
+                    0
 				}
 			}
 			centrist = {
@@ -561,6 +561,14 @@ ideologies = {
 
 	market_liberal = {
 		types = {
+			taiwanese_liberal_populism2 = {
+				can_be_randomly_selected = no
+				color = {
+					79
+					221
+					186
+				}
+			}
 			right_libertarianism = {
 			}
 			right_anarchism = {
