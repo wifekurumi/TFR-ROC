@@ -49,6 +49,9 @@ add_dynamic_modifier = {
 add_dynamic_modifier = {
     	modifier = CHI_influence_SDP_dynamic
 	}
+add_dynamic_modifier = {
+	modifier = CHI_taiwanese_independence_dynamic
+		}
 recruit_character = CHI_sunyoulian_char
 recruit_character = CHI_fanyun_char
 recruit_character = CHI_chenboguang_char
@@ -163,5 +166,6 @@ PHI = {
 		days = 1200
 	}
 }
+
 
 
