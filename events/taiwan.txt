@@ -3026,13 +3026,13 @@ country_event = {
 			SHZ = {
 				transfer_state = 1395
 				add_state_core = 1395
-
+				THE_ChineseCivilWarTroops = yes
 			}
 			HKN = {
 				transfer_state = 326
 				add_state_core = 326
 				set_cosmetic_tag = HKN_revolution
-				load_oob = HKN_revolt
+				THE_ChineseCivilWarTroops2 = yes
 			}
 			326 = {
 				remove_dynamic_modifier = {
@@ -3057,6 +3057,7 @@ country_event = {
 		}
 	}
 }
+
 
 
 
