@@ -303,13 +303,21 @@ spriteTypes = {
 		name = "GFX_idea_PRC_made_in_china2"
 		texturefile = "gfx/texticons/CHI/PRC_Made_In_China2.png"
 	}
-	spriteType = {
+spriteType = {
 		name = "GFX_ideology_CHI_Taiwanese_Progressivism"
 		texturefile = "gfx/texticons/CHI/centrist_CHI.png"
     }
 	spriteType = {
 		name = "GFX_ideology_CHI_Taiwanese_Progressivism2"
 		texturefile = "gfx/texticons/CHI/classical_liberalism_CHI.png"
+    }
+	spriteType = {
+		name = "GFX_ideology_CHI_Taiwanese_constitutionalism"
+		texturefile = "gfx/texticons/CHI/constitutionalist_CHI.png"
+    }
+	spriteType = {
+		name = "GFX_ideology_taiwanese_liberal_populism"
+		texturefile = "gfx/texticons/CHI/civic_nationalism_CHI.png"
     }
 	spriteType = {
 		name = "GFX_ideology_Chiang_Kaishek_thought"
@@ -330,6 +338,7 @@ spriteTypes = {
 		legacy_lazy_load = no
     }
 }
+
 
 
 
