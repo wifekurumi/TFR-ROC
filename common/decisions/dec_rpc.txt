@@ -1,6 +1,6 @@
 CHI_Legislative_Yuan_decisions = {
 	Common_Agenda = {
-		icon = GFX_laapfaatjyun
+		icon = GFX_CHI_Legislative_Yuan_decisions
 		available = {
 			always = no
 		}
@@ -20,7 +20,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_DPP_agenda = {
-		icon = GFX_dppdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_DPP
 		available = {
 			always = no
 		}
@@ -44,7 +44,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_DPP_agenda2 = {
-		icon = GFX_dppdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_DPP
 		available = {
 			OR = {
 					NOT = {
@@ -111,7 +111,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_DPP_agenda3 = {
-		icon = GFX_dppdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_DPP
 		available = {
 				OR = {
 					NOT = {
@@ -168,7 +168,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_DPP_agenda4 = {
-		icon = GFX_dppdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_DPP
 		available = {
 				OR = {
 					NOT = {
@@ -270,7 +270,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_DPP_agenda5 = {
-		icon = GFX_dppdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_DPP
 		available = {
 				OR = {
 					NOT = {
@@ -324,7 +324,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_KMT_agenda = {
-		icon = GFX_kmtdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_KMT
 		available = {
 						always = no
 		}
@@ -348,7 +348,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_KMT_agenda2 = {
-		icon = GFX_kmtdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_KMT
 		available = {
 			OR = {
 					NOT = {
@@ -414,7 +414,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_KMT_agenda3 = {
-		icon = GFX_kmtdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_KMT
 		available = {
 			OR = {
 					NOT = {
@@ -474,7 +474,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_KMT_agenda4 = {
-		icon = GFX_kmtdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_KMT
 		available = {
 			OR = {
 					NOT = {
@@ -558,7 +558,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_KMT_agenda5 = {
-		icon = GFX_kmtdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_KMT
 		available = {
 			OR = {
 					NOT = {
@@ -613,7 +613,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_TPP_agenda = {
-		icon = GFX_tppdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_TPP
 		available = {
 						always = no
 		}
@@ -637,7 +637,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_TPP_agenda2 = {
-		icon = GFX_tppdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_TPP
 		available = {
 			OR = {
 					NOT = {
@@ -692,7 +692,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_TPP_agenda3 = {
-		icon = GFX_tppdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_TPP
 		available = {
 			OR = {
 					NOT = {
@@ -748,7 +748,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_TPP_agenda4 = {
-		icon = GFX_tppdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_TPP
 		available = {
 			OR = {
 					NOT = {
@@ -832,7 +832,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 	CHI_TPP_agenda5 = {
-		icon = GFX_tppdec
+		icon = GFX_CHI_Legislative_Yuan_decisions_TPP
 		available = {
 			OR = {
 					NOT = {
@@ -896,7 +896,6 @@ CHI_Legislative_Yuan_decisions = {
 		}
 	}	
 }
-
 
 
 
@@ -4773,6 +4772,7 @@ EastAsia_taiwan_war_dec = {
 	}
 	
 }
+
 
 
 
