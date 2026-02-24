@@ -173,6 +173,10 @@ PRC = {
 			expire = "1.1.1.1"
 		}
 	}
+	country_event = {
+					id = ROC.64
+					days = 912
+				}
 add_ideas = Red_Nobility
 	add_ideas = Crony_capitalismy
 	add_ideas = Techno_nationalism
@@ -415,4 +419,10 @@ add_country_leader_role = {
 	expire = "1999.1.1"
 	ideology = babylonian_nazism
 				}  
+}
+SHZ = {
+	promote_character = {
+	character = MCU_Ho_Iat_Seng
+	ideology = military_junta
+}
 }

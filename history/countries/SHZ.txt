@@ -7,7 +7,7 @@ set_stability = 0.3
 oob = "AAS_2020"
 
 set_country_flag = country_language_chinese
-
+recruit_character = SHZ_Yang_Zhichun
 
 set_party_name = {
 		ideology = nationalist
