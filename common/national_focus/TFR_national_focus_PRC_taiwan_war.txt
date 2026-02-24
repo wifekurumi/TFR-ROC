@@ -41,6 +41,10 @@ focus_tree = {
 				#news_event = {
 				#	id = china.
 				#}
+				news_event = {
+					id = ROC.17
+					days = 50
+				}
 			}
 		}
 	}
@@ -1605,5 +1609,6 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 	}
 }
+
 
 
