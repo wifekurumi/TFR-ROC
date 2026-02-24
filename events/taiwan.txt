@@ -3057,6 +3057,53 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = ROC.64
+	title = china.391.t
+	desc = china.391.d
+	picture = GFX_PRC_xinjiang3
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			HKN = {
+				promote_character = {
+	character = HKN_John_Lee
+	ideology = market_socialism
+}
+
+add_country_leader_role = {
+		character = HKN_John_Lee
+		promote_leader = yes
+		country_leader = {
+			ideology = market_socialism 
+			expire = "1.1.1.1"
+		}
+	}
+	promote_character = {
+	character = HKN_John_Lee
+	ideology = SIG_pragmatic_conservatism
+}
+
+add_country_leader_role = {
+		character = HKN_John_Lee
+		promote_leader = yes
+		country_leader = {
+			ideology = SIG_pragmatic_conservatism 
+			expire = "1.1.1.1"
+		}
+	}
+			}
+		}
+	}
+	trigger = {
+	}
+	option = {
+		name = china.391.a
+	}
+}
+
+
 
 
 
