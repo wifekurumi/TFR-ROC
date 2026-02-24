@@ -23,13 +23,13 @@ CHI = {
 	elections_allowed = yes
 }
 set_popularities = {
-	conservative = 40
+	conservative = 35
 	social_liberal = 45
 	market_liberal  = 7
-	totalitarian_socialist = 1
+	totalitarian_socialist = 2
 	communist = 3
 	libertarian_socialist = 2
-	social_democrat = 2
+	social_democrat = 1
 }
 set_country_flag = CHI_lfy_flag
 add_dynamic_modifier = {
@@ -183,6 +183,7 @@ PHI = {
 		days = 1200
 	}
 }
+
 
 
 
