@@ -120,7 +120,7 @@ ideas = {
 				production_speed_buildings_factor = -0.35
 				stability_factor = -0.35
 				business_value_factor = -0.35
-				poverty_development_monthly = -0.35
+				poverty_development_monthly = -0.035
 				factory_energy_consumption = 0.55
 			}
 		}
@@ -142,7 +142,7 @@ ideas = {
 				production_speed_buildings_factor = -0.30
 				stability_factor = -0.30
 				business_value_factor = -0.30
-				poverty_development_monthly = -0.30
+				poverty_development_monthly = -0.030
 				factory_energy_consumption = 0.50
 			}
 		}
@@ -164,7 +164,7 @@ ideas = {
 				production_speed_buildings_factor = -0.25
 				stability_factor = -0.25
 				business_value_factor = -0.25
-				poverty_development_monthly = -0.25
+				poverty_development_monthly = -0.025
 				factory_energy_consumption = 0.35
 			}
 		}
@@ -186,7 +186,7 @@ ideas = {
 				production_speed_buildings_factor = -0.20
 				stability_factor = -0.20
 				business_value_factor = -0.20
-				poverty_development_monthly = -0.20
+				poverty_development_monthly = -0.020
 				factory_energy_consumption = 0.30
 			}
 		}
@@ -208,7 +208,7 @@ ideas = {
 				production_speed_buildings_factor = -0.15
 				stability_factor = -0.15
 				business_value_factor = -0.15
-				poverty_development_monthly = -0.15
+				poverty_development_monthly = -0.015
 				factory_energy_consumption = 0.25
 			}
 		}
@@ -230,7 +230,7 @@ ideas = {
 				production_speed_buildings_factor = -0.10
 				stability_factor = -0.10
 				business_value_factor = -0.10
-				poverty_development_monthly = -0.10
+				poverty_development_monthly = -0.010
 				factory_energy_consumption = 0.20
 			}
 		}
@@ -274,7 +274,7 @@ ideas = {
 				production_speed_buildings_factor = -0.05
 				stability_factor = -0.05
 				business_value_factor = -0.05
-				poverty_development_monthly = -0.05
+				poverty_development_monthly = -0.005
 				factory_energy_consumption = 0.10
 			}
 		}
@@ -296,7 +296,7 @@ ideas = {
 				production_speed_buildings_factor = -0.05
 				stability_factor = -0.05
 				business_value_factor = -0.05
-				poverty_development_monthly = -0.0
+				poverty_development_monthly = -0.00
 				factory_energy_consumption = 0.10
 			}
 		}
@@ -318,7 +318,7 @@ ideas = {
 				production_speed_buildings_factor = -0.0
 				stability_factor = -0.05
 				business_value_factor = -0.0
-				poverty_development_monthly = -0.0
+				poverty_development_monthly = -0.00
 				factory_energy_consumption = 0.5
 			}
 		}
@@ -340,7 +340,7 @@ ideas = {
 				production_speed_buildings_factor = -0.0
 				stability_factor = -0.0
 				business_value_factor = -0.0
-				poverty_development_monthly = -0.0
+				poverty_development_monthly = -0.00
 				factory_energy_consumption = 0.5
 			}
 		}
@@ -362,7 +362,7 @@ ideas = {
 				production_speed_buildings_factor = -0.0
 				stability_factor = -0.0
 				business_value_factor = -0.0
-				poverty_development_monthly = -0.0
+				poverty_development_monthly = -0.00
 				factory_energy_consumption = 0.0
 			}
 		}
