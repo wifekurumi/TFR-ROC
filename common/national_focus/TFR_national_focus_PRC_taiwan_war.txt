@@ -473,8 +473,16 @@ focus_tree = {
 			}
 			#set_country_flag = PRC_ongoing_taiwan_war
 			set_global_flag = PRC_ongoing_taiwan_war
-			unlock_decision_category_tooltip = PRC_taiwan_war_cat
 			hidden_effect = {
+				CHI = {
+				add_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
+				}
+				JAP = {
+				add_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
+				}
+				AST = {
+				add_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
+				}
 				every_state = {
 					#защита от дебила
 					limit = {
@@ -617,6 +625,9 @@ focus_tree = {
 activate_mission = THECHI_taiwan_war_countdown
 			}
 			JAP = {
+activate_mission = THEJAP_taiwan_war_countdown
+			}
+			AST = {
 activate_mission = THEJAP_taiwan_war_countdown
 			}
 			load_oob = "The_PRC_Marine_Corps_taibei"
@@ -788,13 +799,9 @@ activate_mission = THEJAP_taiwan_war_countdown
 			factor = 10
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
-				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
-			}
-			unlock_decision_tooltip = PRC_adapt_to_modern_defense
-			unlock_decision_tooltip = PRC_adapt_to_modern_offensives
-			unlock_decision_tooltip = PRC_adapt_to_modern_airbattles
+			unlock_decision_tooltip = PRC_adapt_to_modern_defense2
+			unlock_decision_tooltip = PRC_adapt_to_modern_offensives2
+			unlock_decision_tooltip = PRC_adapt_to_modern_airbattles2
 		}
 	}
 	focus = {
@@ -861,16 +868,13 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 		completion_reward = {
 			add_stability = -0.025
-			unlock_decision_tooltip = PRC_destroy_taiwan_infr
-			unlock_decision_tooltip = PRC_destroy_taiwan_civ_industry
-			unlock_decision_tooltip = PRC_destroy_taiwan_war_industry
-			unlock_decision_tooltip = PRC_strike_senkaku
-			unlock_decision_tooltip = PRC_strike_okinawa
-			unlock_decision_tooltip = PRC_taiwan_bombing_raid
-			add_days_mission_timeout = {
-				mission = PRC_taiwan_war_countdown
-				days = -30
-			}
+			unlock_decision_tooltip = PRC_destroy_taiwan_infr2
+			unlock_decision_tooltip = PRC_destroy_taiwan_civ_industry2
+			unlock_decision_tooltip = PRC_destroy_taiwan_war_industry2
+			unlock_decision_tooltip = PRC_strike_senkaku2
+			unlock_decision_tooltip = PRC_strike_okinawa2
+			unlock_decision_tooltip = PRC_strike_nagasaki2
+			unlock_decision_tooltip = PRC_taiwan_bombing_raid2
 			hidden_effect = {
 				if = {
 					limit = {
@@ -911,10 +915,7 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 		completion_reward = {
 			add_stability = 0.05
-			swap_ideas = {
-				remove_idea = common_prosperity_law
-				add_idea = common_prosperity_law_1
-			}
+			common_prosperity_law_idk = yes
 			hidden_effect = {
 					
 			}
@@ -1095,10 +1096,7 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 		completion_reward = {
 			add_stability = -0.025
-			swap_ideas = {
-				remove_idea = common_prosperity_law
-				add_idea = common_prosperity_law_2
-			}
+			common_prosperity_law_idk = yes
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -1607,6 +1605,5 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 	}
 }
-
 
 
