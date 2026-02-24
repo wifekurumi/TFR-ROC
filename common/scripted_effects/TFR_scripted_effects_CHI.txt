@@ -1001,7 +1001,10 @@ EADI_taiwan_war = {
 					NOT = {has_country_flag = Taiwan_war}
 				}
 				set_country_flag = Taiwan_war
-				add_ideas = PRC_TaiHai_IDEA_1	
+				swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA
+        	add_idea = PRC_TaiHai_IDEA_1
+    		}
 				country_event = {
 					id = ROC_PRC.13
 				}
@@ -1209,7 +1212,7 @@ PDTO_taiwan_war = {
         	remove_idea = CHI_TaiHai_IDEA_1
         	add_idea = CHI_TaiHai_IDEA_2
     		}
-				country_event = {id = CHI_TaiHai_IDEA.5}	
+				country_event = {id = ROC_CHI.5}	
 			}
 			if = {
 				limit = {
@@ -1217,7 +1220,7 @@ PDTO_taiwan_war = {
 				}
 				set_country_flag = Taiwan_war
 				add_ideas = CHI_TaiHai_IDEA_1	
-				country_event = {id = CHI_TaiHai_IDEA.2}	
+				country_event = {id = ROC_CHI.2}	
 			}
 }
 PDTO2_taiwan_war = {
