@@ -605,98 +605,10 @@ focus_tree = {
 							days = 35
 						}
 					}
-					if = {
-						limit = {
-							is_ai = yes
-							NOT = {
-								has_global_flag = JAP_civil_war_started
-							}
-						}
-						every_state = {
-							limit = {
-								JAP = {
-									divisions_in_state = {
-										state = PREV
-										size > 0
-									}
-								}
-							}
-							teleport_armies = {
-								to_state_array = CHI.owned_controlled_states
-							}
-						}
-						division_template = {
-							name = "Okinawa Defense Brigade"
-							priority = 1
-							regiments = {
-								infantry = {
-									x = 0
-									y = 0
-								}
-								infantry = {
-									x = 0
-									y = 1
-								}
-								infantry = {
-									x = 0
-									y = 2
-								}
-								infantry = {
-									x = 1
-									y = 0
-								}
-								infantry = {
-									x = 1
-									y = 1
-								}
-								infantry = {
-									x = 1
-									y = 2
-								}
-							}
-							support = {
-								recon = {
-									x = 0
-									y = 0
-								}
-								engineer = {
-									x = 0
-									y = 1
-								}
-							}
-						}
-						526 = {
-							create_unit = {
-								division = "division_template = \"Okinawa Defense Brigade\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
-								owner = JAP
-								count = 3
-							}
-						}
-					}
+			
 				}
 				AST = {
-					country_event = {
-						id = ROC.58
-						days = 1
-					}
-					if = {
-						limit = {
-							is_ai = yes
-						}
-						every_state = {
-							limit = {
-								AST = {
-									divisions_in_state = {
-										state = PREV
-										size > 0
-									}
-								}
-							}
-							teleport_armies = {
-								to_state_array = CHI.owned_controlled_states
-							}
-						}
-					}
+	
 				}
 				unlock_decision_category_tooltip = EastAsia_taiwan_war_dec
 			activate_mission = THEPRC_taiwan_war_countdown
