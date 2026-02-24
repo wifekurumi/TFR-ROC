@@ -560,86 +560,6 @@ PRC_the_separatist_problem_ideas = {
 			value = CHI_waidao_zhuangbei_progress_temp
 		}
 	}
-	PDTO_unity_increase = {
-		every_country = {
-			limit = {
-				OR = {
-					has_idea = PDTO_unity_1
-					has_idea = PDTO_unity_2
-					has_idea = PDTO_unity_3
-					has_idea = PDTO_unity_4
-					has_idea = PDTO_unity_5
-				}
-			}
-			if = {
-				limit = {
-					has_idea = PDTO_unity_1
-				}
-				swap_ideas = {
-					remove_idea = PDTO_unity_1
-					add_idea = PDTO_unity_2
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = PDTO_unity_2
-				}
-				swap_ideas = {
-					remove_idea = PDTO_unity_2
-					add_idea = PDTO_unity_3
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = PDTO_unity_3
-				}
-				swap_ideas = {
-					remove_idea = PDTO_unity_3
-					add_idea = PDTO_unity_4
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = PDTO_unity_4
-				}
-				swap_ideas = {
-					remove_idea = PDTO_unity_4
-					add_idea = PDTO_unity_5
-				}
-			}
-		}
-	}
-	PDTO_unity_decrease = {
-		every_country = {
-			if = {
-				limit = {
-					has_idea = PDTO_unity_4
-				}
-				swap_ideas = {
-					remove_idea = PDTO_unity_4
-					add_idea = PDTO_unity_3
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = PDTO_unity_3
-				}
-				swap_ideas = {
-					remove_idea = PDTO_unity_3
-					add_idea = PDTO_unity_2
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = PDTO_unity_2
-				}
-				swap_ideas = {
-					remove_idea = PDTO_unity_2
-					add_idea = PDTO_unity_1
-				}
-			}
-		}
-	}
 }
 
 PDTO_unity_increase = {
@@ -1651,28 +1571,6 @@ THE_ChineseCivilWarTroops2 = {
 	division_template = {
 	name = "Minbing"
 	is_locked = yes
-	regiments = {
-		militia = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-		militia = { x = 1 y = 2 }
-					}
-					
-					support = {
-					}	
-				}
-	random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"militia Brigade\" division_template = \"militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-					id = 1949
-					owner = ROOT
-					count = 7
-				}
-			}
-
-}	is_locked = yes
 	regiments = {
 		militia = { x = 0 y = 0 }
 		militia = { x = 0 y = 1 }
