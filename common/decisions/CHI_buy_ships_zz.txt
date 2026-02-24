@@ -10,15 +10,7 @@ CHI_buy_ships_zz = {
 		}
 		available = {
 		}
-		custom_cost_trigger = {
-			check_variable = {
-				var = income_var
-				value = 45
-			}
-			political_power > 99
-		}
-		custom_cost_text = dx_more_than_45B_and_100pp
-		
+		cost = 100
 		fire_only_once = no
 		days_remove = 120
 		days_re_enable = 356
@@ -31,17 +23,15 @@ CHI_buy_ships_zz = {
 		}
 		complete_effect = {
 			set_temp_variable = {
-				var = income_var_temp
-				value = -45
+				var = debt_var_temp
+				value = 45
 			}
-			add_income = yes
-			add_political_power = -100
+			add_debt_with_inflation = yes
 			hidden_effect = {
 				load_oob = "CHI_BUY_USA_DESTROYERS2"
 			}
 			custom_effect_tooltip = CHI_BUY_USA_DESTROYERS_tt
 		}
-		cost = 50
 	}
 	CHI_buy_USA_destroyers_hawaii = {
 		visible = {
@@ -54,14 +44,14 @@ CHI_buy_ships_zz = {
 		}
 		available = {
 		}
-		custom_cost_trigger = {
-			check_variable = {
-				var = income_var
-				value = 25
-			}
-			political_power > 74
-		}
-		custom_cost_text = dx_more_than_25B_and_75pp
+		#custom_cost_trigger = {
+			#check_variable = {
+			#	var = income_var
+			#	value = 25
+			#}
+		#	political_power > 74
+		#}
+		cost = 75
 		fire_only_once = no
 		days_remove = 70
 		days_re_enable = 356
@@ -74,17 +64,15 @@ CHI_buy_ships_zz = {
 		}
 		complete_effect = {
 			set_temp_variable = {
-				var = income_var_temp
-				value = -25
+				var = debt_var_temp
+				value = 25
 			}
-			add_income = yes
-			add_political_power = -75
+			add_debt_with_inflation = yes
 			hidden_effect = {
 				load_oob = "CHI_BUY_USA_DESTROYERS"
 			}
 			custom_effect_tooltip = CHI_BUY_USA_DESTROYERS_tt
 		}
-		cost = 50
 	}
 	CHI_buy_USA_submarines = {
 		visible = {
@@ -97,14 +85,7 @@ CHI_buy_ships_zz = {
 		}
 		available = {
 		}
-		custom_cost_trigger = {
-			check_variable = {
-				var = income_var
-				value = 25
-			}
-			political_power > 49
-		}
-		custom_cost_text = dx_more_than_15B_and_50pp
+		cost = 50
 		fire_only_once = no
 		days_remove = 70
 		days_re_enable = 356
@@ -117,17 +98,15 @@ CHI_buy_ships_zz = {
 		}
 		complete_effect = {
 			set_temp_variable = {
-				var = income_var_temp
-				value = -15
+				var = debt_var_temp
+				value = 15
 			}
-			add_income = yes
-			add_political_power = -50
+			add_debt_with_inflation = yes
 			hidden_effect = {
 				load_oob = "CHI_BUY_USA_DESTROYERS3"
 			}
 			custom_effect_tooltip = CHI_BUY_USA_DESTROYERS_tt
 		}
-		cost = 50
 	}
 	CHI_buy_JAP_destroyers = {
 		visible = {
@@ -140,14 +119,7 @@ CHI_buy_ships_zz = {
 		}
 		available = {
 		}
-		custom_cost_trigger = {
-			check_variable = {
-				var = income_var
-				value = 25
-			}
-			political_power > 74
-		}
-		custom_cost_text = dx_more_than_25B_and_75pp
+		cost = 75
 		fire_only_once = no
 		days_remove = 70
 		days_re_enable = 356
@@ -160,17 +132,15 @@ CHI_buy_ships_zz = {
 		}
 		complete_effect = {
 			set_temp_variable = {
-				var = income_var_temp
-				value = -25
+				var = debt_var_temp
+				value = 25
 			}
-			add_income = yes
-			add_political_power = -75
+			add_debt_with_inflation = yes
 			hidden_effect = {
 				load_oob = "CHI_buy_JAP_destroyers2"
 			}
 			custom_effect_tooltip = CHI_BUY_JAP_DESTROYERS_tt
 		}
-		cost = 50
 	}
 	CHI_buy_JAP_submarines = {
 		visible = {
@@ -183,14 +153,7 @@ CHI_buy_ships_zz = {
 		}
 		available = {
 		}
-		custom_cost_trigger = {
-			check_variable = {
-				var = income_var
-				value = 25
-			}
-			political_power > 49
-		}
-		custom_cost_text = dx_more_than_15B_and_50pp
+		cost = 50
 		fire_only_once = no
 		days_remove = 70
 		days_re_enable = 356
@@ -203,17 +166,15 @@ CHI_buy_ships_zz = {
 		}
 		complete_effect = {
 			set_temp_variable = {
-				var = income_var_temp
-				value = -15
+				var = debt_var_temp
+				value = 15
 			}
-			add_income = yes
-			add_political_power = -50
+			add_debt_with_inflation = yes
 			hidden_effect = {
 				load_oob = "CHI_buy_JAP_destroyers"
 			}
 			custom_effect_tooltip = CHI_BUY_JAP_DESTROYERS_tt
 		}
-		cost = 50
 	}
 	CHI_buy_KOR_destroyers = {
 		visible = {
@@ -226,14 +187,7 @@ CHI_buy_ships_zz = {
 		}
 		available = {
 		}
-		custom_cost_trigger = {
-			check_variable = {
-				var = income_var
-				value = 25
-			}
-			political_power > 74
-		}
-		custom_cost_text = dx_more_than_25B_and_75pp
+		cost = 75
 		fire_only_once = no
 		days_remove = 70
 		days_re_enable = 356
@@ -246,17 +200,15 @@ CHI_buy_ships_zz = {
 		}
 		complete_effect = {
 			set_temp_variable = {
-				var = income_var_temp
-				value = -25
+				var = debt_var_temp
+				value = 25
 			}
-			add_income = yes
-			add_political_power = -75
+			add_debt_with_inflation = yes
 			hidden_effect = {
 				load_oob = "CHI_buy_KOR_destroyers2"
 			}
 			custom_effect_tooltip = CHI_BUY_KOR_DESTROYERS_tt
 		}
-		cost = 50
 	}
 	CHI_buy_KOR_submarines = {
 		visible = {
@@ -269,14 +221,7 @@ CHI_buy_ships_zz = {
 		}
 		available = {
 		}
-		custom_cost_trigger = {
-			check_variable = {
-				var = income_var
-				value = 25
-			}
-			political_power > 49
-		}
-		custom_cost_text = dx_more_than_15B_and_50pp
+		cost = 50
 		fire_only_once = no
 		days_remove = 70
 		days_re_enable = 356
@@ -289,16 +234,14 @@ CHI_buy_ships_zz = {
 		}
 		complete_effect = {
 			set_temp_variable = {
-				var = income_var_temp
-				value = -15
+				var = debt_var_temp
+				value = 15
 			}
-			add_income = yes
-			add_political_power = -50
+			add_debt_with_inflation = yes
 			hidden_effect = {
 				load_oob = "CHI_buy_KOR_destroyers"
 			}
 			custom_effect_tooltip = CHI_BUY_KOR_DESTROYERS_tt
 		}
-		cost = 50
 	}
 }
