@@ -7,7 +7,7 @@ CHI_Legislative_Yuan_decisions = {
 		visible = {
 		}
 		ai_will_do = {
-			base = 100
+			base = 50
 		}
 		priority = 10
 		fire_only_once = no
@@ -32,7 +32,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 100
+			base = 50
 		}
 		priority = 60
 		fire_only_once = no
@@ -61,7 +61,18 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 50
+			modifier = {
+				factor = 50
+				CHI_tsai_ing_wen_char = {
+						is_country_leader = yes
+					}
+			}
+			modifier = {
+				factor = 0
+				CHI_han_kuo_yu_char = {
+						is_country_leader = yes
+					}
+			}
 		}
 		priority = 60
 		fire_only_once = no
@@ -128,7 +139,18 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 50
+			modifier = {
+				factor = 50
+				CHI_tsai_ing_wen_char = {
+						is_country_leader = yes
+					}
+			}
+			modifier = {
+				factor = 0
+				CHI_han_kuo_yu_char = {
+						is_country_leader = yes
+					}
+			}
 		}
 		priority = 60
 		fire_only_once = no
@@ -185,7 +207,18 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 50
+			modifier = {
+				factor = 50
+				CHI_tsai_ing_wen_char = {
+						is_country_leader = yes
+					}
+			}
+			modifier = {
+				factor = 0
+				CHI_han_kuo_yu_char = {
+						is_country_leader = yes
+					}
+			}
 		}
 		priority = 60
 		fire_only_once = no
@@ -287,7 +320,18 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 50
+		modifier = {
+				factor = 50
+				CHI_tsai_ing_wen_char = {
+						is_country_leader = yes
+					}
+			}
+			modifier = {
+				factor = 0
+				CHI_han_kuo_yu_char = {
+						is_country_leader = yes
+					}
+			}
 		}
 		priority = 60
 		fire_only_once = no
@@ -336,7 +380,18 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 100
+			modifier = {
+				factor = 50
+				CHI_han_kuo_yu_char = {
+						is_country_leader = yes
+					}
+			}
+			modifier = {
+				factor = 0
+				CHI_tsai_ing_wen_char = {
+						is_country_leader = yes
+					}
+			}
 		}
 		priority = 40
 		fire_only_once = no
@@ -365,7 +420,18 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 50
+			modifier = {
+				factor = 50
+				CHI_han_kuo_yu_char = {
+						is_country_leader = yes
+					}
+			}
+			modifier = {
+				factor = 0
+				CHI_tsai_ing_wen_char = {
+						is_country_leader = yes
+					}
+			}
 		}
 		priority = 40
 		fire_only_once = no
@@ -431,7 +497,18 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 50
+			modifier = {
+				factor = 50
+				CHI_han_kuo_yu_char = {
+						is_country_leader = yes
+					}
+			}
+			modifier = {
+				factor = 0
+				CHI_tsai_ing_wen_char = {
+						is_country_leader = yes
+					}
+			}
 		}
 		priority = 40
 		fire_only_once = no
@@ -491,7 +568,18 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 50
+			modifier = {
+				factor = 50
+				CHI_han_kuo_yu_char = {
+						is_country_leader = yes
+					}
+			}
+			modifier = {
+				factor = 0
+				CHI_tsai_ing_wen_char = {
+						is_country_leader = yes
+					}
+			}
 		}
 		priority = 40
 		fire_only_once = no
@@ -575,7 +663,18 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 50
+		modifier = {
+				factor = 50
+				CHI_han_kuo_yu_char = {
+						is_country_leader = yes
+					}
+			}
+			modifier = {
+				factor = 0
+				CHI_tsai_ing_wen_char = {
+						is_country_leader = yes
+					}
+			}
 		}
 		priority = 40
 		fire_only_once = no
@@ -625,7 +724,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 100
+			base = 50
 		}
 		priority = 50
 		fire_only_once = no
@@ -3711,7 +3810,7 @@ CHI_armry_test = {
 		visible = {
 		}
 		ai_will_do = {
-			base = 100
+			base = 50
 		}
 		priority = 10
 		fire_only_once = no
@@ -3748,7 +3847,7 @@ CHI_armry_test = {
 		visible = {
 		}
 		ai_will_do = {
-			base = 100
+			base = 50
 		}
 		priority = 10
 		fire_only_once = no
@@ -3789,7 +3888,7 @@ CHI_armry_test = {
 		visible = {
 		}
 		ai_will_do = {
-			base = 100
+			base = 50
 		}
 		priority = 10
 		fire_only_once = no
@@ -4079,7 +4178,7 @@ PDTO_Trade_Agreement = {
 				}
 		}
 		ai_will_do = {
-			base = 100
+			base = 50
 		}
 		priority = 10
 		fire_only_once = no
@@ -4121,7 +4220,7 @@ PDTO_Mineral_Detection = {
 				}
 		}
 		ai_will_do = {
-			base = 100
+			base = 50
 		}
 		priority = 10
 		fire_only_once = no
@@ -4161,7 +4260,7 @@ PDTO_Unity_up = {
 				}
 		}
 		ai_will_do = {
-			base = 100
+			base = 50
 		}
 		priority = 10
 		fire_only_once = no
@@ -4992,7 +5091,7 @@ EastAsia_taiwan_war_dec = {
 	}
 	#PRC_Nuke_PDTO = {
 		#ai_will_do = {
-			#base = 100
+			#base = 50
 		#}
 		#icon = GFX_PRC_new_left_decision
 		#available = {
@@ -6095,13 +6194,6 @@ EastAsia_taiwan_war_dec = {
 		}
 	}
 }
-
-
-
-
-
-
-
 
 
 
