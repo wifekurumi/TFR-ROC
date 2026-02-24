@@ -1078,8 +1078,9 @@ EADI_taiwan_war = {
 			}
 			if = {
 				limit = {
-					NOT = {has_idea = PRC_TaiHai_IDEA_1}
+					NOT = {has_country_flag = Taiwan_war}
 				}
+				set_country_flag = Taiwan_war
 				add_ideas = PRC_TaiHai_IDEA_1	
 				country_event = {
 					id = ROC_PRC.13
@@ -1292,8 +1293,9 @@ PDTO_taiwan_war = {
 			}
 			if = {
 				limit = {
-					NOT = {has_idea = CHI_TaiHai_IDEA_1}
+					NOT = {has_country_flag = Taiwan_war}
 				}
+				set_country_flag = Taiwan_war
 				add_ideas = CHI_TaiHai_IDEA_1	
 				country_event = {id = CHI_TaiHai_IDEA.2}	
 			}
@@ -1504,8 +1506,9 @@ PDTO2_taiwan_war = {
 			}
 			if = {
 				limit = {
-					NOT = {has_idea = JAP_TaiHai_IDEA_1}
+					NOT = {has_country_flag = Taiwan_war}
 				}
+				set_country_flag = Taiwan_war
 				add_ideas = JAP_TaiHai_IDEA_1	
 				#country_event = {id = JAP_TaiHai_IDEA.1}	
 			}
@@ -1516,6 +1519,10 @@ PDTO2_taiwan_war = {
 		white_peace = JAP
 		annex_country = {
 		    target = HKN
+		    transfer_troops = no
+		}
+		annex_country = {
+		    target = MCU
 		    transfer_troops = no
 		}
 		annex_country = {
@@ -1644,6 +1651,28 @@ THE_ChineseCivilWarTroops2 = {
 	division_template = {
 	name = "Minbing"
 	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+					}
+					
+					support = {
+					}	
+				}
+	random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"militia Brigade\" division_template = \"militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					id = 1949
+					owner = ROOT
+					count = 7
+				}
+			}
+
+}	is_locked = yes
 	regiments = {
 		militia = { x = 0 y = 0 }
 		militia = { x = 0 y = 1 }
