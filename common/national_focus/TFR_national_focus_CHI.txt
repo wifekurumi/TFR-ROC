@@ -885,6 +885,11 @@ focus_tree = {
 			has_country_flag = covid_happen
 		}
 		completion_reward = {
+		add_political_power = 50
+			add_days_mission_timeout = {
+				mission = Epidemic_is_getting_worse
+				days = 50
+			}
 		}
 		bypass = {
 		}
