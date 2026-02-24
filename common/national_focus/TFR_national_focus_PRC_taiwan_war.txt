@@ -447,6 +447,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = taihai_war
+			add_ideas = PRC_TaiHai_IDEA
 			hidden_effect = {
 				TFR_PRC_clear_econ_law_effect = yes
 				add_ideas = common_prosperity_law
@@ -1606,5 +1607,6 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 	}
 }
+
 
 
