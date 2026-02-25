@@ -38,9 +38,10 @@ focus_tree = {
 			#add_ideas = early_mobilization
 			add_stability = -0.1
 			hidden_effect = {
-				#news_event = {
-				#	id = china.
-				#}
+				news_event = {
+					id = ROC.19
+days = 50
+				}
 			}
 		}
 	}
@@ -1605,5 +1606,6 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 	}
 }
+
 
 
