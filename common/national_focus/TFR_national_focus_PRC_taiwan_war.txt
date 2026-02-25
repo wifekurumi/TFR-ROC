@@ -41,10 +41,6 @@ focus_tree = {
 				#news_event = {
 				#	id = china.
 				#}
-				news_event = {
-					id = ROC.18
-					days = 50
-				}
 			}
 		}
 	}
@@ -286,7 +282,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		immediate = {
+		select_effect = {
 			hidden_effect = {
 				CHI = {
 					country = {
@@ -1609,7 +1605,5 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 	}
 }
-
-
 
 
