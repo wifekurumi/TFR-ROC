@@ -2481,27 +2481,9 @@ focus_tree = {
 
 		}
 	}
-	focus = {
-		#走出風暴
-		id = Out_the_storm
-		icon = GFX_focus_CHI_Semiconductor_mobilization
-		cost = 1
-		x = -1
-		y = 4
-		prerequisite = {
-			focus = chip_complex
-		}
-		prerequisite = {
-			focus = Japan_Science_Technology_Industry_Cooperation
-		}
-		relative_position_id = Pacific_War
-		completion_reward = {
-
-		}
-	}
 	focus = {	
 		id = CHI_thenationisinperil
-		icon = GFX_focus_CHI_thenationisinperil
+		icon = GFX_focus_CHI_grant_emergency_powers
 		x = 0
 		y = 10
 		cost = 2
@@ -2513,7 +2495,7 @@ focus_tree = {
 			factor = 1
 		}
 		allow_branch = {
-			has_country_flag = CHI_taihai_war
+			
 		}
 		completion_reward = {
 			add_ideas = CHI_thenationisinperil_1
@@ -2610,7 +2592,7 @@ focus_tree = {
 	focus = {
 		# 國民精神總動員
 		id = CHI_National_Spiritual_Mobilization
-		icon = GFX_focus_CHI_National_Spiritual_Mobilization
+		icon = GFX_focus_CHI_unite_the_island
 		x = -3
 		y = 1
 		cost = 3
@@ -2712,6 +2694,7 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
 		# 動員警力維持秩序
 		id = CHI_Mobilize_police_force_to_maintain_order
@@ -2953,7 +2936,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_Requesting_material_assistance_from_allies
-		icon = GFX_focus_CHI_Requesting_material_assistance_from_allies
+		icon = GFX_focus_CHI_appeal_to_the_free_world
 		x = 0
 		y = 2
 		cost = 2
@@ -3295,7 +3278,7 @@ focus_tree = {
 	focus = {
 		# 自由地區一步也不能退！
 		id = CHI_Not_step_back
-		icon = GFX_focus_CHI_Not_step_back
+		icon = GFX_focus_CHI_hold_the_defence_line
 		x = -1
 		y = 2
 		cost = 3.2
@@ -3343,7 +3326,7 @@ focus_tree = {
 	focus = {
 		# 死戰不退
 		id = CHI_Fight_to_the_death
-		icon = GFX_focus_CHI_Fight_to_the_death
+		icon = GFX_focus_CHI_guerilla_strategy
 		x = 0
 		y = 4
 		cost = 3.2
@@ -3398,3 +3381,4 @@ focus_tree = {
 		}
 	}
 }
+
