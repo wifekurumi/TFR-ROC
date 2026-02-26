@@ -311,6 +311,12 @@ CHI_NHCC_decisions = {
 		selectable_mission = no
 		days_mission_timeout = 30
 		timeout_effect = {
+			CHI_decrease_coroldpirus = yes
+			set_temp_variable = {
+				var = CHI_vaccine_progress_temp
+				value = 20
+			}
+			CHI_vaccine_progress = yes
 			set_temp_variable = {
 				var = CHI_vaccine_value_temp
 				value = 2000

@@ -21,7 +21,7 @@ focus_tree = {
 			}
 		}
 		available = {
-			has_global_flag = USA_american_civil_war_global
+			has_global_flag = PRC_UnitedStates_divided
 		}
 		select_effect = {
 			hidden_effect = {
@@ -38,9 +38,10 @@ focus_tree = {
 			#add_ideas = early_mobilization
 			add_stability = -0.1
 			hidden_effect = {
-				#news_event = {
-				#	id = china.
-				#}
+				news_event = {
+					id = ROC.19
+days = 50
+				}
 			}
 		}
 	}
@@ -282,7 +283,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		immediate = {
+		select_effect = {
 			hidden_effect = {
 				CHI = {
 					country = {
@@ -447,6 +448,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = taihai_war
+			add_ideas = PRC_TaiHai_IDEA
 			hidden_effect = {
 				TFR_PRC_clear_econ_law_effect = yes
 				add_ideas = common_prosperity_law
@@ -472,8 +474,16 @@ focus_tree = {
 			}
 			#set_country_flag = PRC_ongoing_taiwan_war
 			set_global_flag = PRC_ongoing_taiwan_war
-			unlock_decision_category_tooltip = PRC_taiwan_war_cat
 			hidden_effect = {
+				CHI = {
+				add_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
+				}
+				JAP = {
+				add_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
+				}
+				AST = {
+				add_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
+				}
 				every_state = {
 					#защита от дебила
 					limit = {
@@ -605,98 +615,10 @@ focus_tree = {
 							days = 35
 						}
 					}
-					if = {
-						limit = {
-							is_ai = yes
-							NOT = {
-								has_global_flag = JAP_civil_war_started
-							}
-						}
-						every_state = {
-							limit = {
-								JAP = {
-									divisions_in_state = {
-										state = PREV
-										size > 0
-									}
-								}
-							}
-							teleport_armies = {
-								to_state_array = CHI.owned_controlled_states
-							}
-						}
-						division_template = {
-							name = "Okinawa Defense Brigade"
-							priority = 1
-							regiments = {
-								infantry = {
-									x = 0
-									y = 0
-								}
-								infantry = {
-									x = 0
-									y = 1
-								}
-								infantry = {
-									x = 0
-									y = 2
-								}
-								infantry = {
-									x = 1
-									y = 0
-								}
-								infantry = {
-									x = 1
-									y = 1
-								}
-								infantry = {
-									x = 1
-									y = 2
-								}
-							}
-							support = {
-								recon = {
-									x = 0
-									y = 0
-								}
-								engineer = {
-									x = 0
-									y = 1
-								}
-							}
-						}
-						526 = {
-							create_unit = {
-								division = "division_template = \"Okinawa Defense Brigade\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
-								owner = JAP
-								count = 3
-							}
-						}
-					}
+			
 				}
 				AST = {
-					country_event = {
-						id = ROC.58
-						days = 1
-					}
-					if = {
-						limit = {
-							is_ai = yes
-						}
-						every_state = {
-							limit = {
-								AST = {
-									divisions_in_state = {
-										state = PREV
-										size > 0
-									}
-								}
-							}
-							teleport_armies = {
-								to_state_array = CHI.owned_controlled_states
-							}
-						}
-					}
+	
 				}
 				unlock_decision_category_tooltip = EastAsia_taiwan_war_dec
 			activate_mission = THEPRC_taiwan_war_countdown
@@ -704,6 +626,9 @@ focus_tree = {
 activate_mission = THECHI_taiwan_war_countdown
 			}
 			JAP = {
+activate_mission = THEJAP_taiwan_war_countdown
+			}
+			AST = {
 activate_mission = THEJAP_taiwan_war_countdown
 			}
 			load_oob = "The_PRC_Marine_Corps_taibei"
@@ -875,13 +800,9 @@ activate_mission = THEJAP_taiwan_war_countdown
 			factor = 10
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
-				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
-			}
-			unlock_decision_tooltip = PRC_adapt_to_modern_defense
-			unlock_decision_tooltip = PRC_adapt_to_modern_offensives
-			unlock_decision_tooltip = PRC_adapt_to_modern_airbattles
+			unlock_decision_tooltip = PRC_adapt_to_modern_defense2
+			unlock_decision_tooltip = PRC_adapt_to_modern_offensives2
+			unlock_decision_tooltip = PRC_adapt_to_modern_airbattles2
 		}
 	}
 	focus = {
@@ -948,16 +869,13 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 		completion_reward = {
 			add_stability = -0.025
-			unlock_decision_tooltip = PRC_destroy_taiwan_infr
-			unlock_decision_tooltip = PRC_destroy_taiwan_civ_industry
-			unlock_decision_tooltip = PRC_destroy_taiwan_war_industry
-			unlock_decision_tooltip = PRC_strike_senkaku
-			unlock_decision_tooltip = PRC_strike_okinawa
-			unlock_decision_tooltip = PRC_taiwan_bombing_raid
-			add_days_mission_timeout = {
-				mission = PRC_taiwan_war_countdown
-				days = -30
-			}
+			unlock_decision_tooltip = PRC_destroy_taiwan_infr2
+			unlock_decision_tooltip = PRC_destroy_taiwan_civ_industry2
+			unlock_decision_tooltip = PRC_destroy_taiwan_war_industry2
+			unlock_decision_tooltip = PRC_strike_senkaku2
+			unlock_decision_tooltip = PRC_strike_okinawa2
+			unlock_decision_tooltip = PRC_strike_nagasaki2
+			unlock_decision_tooltip = PRC_taiwan_bombing_raid2
 			hidden_effect = {
 				if = {
 					limit = {
@@ -998,10 +916,7 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 		completion_reward = {
 			add_stability = 0.05
-			swap_ideas = {
-				remove_idea = common_prosperity_law
-				add_idea = common_prosperity_law_1
-			}
+			common_prosperity_law_idk = yes
 			hidden_effect = {
 					
 			}
@@ -1182,10 +1097,7 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 		completion_reward = {
 			add_stability = -0.025
-			swap_ideas = {
-				remove_idea = common_prosperity_law
-				add_idea = common_prosperity_law_2
-			}
+			common_prosperity_law_idk = yes
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -1694,5 +1606,6 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 	}
 }
+
 
 

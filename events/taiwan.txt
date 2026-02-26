@@ -745,6 +745,12 @@ country_event = {
 			add_dynamic_modifier = {
 					modifier = CHI_LY_of_the_roc_dynamic
 				}
+add_to_variable = {var = CHI_LFY_conservative_drift value = 0.01}
+				add_to_variable = {var = CHI_LFY_political_power_gain value = 0.50}
+				add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = -0.05}
+				add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.04}
+				add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = 0.05}
+				add_to_variable = {var = CHI_LFY_social_liberal_drift value = 0.03}
 		}
 	}
 	trigger = {
@@ -2891,6 +2897,65 @@ country_event = {
 	}
 }
 country_event = {
+	id = ROC.57
+	title = ROC.57.t
+	desc = ROC.57.d
+	picture = GFX_china_civil_war_1
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC.57.a
+		complete_national_focus = PRC_fast_finalization
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = ROC.58
+	title = ROC.58.t
+	desc = ROC.58.d
+	picture = GFX_china_civil_war_1
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_ideas = PDO_taiwan_intervention_idea
+			activate_mission = JAP_taiwan_war_mission
+			if = {
+				limit = {
+					tag = JAP
+				}
+				set_country_flag = JAP_ongoing_taiwan_war
+				mark_focus_tree_layout_dirty = yes
+				hidden_effect = {
+					complete_national_focus = JAP_defend_taiwan
+				}
+			}
+		}
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC.58.a
+		if = {
+				limit = {
+					tag = JAP
+				}
+				mark_focus_tree_layout_dirty = yes
+				hidden_effect = {
+					complete_national_focus = JAP_defend_taiwan
+				}
+			}
+	}
+}
+country_event = {
 	id = ROC.59
 	title = ROC.59.t
 	desc = ROC.59.d
@@ -3026,13 +3091,29 @@ country_event = {
 			SHZ = {
 				transfer_state = 1395
 				add_state_core = 1395
-
+				THE_ChineseCivilWarTroops = yes
 			}
 			HKN = {
+				set_politics = {
+	ruling_party = social_liberal
+	last_election = "2016.1.16"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	authoritarian_democrat = 5
+	communist = 5
+	libertarian_socialist = 10
+	social_democrat = 20
+	market_liberal = 20
+	social_liberal = 50
+	conservative = 10
+	nationalist = 0
+}
 				transfer_state = 326
 				add_state_core = 326
 				set_cosmetic_tag = HKN_revolution
-				load_oob = HKN_revolt
+				THE_ChineseCivilWarTroops2 = yes
 			}
 			326 = {
 				remove_dynamic_modifier = {
@@ -3057,6 +3138,57 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = ROC.64
+	title = china.391.t
+	desc = china.391.d
+	picture = GFX_PRC_xinjiang3
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			HKN = {
+				promote_character = {
+	character = HKN_John_Lee
+	ideology = market_socialism
+}
+
+add_country_leader_role = {
+		character = HKN_John_Lee
+		promote_leader = yes
+		country_leader = {
+			ideology = market_socialism 
+			expire = "1.1.1.1"
+		}
+	}
+	promote_character = {
+	character = HKN_John_Lee
+	ideology = SIG_pragmatic_conservatism
+}
+
+add_country_leader_role = {
+		character = HKN_John_Lee
+		promote_leader = yes
+		country_leader = {
+			ideology = SIG_pragmatic_conservatism 
+			expire = "1.1.1.1"
+		}
+	}
+			}
+		}
+	}
+	trigger = {
+	}
+	option = {
+		name = china.391.a
+	}
+}
+
+
+
+
+
+
 
 
 
