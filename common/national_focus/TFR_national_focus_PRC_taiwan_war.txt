@@ -39,7 +39,7 @@ focus_tree = {
 			add_stability = -0.1
 			hidden_effect = {
 				news_event = {
-					id = ROC.19
+					id = ROC.18
 days = 50
 				}
 			}
@@ -1606,6 +1606,7 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 	}
 }
+
 
 
 
