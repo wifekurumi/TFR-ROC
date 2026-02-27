@@ -1,1143 +1,728 @@
 defined_text = {
-		name = get_fbi_event_title
-		
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_1
-			}
-			localization_key = "fbi_case_pipeline"
+	name = get_fbi_event_title
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_1
 		}
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_2
-			}
-			localization_key = "fbi_case_false_flags"
-		}
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_3
-			}
-			localization_key = "fbi_case_atomwaffen"
-		}
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_4
-			}
-			localization_key = "fbi_case_leftists"
-		}
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_5
-			}
-			localization_key = "fbi_case_texas"
-		}
+		localization_key = "fbi_case_pipeline"
 	}
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_2
+		}
+		localization_key = "fbi_case_false_flags"
+	}
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_3
+		}
+		localization_key = "fbi_case_atomwaffen"
+	}
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_4
+		}
+		localization_key = "fbi_case_leftists"
+	}
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_5
+		}
+		localization_key = "fbi_case_texas"
+	}
+}
 
-	defined_text = {
-		name = get_fbi_case_file
-		
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_1
-			}
-			localization_key = "fbi_case_pipeline_text"
+defined_text = {
+	name = get_fbi_case_file
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_1
 		}
-		
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_2
-			}
-			localization_key = "fbi_case_false_flags_text"
-		}
-		
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_3
-			}
-			localization_key = "fbi_case_atomwaffen_text"
-		}
-		
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_4
-			}
-			localization_key = "fbi_case_leftists_text"
-		}
-		
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_5
-			}
-			localization_key = "fbi_case_texas_text"
-		}
+		localization_key = "fbi_case_pipeline_text"
 	}
-	
-	defined_text = {
-		name = get_fbi_buton 
-		
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_1
-			}
-			localization_key = "fbi_case_pipeline_button"
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_2
 		}
-		
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_2
-			}
-			localization_key = "fbi_case_false_flags_button"
-		}
-		
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_3
-			}
-			localization_key = "fbi_case_atomwaffen_button"
-		}
-		
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_4
-			}
-			localization_key = "fbi_case_leftists_button"
-		}
-		
-		text = { 
-			trigger = {
-				has_country_flag = show_fbi_file_5
-			}
-			localization_key = "fbi_case_texas_button"
-		}
+		localization_key = "fbi_case_false_flags_text"
 	}
-	
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_3
+		}
+		localization_key = "fbi_case_atomwaffen_text"
+	}
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_4
+		}
+		localization_key = "fbi_case_leftists_text"
+	}
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_5
+		}
+		localization_key = "fbi_case_texas_text"
+	}
+}
+
+defined_text = {
+	name = get_fbi_buton
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_1
+		}
+		localization_key = "fbi_case_pipeline_button"
+	}
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_2
+		}
+		localization_key = "fbi_case_false_flags_button"
+	}
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_3
+		}
+		localization_key = "fbi_case_atomwaffen_button"
+	}
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_4
+		}
+		localization_key = "fbi_case_leftists_button"
+	}
+	text = {
+		trigger = {
+			has_country_flag = show_fbi_file_5
+		}
+		localization_key = "fbi_case_texas_button"
+	}
+}
+
 defined_text = {
 	name = start_menu_country_desc
-	text = { 
-			trigger = {
-				tag = CHI
-			}
-			localization_key = "CHI_country_summary"
+	text = {
+		trigger = {
+			tag = CHI
 		}
-		text = { 
-			trigger = {
-				tag = USA
-			}
-			localization_key = "USA_country_summary"
-		}
-		text = { 
-			trigger = {
-				tag = GER
-			}
-			localization_key = "GER_country_summary"
-		}
-		text = { 
-			trigger = {
-				tag = SOV
-			}
-			localization_key = "SOV_country_summary"
-		}
-		text = { 
-			trigger = {
-				tag = FRA
-			}
-			localization_key = "FRA_country_summary"
-		}
-		text = { 
-			trigger = {
-				tag = PRC
-			}
-			localization_key = "PRC_country_summary"
-		}
-		text = { 
-			trigger = {
-				tag = JAP
-			}
-			localization_key = "JAP_country_summary"
-		}
-		text = { 
-			trigger = {
-				tag = SYR
-			}
-			localization_key = "SYR_country_summary"
-		}
-		text = {
-			trigger = {
-				tag = USB
-				has_completed_focus = USB_rebirth
-			}
-			localization_key = "USB_caligula_country_summary"
-		}
-		text = { 
-			trigger = {
-				tag = NCM
-			}
-			localization_key = "NCM_country_summary"
-		}
+		localization_key = "CHI_country_summary"
 	}
-	
-	defined_text = {
-		name = start_menu_country_paths
-		
-		text = { 
-			trigger = {
-				tag = USA
-			}
-			localization_key = "USA_country_paths"
+	text = {
+		trigger = {
+			tag = USA
 		}
-		text = { 
-			trigger = {
-				tag = GER
-			}
-			localization_key = "GER_country_paths"
-		}
-		text = { 
-			trigger = {
-				tag = SOV
-			}
-			localization_key = "SOV_country_paths"
-		}
-		text = { 
-			trigger = {
-				tag = FRA
-			}
-			localization_key = "FRA_country_paths"
-		}
-		text = { 
-			trigger = {
-				tag = PRC
-			}
-			localization_key = "PRC_country_paths"
-		}
-		text = { 
-			trigger = {
-				tag = JAP
-			}
-			localization_key = "JAP_country_paths"
-		}
-		text = { 
-			trigger = {
-				tag = SYR
-			}
-			localization_key = "SYR_country_paths"
-		}
-		text = {
-			trigger = {
-				tag = USB
-				has_completed_focus = USB_rebirth
-			}
-			localization_key = "USB_caligula_country_paths"
-		}
-		text = { 
-			trigger = {
-				tag = NCM
-			}
-			localization_key = "NCM_country_paths"
-		}
+		localization_key = "USA_country_summary"
 	}
-	
-	defined_text = {
-		name = start_menu_country_other
-		
-		text = { 
-			trigger = {
-				tag = USA
-			}
-			localization_key = "USA_country_other"
+	text = {
+		trigger = {
+			tag = GER
 		}
-		text = { 
-			trigger = {
-				tag = GER
-			}
-			localization_key = "GER_country_other"
+		localization_key = "GER_country_summary"
+	}
+	text = {
+		trigger = {
+			tag = SOV
 		}
-		text = { 
-			trigger = {
-				tag = SOV
-			}
-			localization_key = "SOV_country_other"
+		localization_key = "SOV_country_summary"
+	}
+	text = {
+		trigger = {
+			tag = FRA
 		}
-		text = { 
-			trigger = {
-				tag = FRA
-			}
-			localization_key = "FRA_country_other"
+		localization_key = "FRA_country_summary"
+	}
+	text = {
+		trigger = {
+			tag = PRC
 		}
-		text = { 
-			trigger = {
-				tag = PRC
-			}
-			localization_key = "PRC_country_other"
+		localization_key = "PRC_country_summary"
+	}
+	text = {
+		trigger = {
+			tag = JAP
 		}
-		text = { 
-			trigger = {
-				tag = JAP
-			}
-			localization_key = "JAP_country_other"
+		localization_key = "JAP_country_summary"
+	}
+	text = {
+		trigger = {
+			tag = SYR
 		}
-		text = {
-			trigger = {
-				tag = USB
-				has_completed_focus = USB_rebirth
-			}
-			localization_key = "USB_caligula_country_other"
+		localization_key = "SYR_country_summary"
+	}
+	text = {
+		trigger = {
+			tag = USB
+			has_completed_focus = USB_rebirth
 		}
-		text = { 
-			trigger = {
-				tag = NCM
-			}
-			localization_key = "NCM_country_other"
+		localization_key = "USB_caligula_country_summary"
+	}
+	text = {
+		trigger = {
+			tag = NCM
 		}
+		localization_key = "NCM_country_summary"
+	}
 }
+
 defined_text = {
-		name = start_menu_country_paths
-		text = { 
-			trigger = {
-				tag = CHI
-			}
-			localization_key = "CHI_country_paths"
+	name = start_menu_country_paths
+	text = {
+		trigger = {
+			tag = USA
 		}
-		text = { 
-			trigger = {
-				tag = USA
-			}
-			localization_key = "USA_country_paths"
-		}
-		text = { 
-			trigger = {
-				tag = GER
-			}
-			localization_key = "GER_country_paths"
-		}
-		text = { 
-			trigger = {
-				tag = SOV
-			}
-			localization_key = "SOV_country_paths"
-		}
-		text = { 
-			trigger = {
-				tag = FRA
-			}
-			localization_key = "FRA_country_paths"
-		}
-		text = { 
-			trigger = {
-				tag = PRC
-			}
-			localization_key = "PRC_country_paths"
-		}
-		text = { 
-			trigger = {
-				tag = JAP
-			}
-			localization_key = "JAP_country_paths"
-		}
-		text = { 
-			trigger = {
-				tag = SYR
-			}
-			localization_key = "SYR_country_paths"
-		}
-		text = {
-			trigger = {
-				tag = USB
-				has_completed_focus = USB_rebirth
-			}
-			localization_key = "USB_caligula_country_paths"
-		}
-		text = { 
-			trigger = {
-				tag = NCM
-			}
-			localization_key = "NCM_country_paths"
-		}
+		localization_key = "USA_country_paths"
 	}
-	
-	defined_text = {
-		name = start_menu_country_other
-		
-		text = { 
-			trigger = {
-				tag = USA
-			}
-			localization_key = "USA_country_other"
+	text = {
+		trigger = {
+			tag = GER
 		}
-		text = { 
-			trigger = {
-				tag = GER
-			}
-			localization_key = "GER_country_other"
+		localization_key = "GER_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = SOV
 		}
-		text = { 
-			trigger = {
-				tag = SOV
-			}
-			localization_key = "SOV_country_other"
+		localization_key = "SOV_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = FRA
 		}
-		text = { 
-			trigger = {
-				tag = FRA
-			}
-			localization_key = "FRA_country_other"
+		localization_key = "FRA_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = PRC
 		}
-		text = { 
-			trigger = {
-				tag = PRC
-			}
-			localization_key = "PRC_country_other"
+		localization_key = "PRC_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = JAP
 		}
-		text = { 
-			trigger = {
-				tag = JAP
-			}
-			localization_key = "JAP_country_other"
+		localization_key = "JAP_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = SYR
 		}
-		text = {
-			trigger = {
-				tag = USB
-				has_completed_focus = USB_rebirth
-			}
-			localization_key = "USB_caligula_country_other"
+		localization_key = "SYR_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = USB
+			has_completed_focus = USB_rebirth
 		}
-		text = { 
-			trigger = {
-				tag = NCM
-			}
-			localization_key = "NCM_country_other"
+		localization_key = "USB_caligula_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = NCM
 		}
+		localization_key = "NCM_country_paths"
+	}
 }
+
 defined_text = {
-		name = start_menu_country_other
-		text = { 
-			trigger = {
-				tag = CHI
-			}
-			localization_key = "CHI_country_other"
+	name = start_menu_country_other
+	text = {
+		trigger = {
+			tag = USA
 		}
-		text = { 
-			trigger = {
-				tag = USA
-			}
-			localization_key = "USA_country_other"
+		localization_key = "USA_country_other"
+	}
+	text = {
+		trigger = {
+			tag = GER
 		}
-		text = { 
-			trigger = {
-				tag = GER
-			}
-			localization_key = "GER_country_other"
+		localization_key = "GER_country_other"
+	}
+	text = {
+		trigger = {
+			tag = SOV
 		}
-		text = { 
-			trigger = {
-				tag = SOV
-			}
-			localization_key = "SOV_country_other"
+		localization_key = "SOV_country_other"
+	}
+	text = {
+		trigger = {
+			tag = FRA
 		}
-		text = { 
-			trigger = {
-				tag = FRA
-			}
-			localization_key = "FRA_country_other"
+		localization_key = "FRA_country_other"
+	}
+	text = {
+		trigger = {
+			tag = PRC
 		}
-		text = { 
-			trigger = {
-				tag = PRC
-			}
-			localization_key = "PRC_country_other"
+		localization_key = "PRC_country_other"
+	}
+	text = {
+		trigger = {
+			tag = JAP
 		}
-		text = { 
-			trigger = {
-				tag = JAP
-			}
-			localization_key = "JAP_country_other"
+		localization_key = "JAP_country_other"
+	}
+	text = {
+		trigger = {
+			tag = USB
+			has_completed_focus = USB_rebirth
 		}
-		text = {
-			trigger = {
-				tag = USB
-				has_completed_focus = USB_rebirth
-			}
-			localization_key = "USB_caligula_country_other"
+		localization_key = "USB_caligula_country_other"
+	}
+	text = {
+		trigger = {
+			tag = NCM
 		}
-		text = { 
-			trigger = {
-				tag = NCM
-			}
-			localization_key = "NCM_country_other"
-		}
+		localization_key = "NCM_country_other"
+	}
 }
-			###### 标题 ######
-	defined_text = {
-		name = get_super_event_title
-		text = {
-			trigger = {
-				has_country_flag = PRC_wanghuning_victory_super_event_flag #超事件出现flag
-			}
-			localization_key = "CHI_Chinese_Civil_War" #调用的本地化
-		}
-	}
 
-	###### 引文 #######
-
-	defined_text = {
-		name = get_superevent_quote
-		text = {
-			trigger = {
-				has_country_flag = PRC_wanghuning_victory_super_event_flag #超事件出现flag
-			}
-			localization_key = "CHI_Chinese_Civil_War_text" #调用的本地化
+defined_text = {
+	name = start_menu_country_paths
+	text = {
+		trigger = {
+			tag = CHI
 		}
+		localization_key = "CHI_country_paths"
 	}
-	
-	##### 按钮 #####
-
-	defined_text = {
-		name = get_superevent_buton 
-		text = {
-			trigger = {
-				has_country_flag = PRC_wanghuning_victory_super_event_flag #超事件出现flag
-			}
-			localization_key = "CHI_Chinese_Civil_War_button" #调用的本地化
+	text = {
+		trigger = {
+			tag = USA
 		}
+		localization_key = "USA_country_paths"
 	}
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = "GER_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = SOV
+		}
+		localization_key = "SOV_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = FRA
+		}
+		localization_key = "FRA_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = PRC
+		}
+		localization_key = "PRC_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = "JAP_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = SYR
+		}
+		localization_key = "SYR_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = USB
+			has_completed_focus = USB_rebirth
+		}
+		localization_key = "USB_caligula_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = NCM
+		}
+		localization_key = "NCM_country_paths"
+	}
+}
+
+defined_text = {
+	name = start_menu_country_other
+	text = {
+		trigger = {
+			tag = USA
+		}
+		localization_key = "USA_country_other"
+	}
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = "GER_country_other"
+	}
+	text = {
+		trigger = {
+			tag = SOV
+		}
+		localization_key = "SOV_country_other"
+	}
+	text = {
+		trigger = {
+			tag = FRA
+		}
+		localization_key = "FRA_country_other"
+	}
+	text = {
+		trigger = {
+			tag = PRC
+		}
+		localization_key = "PRC_country_other"
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = "JAP_country_other"
+	}
+	text = {
+		trigger = {
+			tag = USB
+			has_completed_focus = USB_rebirth
+		}
+		localization_key = "USB_caligula_country_other"
+	}
+	text = {
+		trigger = {
+			tag = NCM
+		}
+		localization_key = "NCM_country_other"
+	}
+}
+
+defined_text = {
+	name = start_menu_country_other
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = "CHI_country_other"
+	}
+	text = {
+		trigger = {
+			tag = USA
+		}
+		localization_key = "USA_country_other"
+	}
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = "GER_country_other"
+	}
+	text = {
+		trigger = {
+			tag = SOV
+		}
+		localization_key = "SOV_country_other"
+	}
+	text = {
+		trigger = {
+			tag = FRA
+		}
+		localization_key = "FRA_country_other"
+	}
+	text = {
+		trigger = {
+			tag = PRC
+		}
+		localization_key = "PRC_country_other"
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = "JAP_country_other"
+	}
+	text = {
+		trigger = {
+			tag = USB
+			has_completed_focus = USB_rebirth
+		}
+		localization_key = "USB_caligula_country_other"
+	}
+	text = {
+		trigger = {
+			tag = NCM
+		}
+		localization_key = "NCM_country_other"
+	}
+}
+
 defined_text = {
 	name = CHI_lfy_dangtuan
-	
-	text = { 
+	text = {
 		trigger = {
 			tag = CHI
 		}
 		localization_key = "CHI_start_lfy_desc"
 	}
 }
-defined_text = {
-		name = get_super_event_title
-		text = {
-			trigger = {
-				has_country_flag = CHI_taihai_war_superevent #超事件出现flag
-			}
-			localization_key = "CHI_TAIWAN_War" #调用的本地化
-		}
-	}
 
-	###### 引文 #######
-
-	defined_text = {
-		name = get_superevent_quote
-		text = {
-			trigger = {
-				has_country_flag = CHI_taihai_war_superevent #超事件出现flag
-			}
-			localization_key = "CHI_TAIWAN_War_text" #调用的本地化
-		}
-	}
-	
-	##### 按钮 #####
-
-	defined_text = {
-		name = get_superevent_buton 
-		text = {
-			trigger = {
-				has_country_flag = CHI_taihai_war_superevent #超事件出现flag
-			}
-			localization_key = "CHI_TAIWAN_War_button" #调用的本地化
-		}
-	}
 defined_text = {
 	name = get_Taipei_status_PDTO
-	
-	text = { 
+	text = {
 		trigger = {
 			1148 = {
-		controller = {
-            is_ally_with = PRC
-        }
-				}
-		}
-		localization_key = "PLA_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				1148 = {
-		controller = {
-            is_ally_with = JAP
-        }
-				}
-			}
-		}
-		localization_key = "PDTO_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				NOT = {
-				1148 = {
-					 OR = {
-        controller = {
-            is_ally_with = PRC
-        }
-		controller = {
-            is_ally_with = JAP
-        }
-    }
-				}
-				}
-			}
-		}
-		localization_key = "neutral_control"
-	}
-}
-defined_text = {
-	name = get_Taichung_status_PDTO
-	
-	text = { 
-		trigger = {
-			1149 = {
-		controller = {
-            is_ally_with = PRC
-        }
-				}
-		}
-		localization_key = "PLA_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				1149 = {
-		controller = {
-            is_ally_with = JAP
-        }
-				}
-			}
-		}
-		localization_key = "PDTO_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				NOT = {
-				1149 = {
+				controller = {
 					is_ally_with = PRC
 				}
-				1149 = {
-					is_ally_with = JAP
+			}
+		}
+		localization_key = "PLA_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				1148 = {
+					controller = {
+						is_ally_with = JAP
+					}
 				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					1148 = {
+						OR = {
+							controller = {
+								is_ally_with = PRC
+							}
+							controller = {
+								is_ally_with = JAP
+							}
+						}
+					}
 				}
 			}
 		}
 		localization_key = "neutral_control"
 	}
 }
+
+defined_text = {
+	name = get_Taichung_status_PDTO
+	text = {
+		trigger = {
+			1149 = {
+				controller = {
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "PLA_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				1149 = {
+					controller = {
+						is_ally_with = JAP
+					}
+				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					1149 = {
+						is_ally_with = PRC
+					}
+					1149 = {
+						is_ally_with = JAP
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
 defined_text = {
 	name = get_Kaohsiung_status_PDTO
-	
-	text = { 
+	text = {
 		trigger = {
 			1150 = {
-		controller = {
-            is_ally_with = PRC
-        }
+				controller = {
+					is_ally_with = PRC
 				}
+			}
 		}
 		localization_key = "PLA_control"
 	}
-	text = { 
+	text = {
 		trigger = {
 			OR = {
 				1150 = {
-		controller = {
-            is_ally_with = JAP
-        }
+					controller = {
+						is_ally_with = JAP
+					}
 				}
 			}
 		}
 		localization_key = "PDTO_control"
 	}
-	text = { 
+	text = {
 		trigger = {
 			OR = {
 				NOT = {
-				1150 = {
-					 OR = {
-        controller = {
-            is_ally_with = PRC
-        }
-		controller = {
-            is_ally_with = JAP
-        }
-    }
-				}
+					1150 = {
+						OR = {
+							controller = {
+								is_ally_with = PRC
+							}
+							controller = {
+								is_ally_with = JAP
+							}
+						}
+					}
 				}
 			}
 		}
 		localization_key = "neutral_control"
 	}
 }
+
 defined_text = {
 	name = get_Hualien_status_PDTO
-	
-	text = { 
+	text = {
 		trigger = {
 			524 = {
-		controller = {
-            is_ally_with = PRC
-        }
+				controller = {
+					is_ally_with = PRC
 				}
+			}
 		}
 		localization_key = "PLA_control"
 	}
-	text = { 
+	text = {
 		trigger = {
 			OR = {
 				524 = {
-		controller = {
-            is_ally_with = JAP
-        }
+					controller = {
+						is_ally_with = JAP
+					}
 				}
 			}
 		}
 		localization_key = "PDTO_control"
 	}
-	text = { 
+	text = {
 		trigger = {
 			OR = {
 				NOT = {
-				524 = {
-					 OR = {
-        controller = {
-            is_ally_with = PRC
-        }
-		controller = {
-            is_ally_with = JAP
-        }
-    }
-				}
+					524 = {
+						OR = {
+							controller = {
+								is_ally_with = PRC
+							}
+							controller = {
+								is_ally_with = JAP
+							}
+						}
+					}
 				}
 			}
 		}
 		localization_key = "neutral_control"
 	}
 }
+
 defined_text = {
 	name = get_Kinmen_status_PDTO
-	
-	text = { 
+	text = {
 		trigger = {
 			648 = {
-		controller = {
-            is_ally_with = PRC
-        }
+				controller = {
+					is_ally_with = PRC
 				}
+			}
 		}
 		localization_key = "PLA_control"
 	}
-	text = { 
+	text = {
 		trigger = {
 			OR = {
 				648 = {
-		controller = {
-            is_ally_with = JAP
-        }
+					controller = {
+						is_ally_with = JAP
+					}
 				}
 			}
 		}
 		localization_key = "PDTO_control"
 	}
-	text = { 
+	text = {
 		trigger = {
 			OR = {
 				NOT = {
-				648 = {
-					 OR = {
-        controller = {
-            is_ally_with = PRC
-        }
-		controller = {
-            is_ally_with = JAP
-        }
-    }
-				}
+					648 = {
+						OR = {
+							controller = {
+								is_ally_with = PRC
+							}
+							controller = {
+								is_ally_with = JAP
+							}
+						}
+					}
 				}
 			}
 		}
 		localization_key = "neutral_control"
 	}
 }
+
 defined_text = {
 	name = get_Penghu_status_PDTO
-	
-	text = { 
+	text = {
 		trigger = {
 			1151 = {
-		controller = {
-            is_ally_with = PRC
-        }
+				controller = {
+					is_ally_with = PRC
 				}
+			}
 		}
 		localization_key = "PLA_control"
 	}
-	text = { 
+	text = {
 		trigger = {
 			OR = {
 				1151 = {
-		controller = {
-            is_ally_with = JAP
-        }
+					controller = {
+						is_ally_with = JAP
+					}
 				}
 			}
 		}
 		localization_key = "PDTO_control"
 	}
-	text = { 
+	text = {
 		trigger = {
 			OR = {
 				NOT = {
-				1451 = {
-					 OR = {
-        controller = {
-            is_ally_with = PRC
-        }
-		controller = {
-            is_ally_with = JAP
-        }
-    }
-				}
-				}
-			}
-		}
-		localization_key = "neutral_control"
-	}
-}
-defined_text = {
-	name = get_Okinawa_status_PDTO
-	
-	text = { 
-		trigger = {
-			526 = {
-		controller = {
-            is_ally_with = PRC
-        }
-				}
-		}
-		localization_key = "PLA_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				526 = {
-		controller = {
-            is_ally_with = JAP
-        }
-				}
-			}
-		}
-		localization_key = "PDTO_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				NOT = {
-				526 = {
-					 OR = {
-        controller = {
-            is_ally_with = PRC
-        }
-		controller = {
-            is_ally_with = JAP
-        }
-    }
-				}
-				}
-			}
-		}
-		localization_key = "neutral_control"
-	}
-}
-defined_text = {
-	name = get_SenkakuIslands_status_PDTO
-	
-	text = { 
-		trigger = {
-			876 = {
-		controller = {
-            is_ally_with = PRC
-        }
-				}
-		}
-		localization_key = "PLA_control"
-	}
-	text = { 
-		trigger = {
-			876 = {
-		controller = {
-            is_ally_with = JAP
-        }
-				}
-		}
-		localization_key = "PDTO_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				NOT = {
-				876 = {
-					 OR = {
-        controller = {
-            is_ally_with = PRC
-        }
-		controller = {
-            is_ally_with = JAP
-        }
-    }
-				}
-				}
-			}
-		}
-		localization_key = "neutral_control"
-	}
-}
-defined_text = {
-	name = get_Hongkong_status_PDTO
-	
-	text = { 
-		trigger = {
-			326 = {
-		controller = {
-            is_ally_with = PRC
-        }
-				}
-		}
-		localization_key = "PLA_control"
-	}
-	text = { 
-		trigger = {
-			326 = {
-		controller = {
-            is_ally_with = JAP
-        }
-				}
-		}
-		localization_key = "PDTO_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				NOT = {
-				326 = {
-					 OR = {
-        controller = {
-            is_ally_with = PRC
-        }
-		controller = {
-            is_ally_with = JAP
-        }
-		controller = {
-            is_ally_with = HKN
-        }
-		controller = {
-            is_ally_with = SHZ
-        }
-    }
-				}
-				}
-			}
-		}
-		localization_key = "neutral_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				NOT = {
-				326 = {
-					 OR = {
-        controller = {
-            tag = HKN
-        }
-    }
-				}
-				}
-			}
-		}
-		localization_key = "HKN_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				NOT = {
-				326 = {
-					 OR = {
-        controller = {
-            tag = SHZ
-        }
-    }
-				}
-				}
-			}
-		}
-		localization_key = "SHZ_control"
-	}
-}
-defined_text = {
-	name = get_ShenZhen_status_PDTO
-	
-	text = { 
-		trigger = {
-			1395 = {
-		controller = {
-            is_ally_with = PRC
-        }
-				}
-		}
-		localization_key = "PLA_control"
-	}
-	text = { 
-		trigger = {
-			1395 = {
-		controller = {
-            is_ally_with = JAP
-        }
-				}
-		}
-		localization_key = "PDTO_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				NOT = {
-				1395 = {
-					 OR = {
-        controller = {
-            is_ally_with = PRC
-        }
-		controller = {
-            is_ally_with = JAP
-        }
-		controller = {
-            is_ally_with = HKN
-        }
-		controller = {
-            is_ally_with = SHZ
-        }
-    }
-				}
-				}
-			}
-		}
-		localization_key = "neutral_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				NOT = {
-				1395 = {
-					 OR = {
-        controller = {
-            tag = HKN
-        }
-    }
-				}
-				}
-			}
-		}
-		localization_key = "HKN_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				NOT = {
-				1395 = {
-					 OR = {
-        controller = {
-            tag = SHZ
-        }
-    }
-				}
-				}
-			}
-		}
-		localization_key = "SHZ_control"
-	}
-}
-defined_text = {
-	name = get_XishaIslands_status_PDTO
-	
-	text = { 
-		trigger = {
-			879 = {
-		controller = {
-            is_ally_with = PRC
-        }
-				}
-		}
-		localization_key = "PLA_control"
-	}
-	text = { 
-		trigger = {
-			879 = {
-		controller = {
-            is_ally_with = JAP
-        }
-				}
-		}
-		localization_key = "PDTO_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				NOT = {
-				879 = {
-					 OR = {
-        controller = {
-            is_ally_with = PRC
-        }
-		controller = {
-            is_ally_with = JAP
-        }
-    }
-				}
-				}
-			}
-		}
-		localization_key = "neutral_control"
-	}
-}
-defined_text = {
-	name = get_CCPSpratlyIslands_status_PDTO
-	
-	text = { 
-		trigger = {
-			1382 = {
-		controller = {
-            is_ally_with = PRC
-        }
-				}
-		}
-		localization_key = "PLA_control"
-	}
-	text = { 
-		trigger = {
-			1382 = {
-		controller = {
-            is_ally_with = JAP
-        }
-				}
-		}
-		localization_key = "PDTO_control"
-	}
-	text = { 
-		trigger = {
-			OR = {
-				NOT = {
-				1382 = {
-					 OR = {
-        controller = {
-            is_ally_with = PRC
-        }
-		controller = {
-            is_ally_with = JAP
-        }
-    }
-				}
+					1451 = {
+						OR = {
+							controller = {
+								is_ally_with = PRC
+							}
+							controller = {
+								is_ally_with = JAP
+							}
+						}
+					}
 				}
 			}
 		}
@@ -1145,3 +730,338 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = get_Okinawa_status_PDTO
+	text = {
+		trigger = {
+			526 = {
+				controller = {
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "PLA_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				526 = {
+					controller = {
+						is_ally_with = JAP
+					}
+				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					526 = {
+						OR = {
+							controller = {
+								is_ally_with = PRC
+							}
+							controller = {
+								is_ally_with = JAP
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_SenkakuIslands_status_PDTO
+	text = {
+		trigger = {
+			876 = {
+				controller = {
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "PLA_control"
+	}
+	text = {
+		trigger = {
+			876 = {
+				controller = {
+					is_ally_with = JAP
+				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					876 = {
+						OR = {
+							controller = {
+								is_ally_with = PRC
+							}
+							controller = {
+								is_ally_with = JAP
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_Hongkong_status_PDTO
+	text = {
+		trigger = {
+			326 = {
+				controller = {
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "PLA_control"
+	}
+	text = {
+		trigger = {
+			326 = {
+				controller = {
+					is_ally_with = JAP
+				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					326 = {
+						OR = {
+							controller = {
+								is_ally_with = PRC
+							}
+							controller = {
+								is_ally_with = JAP
+							}
+							controller = {
+								is_ally_with = HKN
+							}
+							controller = {
+								is_ally_with = SHZ
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					326 = {
+						OR = {
+							controller = {
+								tag = HKN
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = "HKN_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					326 = {
+						OR = {
+							controller = {
+								tag = SHZ
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = "SHZ_control"
+	}
+}
+
+defined_text = {
+	name = get_ShenZhen_status_PDTO
+	text = {
+		trigger = {
+			1395 = {
+				controller = {
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "PLA_control"
+	}
+	text = {
+		trigger = {
+			1395 = {
+				controller = {
+					is_ally_with = JAP
+				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					1395 = {
+						OR = {
+							controller = {
+								is_ally_with = PRC
+							}
+							controller = {
+								is_ally_with = JAP
+							}
+							controller = {
+								is_ally_with = HKN
+							}
+							controller = {
+								is_ally_with = SHZ
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					1395 = {
+						OR = {
+							controller = {
+								tag = HKN
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = "HKN_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					1395 = {
+						OR = {
+							controller = {
+								tag = SHZ
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = "SHZ_control"
+	}
+}
+
+defined_text = {
+	name = get_XishaIslands_status_PDTO
+	text = {
+		trigger = {
+			879 = {
+				controller = {
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "PLA_control"
+	}
+	text = {
+		trigger = {
+			879 = {
+				controller = {
+					is_ally_with = JAP
+				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					879 = {
+						OR = {
+							controller = {
+								is_ally_with = PRC
+							}
+							controller = {
+								is_ally_with = JAP
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_CCPSpratlyIslands_status_PDTO
+	text = {
+		trigger = {
+			1382 = {
+				controller = {
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "PLA_control"
+	}
+	text = {
+		trigger = {
+			1382 = {
+				controller = {
+					is_ally_with = JAP
+				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					1382 = {
+						OR = {
+							controller = {
+								is_ally_with = PRC
+							}
+							controller = {
+								is_ally_with = JAP
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}

@@ -18,6 +18,11 @@ set_variable = {
 }
 
 set_variable = {
+	var = CHI_PRC_Infiltration_timeout_mission_var
+	value = 30
+}
+
+set_variable = {
 	Chinese_Influence = 0.2
 }
 

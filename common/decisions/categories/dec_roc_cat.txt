@@ -116,7 +116,7 @@ PHI_civil_war_dec = {
 }
 The_CCP_Difficulty_Selection = {
 	visible_when_empty = yes
-	priority = 99
+	priority = 100
 	
 	visible = {
 		original_tag = CHI

@@ -685,7 +685,7 @@ CHI_NHCC_decisions = {
 # 中共的滲透
 CHI_PRC_Infiltration_decisions = {
 	# 中共滲透日益嚴重
-	PRC_infiltration_becoming_serious = {
+	PRC_infiltration_becoming_serious_mission = {
 		icon = generic_coronavirus
 		allowed = {
 			tag = CHI
@@ -701,15 +701,89 @@ CHI_PRC_Infiltration_decisions = {
 		priority = 200
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 30
+		days_mission_timeout = CHI_PRC_Infiltration_timeout_mission_var
 		timeout_effect = {
 			set_temp_variable = {
 				var = CHI_PRC_Infiltration_progress_temp
 				value = 5
 			}
-			PRC_Infiltration_change = yes
+			PRC_Infiltration_change = yes			
+			activate_mission = PRC_infiltration_becoming_serious_mission
 		}
 		cancel_trigger = {
+		}
+	}
+	# 在軍隊中搜索通敵者
+	Investigate_senior_military_officials = {
+		icon = generic_mask
+		visible = {
+			always = yes
+		}
+		available = {
+			#启用
+			has_completed_focus = Rectify_weakening_military_preparedness
+		}
+		allowed = {
+			tag = CHI
+		}
+		priority = 90		#重要程度
+		fire_only_once = no		#是否只觸發一次
+		custom_cost_text = NSM_revanchist_reconquest_campaign_decision_cost
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 20
+			}
+		}
+		days_remove = 10		#持續幾天
+		days_re_enable = 10		# 幾天後重新显示
+		modifier = {
+			#未移除的時候的效果
+			political_power_gain = -0.05
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -20				
+			}
+		}
+		remove_effect = {
+			#移除後的效果
+			random_list = {
+				1 = {
+					add_manpower = -1
+					set_temp_variable = {
+						var = CHI_PRC_Infiltration_progress_temp
+						value = -5
+					}
+					PRC_Infiltration_change = yes
+				}
+				1 = {
+					add_manpower = -5
+					set_temp_variable = {
+						var = CHI_PRC_Infiltration_progress_temp
+						value = -10
+					}
+					PRC_Infiltration_change = yes
+				}
+				1 = {
+					add_manpower = -10
+					set_temp_variable = {
+						var = CHI_PRC_Infiltration_progress_temp
+						value = -15
+					}
+					PRC_Infiltration_change = yes
+				}
+				1 = {
+					add_manpower = -15
+					set_temp_variable = {
+						var = CHI_PRC_Infiltration_progress_temp
+						value = -20
+					}
+					PRC_Infiltration_change = yes
+				}
+				1 = {
+					add_political_power = 15
+				}
+			}
 		}
 	}
 	# 在國際上宣傳台灣
@@ -752,17 +826,27 @@ CHI_PRC_Infiltration_decisions = {
 			tag = CHI
 		}
 		available = {
-			#启用
-			has_completed_focus = Taiwan_safe_people_reach
+			if = {
+				limit = {
+					has_completed_focus = Taiwan_safe_people_reach					
+				}
+				has_completed_focus = Expand_intelligence_system
+			}
+			else = {
+				has_completed_focus = Support_Black_Bear_Academy
+			}
 		}
 		visible = {
 			#显示
 			## 是否完成國策
-			has_completed_focus = Taiwan_will_win
+			OR = {
+				has_completed_focus = Taiwan_safe_people_reach
+				has_completed_focus = Taiwan_will_win
+			}
 		}
 		priority = 90		#重要程度
 		fire_only_once = no		#是否只觸發一次
-		cost = 50		#花費政治點數
+		cost = 25		#花費政治點數
 		days_remove = 30		#持續幾天
 		days_re_enable = 50		# 幾天後重新显示
 		modifier = {
@@ -773,7 +857,42 @@ CHI_PRC_Infiltration_decisions = {
 			#移除後的效果
 			set_temp_variable = {
 				var = CHI_PRC_Infiltration_progress_temp
-				value = -15
+				value = -10
+			}
+			PRC_Infiltration_change = yes
+		}
+	}
+	# 清查非法政治組織
+	Investigate_illegal_political_organizations = {
+		icon = generic_mask
+		allowed = {
+			tag = CHI
+		}
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		priority = 90		#重要程度
+		fire_only_once = no		#是否只觸發一次
+		cost = 30		#花費政治點數
+		days_remove = 0		#持續幾天
+		days_re_enable = 50		# 幾天後重新显示
+		modifier = {
+			#未移除的時候的效果
+			political_power_gain = -0.05
+		}
+		remove_effect = {
+			#移除後的效果
+			set_temp_variable = {
+				var = CHI_PRC_Infiltration_timeout_mission_var_temp
+				value = 1
+			}
+			CHI_add_Infiltration_growth_time = yes
+			set_temp_variable = {
+				var = CHI_PRC_Infiltration_progress_temp
+				value = -10
 			}
 			PRC_Infiltration_change = yes
 		}

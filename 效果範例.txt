@@ -1,5 +1,7 @@
+custom_effect_tooltip #描述
 political_power_gain#政治點數獲得（每日）
 political_power_factor#政治點數獲得倍率
+add_political_power #直接给予政治点
 stability_factor#穩定度加成倍率
 stability_weekly#每週穩定度變化
 war_stability_factor#開戰後穩定度
