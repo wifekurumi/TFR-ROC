@@ -2771,7 +2771,7 @@ focus_tree = {
 			focus = CHI_Mobilize_police_force_to_maintain_order
 		}
 		completion_reward = {
-			add_stability = -10
+			add_stability = -0.1
 			show_ideas_tooltip = war_mobilization
 			add_ideas = CHI_Wartime_normal_system_idea
 			hidden_effect = {
