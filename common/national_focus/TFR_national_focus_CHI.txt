@@ -2862,11 +2862,13 @@ focus_tree = {
 			focus = CHI_Wartime_resource_allocation
 		}
 		completion_reward = {
+PRC = {
 			add_days_mission_timeout = {
-				mission = PRC_taiwan_war_countdown
-				days = -30
+				mission = THEPRC_taiwan_war_countdown
+				days = -14
 			}
 		}
+}
 	}
 	focus = {
 		id = CHI_Frogmen_infiltrate_Fujian
@@ -2886,11 +2888,13 @@ focus_tree = {
 			focus = CHI_Wartime_resource_allocation
 		}
 		completion_reward = {
+PRC = {
 			add_days_mission_timeout = {
-				mission = PRC_taiwan_war_countdown
-				days = -30
+				mission = THEPRC_taiwan_war_countdown
+				days = -14
 			}
 		}
+}
 	}
 	focus = {
 		id = CHI_Martial_law_declared
