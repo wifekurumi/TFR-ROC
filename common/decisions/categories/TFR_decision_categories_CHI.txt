@@ -24,8 +24,7 @@ CHI_PRC_Infiltration_decisions = {
 		always = yes
 	}
 	visible = {
-		is_debug = yes
-		date < 2023.1.1
+		always = yes
 	}
 	scripted_gui = PRC_Infiltration_gui
 }

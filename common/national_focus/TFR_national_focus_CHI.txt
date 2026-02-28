@@ -42,7 +42,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_Taiwan_will_win
 		x = 3
 		y = 1
-		cost = 2
+		cost = 5
 		completion_reward = {
 			add_political_power = 15
 			add_popularity = {
@@ -98,6 +98,7 @@ focus_tree = {
 					remove_idea = "CHI_taiwanese_independence_movement_idea"
 				}
 			}
+			unlock_decision_tooltip = Promote_Taiwan_internationally
 			hidden_effect = {
 				add_to_variable = {
 					var = CHI_taiwanese_independence_political_power_gain_var
@@ -129,6 +130,8 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = CHI_mobilize_balckbear_1
 			add_political_power = -15
+			unlock_decision_tooltip = Countering_China_Information_War
+			unlock_decision_tooltip = Investigate_illegal_political_organizations
 		}
 		bypass = {
 		}
@@ -231,7 +234,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_We_are_already_independent_country
 		x = 0
 		y = 2
-		cost = 3
+		cost = 4
 		completion_reward = {
 			add_political_power = 50
 			effect_tooltip = {
@@ -283,7 +286,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_Taiwan_safe_people_reach
 		x = -3
 		y = 1
-		cost = 2
+		cost = 5
 		completion_reward = {
 			add_political_power = 25
 			add_popularity = {
@@ -370,6 +373,8 @@ focus_tree = {
 			gain_random_agency_upgrade = yes
 			gain_random_agency_upgrade = yes
 			gain_random_agency_upgrade = yes
+			unlock_decision_tooltip = Countering_China_Information_War
+			unlock_decision_tooltip = Investigate_illegal_political_organizations
 		}
 		bypass = {
 		}
@@ -436,7 +441,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_No_distinction_between_big_and_small
 		x = 0
 		y = 2
-		cost = 3
+		cost = 4
 		completion_reward = {
 			add_political_power = 50
 			swap_ideas = {
@@ -496,6 +501,7 @@ focus_tree = {
 					add_idea = Republic_of_China_Based_in_Taiwan_idea
 				}
 			}
+			unlock_decision_tooltip = Promote_Taiwan_internationally
 			hidden_effect = {
 				CHI = {
 					country_event = {
@@ -624,7 +630,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_our_next_step
 		x = 0
 		y = 4
-		cost = 2
+		cost = 5
 		available = {
 			has_country_flag = covid_happen3
 			has_country_flag = CHI_has_oli_crash3
@@ -1520,6 +1526,7 @@ focus_tree = {
 					add_idea = CHI_ROC_army_res1
 				}
 			}
+			unlock_decision_tooltip = Investigate_senior_military_officials
 			hidden_effect = {
 				add_to_variable = {
 					var = ROC_battalion_upkeep_factor

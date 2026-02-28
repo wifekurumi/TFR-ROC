@@ -686,7 +686,7 @@ CHI_NHCC_decisions = {
 CHI_PRC_Infiltration_decisions = {
 	# 中共滲透日益嚴重
 	PRC_infiltration_becoming_serious_mission = {
-		icon = generic_coronavirus
+		icon = GFX_PRC_Infiltration_mission
 		allowed = {
 			tag = CHI
 		}
@@ -715,16 +715,18 @@ CHI_PRC_Infiltration_decisions = {
 	}
 	# 在軍隊中搜索通敵者
 	Investigate_senior_military_officials = {
-		icon = generic_mask
-		visible = {
-			always = yes
-		}
-		available = {
-			#启用
-			has_completed_focus = Rectify_weakening_military_preparedness
-		}
+		icon = CHI_small_blockade
 		allowed = {
 			tag = CHI
+		}
+		available = {
+			has_completed_focus = Rectify_weakening_military_preparedness
+		}
+		visible = {
+			OR = {
+				has_completed_focus = Taiwan_safe_people_reach
+				has_completed_focus = Taiwan_will_win
+			}
 		}
 		priority = 90		#重要程度
 		fire_only_once = no		#是否只觸發一次
@@ -788,22 +790,32 @@ CHI_PRC_Infiltration_decisions = {
 	}
 	# 在國際上宣傳台灣
 	Promote_Taiwan_internationally = {
-		icon = generic_mask
+		icon = Announce_guidance
 		allowed = {
 			tag = CHI
 		}
 		available = {
-			#启用
-			has_completed_focus = Taiwan_will_win
+			if = {
+				limit = {
+					has_completed_focus = Taiwan_safe_people_reach
+				}
+				has_completed_focus = ased_in_Taiwa
+			}
+			else = {
+				has_completed_focus = Continue_transform_justice
+			}
 		}
 		visible = {
 			#显示
 			## 是否完成國策
-			has_completed_focus = Continue_transform_justice
+			OR = {
+				has_completed_focus = Taiwan_safe_people_reach
+				has_completed_focus = Taiwan_will_win
+			}
 		}
 		priority = 90		#重要程度
 		fire_only_once = no		#是否只觸發一次
-		cost = 30		#花費政治點數
+		cost = 25		#花費政治點數
 		days_remove = 10		#持續幾天
 		days_re_enable = 10		# 幾天後重新显示
 		modifier = {
@@ -814,14 +826,56 @@ CHI_PRC_Infiltration_decisions = {
 			#移除後的效果
 			set_temp_variable = {
 				var = CHI_PRC_Infiltration_progress_temp
-				value = -15
+				value = -5
 			}
 			PRC_Infiltration_change = yes
 		}
 	}
 	# 應對中國資訊戰
 	Countering_China_Information_War = {
-		icon = generic_mask
+		icon = GFX_Countering_China_Information_War_mission
+		allowed = {
+			tag = CHI
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = Taiwan_safe_people_reach
+				}
+				has_completed_focus = Expand_intelligence_system
+			}
+			else = {
+				has_completed_focus = Support_Black_Bear_Academy
+			}
+		}
+		visible = {
+			#显示
+			## 是否完成國策
+			OR = {
+				has_completed_focus = Taiwan_safe_people_reach
+				has_completed_focus = Taiwan_will_win
+			}
+		}
+		priority = 90		#重要程度
+		fire_only_once = no		#是否只觸發一次
+		cost = 50		#花費政治點數
+		days_remove = 30		#持續幾天
+		days_re_enable = 20		# 幾天後重新显示
+		modifier = {
+			#未移除的時候的效果
+			political_power_gain = -0.05
+		}
+		remove_effect = {
+			#移除後的效果
+			set_temp_variable = {
+				var = CHI_PRC_Infiltration_progress_temp
+				value = -10
+			}
+			PRC_Infiltration_change = yes
+		}
+	}
+	# 清查非法政治組織
+	Investigate_illegal_political_organizations = { 
 		allowed = {
 			tag = CHI
 		}
@@ -845,39 +899,9 @@ CHI_PRC_Infiltration_decisions = {
 			}
 		}
 		priority = 90		#重要程度
-		fire_only_once = no		#是否只觸發一次
-		cost = 25		#花費政治點數
-		days_remove = 30		#持續幾天
-		days_re_enable = 50		# 幾天後重新显示
-		modifier = {
-			#未移除的時候的效果
-			political_power_gain = -0.05
-		}
-		remove_effect = {
-			#移除後的效果
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_progress_temp
-				value = -10
-			}
-			PRC_Infiltration_change = yes
-		}
-	}
-	# 清查非法政治組織
-	Investigate_illegal_political_organizations = {
-		icon = generic_mask
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		priority = 90		#重要程度
-		fire_only_once = no		#是否只觸發一次
+		fire_only_once = 5		#是否只觸發一次
 		cost = 30		#花費政治點數
-		days_remove = 0		#持續幾天
+		days_remove = 15		#持續幾天
 		days_re_enable = 50		# 幾天後重新显示
 		modifier = {
 			#未移除的時候的效果
@@ -892,11 +916,182 @@ CHI_PRC_Infiltration_decisions = {
 			CHI_add_Infiltration_growth_time = yes
 			set_temp_variable = {
 				var = CHI_PRC_Infiltration_progress_temp
-				value = -10
+				value = -5
 			}
 			PRC_Infiltration_change = yes
+			custom_effect_tooltip =Investigate_illegal_political_organization_tooltip
+
+			set_country_flag = Investigate_illegal_political_organizations_flg
 		}
 	}
+	Investigate_illegal_political_organization_2 = {
+		name = Investigate_illegal_political_organizations 
+		allowed = {
+			tag = CHI
+		}
+		available = {
+			hidden_trigger = {
+				has_country_flag = Investigate_illegal_political_organizations_flg
+			}
+		}
+		visible = {
+			hidden_trigger = {
+				has_country_flag = Investigate_illegal_political_organizations_flg
+			}
+		}
+		priority = 90		#重要程度
+		fire_only_once = 5		#是否只觸發一次
+		cost = 30		#花費政治點數
+		days_remove = 15		#持續幾天
+		days_re_enable = 50		# 幾天後重新显示
+		modifier = {
+			#未移除的時候的效果
+			political_power_gain = -0.05
+		}
+		remove_effect = {
+			#移除後的效果
+			set_temp_variable = {
+				var = CHI_PRC_Infiltration_timeout_mission_var_temp
+				value = 1
+			}
+			CHI_add_Infiltration_growth_time = yes
+			set_temp_variable = {
+				var = CHI_PRC_Infiltration_progress_temp
+				value = -5
+			}
+			PRC_Infiltration_change = yes
+			custom_effect_tooltip =Investigate_illegal_political_organization_2_tooltip
+
+			set_country_flag = Investigate_illegal_political_organizations_flg_2
+		}
+	}
+	Investigate_illegal_political_organization_3 = {
+		name = Investigate_illegal_political_organizations 
+		allowed = {
+			tag = CHI
+		}
+		available = {
+			hidden_trigger = {
+				has_country_flag = Investigate_illegal_political_organizations_flg_2
+			}
+		}
+		visible = {
+			hidden_trigger = {
+				has_country_flag = Investigate_illegal_political_organizations_flg_2
+			}
+		}
+		priority = 90		#重要程度
+		fire_only_once = 5		#是否只觸發一次
+		cost = 30		#花費政治點數
+		days_remove = 15		#持續幾天
+		days_re_enable = 50		# 幾天後重新显示
+		modifier = {
+			#未移除的時候的效果
+			political_power_gain = -0.05
+		}
+		remove_effect = {
+			#移除後的效果
+			set_temp_variable = {
+				var = CHI_PRC_Infiltration_timeout_mission_var_temp
+				value = 1
+			}
+			CHI_add_Infiltration_growth_time = yes
+			set_temp_variable = {
+				var = CHI_PRC_Infiltration_progress_temp
+				value = -5
+			}
+			PRC_Infiltration_change = yes
+			custom_effect_tooltip =Investigate_illegal_political_organization_3_tooltip
+
+			set_country_flag = Investigate_illegal_political_organizations_flg_3
+		}
+	}
+	Investigate_illegal_political_organization_4 = {
+		name = Investigate_illegal_political_organizations 
+		allowed = {
+			tag = CHI
+		}
+		available = {
+			hidden_trigger = {
+				has_country_flag = Investigate_illegal_political_organizations_flg_3			
+			}
+		}
+		visible = {
+			hidden_trigger = {
+				has_country_flag = Investigate_illegal_political_organizations_flg_3			
+			}
+		}
+		priority = 90		#重要程度
+		fire_only_once = 5		#是否只觸發一次
+		cost = 30		#花費政治點數
+		days_remove = 15		#持續幾天
+		days_re_enable = 50		# 幾天後重新显示
+		modifier = {
+			#未移除的時候的效果
+			political_power_gain = -0.05
+		}
+		remove_effect = {
+			#移除後的效果
+			set_temp_variable = {
+				var = CHI_PRC_Infiltration_timeout_mission_var_temp
+				value = 1
+			}
+			CHI_add_Infiltration_growth_time = yes
+			set_temp_variable = {
+				var = CHI_PRC_Infiltration_progress_temp
+				value = -5
+			}
+			PRC_Infiltration_change = yes
+			custom_effect_tooltip =Investigate_illegal_political_organization_4_tooltip
+
+			set_country_flag = Investigate_illegal_political_organizations_flg_4
+		}
+	}
+	Investigate_illegal_political_organization_5 = {
+		name = Investigate_illegal_political_organizations 
+		allowed = {
+			tag = CHI
+		}
+		available = {
+			hidden_trigger = {
+				has_country_flag = Investigate_illegal_political_organizations_flg_4				
+			}
+		}
+		visible = {
+			hidden_trigger = {
+				has_country_flag = Investigate_illegal_political_organizations_flg_4				
+			}
+		}
+		priority = 90		#重要程度
+		fire_only_once = 5		#是否只觸發一次
+		cost = 30		#花費政治點數
+		days_remove = 15		#持續幾天
+		days_re_enable = 50		# 幾天後重新显示
+		modifier = {
+			#未移除的時候的效果
+			political_power_gain = -0.05
+		}
+		remove_effect = {
+			#移除後的效果
+			set_temp_variable = {
+				var = CHI_PRC_Infiltration_timeout_mission_var_temp
+				value = 1
+			}
+			CHI_add_Infiltration_growth_time = yes
+			set_temp_variable = {
+				var = CHI_PRC_Infiltration_progress_temp
+				value = -5
+			}
+			PRC_Infiltration_change = yes
+			custom_effect_tooltip = Investigate_illegal_political_organization_5_tooltip
+
+			clr_country_flag = Investigate_illegal_political_organizations_flg
+			clr_country_flag = Investigate_illegal_political_organizations_flg_2
+			clr_country_flag = Investigate_illegal_political_organizations_flg_3
+			clr_country_flag = Investigate_illegal_political_organizations_flg_4
+		}
+	}
+
 	#debug	
 	debug_add_25_Infiltration = {
 		icon = generic_mask

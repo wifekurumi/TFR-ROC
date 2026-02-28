@@ -19,7 +19,7 @@ spriteTypes = {
 		name = "GFX_CHI_Legislative_Yuan_decisions"
 		texturefile = "gfx/interface/decisions/generic/CHI_Legislative_Yuan_decisions.png"
 	}
-SpriteType = {
+	SpriteType = {
 		name = "GFX_CHI_Legislative_Yuan_decisions_DPP"
 		texturefile = "gfx/interface/decisions/generic/CHI_Legislative_Yuan_decisions_DPP.png"
 	}
@@ -54,5 +54,13 @@ SpriteType = {
 	SpriteType = {
 		name = "GFX_TPP_button_icon"
 		texturefile = "gfx/interface/decisions/CHI/TPP_button.png" 
+	}
+	SpriteType = {
+		name = "GFX_PRC_Infiltration_mission"
+		texturefile = "gfx/interface/decisions/CHI/PRC_Infiltration.png" 
+	}
+	SpriteType = {
+		name = "GFX_Countering_China_Information_War_mission"
+		texturefile = "gfx/interface/decisions/CHI/Countering_China_Information_War.png" 
 	}
 }
