@@ -1,0 +1,93 @@
+﻿units = {
+	fleet = {
+	name = "海軍第168艦隊"
+	naval_base = 7186
+	task_force = {
+		name = "基隆級驅逐艦隊"
+		location = 7186
+
+		ship = { name = "基隆號 (DDG-1801)" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = CHI version_name = "基隆級驅逐艦" } } }
+		ship = { name = "蘇澳號 (DDG-1802)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = CHI version_name = "基隆級驅逐艦" } } }
+		ship = { name = "左營號 (DDG-1803)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = CHI version_name = "基隆級驅逐艦" } } }
+		ship = { name = "馬公號 (DDG-1805)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = CHI version_name = "基隆級驅逐艦" } } }
+	}
+}
+fleet = {
+	name = "海軍第124艦隊"
+	naval_base = 12068
+	task_force = {
+		name = "康定級巡防艦隊"
+		location = 12068
+
+		ship = { name = "康定號 (FFG-1202)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "康定級巡防艦" } } }
+		ship = { name = "西寧號 (FFG-1203)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "康定級巡防艦" } } }
+		ship = { name = "昆明號 (FFG-1205)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "康定級巡防艦" } } }
+		ship = { name = "迪化號 (FFG-1206)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "康定級巡防艦" } } }
+		ship = { name = "武昌號 (FFG-1207)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "康定級巡防艦" } } }
+		ship = { name = "承德號 (FFG-1209)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "康定級巡防艦" } } }
+	}
+}
+fleet = {
+	name = "海軍第146艦隊"
+	naval_base = 12068
+	task_force = {
+		name = "成功級巡防艦隊"
+		location = 12068
+
+		ship = { name = "成功號 (PFG2-1101)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "成功級巡防艦" } } }
+		ship = { name = "鄭和號 (PFG2-1103)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "成功級巡防艦" } } }
+		ship = { name = "繼光號 (PFG2-1105)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "成功級巡防艦" } } }
+		ship = { name = "岳飛號 (PFG2-1106)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "成功級巡防艦" } } }
+		ship = { name = "子儀號 (PFG2-1107)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "成功級巡防艦" } } }
+		ship = { name = "班超號 (PFG2-1108)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "成功級巡防艦" } } }
+		ship = { name = "張騫號 (PFG2-1109)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "成功級巡防艦" } } }
+		ship = { name = "田單號 (PFG2-1110)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "成功級巡防艦" } } }
+	}
+}
+fleet = {
+	name = "海軍第256潛艦隊"
+	naval_base = 7186
+	task_force = {
+		name = "潛艦戰隊"
+		location = 7186
+
+		ship = { name = "海獅號 (SS-791)" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CHI version_name = "丁奇級潛艦" } } }
+		ship = { name = "海豹號 (SS-792)" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CHI version_name = "丁奇級潛艦" } } }
+		ship = { name = "海龍號 (SS-793)" definition = submarine equipment = { ship_hull_submarine_3 = { amount = 1 owner = CHI version_name = "海龍級潛艦" } } }
+		ship = { name = "海虎號 (SS-794)" definition = submarine equipment = { ship_hull_submarine_3 = { amount = 1 owner = CHI version_name = "海龍級潛艦" } } }
+	}
+}
+fleet = {
+	name = "海軍飛彈巡邏艦隊"
+	naval_base = 12068
+	task_force = {
+		name = "沱江級飛彈巡邏艦"
+		location = 12068
+
+		ship = { name = "沱江號 (PGG-618)" definition = destroyer equipment = { ship_hull_destroyer_3 = { amount = 1 owner = CHI version_name = "沱江級飛彈巡邏艦" } } }
+		ship = { name = "塔江號 (PGG-619)" definition = destroyer equipment = { ship_hull_destroyer_3 = { amount = 1 owner = CHI version_name = "沱江級飛彈巡邏艦" } } }
+	}
+}
+fleet = {
+	name = "海軍巡邏艦隊"
+	naval_base = 12068
+	task_force = {
+		name = "錦江級巡邏艦"
+		location = 12068
+
+		ship = { name = "錦江號 (PGG-601)" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = CHI version_name = "錦江級巡邏艦" } } }
+		ship = { name = "鳳陽號 (PGG-602)" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = CHI version_name = "錦江級巡邏艦" } } }
+		ship = { name = "龍江號 (PGG-603)" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = CHI version_name = "錦江級巡邏艦" } } }
+		ship = { name = "濟陽號 (PGG-604)" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = CHI version_name = "錦江級巡邏艦" } } }
+		ship = { name = "建江號 (PGG-605)" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = CHI version_name = "錦江級巡邏艦" } } }
+		ship = { name = "萬江號 (PGG-606)" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = CHI version_name = "錦江級巡邏艦" } } }
+		ship = { name = "新江號 (PGG-607)" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = CHI version_name = "錦江級巡邏艦" } } }
+		ship = { name = "順江號 (PGG-608)" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = CHI version_name = "錦江級巡邏艦" } } }
+		ship = { name = "旭江號 (PGG-609)" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = CHI version_name = "錦江級巡邏艦" } } }
+		ship = { name = "光江號 (PGG-610)" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = CHI version_name = "錦江級巡邏艦" } } }
+		ship = { name = "盛江號 (PGG-611)" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = CHI version_name = "錦江級巡邏艦" } } }
+		ship = { name = "資江號 (PGG-612)" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = CHI version_name = "錦江級巡邏艦" } } }
+	}
+}
+
+}
