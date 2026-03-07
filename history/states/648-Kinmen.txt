@@ -8,6 +8,7 @@ state={
 		add_core_of = CHI
 		add_claim_by = PRC
 		buildings = {
+			air_base = 1
 			infrastructure = 2
 			14170 = { 
 				coastal_bunker = 5 

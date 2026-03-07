@@ -16,6 +16,7 @@ state = {
 			industrial_complex = 3
 			arms_factory = 2
 			office_park = 4
+			air_base = 1
 			7186 = {
 				naval_base = 6
 				coastal_bunker = 2

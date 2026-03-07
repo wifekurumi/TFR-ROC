@@ -18,6 +18,7 @@ state = {
 			arms_factory = 1
 			office_park = 1
 			dockyard = 1
+			air_base = 1
 			7214 = { coastal_bunker = 1 }
 			11959 = { coastal_bunker = 1 }
 			13968 = {
