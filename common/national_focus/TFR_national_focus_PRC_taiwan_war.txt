@@ -807,26 +807,7 @@ swap_ideas = {
 			unlock_decision_tooltip = PRC_adapt_to_modern_defense2
 			unlock_decision_tooltip = PRC_adapt_to_modern_offensives2
 			unlock_decision_tooltip = PRC_adapt_to_modern_airbattles2
-hidden_effect = {
-				CHI = {
-					swap_ideas = {
-				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
-				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
-			}
-				}
-				JAP = {
-					swap_ideas = {
-				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
-				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
-			}
-				}
-				AST = {
-					swap_ideas = {
-				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
-				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
-			}
-				}
-			}
+set_country_flag = Learning_New_Warfare
 		}
 	}
 	focus = {
@@ -901,6 +882,27 @@ hidden_effect = {
 			unlock_decision_tooltip = PRC_strike_nagasaki2
 			unlock_decision_tooltip = PRC_taiwan_bombing_raid2
 			hidden_effect = {
+CHI = {
+					swap_ideas = {
+				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
+				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
+				set_country_flag = Learning_New_Warfare
+			}
+				}
+				JAP = {
+					swap_ideas = {
+				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
+				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
+				set_country_flag = Learning_New_Warfare
+			}
+				}
+				AST = {
+					swap_ideas = {
+				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
+				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
+				set_country_flag = Learning_New_Warfare
+			}
+				}
 				if = {
 					limit = {
 						has_war_with = JAP
@@ -1630,6 +1632,7 @@ hidden_effect = {
 		}
 	}
 }
+
 
 
 
