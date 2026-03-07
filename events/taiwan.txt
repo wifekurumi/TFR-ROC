@@ -113,6 +113,7 @@ country_event = {
 	}
 	option = {
 		name = ROC_CHI.5.a
+		add_ideas = CHI_united_as_one_idea
 		hidden_effect = {
 		}
 	}
@@ -3357,6 +3358,7 @@ add_country_leader_role = {
 		name = china.391.a
 	}
 }
+
 
 
 
