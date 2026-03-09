@@ -350,3 +350,129 @@ PRC_CCP_STATE2_dynamic = {
 				attack_bonus_against = 0.15
 			}
 }
+PRC_illegal_organ_trade = {
+	enable = {
+		tag = PRC
+	}
+	monthly_population = -0.05
+	stability_factor = 0.10
+	war_support_factor = -0.10
+	income_growth_factor = 0.10
+
+}
+PRC_private_prison = {
+	enable = {
+		tag = PRC
+	}
+	monthly_population = -0.05
+	political_power_factor = -0.05
+	conscription_factor = 0.15
+	income_growth_factor = 0.10
+}
+PRC_Chinesestyleeducation = {
+	enable = {
+		tag = PRC
+	}
+	monthly_population = -0.05
+	political_power_factor = -0.05
+	conscription_factor = 0.15
+	research_speed_factor = -0.05
+	industrial_capacity_factory = 0.25
+	income_growth_factor = 0.10
+}
+PRC_correctionalschool = {
+	enable = {
+		tag = PRC
+	}
+	monthly_population = -0.05
+	political_power_factor = -0.05
+	conscription_factor = 0.15
+	research_speed_factor = -0.05
+	industrial_capacity_factory = 0.25
+	income_growth_factor = 0.10
+}
+PRC_iSlashingline = {
+	enable = {
+		tag = PRC
+	}
+	monthly_population = -0.05
+	political_power_factor = 0.05
+
+}
+PRC_RedAristocracy = {
+	enable = {
+		tag = PRC
+	}
+	monthly_population = -0.05
+	political_power_factor = 0.05
+	research_speed_factor = -0.05
+	conscription_factor = 0.15
+	income_growth_factor = 0.10
+}
+PRC_Nationalistsentiment = {
+	enable = {
+		tag = PRC
+	}
+	monthly_population = 0.05
+	political_power_factor = 0.05
+	research_speed_factor = -0.05
+	conscription_factor = 0.15
+	army_core_attack_factor = 0.15
+	army_core_defence_factor = 0.15
+	army_claim_attack_factor = 0.15
+	army_claim_defence_factor = 0.15
+}
+PRC_Bureaucraticcapitalism = {
+	enable = {
+		tag = PRC
+	}
+	political_power_factor = 0.05
+	monthly_population = -0.05
+	conscription_factor = 0.25
+	production_speed_buildings_factor = 0.50
+	industrial_capacity_factory = 0.25
+}
+PRC_EducationSystem = {
+	enable = {
+		tag = PRC
+	}
+	political_power_factor = 0.05
+	monthly_population = -0.05
+	conscription_factor = 0.25
+	research_speed_factor = -0.05
+	production_speed_buildings_factor = 0.15
+	industrial_capacity_factory = 0.15
+}
+PRC_Antiintellectualeducation = {
+	enable = {
+		tag = PRC
+	}
+	political_power_factor = 0.05
+	monthly_population = -0.05
+	conscription_factor = 0.25
+	research_speed_factor = -0.05
+	production_speed_buildings_factor = 0.15
+	industrial_capacity_factory = 0.15
+}
+PRC_Chineseslavery = {
+	enable = {
+		tag = PRC
+	}
+	political_power_factor = 0.05
+	monthly_population = -0.05
+	conscription_factor = 0.25
+	research_speed_factor = -0.05
+	production_speed_buildings_factor = 0.15
+	industrial_capacity_factory = 0.15
+}
+PRC_Domestictechnology = {
+	enable = {
+		tag = PRC
+	}
+	political_power_factor = 0.05
+	monthly_population = -0.05
+	conscription_factor = 0.25
+	research_speed_factor = -0.05
+	production_speed_buildings_factor = 0.15
+	industrial_capacity_factory = 0.15
+}
