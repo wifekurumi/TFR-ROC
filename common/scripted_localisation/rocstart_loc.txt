@@ -900,3 +900,451 @@ defined_text = {
 		localization_key = "neutral_control"
 	}
 }
+defined_text = {
+	name = CHI_combatreadiness2
+	
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness
+						value > 0.99
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text5"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness
+						value > 0.74
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text4"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness
+						value > 0.49
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text3"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness
+						value > 0.24
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text2"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness
+						value > 0
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text1"
+	}
+}
+defined_text = {
+	name = CHI_combatreadiness3
+	
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness2
+						value > 0.99
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text5"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness2
+						value > 0.74
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text4"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness2
+						value > 0.49
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text3"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness2
+						value > 0.24
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text2"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness2
+						value > 0
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text1"
+	}
+}
+defined_text = {
+	name = CHI_combatreadiness3
+	
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness3
+						value > 0.99
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text5"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness3
+						value > 0.74
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text4"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness3
+						value > 0.49
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text3"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness3
+						value > 0.24
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text2"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness3
+						value > 0
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text1"
+	}
+}
+defined_text = {
+	name = CHI_combatreadiness4
+	
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness4
+						value > 0.99
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text5"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness4
+						value > 0.74
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text4"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness4
+						value > 0.49
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text3"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness4
+						value > 0.24
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text2"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness4
+						value > 0
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text1"
+	}
+}
+defined_text = {
+	name = CHI_stage
+	text = { 
+		trigger = {
+			CHI = {
+				has_country_flag = CHI_stage_1
+			}
+		}
+		localization_key = "CHI_stage_1"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				has_country_flag = CHI_stage_2
+			}
+		}
+		localization_key = "CHI_stage_2"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				has_country_flag = CHI_stage_3
+			}
+		}
+		localization_key = "CHI_stage_3"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				has_country_flag = CHI_stage_4
+			}
+		}
+		localization_key = "CHI_stage_4"
+	}
+}
+defined_text = {
+	name = CHI_combatreadiness5
+	
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness5
+						value > 0.99
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text5"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness5
+						value > 0.74
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text4"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness5
+						value > 0.49
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text3"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness5
+						value > 0.24
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text2"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness5
+						value > 0
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text1"
+	}
+}
+defined_text = {
+	name = CHI_combatreadiness6
+	
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness6
+						value > 0.99
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text5"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness6
+						value > 0.74
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text4"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness6
+						value > 0.49
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text3"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness6
+						value > 0.24
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text2"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness6
+						value > 0
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text1"
+	}
+}
+defined_text = {
+	name = CHI_combatreadiness7
+	
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness7
+						value > 0.99
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text5"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness7
+						value > 0.74
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text4"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness7
+						value > 0.49
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text3"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness7
+						value > 0.24
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text2"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_influence_combatreadiness7
+						value > 0
+				}
+			}
+		}
+		localization_key = "CHI_Infiltration_text1"
+	}
+}
