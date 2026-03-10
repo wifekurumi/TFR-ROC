@@ -476,3 +476,110 @@ PRC_Domestictechnology = {
 	production_speed_buildings_factor = 0.15
 	industrial_capacity_factory = 0.15
 }
+CHI_influence_combatreadiness_dynamic = {
+	enable = { 
+		tag = CHI
+	}
+	industrial_capacity_factory = CHI_influence_combatreadiness_dynamic_var
+	production_speed_arms_factory_factor = CHI_influence_combatreadiness_dynamic_var
+	production_speed_bunker_factor = CHI_influence_combatreadiness_dynamic_var
+	production_speed_coastal_bunker_factor = CHI_influence_combatreadiness_dynamic_var
+	production_speed_anti_air_building_factor = CHI_influence_combatreadiness_dynamic_var
+	army_core_attack_factor = CHI_influence_combatreadiness_dynamic_var
+	army_core_defence_factor = CHI_influence_combatreadiness_dynamic_var
+	conscription_factor = CHI_influence_combatreadiness_dynamic_var
+}
+CHI_influence_combatreadiness2_dynamic = {
+	enable = { 
+		tag = CHI
+	}
+	political_power_factor = CHI_influence_combatreadiness2_dynamic_var
+	opinion_gain_monthly_same_ideology = CHI_influence_combatreadiness2_dynamic_var
+	opinion_gain_monthly_same_ideology_factor = CHI_influence_combatreadiness2_dynamic_var
+	faction_trade_opinion_factor = CHI_influence_combatreadiness2_dynamic_var
+	trade_opinion_factor = CHI_influence_combatreadiness2_dynamic_var
+	opinion_gain_monthly = CHI_influence_combatreadiness2_dynamic_var
+	opinion_gain_monthly_factor = CHI_influence_combatreadiness2_dynamic_var
+}
+CHI_influence_combatreadiness3_dynamic = {
+	enable = { 
+		tag = CHI
+	}
+	political_power_factor = CHI_influence_combatreadiness3_dynamic_var
+	stability_factor = CHI_influence_combatreadiness3_dynamic_var
+	defensive_war_stability_factor = CHI_influence_combatreadiness3_dynamic_var
+	war_support_factor = CHI_influence_combatreadiness3_dynamic_var
+	defensive_war_stability_factor = CHI_influence_combatreadiness3_dynamic_var
+	conscription_factor = CHI_influence_combatreadiness3_dynamic_var
+	coordination_bonus = CHI_influence_combatreadiness3_dynamic_var
+	resistance_growth_on_our_occupied_states = CHI_influence_combatreadiness3_dynamic_var
+	army_core_attack_factor = CHI_influence_combatreadiness3_dynamic_var
+	army_core_defence_factor = CHI_influence_combatreadiness3_dynamic_var
+}
+CHI_influence_combatreadiness4_dynamic = {
+	enable = { 
+		tag = CHI
+	}
+	airforce_intel_factor = CHI_influence_combatreadiness4_dynamic_var
+	army_intel_factor = CHI_influence_combatreadiness4_dynamic_var
+	civilian_intel_factor = CHI_influence_combatreadiness4_dynamic_var
+	intel_from_combat_factor = CHI_influence_combatreadiness4_dynamic_var
+	enemy_operative_capture_chance_factor = CHI_influence_combatreadiness4_dynamic_var
+	air_bombing_targetting = CHI_influence_combatreadiness4_dynamic_var
+	air_detection = CHI_influence_combatreadiness4_dynamic_var
+	pocket_penalty = CHI_influence_combatreadiness4_dynamic_var
+	coordination_bonus = CHI_influence_combatreadiness4_dynamic_var
+	army_morale_factor = CHI_influence_combatreadiness4_dynamic_var
+}
+CHI_influence_combatreadiness5_dynamic = {
+	enable = { 
+		tag = CHI
+	}
+	production_speed_buildings_factor = CHI_influence_combatreadiness5_dynamic_var
+	industry_repair_factor = CHI_influence_combatreadiness5_dynamic_var
+	repair_speed_infrastructure_factor = CHI_influence_combatreadiness5_dynamic_var
+	repair_speed_arms_factory_factor = CHI_influence_combatreadiness5_dynamic_var
+	repair_speed_industrial_complex_factor = CHI_influence_combatreadiness5_dynamic_var
+	industrial_capacity_factory = CHI_influence_combatreadiness5_dynamic_var
+	global_building_slots_factor = CHI_influence_combatreadiness5_dynamic_var
+	production_factory_efficiency_gain_factor = CHI_influence_combatreadiness5_dynamic_var
+	production_factory_max_efficiency_factor = CHI_influence_combatreadiness5_dynamic_var
+	production_factory_start_efficiency_factor = CHI_influence_combatreadiness5_dynamic_var
+}
+CHI_influence_combatreadiness6_dynamic = {
+	enable = { 
+		tag = CHI
+	}
+	political_power_factor = CHI_influence_combatreadiness6_dynamic_var
+	party_popularity_stability_factor = CHI_influence_combatreadiness6_dynamic_var
+	stability_factor = CHI_influence_combatreadiness6_dynamic_var
+	war_support_factor = CHI_influence_combatreadiness6_dynamic_var
+	conservative_drift = CHI_influence_combatreadiness6_dynamic_var
+	libertarian_socialist_drift = CHI_influence_combatreadiness6_dynamic_var
+	social_democrat_drift = CHI_influence_combatreadiness6_dynamic_var
+	social_liberal_drift = CHI_influence_combatreadiness6_dynamic_var
+	authoritarian_democrat_drift = CHI_influence_combatreadiness6_dynamic_var
+	market_liberal_drift = CHI_influence_combatreadiness6_dynamic_var
+	initiative_factor = CHI_influence_combatreadiness6_dynamic_var
+	fascist_drift = CHI_influence_combatreadiness6_dynamic_var
+	communist_drift = CHI_influence_combatreadiness6_dynamic_var
+	totalitarian_socialist_drift = CHI_influence_combatreadiness6_dynamic_var
+	national_socialist_drift = CHI_influence_combatreadiness6_dynamic_var
+}
+CHI_influence_combatreadiness7_dynamic = {
+	enable = { 
+		tag = CHI
+	}
+	experience_gain_air_factor = CHI_influence_combatreadiness7_dynamic_var
+	experience_gain_army_factor = CHI_influence_combatreadiness7_dynamic_var
+	experience_gain_navy_factor = CHI_influence_combatreadiness7_dynamic_var
+	terrain_trait_xp_gain_factor = CHI_influence_combatreadiness7_dynamic_var
+	army_morale_factor = CHI_influence_combatreadiness7_dynamic_var
+	army_org_factor = CHI_influence_combatreadiness7_dynamic_var
+	coordination_bonus = CHI_influence_combatreadiness7_dynamic_var
+	max_planning = CHI_influence_combatreadiness7_dynamic_var
+	max_planning_factor = CHI_influence_combatreadiness7_dynamic_var
+	planning_speed = CHI_influence_combatreadiness7_dynamic_var
+	army_core_attack_factor = CHI_influence_combatreadiness7_dynamic_var
+	army_core_defence_factor = CHI_influence_combatreadiness7_dynamic_var
+}
