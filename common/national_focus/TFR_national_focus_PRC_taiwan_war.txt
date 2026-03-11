@@ -286,10 +286,10 @@ days = 50
 		select_effect = {
 			hidden_effect = {
 				CHI = {
-					country = {
+					country_event = {
 						id = ROC.20
 					}
-					country = {
+					country_event = {
 						id = ROC.21
 						days = 2
 					}
@@ -1632,6 +1632,7 @@ CHI = {
 		}
 	}
 }
+
 
 
 
