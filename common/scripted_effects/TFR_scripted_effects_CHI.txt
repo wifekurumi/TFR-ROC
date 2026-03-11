@@ -1523,6 +1523,50 @@ PDTO2_taiwan_war = {
 				modifier = PRC_hong_kong
 			}
 		}
+		326 = {
+			remove_dynamic_modifier = {
+				modifier = PRC_hong_kong
+			}
+		}
+		524 = {
+			remove_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+			}
+			1148 = {
+			remove_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+			}
+			1149 = {
+			remove_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+			}
+			1150 = {
+			remove_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+			}
+			524 = {
+			remove_dynamic_modifier = {
+				modifier = PDTO_stand_up_to_taiwan_idea_1
+			}
+			}
+			1148 = {
+			remove_dynamic_modifier = {
+				modifier = PDTO_stand_up_to_taiwan_idea_1
+			}
+			}
+			1149 = {
+			remove_dynamic_modifier = {
+				modifier = PDTO_stand_up_to_taiwan_idea_1
+			}
+			}
+			1150 = {
+			remove_dynamic_modifier = {
+				modifier = PDTO_stand_up_to_taiwan_idea_1
+			}
 		country_event = {
 			id = china.254
 			days = 200
