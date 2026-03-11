@@ -1,5 +1,26 @@
 ideas = {
 	country = {
+		CHI_aging_population_idea = {
+				name = JAP_aging_population_idea
+				picture = JAP_declining_population
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+				
+				allowed = {
+					tag = CHI
+				}
+				
+				modifier = {
+					monthly_population = -0.60
+					expense_growth_factor = 0.10
+					personal_value_factor = -0.05
+					personal_expense_factor = 0.1
+					inflation_monthly = -0.002
+					society_development_monthly = -0.01
+					poverty_development_monthly = -0.03
+				}
+			}
 		PRC_anti_western_proaganda_idea2 = {
 	picture = PRC_anti_western_proaganda
 
@@ -4824,6 +4845,7 @@ CHI_TaiHai_IDEA_25 = {
 }
 	}
 }
+
 
 
 
