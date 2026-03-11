@@ -227,7 +227,8 @@ CHI_hu_chen_pu_char = { #胡鎮埔
 }
 
 CHI_hsieh_chien_tung_char = { #謝建東
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_hsieh_chien_tung.png" small="gfx/Leaders/CHI/minister/CHI_hsieh_chien_tung_char.png"} }
+    portraits={ 
+		army={ large="gfx/Leaders/CHI/generals/CHI_hsieh_chien_tung.png" small="gfx/Leaders/CHI/minister/CHI_hsieh_chien_tung_char.png"} }
     field_marshal={ skill=3 attack_skill=2 defense_skill=2 planning_skill=4 logistics_skill=5 legacy_id=-1 traits={ organizer } }
 }
 
@@ -236,7 +237,7 @@ CHI_chiu_kuo_cheng_char = { #邱國正
 		civilian = {
 					large = "gfx/Leaders/CHI/generals/Chiu_Kuo_Cheng.png" 
 				}
-				army={ large="gfx/Leaders/CHI/generals/CHI_Chiu_Kuo_cheng.png" small="gfx/Leaders/CHI/minister/CHI_chiu_kou_cheng_char.png"} }
+				army={ large="gfx/Leaders/CHI/generals/Chiu_Kuo_cheng.png" small="gfx/Leaders/CHI/minister/CHI_chiu_kou_cheng_char.png"} }
 				country_leader={
 				ideology = military_junta
 				expire = "1.1.1.1"
@@ -250,36 +251,43 @@ CHI_lee_shying_jow_char = { #李翔宙
 }
 
 CHI_zhao_shi_zhang_char = { #趙世璋
-    portraits={ army={ large="gfx/Leaders/CHI/generals/zhao_shi_zhang.png" small="gfx/Leaders/CHI/minister/CHI_zhao_shi_zhang_char.png"} }
+    portraits={ army={ large="gfx/Leaders/CHI/generals/zhao_shi_zhang.png" 
+	small="gfx/Leaders/CHI/minister/CHI_zhao_shi_zhang_char.png"} }
     field_marshal={ skill=2 attack_skill=2 defense_skill=2 planning_skill=2 logistics_skill=2 legacy_id=-1 }
 }
 
 CHI_chen_ti_duan_char = { #陳體端
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_chen_ti_duan.png" small="gfx/Leaders/CHI/minister/CHI_chen_ti_duan_char.png"} }
+    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_chen_ti_duan.png" 
+	small="gfx/Leaders/CHI/minister/CHI_chen_ti_duan_char.png"} }
     field_marshal={ skill=2 attack_skill=2 defense_skill=2 planning_skill=2 logistics_skill=2 legacy_id=-1 }
 }
 CHI_wang_hsin_lung_char = { #王信龍
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_wang_shin_lung.png" small="gfx/Leaders/CHI/minister/CHI_wang_shin_lung_char.png"} }
+    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_wang_shin_lung.png" 
+	small="gfx/Leaders/CHI/minister/CHI_wang_shin_lung_char.png"} }
     corps_commander={ skill=4 attack_skill=4 defense_skill=5 planning_skill=3 logistics_skill=2 legacy_id=-1 traits={ infantry_expert organizer } }
 }
 
 CHI_chen_pao_yu_char = { #陳寶餘
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_chen_pao_yu.png" small="gfx/Leaders/CHI/minister/CHI_chen_pao_yu_char.png"} }
+    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_chen_pao_yu.png" 
+	small="gfx/Leaders/CHI/minister/CHI_chen_pao_yu_char.png"} }
     corps_commander={ skill=1 attack_skill=1 defense_skill=2 planning_skill=1 logistics_skill=2 legacy_id=-1 }
 }
 
 CHI_chang_guan_chung_char = { #張冠群
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_chang_guan_chung.png" small="gfx/Leaders/CHI/minister/CHI_chang_guan_chung_char.png"} }
+    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_chang_guan_chung.png" 
+	small="gfx/Leaders/CHI/minister/CHI_chang_guan_chung_char.png"} }
     corps_commander={ skill=1 attack_skill=1 defense_skill=1 planning_skill=3 logistics_skill=2 legacy_id=-1 }
 }
 
 CHI_chu_kai_sheng_char = { #朱凱生
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_chu_kai_sheng.png" small="gfx/Leaders/CHI/minister/CHI_chu_kai_sheng_char.png"} }
+    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_chu_kai_sheng.png" 
+	small="gfx/Leaders/CHI/minister/CHI_chu_kai_sheng_char.png"} }
     corps_commander={ skill=4 attack_skill=5 defense_skill=3 planning_skill=1 logistics_skill=2 legacy_id=-1 traits={ infantry_expert } }
 }
 
 CHI_yu_bei_chan_char = { #于北辰
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_yu_bei_chan.png" small="gfx/Leaders/CHI/minister/CHI_yu_bei_chan_char.png"} }
+    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_yu_bei_chan.png" 
+	small="gfx/Leaders/CHI/minister/CHI_yu_bei_chan_char.png"} }
     corps_commander={ skill=3 attack_skill=5 defense_skill=4 planning_skill=1 logistics_skill=2 legacy_id=-1 traits={ panzer_leader } }
 }
 
