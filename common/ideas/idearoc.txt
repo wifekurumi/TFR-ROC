@@ -17,8 +17,8 @@ ideas = {
 					personal_value_factor = -0.05
 					personal_expense_factor = 0.1
 					inflation_monthly = -0.002
-					society_development_monthly = -0.01
-					poverty_development_monthly = -0.03
+					society_development_monthly = -0.02
+					poverty_development_monthly = -0.01
 				}
 			}
 		PRC_anti_western_proaganda_idea2 = {
@@ -4845,6 +4845,7 @@ CHI_TaiHai_IDEA_25 = {
 }
 	}
 }
+
 
 
 
