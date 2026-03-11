@@ -299,6 +299,7 @@ days = 50
 		completion_reward = {
 			news_event = china.82
 			CHI = {
+				
 				country_event = {
 					id = ROC.25
 				}
@@ -457,6 +458,50 @@ days = 50
 				id = ROC.32
 			}
 			CHI = {
+				524 = {
+			add_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+				scope = PRC
+			}
+			}
+			1148 = {
+			add_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+				scope = PRC
+			}
+			}
+			1149 = {
+			add_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+				scope = PRC
+			}
+			}
+			1150 = {
+			add_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+				scope = PRC
+			}
+			}
+			524 = {
+			add_dynamic_modifier = {
+				modifier = PDTO_stand_up_to_taiwan_idea_1
+			}
+			}
+			1148 = {
+			add_dynamic_modifier = {
+				modifier = PDTO_stand_up_to_taiwan_idea_1
+			}
+			}
+			1149 = {
+			add_dynamic_modifier = {
+				modifier = PDTO_stand_up_to_taiwan_idea_1
+			}
+			}
+			1150 = {
+			add_dynamic_modifier = {
+				modifier = PDTO_stand_up_to_taiwan_idea_1
+			}
+			}
 				country_event = {
 					id = ROC.22
 				}
@@ -663,6 +708,18 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 		completion_reward = {
 			country_event = ROC.57
+			hidden_effect = {
+				879 = {
+				remove_dynamic_modifier = {
+				modifier = PRC_non_combat_area
+			}
+			}
+			1382 = {
+				remove_dynamic_modifier = {
+				modifier = PRC_non_combat_area
+			}
+			}
+			}
 		}
 	}
 	focus = {
@@ -1632,7 +1689,6 @@ CHI = {
 		}
 	}
 }
-
 
 
 
