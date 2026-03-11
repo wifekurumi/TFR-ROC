@@ -11,7 +11,7 @@ focus_tree = {
 		y = 0
 		cost = 1
 		available_if_capitulated = yes
-		cancelable = no
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -40,7 +40,7 @@ focus_tree = {
 			hidden_effect = {
 				news_event = {
 					id = ROC.18
-days = 50
+				days = 50
 				}
 			}
 		}
@@ -52,7 +52,7 @@ days = 50
 			#has_global_flag = USA_american_civil_war_global
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+		
 		x = -2
 		y = 1
 		cost = 1
@@ -130,7 +130,7 @@ days = 50
 			}
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+		
 		x = 0
 		y = 1
 		cost = 1
@@ -162,7 +162,7 @@ days = 50
 			#has_global_flag = USA_american_civil_war_global
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+		
 		x = 2
 		y = 1
 		cost = 1
@@ -194,7 +194,7 @@ days = 50
 			#has_global_flag = USA_american_civil_war_global
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+		
 		x = -1
 		y = 2
 		cost = 1
@@ -220,7 +220,7 @@ days = 50
 			#has_global_flag = USA_american_civil_war_global
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+		
 		x = 1
 		y = 2
 		cost = 1
@@ -267,7 +267,7 @@ days = 50
 			has_completed_focus = PRC_plan_on_high_alert
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+		
 		x = 0
 		y = 3
 		will_lead_to_war_with = CHI
@@ -338,7 +338,7 @@ days = 50
 			}
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+		
 		x = 2
 		y = 3
 		cost = 1
@@ -375,7 +375,7 @@ days = 50
 			#has_global_flag = USA_american_civil_war_global
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+		
 		x = -2
 		y = 3
 		cost = 1
@@ -428,13 +428,13 @@ days = 50
 			#has_global_flag = USA_american_civil_war_global
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+		
 		x = 0
 		y = 4
 		will_lead_to_war_with = CHI
 		will_lead_to_war_with = JAP
 		will_lead_to_war_with = AST
-		cost = 0.5
+		cost = 1
 		prerequisite = {
 			focus = PRC_plan_on_high_alert
 		}
@@ -699,7 +699,7 @@ activate_mission = THEJAP_taiwan_war_countdown
 			focus = PRC_finish_what_mao_started
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+		
 		x = 0
 		y = 5
 		cost = 0.5
@@ -732,7 +732,7 @@ activate_mission = THEJAP_taiwan_war_countdown
 			focus = PRC_analyze_first_days
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+
 		x = 0
 		y = 6
 		cost = 1
@@ -788,7 +788,7 @@ activate_mission = THEJAP_taiwan_war_countdown
 			focus = PRC_fast_finalization
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+	
 		x = 0
 		y = 7
 		cost = 5
@@ -849,7 +849,7 @@ activate_mission = THEJAP_taiwan_war_countdown
 			focus = PRC_air_deconservation
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+	
 		x = 0
 		y = 9
 		cost = 5
@@ -874,7 +874,7 @@ set_country_flag = Learning_New_Warfare
 			focus = PRC_taiwanese_affairs_dont_concern_mainland 
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+		
 		x = -2
 		y = 9
 		cost = 5
@@ -922,7 +922,7 @@ set_country_flag = Learning_New_Warfare
 			focus = PRC_fast_finalization
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+	
 		x = -2
 		y = 7
 		cost = 1.5
@@ -939,7 +939,7 @@ set_country_flag = Learning_New_Warfare
 			unlock_decision_tooltip = PRC_strike_nagasaki2
 			unlock_decision_tooltip = PRC_taiwan_bombing_raid2
 			hidden_effect = {
-CHI = {
+			CHI = {
 					swap_ideas = {
 				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
 				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
@@ -988,7 +988,7 @@ CHI = {
 			focus = PRC_indiscriminate_missile_strikes
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+		
 		x = -1
 		y = 8
 		cost = 5
@@ -1018,7 +1018,7 @@ CHI = {
 			focus = PRC_unite_people
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+	
 		x = -0
 		y = 10
 		cost = 5
@@ -1070,7 +1070,7 @@ CHI = {
 			focus = PRC_economic_conversion_to_military_needs
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+	
 		x = 2
 		y = 9
 		cost = 5
@@ -1119,7 +1119,7 @@ CHI = {
 			focus = PRC_fast_finalization
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
+	
 		x = 2
 		y = 7
 		cost = 1.5
@@ -1171,7 +1171,6 @@ CHI = {
 			focus = PRC_minimize_civilian_casualties
 		}
 		relative_position_id = PRC_the_final_opportunity
-		cancelable = no
 		x = 1
 		y = 8
 		cost = 5
