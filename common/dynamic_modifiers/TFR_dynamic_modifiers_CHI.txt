@@ -583,3 +583,21 @@ CHI_influence_combatreadiness7_dynamic = {
 	army_core_attack_factor = CHI_influence_combatreadiness7_dynamic_var
 	army_core_defence_factor = CHI_influence_combatreadiness7_dynamic_var
 }
+PDTO_stand_up_to_taiwan_idea_1 = {
+	icon = GFX_modifiers_SOV_devastated_by_war
+	enable = {
+		always = yes
+	}
+	local_non_core_manpower = -0.50
+	resistance_growth = 0.50
+	local_factories = 0.05
+	local_supplies = 0.50
+	local_supplies_for_controller = 0.50
+	army_intel_factor = 0.50
+	army_attack_factor = 0.15
+	army_defence_factor = 0.15
+	army_core_attack_factor = 0.30
+	army_core_defence_factor = 0.30
+	army_org_factor = 0.15
+	army_speed_factor = 0.15
+}
