@@ -4370,6 +4370,9 @@ PDTO_solidarity = {
 		visible = {
 			always = yes
 		}
+		allowed = {
+			always = yes
+		}
 		ai_will_do = {
 			base = 20
 		}
@@ -4456,6 +4459,9 @@ PDTO_solidarity = {
 		visible = {
 			always = yes
 		}
+		allowed = {
+			always = yes
+		}
 		ai_will_do = {
 			base = 10
 		}
@@ -4495,6 +4501,9 @@ PDTO_solidarity = {
 		}
 		ai_will_do = {
 			base = 10
+		}
+		allowed = {
+			always = yes
 		}
 		priority = 10
 		fire_only_once = no
@@ -6423,6 +6432,7 @@ EastAsia_taiwan_war_dec = {
 		}
 	}
 }
+
 
 
 
