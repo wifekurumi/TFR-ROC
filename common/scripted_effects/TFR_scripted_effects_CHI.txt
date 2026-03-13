@@ -850,11 +850,11 @@ EADI_taiwan_war = {
 			}
 			if = {
    				limit = {has_idea = PRC_TaiHai_IDEA_25}
-				country_event = {id = PRC_TaiHai_IDEA.32}	
+				country_event = {id = ROC_PRC.32}	
 			}
 			if = {
    				limit = {has_idea = PRC_TaiHai_IDEA_24}
-				country_event = {id = PRC_TaiHai_IDEA.31}	
+				country_event = {id = ROC_PRC.31}	
    			swap_ideas = {
         	remove_idea = PRC_TaiHai_IDEA_24
         	add_idea = PRC_TaiHai_IDEA_25
@@ -862,7 +862,7 @@ EADI_taiwan_war = {
 			}
 			if = {
    				limit = {has_idea = PRC_TaiHai_IDEA_23}
-				country_event = {id = PRC_TaiHai_IDEA.29}	
+				country_event = {id = ROC_PRC.29}	
    			swap_ideas = {
         	remove_idea = PRC_TaiHai_IDEA_23
         	add_idea = PRC_TaiHai_IDEA_24
@@ -870,7 +870,7 @@ EADI_taiwan_war = {
 			}
 			if = {
    				limit = {has_idea = PRC_TaiHai_IDEA_22}
-				country_event = {id = PRC_TaiHai_IDEA.28}	
+				country_event = {id = ROC_PRC.28}	
    			swap_ideas = {
         	remove_idea = PRC_TaiHai_IDEA_22
         	add_idea = PRC_TaiHai_IDEA_23
@@ -878,7 +878,7 @@ EADI_taiwan_war = {
 			}
 			if = {
    				limit = {has_idea = PRC_TaiHai_IDEA_21}
-				country_event = {id = PRC_TaiHai_IDEA.27}	
+				country_event = {id = ROC_PRC.27}	
    			swap_ideas = {
         	remove_idea = PRC_TaiHai_IDEA_21
         	add_idea = PRC_TaiHai_IDEA_22
@@ -886,7 +886,7 @@ EADI_taiwan_war = {
 			}
 			if = {
    				limit = {has_idea = PRC_TaiHai_IDEA_20}
-				country_event = {id = PRC_TaiHai_IDEA.26}	
+				country_event = {id = ROC_PRC.26}	
    			swap_ideas = {
         	remove_idea = PRC_TaiHai_IDEA_20
         	add_idea = PRC_TaiHai_IDEA_21
@@ -894,7 +894,7 @@ EADI_taiwan_war = {
 			}
 			if = {
    				limit = {has_idea = PRC_TaiHai_IDEA_19}
-				country_event = {id = PRC_TaiHai_IDEA.25}	
+				country_event = {id = ROC_PRC.25}	
    			swap_ideas = {
         	remove_idea = PRC_TaiHai_IDEA_19
         	add_idea = PRC_TaiHai_IDEA_20
@@ -902,7 +902,7 @@ EADI_taiwan_war = {
 			}
 			if = {
    				limit = {has_idea = PRC_TaiHai_IDEA_18}
-				country_event = {id = PRC_TaiHai_IDEA.23}	
+				country_event = {id = ROC_PRC.23}	
    			swap_ideas = {
         	remove_idea = PRC_TaiHai_IDEA_18
         	add_idea = PRC_TaiHai_IDEA_19
@@ -910,7 +910,7 @@ EADI_taiwan_war = {
 			}
 			if = {
    				limit = {has_idea = PRC_TaiHai_IDEA_17}
-				country_event = {id = PRC_TaiHai_IDEA.21}	
+				country_event = {id = ROC_PRC.21}	
    			swap_ideas = {
         	remove_idea = PRC_TaiHai_IDEA_17
         	add_idea = PRC_TaiHai_IDEA_18
@@ -918,7 +918,7 @@ EADI_taiwan_war = {
 			}
 			if = {
    				limit = {has_idea = PRC_TaiHai_IDEA_16}
-				country_event = {id =  PRC_TaiHai_IDEA.20}	
+				country_event = {id =  ROC_PRC.20}	
    			swap_ideas = {
         	remove_idea = PRC_TaiHai_IDEA_16
         	add_idea = PRC_TaiHai_IDEA_17
@@ -926,7 +926,7 @@ EADI_taiwan_war = {
 			}
 			if = {
    				limit = {has_idea = PRC_TaiHai_IDEA_15}
-				country_event = {id = PRC_TaiHai_IDEA.19}	
+				country_event = {id = ROC_PRC.19}	
    			swap_ideas = {
         	remove_idea = PRC_TaiHai_IDEA_15
         	add_idea = PRC_TaiHai_IDEA_16
@@ -934,7 +934,7 @@ EADI_taiwan_war = {
 			}
 			if = {
    				limit = {has_idea = PRC_TaiHai_IDEA_14}
-				country_event = {id = PRC_TaiHai_IDEA.18}	
+				country_event = {id = ROC_PRC.18}	
    			swap_ideas = {
         	remove_idea = PRC_TaiHai_IDEA_14
         	add_idea = PRC_TaiHai_IDEA_15
@@ -942,7 +942,7 @@ EADI_taiwan_war = {
 			}
 			if = {
    				limit = {has_idea = PRC_TaiHai_IDEA_13}
-				country_event = {id = PRC_TaiHai_IDEA.16}	
+				country_event = {id = ROC_PRC.16}	
    			swap_ideas = {
         	remove_idea = PRC_TaiHai_IDEA_13
         	add_idea = PRC_TaiHai_IDEA_14
@@ -950,7 +950,7 @@ EADI_taiwan_war = {
 			}
 			if = {
    				limit = {has_idea = PRC_TaiHai_IDEA_12}
-				country_event = {id = PRC_TaiHai_IDEA.14}	
+				country_event = {id = ROC_PRC.14}	
    			swap_ideas = {
         	remove_idea = PRC_TaiHai_IDEA_12
         	add_idea = PRC_TaiHai_IDEA_13
