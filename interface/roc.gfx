@@ -1,4 +1,8 @@
 spriteTypes = {
+	spriteType = {
+		name = "GFX_autonomy_Special_Administrative_Region_PRC_icon"
+		textureFile = "gfx/texticons/CHI/PRC_SpecialAdministrativeRegion.png"
+	}
 	SpriteType = {
 		name = "GFX_DPP"
 		texturefile = "gfx/roc/DPP.png" 
@@ -338,6 +342,7 @@ spriteType = {
 		legacy_lazy_load = no
     }
 }
+
 
 
 
