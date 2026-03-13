@@ -299,7 +299,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = {
-				focus = PRC_adopt_strict_lockdown_measures
+				focus = PRC_surveillance_state_contact_tracing
 		}
 		completion_reward = {
 			add_popularity = {
