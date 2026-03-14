@@ -572,7 +572,6 @@ PDTO_unity = {
 }
 PDTO_unity_increase2 = {
 	custom_effect_tooltip = PDTO_unity_tt1
-	hidden_effect = {
 	every_country = {
 		limit = {
 			OR = {
@@ -630,7 +629,7 @@ PDTO_unity_increase2 = {
 			add_ideas = PDTO_unity_1
 		}
 	}
-	}
+	
 }
 
 PDTO_unity_decrease2 = {
