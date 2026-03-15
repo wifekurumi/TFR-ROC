@@ -1145,7 +1145,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_Electricity_prices_freeze_and_rise
 		x = 0
 		y = 2
-		cost = 3
+		cost = 1
 		available = {
 			has_completed_focus = Coping_with_the_oil_crisis
 		}
@@ -2429,7 +2429,12 @@ focus_tree = {
 		}
 		relative_position_id = Semiconductor_mobilization
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = CHI_InvestingAI
+				days = 365
+			}
+			custom_effect_tooltip = after_idea_expires
+			CHI_increase_tsmc_idea = yes
 		}
 	}
 	focus = {
@@ -2495,7 +2500,7 @@ focus_tree = {
 		}
 		relative_position_id = Semiconductor_mobilization
 		completion_reward = {
-
+			add_ideas = CHI_scientists_from_america_idea
 		}
 	}
 	focus = {
