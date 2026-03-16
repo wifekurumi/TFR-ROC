@@ -1348,4 +1348,68 @@ defined_text = {
 		localization_key = "CHI_Infiltration_text1"
 	}
 }
-
+defined_text = {
+		name = GET_BACKGROUND
+		text = { 
+			trigger = {
+				tag = CHI
+			}
+			localization_key = "GFX_CHI_BG"
+		}	
+		text = { 
+			trigger = {
+				tag = SOV
+			}
+			localization_key = "GFX_Moscow_BG"
+		}	
+		text = { 
+			trigger = {
+				tag = FRA
+			}
+			localization_key = "GFX_France_BG"
+		}	
+		text = { 
+			trigger = {
+				tag = USA
+			}
+			localization_key = "GFX_USA_BG"
+		}
+		text = { 
+			trigger = {
+				tag = GER
+			}
+			localization_key = "GFX_GER_BG"
+		}
+		text = { 
+			trigger = {
+				tag = JAP
+			}
+			localization_key = "GFX_Japan_BG"
+		}
+		text = { 
+			trigger = {
+				tag = PRC
+			}
+			localization_key = "GFX_China_BG"
+		}
+		text = {
+			trigger = {
+				tag = USB
+				has_completed_focus = USB_rebirth
+			}
+			localization_key = "GFX_Caligula_BG"
+		}
+		text = { 
+			trigger = {
+				tag = NCM
+			}
+			localization_key = "GFX_NCM_BG"
+		}
+		text = {
+			trigger = {
+				NOT = { tag = SOV tag = USA tag = FRA tag = JAP tag = PRC tag = GER tag = NCM tag = CHI}
+				NOT = { tag = USB has_completed_focus = USB_rebirth }
+			}
+			localization_key = "GFX_World_Map_BG"
+		}
+	}
