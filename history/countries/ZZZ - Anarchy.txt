@@ -459,7 +459,7 @@ add_country_leader_role = {
 }
 SHZ = {
 	promote_character = {
-	character = MCU_Ho_Iat_Seng
+	character = SHZ_Yang_Zhichun
 	ideology = military_junta
 }
 }
