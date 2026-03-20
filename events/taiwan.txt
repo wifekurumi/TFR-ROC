@@ -3,6 +3,235 @@ add_namespace = ROC_CHI
 add_namespace = ROC_PRC
 add_namespace = ROC_JAP
 country_event = {
+	id = ROC_PRC.38
+	title = ROC_PRC.38.t
+	desc = ROC_PRC.38.d
+	#picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.38.a
+		CHF = {
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+			}
+		}
+		ESF = {
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+			}
+		}
+		SIC = {
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+			}
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.37
+	title = ROC_PRC.37.t
+	desc = ROC_PRC.37.d
+	#picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.37.a
+		country_event = {
+				id = ROC_PRC.38
+				days = 4
+			}
+	}
+}
+country_event = {
+	id = ROC_PRC.36
+	title = ROC_PRC.36.t
+	desc = ROC_PRC.36.d
+	#picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			1222 = {
+				set_demilitarized_zone = yes
+			}
+			613 = {
+				set_demilitarized_zone = yes
+			}
+			1215 = {
+				set_demilitarized_zone = yes
+			}
+			1429 = {
+				set_demilitarized_zone = yes
+			}
+			1228 = {
+				set_demilitarized_zone = yes
+			}
+			1220 = {
+				set_demilitarized_zone = yes
+			}
+			1221 = {
+				set_demilitarized_zone = yes
+			}
+			606 = {
+				set_demilitarized_zone = yes
+			}
+			596 = {
+				set_demilitarized_zone = yes
+			}
+			1227 = {
+				set_demilitarized_zone = yes
+			}
+			600 = {
+				set_demilitarized_zone = yes
+			}
+			1159 = {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+	option = {
+		name = ROC_PRC.36.a
+		PRC_Taihai_boxilai3 = yes
+		country_event = {
+				id = ROC_PRC.37
+				days = 4
+			}
+	}
+}
+country_event = {
+	id = ROC_PRC.35
+	title = ROC_PRC.35.t
+	desc = ROC_PRC.35.d
+	#picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			591 = {
+				set_demilitarized_zone = yes
+			}
+			593 = {
+				set_demilitarized_zone = yes
+			}
+			728 = {
+				set_demilitarized_zone = yes
+			}
+			594 = {
+				set_demilitarized_zone = yes
+			}
+			1203 = {
+				set_demilitarized_zone = yes
+			}
+			1191 = {
+				set_demilitarized_zone = yes
+			}
+			592 = {
+				set_demilitarized_zone = yes
+			}
+			729 = {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+	option = {
+		name = ROC_PRC.35.a
+		PRC_Taihai_boxilai2 = yes
+		country_event = {
+				id = ROC_PRC.36
+				days = 4
+			}
+	}
+}
+country_event = {
+	id = ROC_PRC.34
+	title = ROC_PRC.34.t
+	desc = ROC_PRC.34.d
+	#picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			605 = {
+				set_demilitarized_zone = yes
+			}
+			1189 = {
+				set_demilitarized_zone = yes
+			}
+			1190 = {
+				set_demilitarized_zone = yes
+			}
+			601 = {
+				set_demilitarized_zone = yes
+			}
+			1168 = {
+				set_demilitarized_zone = yes
+			}
+			1188 = {
+				set_demilitarized_zone = yes
+			}
+			325 = {
+				set_demilitarized_zone = yes
+			}
+			1196 = {
+				set_demilitarized_zone = yes
+			}
+			1195 = {
+				set_demilitarized_zone = yes
+			}
+			1192 = {
+				set_demilitarized_zone = yes
+			}
+			603 = {
+				set_demilitarized_zone = yes
+			}
+			1197 = {
+				set_demilitarized_zone = yes
+			}
+			1210 = {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+	option = {
+		name = ROC_PRC.34.a
+		PRC_Taihai_boxilai1 = yes
+		PRC = {
+			load_focus_tree = generic_focus
+		}
+		country_event = {
+				id = ROC_PRC.35
+				days = 4
+			}
+	}
+}
+#news_event = {
+#	id = ROC_PRC.34
+#	title = ROC_PRC.34.t
+#	desc = ROC_PRC.34.d
+#	#picture = GFX_Taiwan_Flag
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#	trigger = {
+#	}
+#	option = {
+#		name = ROC_PRC.34.a
+#	}
+#}
+country_event = {
 	id = ROC_CHI.1
 	title = ROC_CHI.1.t
 	desc = ROC_CHI.1.d
@@ -13,6 +242,7 @@ country_event = {
 	}
 	option = {
 		name = ROC_CHI.1.a
+		
 		hidden_effect = {
 		}
 	}
@@ -242,6 +472,7 @@ promote_character = {
 	character = CHI_chen_yi_qi_char
 	ideology = babylonian_nazism
 }
+
 		hidden_effect = {
 		}
 	}
@@ -266,7 +497,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+news_event = {
 	id = ROC_PRC.1
 	title = ROC_PRC.1.t
 	desc = ROC_PRC.1.d
@@ -738,7 +969,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+news_event = {
 	id = ROC_PRC.30
 	title = ROC_PRC.30.t
 	desc = ROC_PRC.30.d
@@ -2161,6 +2392,7 @@ country_event = {
 			}
 			AST = {
 				set_country_flag = pdto_member
+				
 			}
 			CHI = {
 				set_country_flag = pdto_member
@@ -2171,6 +2403,10 @@ country_event = {
 		name = ROC.31.a
 		add_war_support = 0.05
 		PDTO_unity_increase2 = yes
+		unlock_decision_tooltip = PDTO_military_exercise
+				unlock_decision_tooltip = PDTO_Trade_Agreement
+				unlock_decision_tooltip = PDTO_Mineral_Detection
+				unlock_decision_tooltip = PDTO_Unity_up
 	}
 }
 country_event = {
@@ -3187,16 +3423,10 @@ country_event = {
 				}
 				load_oob = TIB_revolt
 		}
-		TAR = {
-			declare_war_on = {
-				target = TIB
-				type = annex_everything
-			}
-		}
 		}
 	}
 }
-country_event = {
+news_event = {
 	id = ROC.60
 	title = ROC.60.t
 	desc = ROC.60.d
@@ -3453,7 +3683,23 @@ add_country_leader_role = {
 		name = china.391.a
 	}
 }
-
+country_event = {
+	id = ROC.65
+	title = china.107.t
+	desc = china.107.d
+	picture = GFX_PRC_Generic_NPC
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = china.107.b
+		country_event = {
+			id = china.110
+			days = 1
+		}
+	}
+}
 
 
 
