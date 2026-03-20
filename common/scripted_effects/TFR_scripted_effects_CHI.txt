@@ -1530,25 +1530,25 @@ PDTO2_taiwan_war = {
 		524 = {
 			remove_dynamic_modifier = {
 				modifier = PRC_unplanned_offensive
-				scope = PRC
+		
 			}
 			}
 			1148 = {
 			remove_dynamic_modifier = {
 				modifier = PRC_unplanned_offensive
-				scope = PRC
+		
 			}
 			}
 			1149 = {
 			remove_dynamic_modifier = {
 				modifier = PRC_unplanned_offensive
-				scope = PRC
+			
 			}
 			}
 			1150 = {
 			remove_dynamic_modifier = {
 				modifier = PRC_unplanned_offensive
-				scope = PRC
+			
 			}
 			}
 			524 = {
