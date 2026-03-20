@@ -1676,6 +1676,7 @@ PDTO2_taiwan_war = {
 	remove_ideas = JAP_TaiHai_IDEA_25
 		}
 		CHI = {
+			remove_ideas = CHI_pdto_fuel_shipments_idea
 			remove_ideas = CHI_PRC_infiltration_high
 			remove_ideas = CHI_PRC_infiltration_middle
 			remove_ideas = CHI_PRC_infiltration_low
