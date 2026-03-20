@@ -86,7 +86,60 @@ units = {
 		division_template = "Chinese Marine Corps"
 		start_experience_factor = 0.4
 	}
+	division = {
+		name = "Chinese Marine Corps"
+		location = 11959
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
 	
+	division = {
+		name = "Chinese Marine Corps"
+		location = 13968
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "Chinese Marine Corps"
+		location = 7214
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "Chinese Marine Corps"
+		location = 13967
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "Chinese Marine Corps"
+		location = 11959
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "Chinese Marine Corps"
+		location = 13968
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "Chinese Marine Corps"
+		location = 7214
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "Chinese Marine Corps"
+		location = 13967
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
 
 
 }
