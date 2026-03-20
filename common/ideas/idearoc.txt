@@ -1,5 +1,60 @@
 ideas = {
 	country = {
+PRK_Total_Control_idea_1 = {
+				name = PRK_Total_Control_idea
+				picture = PRK_Total_Control
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					stability_factor = 0.25
+					political_power_gain = 0.4
+					fascist_drift = 0.02
+					drift_defence_factor = 0.95
+					resistance_activity = -0.2
+					war_support_factor = 0.1
+				}
+			}
+
+			PRK_Total_Control_idea_2 = {
+				picture = PRK_Total_Control
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+				name = PRK_Total_Control_idea
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					stability_factor = 0.15
+					political_power_gain = 0.1
+					drift_defence_factor = 0.5
+					resistance_activity = -0.1
+					war_support_factor = 0.1
+					production_factory_efficiency_gain_factor = 0.1
+					army_org_factor = 0.05
+					land_reinforce_rate = 0.025
+				}
+			}
 CHI_InvestingAI = {
 			picture = CHI_InvestingAI
 		    traits = {
