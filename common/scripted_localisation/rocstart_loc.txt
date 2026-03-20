@@ -524,7 +524,7 @@ defined_text = {
 	name = get_Penghu_status_PDTO
 	text = {
 		trigger = {
-			1151 = {
+			1451 = {
 				controller = {
 					is_ally_with = PRC
 				}
@@ -535,7 +535,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				1151 = {
+				1451 = {
 					controller = {
 						is_ally_with = JAP
 					}
