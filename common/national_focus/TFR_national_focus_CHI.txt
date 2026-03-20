@@ -3032,6 +3032,7 @@ PRC = {
 			focus = CHI_National_Spiritual_Mobilization
 		}
 		completion_reward = {
+			add_ideas = CHI_pdto_fuel_shipments_idea
 			unlock_decision_tooltip = CHI_JAPANDAST_Military_aid
 		}
 	}
