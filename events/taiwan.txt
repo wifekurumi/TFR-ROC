@@ -3267,6 +3267,7 @@ country_event = {
     }
 			}
 			SHZ = {
+				inherit_technology = PRC
 				set_cosmetic_tag = PRC_military_administration
 				transfer_state = 1395
 				add_state_core = 1395
