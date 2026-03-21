@@ -1,5 +1,30 @@
 ideas = {
 	country = {
+		PRC_CITS_idea = {
+			picture = GFX_CITS_faction
+			allowed = {
+				always = yes
+			}
+			  traits = {
+			        ZZZ_blank_idea_trait
+			    }
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+			}
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+                industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.10
+				planning_speed_factor = -0.1
+				income_growth_factor = 0.05
+				personal_value_factor = 0.05
+				master_ideology_drift = 0.01
+			}
+		}
 		Red_Nobility = {
 			picture = Red_Nobility
 			allowed = {
