@@ -159,6 +159,10 @@ add_country_leader_role = {
 		}
 	}
 }
+PRK = {
+	change_government_type_fascist_dictatorship = yes
+		change_economy_type_command_economy = yes
+}
 PRC = {
 	 set_autonomy = {
         target = MCU
@@ -169,12 +173,16 @@ PRC = {
         autonomy_state = autonomy_Special_Administrative_Region_PRC
     }
 	set_party_name = { ideology = communist long_name = PRC_xijp_ccp_long name = PRC_xijp_ccp }
+	change_government_type_presidential_dictatorship = yes
 	add_country_leader_role = {
 		character = PRC_xi_jinping
 		promote_leader = yes
-		country_leader = {
-			ideology = xi_jinping_thought 
-			expire = "1.1.1.1"
+		country_leader={
+			ideology=xi_jinping_thought
+			desc = PRC_XI_JINPING_DESC
+			traits={ hos_red_dragon_rider }
+			expire="1.1.1.1"
+			id=-1
 		}
 	}
 	country_event = {
