@@ -3700,6 +3700,76 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = ROC.66
+	title = china.110.t
+	desc = china.110.d
+	picture = GFX_PRC_chen_quanguo_event
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = china.110.a
+		hidden_effect = {
+		}
+	}
+}
+news_event = {
+	id = ROC.67
+	title = sino_jap_coldwar.12.t
+	desc = ROC.67.d
+	picture = GFX_sino_jap_coldwar_pdto_join_news
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+		tag = PRC
+	}
+	immediate = {
+		hidden_effect = {
+			PRK = {
+				set_country_flag = eadi_member
+			}
+			PRC = {
+				add_to_faction = PRK
+			}
+		}
+	}
+	option = {
+		name = sino_jap_coldwar.12.a
+		news_event = {
+			id = ROC.68
+			days = 4
+		}
+		hidden_effect = {
+		}
+	}
+}
+news_event = {
+	id = ROC.68
+	title = sino_jap_coldwar.11.t
+	desc = ROC.68.d
+	picture = GFX_sino_jap_coldwar_pdto_join_news
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+		tag = PRC
+	}
+	immediate = {
+		hidden_effect = {
+			JAP = {
+				add_to_faction = KOR
+			}
+			KOR = {
+				set_country_flag = pdto_member
+			}
+		}
+	}
+	option = {
+		name = sino_jap_coldwar.11.a
+		
+	}
+}
 
 
 
