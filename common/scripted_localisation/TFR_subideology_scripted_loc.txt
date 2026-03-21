@@ -2087,6 +2087,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = red_military_junta
+		}
+		localization_key = red_military_junta
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = nationalist_xi_jinping_thought
 		}
 		localization_key = PRC_xi_jinping_thought
@@ -2376,6 +2382,12 @@ defined_text = {
 
 defined_text = {
 	name = GetSubIdeologyLocFascist	
+	text = {
+		trigger = {
+			has_country_leader_ideology = jucheism2
+		}
+		localization_key = jucheism2
+	}
 	text = {
 		trigger = {
 			has_country_leader_ideology = CHI_Shina_Destructionism
@@ -2726,9 +2738,21 @@ defined_text = {
 	name = GetSubIdeologyLocNatSoc
 	text = {
 		trigger = {
+			has_country_leader_ideology = confucian_hyperconservativism
+		}
+		localization_key = confucian_hyperconservativism
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = national_socialist_xi_jinping_thought
 		}
 		localization_key = PRC_xi_jinping_thought
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = PRC_social_fascism
+		}
+		localization_key = PRC_social_fascism
 	}
 	text = {
 		trigger = {
