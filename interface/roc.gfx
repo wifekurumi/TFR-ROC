@@ -3,6 +3,18 @@ spriteTypes = {
 		name = "GFX_autonomy_Special_Administrative_Region_PRC_icon"
 		textureFile = "gfx/texticons/CHI/PRC_SpecialAdministrativeRegion.png"
 	}
+spriteType = {
+			name = "GFX_TFR_CITS_button"  
+			texturefile = "gfx/interface/GFX_TFR_CITS_button.png"
+		}
+		spriteType = {
+			name = "GFX_idea_PRC_CITS_idea"  
+			texturefile = "gfx/texticons/CHI/GFX_TFR_CITS_button.png"
+		}
+		spriteType = {
+			name = "GFX_CITS_faction"  
+			texturefile = "gfx/texticons/CHI/GFX_CITS_ICON.png"
+		}
 	SpriteType = {
 		name = "GFX_DPP"
 		texturefile = "gfx/roc/DPP.png" 
