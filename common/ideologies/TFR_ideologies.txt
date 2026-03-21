@@ -4,9 +4,9 @@ ideologies = {
 			jucheism = {
 				can_be_randomly_selected = no
 				color = {
-					117
-					26
-					8
+					75
+					34
+					9
 				}
 			}
 			totalism = {
@@ -14,9 +14,9 @@ ideologies = {
 			totalitarian_socialist_xi_jinping_thought = {
 				can_be_randomly_selected = no
 				color = {
-					140
-					35
-					35
+					96
+					41
+					0
 				}
 			}
 			digital_leninism = {
@@ -151,9 +151,9 @@ ideologies = {
 			xi_jinping_thought = {
 				can_be_randomly_selected = no
 				color = {
-					140
-					35
-					35
+					96
+					41
+					0
 				}
 			}
 			li_zuocheng_thought = {
@@ -1094,9 +1094,9 @@ ideologies = {
 			nationalist_xi_jinping_thought = {
 				can_be_randomly_selected = no
 				color = {
-					140
-					35
-					35
+					96
+					41
+					0
 				}
 			}
 			theocracy = {
@@ -1155,6 +1155,14 @@ ideologies = {
 			}
 			military_junta = {
 				#Junta
+			}
+			red_military_junta = {
+				can_be_randomly_selected = no
+				color = {
+					56
+					31
+					27
+				}
 			}
 			neo_luddism = {
 				#Ted K
@@ -1261,9 +1269,9 @@ ideologies = {
 			fascist_xi_jinping_thought = {
 				can_be_randomly_selected = no
 				color = {
-					140
-					35
-					35
+					96
+					41
+					0
 				}
 			}
 			ethno_nationalism = {
@@ -1385,6 +1393,14 @@ ideologies = {
 					102
 				}
 			}
+			jucheism2 = {
+				can_be_randomly_selected = no
+				color = {
+					75
+					34
+					9
+				}
+			}
 			chinese_exceptionalism = {
 				can_be_randomly_selected = no
 			}
@@ -1422,9 +1438,16 @@ ideologies = {
 			national_socialist_xi_jinping_thought = {
 				can_be_randomly_selected = no
 				color = {
-					140
-					35
-					35
+					96
+					41
+					0
+				}
+			}
+			PRC_social_fascism {
+				color = {
+					101
+					34
+					11
 				}
 			}
 			esoteric_fascism = {
