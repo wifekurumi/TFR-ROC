@@ -2,6 +2,10 @@ CHI_empire = {
 	color = rgb { 156 156 81 }
 	color_ui = rgb { 156 156 81 }
 }
+PRC_empire2 = {
+	color = rgb { 156 156 81 }
+	color_ui = rgb { 156 156 81 }
+}
 PDF_burma = {
 	color = rgb { 214 50 59 }
 	color_ui = rgb { 214 50 59 }
