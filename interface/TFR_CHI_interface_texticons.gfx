@@ -39,7 +39,7 @@ spriteTypes = {
 		texturefile = "gfx/texticons/CHI/CHI_TSP.png"
 		legacy_lazy_load = no
 	}
-SpriteType = {
+	spriteType = {
 			name = "GFX_CHI_BG"  
 			texturefile = "gfx/texticons/CHI/start_p1.png"
 			alwaystransparent = yes

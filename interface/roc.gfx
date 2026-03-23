@@ -1,9 +1,25 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_autonomy_Special_Administrative_Region_PRC_icon"
-		textureFile = "gfx/texticons/CHI/PRC_SpecialAdministrativeRegion.png"
-	}
+	name = "GFX_TFR_game_rule_flag_PRC_empireNEW"
+	texturefile = "gfx/flags/small/PRC_empire.tga"
+	legacy_lazy_load = no
+}
 spriteType = {
+	name = "GFX_TFR_game_rule_flag_PRC_empire2NEW"
+	texturefile = "gfx/flags/small/PRC_empire2.tga"
+	legacy_lazy_load = no
+}
+spriteType = {
+	name = "GFX_TFR_game_rule_flag_PRC_empire3NEW"
+	texturefile = "gfx/flags/small/PRC_empire3.tga"
+	legacy_lazy_load = no
+}
+spriteType = {
+	name = "GFX_TFR_game_rule_flag_CHI_empire3NEW"
+	texturefile = "gfx/flags/small/CHI_empire.tga"
+	legacy_lazy_load = no
+}
+	spriteType = {
 			name = "GFX_TFR_CITS_button"  
 			texturefile = "gfx/interface/GFX_TFR_CITS_button.png"
 		}
@@ -15,207 +31,211 @@ spriteType = {
 			name = "GFX_CITS_faction"  
 			texturefile = "gfx/texticons/CHI/GFX_CITS_ICON.png"
 		}
-	SpriteType = {
+	spriteType = {
+		name = "GFX_autonomy_Special_Administrative_Region_PRC_icon"
+		textureFile = "gfx/texticons/CHI/PRC_SpecialAdministrativeRegion.png"
+	}
+	spriteType = {
 		name = "GFX_DPP"
 		texturefile = "gfx/roc/DPP.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_KMT"
 		texturefile = "gfx/roc/kmt.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_DPP"
 		texturefile = "gfx/roc/DPP.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_KMT_banner"
 		texturefile = "gfx/roc/kmt_banner.png" 
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_DPP_banner"
 		texturefile = "gfx/roc/dpp_banner.png" 
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_eventtaiwan1"
 		texturefile = "gfx/roc/eventtaiwan1.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_kmt_oilcrash"
 		texturefile = "gfx/roc/kmt_oilcrash.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_dpp_oilcrash"
 		texturefile = "gfx/roc/dpp_oilcrash.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_CHI_Emergency_Energy_Security_Act"
 		texturefile = "gfx/roc/CHI_Emergency_Energy_Security_Act.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_CHI_Targeted_subsidies"
 		texturefile = "gfx/roc/CHI_Targeted_subsidies.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_CHI_Crisis_and_Diplomacy"
 		texturefile = "gfx/roc/CHI_Crisis_and_Diplomacy.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_CHI_Priority_purchase_of_oil"
 		texturefile = "gfx/roc/CHI_Priority_purchase_of_oil.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_CHI_Strengthen_foreign_trade"
 		texturefile = "gfx/roc/CHI_Strengthen_foreign_trade.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_CHI_Expand_reserves"
 		texturefile = "gfx/roc/CHI_Expand_reserves.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_CHI_Nuclear_energy_extension"
 		texturefile = "gfx/roc/CHI_Nuclear_energy_extension.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_CHI_Embrace_New_Energy"
 		texturefile = "gfx/roc/CHI_Embrace_New_Energy.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_CHI_Our_allies_in_Europe_and_America"
 		texturefile = "gfx/roc/CHI_Our_allies_in_Europe_and_America.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_CHI_With_compatriots_in_China"
 		texturefile = "gfx/roc/CHI_With_compatriots_in_China.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_kmt_oilcrash_win"
 		texturefile = "gfx/roc/kmt_oilcrash_win.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_dpp_oilcrash_win"
 		texturefile = "gfx/roc/dpp_oilcrash_win.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_CHI_Use_of_strategic_reserves"
 		texturefile = "gfx/roc/CHI_Implement_fuel_rationing.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_CHI_Implement_fuel_rationing"
 		texturefile = "gfx/roc/CHI_Use_of_strategic_reserves.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_laapfaatjyun"
 		texturefile = "gfx/roc/laapfaatjyun.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_kmtdec"
 		texturefile = "gfx/roc/kmtdec.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_dppdec"
 		texturefile = "gfx/roc/dppdec.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_tppdec"
 		texturefile = "gfx/roc/tppdec.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_lfj_me"
 		texturefile = "gfx/roc/lfj_me.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_kmt_icon"
 		texturefile = "gfx/roc/kmt_icon2.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_dpp_icon"
 		texturefile = "gfx/roc/dpp_icon2.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_tpp_icon"
 		texturefile = "gfx/roc/tpp_icon2.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_lfj_chi"
 		texturefile = "gfx/roc/lfj_chi2.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_idea_CHI_LY_of_the_roc_dynamic"
 		texturefile = "gfx/roc/CHI_LY_of_the_roc_dynamic.png" 
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_bop_hgy"
 		texturefile = "gfx/roc/bop_hgy.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_bop_lqd"
 		texturefile = "gfx/roc/bop_lqd.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_bop_dpp"
 		texturefile = "gfx/roc/dpp_bop.png"
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_bop_kmt"
 		texturefile = "gfx/roc/kmt_bop.png"
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_taihai_war_open"
 		texturefile = "gfx/roc/taihai_war_open.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_taihai_war_map"
 		texturefile = "gfx/roc/taihai_war_map.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_taihai_war_out"
 		texturefile = "gfx/roc/taihai_war_out.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_test_of_will_taidong"
 		texturefile = "gfx/roc/test_of_will_taidong.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_test_of_will_tainan"
 		texturefile = "gfx/roc/test_of_will_tainan.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_test_of_will_taizhong"
 		texturefile = "gfx/roc/test_of_will_taizhong.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_test_of_will_taipei"
 		texturefile = "gfx/roc/test_of_will_taipei.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_test_of_will_text"
 		texturefile = "gfx/roc/test_of_will_text.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_test_of_will_penghu"
 		texturefile = "gfx/roc/test_of_will_penghu.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_test_of_will_jinmen"
 		texturefile = "gfx/roc/test_of_will_jinmen.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_whn_superevent"
 		texturefile = "gfx/roc/GFX_whn_superevent.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_open_lifahui_gui111"
 		texturefile = "gfx/roc/open_lifayuan_gui1112.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_guofangbu"
 		texturefile = "gfx/roc/guofangbu.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_PLA"
 		texturefile = "gfx/roc/PLA.png"
 	}
@@ -226,19 +246,19 @@ spriteType = {
 		size = { x = 350 y = 200 }
 		effectfile = "gfx/FX/progress.lua"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_PLA_lieyu"
 		texturefile = "gfx/roc/CHI_Jinmenboyi_PRC_lieyu.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_guojun_lieyu"
 		texturefile = "gfx/roc/CHI_Jinmenboyi_CHI_lieyu.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_PLA_jinmen"
 		texturefile = "gfx/roc/CHI_Jinmenboyi_PRC_jinmen.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_guojun_jinmen"
 		texturefile = "gfx/roc/CHI_Jinmenboyi_CHI_jinmen.png"
 	}
@@ -295,35 +315,35 @@ spriteType = {
 		name = "GFX_PDTO_dec"
 		textureFile = "gfx/ROC/PDTO_dec.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_CHI_TAIHAI_WAR_superevent"
 		texturefile = "gfx/roc/CHI_taihai_war_picture.png"
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_MND_event_texticon"
 		texturefile = "gfx/roc/MND_event_texticon.png"
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_MND_event_texticon2"
 		texturefile = "gfx/roc/MND_event_texticon2.png"
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_MND_event_texticon3"
 		texturefile = "gfx/roc/MND_event_texticon3.png"
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_CCP_event_texticon"
 		texturefile = "gfx/roc/CCP_event_texticon.png"
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_idea_PRC_made_in_china2"
 		texturefile = "gfx/texticons/CHI/PRC_Made_In_China2.png"
 	}
-spriteType = {
+	spriteType = {
 		name = "GFX_ideology_CHI_Taiwanese_Progressivism"
 		texturefile = "gfx/texticons/CHI/centrist_CHI.png"
     }
@@ -358,6 +378,10 @@ spriteType = {
 		legacy_lazy_load = no
     }
 	spriteType = {
+		name = "GFX_ideology_CHI_Shina_Destructionism"
+		texturefile = "gfx/texticons/CHI/tuzhi.png"
+    }
+	spriteType = {
 		name = "GFX_ideology_social_red_military_junta"
 		texturefile = "gfx/texticons/CHI/military_junta_PRC.png"
     }
@@ -367,7 +391,7 @@ spriteType = {
     }
 	spriteType = {
 		name = "GFX_ideology_jucheism2"
-		texturefile = "gfx/texticons/CHI/jucheism.png"
+		texturefile = "gfx/texticons/CHI/jucheism_PRK.png"
     }
 }
 
