@@ -111,10 +111,6 @@ country_event = {
 				election_frequency = 48
 				elections_allowed = yes
 			}
-			add_ideas = CHI_Yen_Tehfa
-			add_ideas = CHI_Zhang_Shanzheng_hog
-			add_ideas = CHI_Wu_Zhaoxie_for
-			add_ideas = CHI_Cai_Desheng_int
 			1150 = {
 				remove_dynamic_modifier = {
 					modifier = CHI_gaoxiong
