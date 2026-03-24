@@ -292,4 +292,124 @@ spriteTypes = {
     texturefile = "gfx/interface/ideas/CCP/BPRC_china.png"
 		legacy_lazy_load = no
 	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Johnny_Chiang_hog"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Johnny_Chiang_hog.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_wang_jinpyng_hog"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_wang_jinpyng_hog.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_mao_chihkuo_hog"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_mao_chihkuo_hog.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_eric_chu_hog"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_eric_chu_hog.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_chen_chienjen_hog"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_chen_chienjen_hog.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Lin_Chia_lung_for"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Lin_Chia_lung_for.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Chiang_Yi_huah_for"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Chiang_Yi_huah_for.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Zhang_Zhongmou_eco"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Zhang_Zhongmou_eco.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Peng_Huainan_eco"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Peng_Huainan_eco.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Kuo_Chih_hui_eco"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Kuo_Chih_hui_eco.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Kung_Ming_hsin_eco"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Kung_Ming_hsin_eco.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Du_Zijin_eco"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Du_Zijin_eco.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Eric_Tseng_eco"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Eric_Tseng_eco.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Chang_Sheng_ho_eco"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Chang_Sheng_ho_eco.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Sean_Chen_eco"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Sean_Chen_eco.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Wang_Jian_xuan_eco"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Wang_Jian_xuan_eco.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Ku_Li_hsiung"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Ku_Li_hsiung.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Shen_Po_yang_int"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Shen_Po_yang_int.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Miao_Poya_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Miao_Poya_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Chen_Shih_chung_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Chen_Shih_chung_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Li_Hongyuan_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Li_Hongyuan_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Luo_Shaohuo_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Luo_Shaohuo_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Li_Hongjun_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Li_Hongjun_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_King_Pu_tsung_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_King_Pu_tsung_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Lin_You_chang_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Lin_You_chang_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Hua_Ching_chun_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Hua_Ching_chun_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Ming_Ju_zheng_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Ming_Ju_zheng_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Kao_Ching_yuan_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Kao_Ching_yuan_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Liao_Liao_yi_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Liao_Liao_yi_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_zhang_shanzheng1_hog"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_zhang_shanzheng_hog.png"
+	}
 }
