@@ -778,7 +778,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "HKN_control"
+		localization_key = "SHZ_control"
 	}
 	text = {
 		trigger = {
@@ -794,7 +794,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "SHZ_control"
+		localization_key = "HKN_control"
 	}
 }
 
@@ -859,7 +859,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "HKN_control"
+		localization_key = "SHZ_control"
 	}
 	text = {
 		trigger = {
@@ -875,7 +875,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "SHZ_control"
+		localization_key = "HKN_control"
 	}
 }
 
