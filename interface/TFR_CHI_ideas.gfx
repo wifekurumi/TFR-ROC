@@ -412,4 +412,12 @@ spriteTypes = {
 		name = "GFX_idea_CHI_zhang_shanzheng1_hog"
 		texturefile = "gfx/Leaders/CHI/minister/CHI_zhang_shanzheng_hog.png"
 	}
+SpriteType = {
+		name = "GFX_HKY_corps_commander"
+		texturefile = "gfx/Leaders/CHI/CHI_han_kuo_yu_military.png"
+	}	
+	SpriteType = {
+		name = "GFX_TIW_corps_commander"
+		texturefile = "gfx/Leaders/CHI/CHI_tsai_ing_wen_military.png"
+	}	
 }
