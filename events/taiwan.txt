@@ -3017,13 +3017,13 @@ country_event = {
 		}
 	}
 }
-country_event = {
+news_event = {
 	id = ROC.41
 	title = ROC.41.t
 	desc = ROC.41.d
 	#picture = GFX_Taiwan_Invasion
 	is_triggered_only = yes
-	fire_only_once = yes
+	major = yes
 	trigger = {
 	}
 	immediate = {
@@ -3293,50 +3293,44 @@ news_event = {
 		name = ROC.42.a
 	}
 }
-country_event = {
+news_event = {
 	id = ROC.43
 	title = ROC.43.t
 	desc = ROC.43.d
 	#picture = GFX_Taiwan_Invasion
 	is_triggered_only = yes
-	fire_only_once = yes
+	major = yes
 	trigger = {
 	}
 	}
 	option = {
 		name = ROC.43.a
 	}
-country_event = {
+news_event = {
 	id = ROC.44
 	title = ROC.44.t
 	desc = ROC.44.d
 	#picture = GFX_Taiwan_Invasion
 	is_triggered_only = yes
-	fire_only_once = yes
+	major = yes
 	trigger = {
 	}
 	}
 	option = {
 		name = ROC.44.a
 	}
-country_event = {
+news_event = {
 	id = ROC.45
 	title = ROC.45.t
 	desc = ROC.45.d
 	#picture = GFX_Taiwan_Invasion
 	is_triggered_only = yes
-	fire_only_once = yes
+	major = yes
 	trigger = {
 	}
 	}
 	option = {
 		name = ROC.45.a
-		326 = {
-				set_demilitarized_zone = yes
-			}
-			326 = {
-				set_demilitarized_zone = yes
-			}
 	}
 	country_event = {
 	id = ROC.46
