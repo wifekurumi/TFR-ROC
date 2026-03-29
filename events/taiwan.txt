@@ -3,6 +3,82 @@ add_namespace = ROC_CHI
 add_namespace = ROC_PRC
 add_namespace = ROC_JAP
 country_event = {
+	id = ROC_PRC.39
+	title = ROC_PRC.39.t
+	desc = ROC_PRC.39.d
+	#picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.39.a
+		custom_effect_tooltip = ROC_PRC.39.a.tt
+		set_country_flag = Su_Tseng_chang_ROCbasedindependence
+		clr_country_flag = Su_Tseng_chang_Taiwanindependence
+		clr_country_flag = Su_Tseng_chang_PRCcentricindependence
+		clr_country_flag = Su_Tseng_chang_ROCframeworkunification
+		clr_country_flag = Su_Tseng_chang_Beijingledunification
+	}
+	option = {
+		name = ROC_PRC.39.b
+		custom_effect_tooltip = ROC_PRC.39.b.tt
+		set_country_flag = Su_Tseng_chang_Taiwanindependence
+		clr_country_flag = Su_Tseng_chang_ROCbasedindependence
+		clr_country_flag = Su_Tseng_chang_PRCcentricindependence
+		clr_country_flag = Su_Tseng_chang_ROCframeworkunification
+		clr_country_flag = Su_Tseng_chang_Beijingledunification
+	}
+	option = {
+		name = ROC_PRC.39.c
+		custom_effect_tooltip = ROC_PRC.39.c.tt
+		set_country_flag = Su_Tseng_chang_PRCcentricindependence
+		clr_country_flag = Su_Tseng_chang_ROCbasedindependence
+		clr_country_flag = Su_Tseng_chang_Taiwanindependence
+		clr_country_flag = Su_Tseng_chang_ROCframeworkunification
+		clr_country_flag = Su_Tseng_chang_Beijingledunification
+	}
+	option = {
+		name = ROC_PRC.39.e
+		custom_effect_tooltip = ROC_PRC.39.e.tt
+		set_country_flag = Su_Tseng_chang_ROCframeworkunification
+		clr_country_flag = Su_Tseng_chang_ROCbasedindependence
+		clr_country_flag = Su_Tseng_chang_Taiwanindependence
+		clr_country_flag = Su_Tseng_chang_PRCcentricindependence
+		clr_country_flag = Su_Tseng_chang_Beijingledunification
+	}
+	option = {
+		name = ROC_PRC.39.f
+		custom_effect_tooltip = ROC_PRC.39.f.tt
+		set_country_flag = Su_Tseng_chang_Beijingledunification
+		clr_country_flag = Su_Tseng_chang_ROCbasedindependence
+		clr_country_flag = Su_Tseng_chang_Taiwanindependence
+		clr_country_flag = Su_Tseng_chang_PRCcentricindependence
+		clr_country_flag = Su_Tseng_chang_ROCframeworkunification
+	}
+	option = {
+		name = ROC_PRC.39.g
+		custom_effect_tooltip = ROC_PRC.39.g.tt
+		set_country_flag =Su_Tseng_chang_DPP
+		clr_country_flag =Su_Tseng_chang_KMT
+		clr_country_flag =Su_Tseng_chang_TPP
+	}
+	option = {
+		name = ROC_PRC.39.h
+		custom_effect_tooltip = ROC_PRC.39.h.tt
+		set_country_flag =Su_Tseng_chang_KMT
+		clr_country_flag =Su_Tseng_chang_DPP
+		clr_country_flag =Su_Tseng_chang_TPP
+	}
+	option = {
+		name = ROC_PRC.39.i
+		custom_effect_tooltip = ROC_PRC.39.i.tt
+		set_country_flag =Su_Tseng_chang_TPP
+		clr_country_flag =Su_Tseng_chang_DPP
+		clr_country_flag =Su_Tseng_chang_KMT
+	}
+}
+country_event = {
 	id = ROC_PRC.38
 	title = ROC_PRC.38.t
 	desc = ROC_PRC.38.d
@@ -866,7 +942,7 @@ news_event = {
 	title = ROC_PRC.1.t
 	desc = ROC_PRC.1.d
 	picture = GFX_ROCA_Military_inspection
-	fire_only_once = yes
+	major = yes
 	is_triggered_only = yes
 	trigger = {
 	}
@@ -1205,16 +1281,11 @@ country_event = {
 	desc = ROC_PRC.22.d
 	picture = GFX_PRC_li_keqiang_died
 	fire_only_once = yes
-	is_triggered_only = yes
+	major = yes
 	trigger = {
 	}
 	option = {
 		name = ROC_PRC.22.a
-		hidden_effect = {
-			PRC = {
-			add_stability = -0.035
-			}
-		}
 	}
 }
 country_event = {
@@ -1338,7 +1409,7 @@ news_event = {
 	title = ROC_PRC.30.t
 	desc = ROC_PRC.30.d
 	picture = GFX_CHI_Beijing_clearing
-	fire_only_once = yes
+	major = yes
 	is_triggered_only = yes
 	trigger = {
 	}
@@ -2239,13 +2310,13 @@ country_event = {
 		name = ROC.17.a
 	}
 }
-country_event = {
+news_event = {
 	id = ROC.18
 	title = ROC.18.t
 	desc = ROC.18.d
 	#picture = GFX_china_civil_war_1
 	is_triggered_only = yes
-	fire_only_once = yes
+	major = yes
 	trigger = {
 	}
 	immediate = {
@@ -2773,13 +2844,13 @@ country_event = {
 				unlock_decision_tooltip = PDTO_Unity_up
 	}
 }
-country_event = {
+news_event = {
 	id = ROC.32
 	title = ROC.32.t
 	desc = ROC.32.d
 	picture = GFX_Taiwan_Invasion
 	is_triggered_only = yes
-	fire_only_once = yes
+	major = yes
 	trigger = {
 	}
 	option = {
@@ -3175,13 +3246,13 @@ set_party_name = { ideology = nationalist long_name = PHI_MIL_long name = PHI_MI
 		}
 	}
 }
-country_event = {
+news_event = {
 	id = ROC.42
 	title = ROC.42.t
 	desc = ROC.42.d
 	#picture = GFX_Taiwan_Invasion
 	is_triggered_only = yes
-	fire_only_once = yes
+	major = yes
 	trigger = {
 	}
 	immediate = {
@@ -3796,7 +3867,7 @@ news_event = {
 	desc = ROC.60.d
 	picture = GFX_PRC_tibet1
 	fire_only_once = yes
-	is_triggered_only = yes
+	major = yes
 	immediate = {
 		hidden_effect = {
 			TAR = {
@@ -4056,12 +4127,90 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 	}
+	immediate = {
+		hidden_effect = {
+			add_country_leader_role = {
+		character = PRC_chen_quanguo
+		promote_leader = yes
+		country_leader={
+			ideology = PRC_social_fascism
+			desc = PRC_CHEN_QUANGUO_DESC
+			traits={ hos_red_dragon_rider }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	add_country_leader_role = {
+		character = PRC_li_zuocheng
+		promote_leader = yes
+		country_leader={
+			ideology=red_military_junta
+			desc = PRC_LI_ZUOCHENG_DESC
+			traits={ hos_desire_rise for_expansionist }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	add_country_leader_role = {
+		character = PRC_cheng_wenqing
+		promote_leader = yes
+		country_leader={
+			ideology=jucheism2
+			desc = PRC_CHEN_WENQING_DESC
+			traits={ hos_red_dragon_rider }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	set_party_name = {
+				ideology = nationalist
+				long_name = PRC_CCP_taihaiaft
+				name = PRC_CCP_taihaiaft
+			}
+			set_party_name = {
+				ideology = fascist
+				long_name = PRC_CCP_taihaiaft3
+				name = PRC_CCP_taihaiaft3
+			}
+			set_party_name = {
+				ideology = national_socialist
+				long_name = PRC_CCP_taihaiaft2
+				name = PRC_CCP_taihaiaft2
+			}
+			add_popularity = { ideology = fascist popularity = 0.25 }
+				add_popularity = { ideology = nationalist popularity = 0.15 }
+				add_popularity = { ideology = national_socialist popularity = 0.30 }
+		}
+	}
 	option = {
 		name = china.107.b
-		country_event = {
-			id = china.110
-			days = 1
+		set_country_flag = PRC_party_congress_nationalists_won_flag
+		effect_tooltip = {
+			unlock_national_focus = PRC_protectors_of_the_chinese_nation
 		}
+		remove_country_leader_role = {
+			    character = PRC_Zhang_Youxia
+			    ideology = military_junta
+			}
+			set_politics = {
+				ruling_party = national_socialist
+				elections_allowed = no
+			}
+			set_popularities = {
+				totalitarian_socialist = 15
+				communist = 15
+				libertarian_socialist = 6
+				social_democrat = 4
+				social_liberal = 2
+				market_liberal = 0
+				conservative = 0
+				authoritarian_democrat = 7
+				nationalist = 10
+				fascist = 20
+				national_socialist = 29
+			}
+			hidden_effect = {
+			}
 	}
 }
 country_event = {
@@ -4175,6 +4324,99 @@ country_event = {
 			}
 	}
 }
+news_event = {
+	id = ROC.70
+	title = ROC.70.t
+	desc = ROC.70.d
+	picture = GFX_GER_federalize_eu_news
+	
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		hidden_effect = {
+			GermanyreaffirmsEuropeanUnion = yes
+			GermanyreaffirmsEuropeanUnion2 = YES
+			GermanyreaffirmsEuropeanUnion3 = YES
+			GermanyreaffirmsEuropeanUnion4 = yes
+			GermanyreaffirmsEuropeanUnion5 = yes
+			GermanyreaffirmsEuropeanUnion6 = yes
+		}
+	}
+	option = {
+		name = ROC.70.a
+	}
+}
+country_event = {
+	id = ROC.71
+	title = ROC.71.t
+	desc = ROC.71.d
+	#picture = GFX_PRC_history
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+	
+		}
+	}
+	option = {
+		name = ROC.71.a
+		effect_tooltip = {
+
+		}
+	}
+}
+country_event = {
+	id = ROC.72
+	title = ROC.72.t
+	desc = ROC.72.d
+	#picture = GFX_PRC_history
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+	
+		}
+	}
+	option = {
+		name = ROC.72.a
+	}
+}
+country_event = {
+	id = ROC.73
+	title = ROC.73.t
+	desc = ROC.73.d
+	#picture = GFX_PRC_history
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+	
+		}
+	}
+	option = {
+		name = ROC.73.a
+	}
+}
+country_event = {
+	id = ROC.74
+	title = ROC.74.t
+	desc = ROC.74.d
+	#picture = GFX_PRC_history
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+	
+		}
+	}
+	option = {
+		name = ROC.74.a
+	}
+}
 country_event = {
 	id = ROC.75
 	title = ROC.75.t
@@ -4209,11 +4451,14 @@ country_event = {
 		set_global_flag = support_Taiwan_market_liberal
 		set_global_flag = support_Taiwan_conservative
 	}
+	option = {
+		name = china.259.b
+		clr_global_flag = support_Taiwan_social_democrat
+		clr_global_flag = support_Taiwan_social_liberal
+		clr_global_flag = support_Taiwan_market_liberal
+		clr_global_flag = support_Taiwan_conservative
+	}
 }
-
-
-
-
 
 
 
