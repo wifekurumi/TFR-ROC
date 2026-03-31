@@ -134,6 +134,8 @@ CHI_ROC_army_dynamic = {
 	army_armor_attack_factor = ROC_army_armor_attack_factor
 	coordination_bonus = ROC_coordination_bonus
 	mechanized_defence_factor = ROC_mechanized_defence_factor
+	mobilization_speed = ROC_mobilization_speed
+	experience_loss_factor = ROC_experience_loss_factor
 }
 financial_crisis_dynamic = {
 	icon = GFX_idea_TAI_taiwanese_independence_movements
