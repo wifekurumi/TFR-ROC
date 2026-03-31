@@ -243,11 +243,12 @@ set_popularities = {
 				}
 		}
 	}
-	on_state_control_changed = {
+		on_state_control_changed = {
 		effect = {
 			if = { 
 				limit = {
-					has_global_flag = PRC_ongoing_taiwan_war
+					#has_global_flag = PRC_ongoing_taiwan_war
+					#台北-台海
 					FROM.FROM = { 
 						OR = {
 							state = 1148
@@ -255,12 +256,14 @@ set_popularities = {
 					}
 					FROM = {
 						OR = {
+						is_ally_with = PRC
 						is_ally_with = CHI
 						}
 					}
 					ROOT = {
 						OR = {
 						is_ally_with = PRC
+						is_ally_with = CHI
 						}
 					}
 					not = { has_global_flag = battle_of_taipei }
@@ -294,46 +297,56 @@ set_popularities = {
 					country_event = {
 						id = ROC.46 
 						}
-					add_days_mission_timeout = {
-						mission = PRC_taiwan_war_countdown
-						days = 15
-					}
 				}
 				JAP = {
 					country_event = {
 						id = ROC.50
 						}
-					add_days_mission_timeout = {
-						mission = JAP_taiwan_war_mission
-						days = 15
-					}
 				}
 				CHI = {
 					country_event = {
 						id = ROC.50
 						}
-					add_days_mission_timeout = {
-						mission = CHI_taiwan_war_mission
-						days = 15
-					}
+						add_to_variable = {
+					var = ROC_mobilization_speed
+					value = 0.15
+				}
+				add_to_variable = {
+					var = ROC_conscription_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = ROC_experience_loss_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = ROC_army_core_attack_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = ROC_army_core_defence_factor
+					value = 0.05
+				}
 				}
 			}
 			if = { 
 				limit = {
-					has_global_flag = PRC_ongoing_taiwan_war
 					FROM.FROM = { 
+						#台中 - 台海
 						OR = {
 							state = 1149
 						} 
 					}
 					FROM = {
 						OR = {
+						is_ally_with = PRC
 						is_ally_with = CHI
 						}
 					}
 					ROOT = {
 						OR = {
 						is_ally_with = PRC
+						is_ally_with = CHI
 						}
 					}
 					not = { has_global_flag = battle_of_taizhong }
@@ -363,52 +376,62 @@ set_popularities = {
 					country_event = {
 						id = ROC.47
 						}
-					add_days_mission_timeout = {
-						mission = PRC_taiwan_war_countdown
-						days = 15
-					}
 				}
 				JAP = {
 					country_event = {
 						id = ROC.51
 						}
-					add_days_mission_timeout = {
-						mission = JAP_taiwan_war_mission
-						days = 15
-					}
 				}
 				CHI = {
 					country_event = {
 						id = ROC.51
 						}
-					add_days_mission_timeout = {
-						mission = CHI_taiwan_war_mission
-						days = 15
-					}
+						add_to_variable = {
+					var = ROC_mobilization_speed
+					value = 0.15
+				}
+				add_to_variable = {
+					var = ROC_conscription_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = ROC_experience_loss_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = ROC_army_core_attack_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = ROC_army_core_defence_factor
+					value = 0.05
+				}
 				}
 			}
 			if = { 
 				limit = {
-					has_global_flag = PRC_ongoing_taiwan_war
 					FROM.FROM = { 
+						#高雄-台海
 						OR = {
-							state = 1148
+							state = 1150
 						} 
 					}
 					FROM = {
 						OR = {
+						is_ally_with = PRC
 						is_ally_with = CHI
 						}
 					}
 					ROOT = {
 						OR = {
 						is_ally_with = PRC
+						is_ally_with = CHI
 						}
 					}
 					not = { has_global_flag = battle_of_gaoxiong }
 				}
 				set_global_flag = battle_of_gaoxiong
-				1148 = {
+				1150 = {
 					add_extra_state_shared_building_slots = -2
 					add_manpower = -7316
 					damage_building = {
@@ -432,33 +455,41 @@ set_popularities = {
 					country_event = {
 						id = ROC.48
 						}
-					add_days_mission_timeout = {
-						mission = PRC_taiwan_war_countdown
-						days = 15
-					}
 				}
 				JAP = {
 					country_event = {
 						id = ROC.52
 						}
-					add_days_mission_timeout = {
-						mission = JAP_taiwan_war_mission
-						days = 15
-					}
 				}
 				CHI = {
 					country_event = {
 						id = ROC.52
 						}
-					add_days_mission_timeout = {
-						mission = CHI_taiwan_war_mission
-						days = 15
-					}
+						add_to_variable = {
+					var = ROC_mobilization_speed
+					value = 0.15
+				}
+				add_to_variable = {
+					var = ROC_conscription_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = ROC_experience_loss_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = ROC_army_core_attack_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = ROC_army_core_defence_factor
+					value = 0.05
+				}
 				}
 			}
 			if = { 
 				limit = {
-					has_global_flag = PRC_ongoing_taiwan_war
+					#花莲-台海
 					FROM.FROM = { 
 						OR = {
 							state = 524
@@ -466,12 +497,14 @@ set_popularities = {
 					}
 					FROM = {
 						OR = {
+						is_ally_with = PRC
 						is_ally_with = CHI
 						}
 					}
 					ROOT = {
 						OR = {
 						is_ally_with = PRC
+						is_ally_with = CHI
 						}
 					}
 					not = { has_global_flag = battle_of_hualian }
@@ -501,28 +534,36 @@ set_popularities = {
 					country_event = {
 						id = ROC.49
 						}
-					add_days_mission_timeout = {
-						mission = PRC_taiwan_war_countdown
-						days = 15
-					}
 				}
 				JAP = {
 					country_event = {
 						id = ROC.53
 						}
-					add_days_mission_timeout = {
-						mission = JAP_taiwan_war_mission
-						days = 15
-					}
 				}
 				CHI = {
 					country_event = {
 						id = ROC.53
 						}
-					add_days_mission_timeout = {
-						mission = CHI_taiwan_war_mission
-						days = 15
-					}
+						add_to_variable = {
+					var = ROC_mobilization_speed
+					value = 0.15
+				}
+				add_to_variable = {
+					var = ROC_conscription_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = ROC_experience_loss_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = ROC_army_core_attack_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = ROC_army_core_defence_factor
+					value = 0.05
+				}
 				}
 			}
 		}
