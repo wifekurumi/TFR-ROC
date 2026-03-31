@@ -1685,9 +1685,9 @@ ideas = {
 			modifier = {
 			mobilization_speed = 0.15
 			experience_loss_factor = 0.05
-			land_reinforce_rate = -0.05
 			conscription_factor = 0.05
-			minimum_training_level = -0.05
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
 			}
 		}
 PRC_TaiHai_IDEA = {
