@@ -1314,6 +1314,10 @@ set_country_flag = Learning_New_Warfare
 			}
 			hidden_effect = {
 				PRC_increase_corrupt_bureaucracy = yes
+				news_event = {
+				id = ROC.76
+				days = 7
+			}
 			}
 		}
 	}
