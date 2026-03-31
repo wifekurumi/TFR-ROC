@@ -4453,7 +4453,21 @@ country_event = {
 		clr_global_flag = support_Taiwan_conservative
 	}
 }
-
+country_event = {
+	id = ROC.76
+	title = ROC.76.t
+	desc = china.148.d
+	picture = GFX_PRC_protest
+	
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+		is_ai = no
+	}
+	option = {
+		name = ROC.76.a
+	}
+}
 
 
 
