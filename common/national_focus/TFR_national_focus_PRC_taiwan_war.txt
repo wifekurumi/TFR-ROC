@@ -297,11 +297,15 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			
 			news_event = china.82
 			CHI = {
 				
 				country_event = {
 					id = ROC.25
+				}
+				country_event = {
+					id = ROC.90
 				}
 				add_timed_idea = {
 					idea = CHI_silent_dawn
@@ -352,6 +356,12 @@ focus_tree = {
 			country_event = {
 				id = china.9
 				days = 1
+			}
+			CHI = {
+				country_event = {
+				id = ROC.88
+				days = 1
+			}
 			}
 			add_war_support = 0.1
 			648 = {
@@ -461,25 +471,24 @@ focus_tree = {
 				524 = {
 			add_dynamic_modifier = {
 				modifier = PRC_unplanned_offensive
-		
+				
 			}
 			}
 			1148 = {
 			add_dynamic_modifier = {
 				modifier = PRC_unplanned_offensive
-		
 			}
 			}
 			1149 = {
 			add_dynamic_modifier = {
 				modifier = PRC_unplanned_offensive
-		
+				
 			}
 			}
 			1150 = {
 			add_dynamic_modifier = {
 				modifier = PRC_unplanned_offensive
-		
+				
 			}
 			}
 			524 = {
@@ -719,7 +728,7 @@ activate_mission = THEJAP_taiwan_war_countdown
 				modifier = PRC_non_combat_area
 			}
 			}
-				1451 = {
+			1451 = {
 				remove_dynamic_modifier = {
 				modifier = PRC_non_combat_area
 			}
@@ -1312,12 +1321,12 @@ set_country_flag = Learning_New_Warfare
 				id = china.148
 				days = 7
 			}
-			hidden_effect = {
-				PRC_increase_corrupt_bureaucracy = yes
-				news_event = {
+			news_event = {
 				id = ROC.76
 				days = 7
 			}
+			hidden_effect = {
+				PRC_increase_corrupt_bureaucracy = yes
 			}
 		}
 	}
