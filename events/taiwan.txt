@@ -747,6 +747,10 @@ country_event = {
 		name = ROC_CHI.16.a
 		add_popularity = { ideology = conservative popularity = 0.05 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
+		add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = -0.1
+			}
 		create_corps_commander = {
 	name = "韓國瑜"
 	desc = "CHI_han_kuo_yu_char_desc"
@@ -4684,6 +4688,115 @@ country_event = {
 				}
 	}
 }
+country_event = {
+	id = ROC.91
+	title = ROC.91.t
+	desc = ROC.91.d
+	#picture = GFX_PRC_protest
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.91.a
+		add_popularity = { ideology = social_democrat popularity = -0.10 }
+		add_popularity = { ideology = libertarian_socialist popularity = -0.15 }
+		add_popularity = { ideology = communist popularity = -0.20 }
+		add_popularity = { ideology = totalitarian_socialist popularity = -0.20 }
+		set_party_name = {
+				ideology = communist
+				long_name = CHI_fascist_party
+				name = CHI_fascist_party
+			}
+		set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = CHI_fascist_party
+				name = CHI_fascist_party
+			}
+		set_party_name = {
+				ideology = libertarian_socialist
+				long_name = CHI_fascist_party
+				name = CHI_fascist_party
+			}
+	}
+	option = {
+		name = ROC.91.b
+		add_popularity = { ideology = social_democrat popularity = 0.10 }
+		add_popularity = { ideology = libertarian_socialist popularity = 0.15 }
+		add_popularity = { ideology = communist popularity = 0.10 }
+		add_popularity = { ideology = totalitarian_socialist popularity = 0.05 }
+		set_party_name = {
+				ideology = communist
+				long_name = CHI_communist2
+				name = CHI_communist2
+			}
+		set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = CHI_totalitarian_socialist2
+				name = CHI_totalitarian_socialist2
+			}
+		set_party_name = {
+				ideology = libertarian_socialist
+				long_name = CHI_libertarian_socialist2
+				name = CHI_libertarian_socialist2
+			}
+			set_temp_variable = {
+			coalition_partner_var_temp = token:communist
+		}
+		add_to_coalition = yes
+		set_temp_variable = {
+			coalition_partner_var_temp = token:totalitarian_socialist
+		}
+		add_to_coalition = yes
+		set_temp_variable = {
+			coalition_partner_var_temp = token:libertarian_socialist
+		}
+		add_to_coalition = yes
+	}
+}
+country_event = {
+	id = ROC.92
+	title = ROC.92.t
+	desc = ROC.92.d
+	#picture = GFX_PRC_protest
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.92.a
+		add_popularity = { ideology = nationalist popularity = -0.10 }
+		add_popularity = { ideology = fascist popularity = -0.20 }
+		add_popularity = { ideology = national_socialist popularity = -0.20 }
+		set_party_name = {
+				ideology = fascist
+				long_name = CHI_fascist_party
+				name = CHI_fascist_party
+			}
+		set_party_name = {
+				ideology = national_socialist
+				long_name = CHI_fascist_party
+				name = CHI_fascist_party
+			}
+	}
+	option = {
+		name = ROC.92.b
+		add_popularity = { ideology = fascist popularity = 0.05 }
+		add_popularity = { ideology = national_socialist popularity = 0.05 }
+		set_party_name = { ideology = fascist long_name = CHI_armry_party2 name = CHI_armry_party2 }
+		set_party_name = { ideology = national_socialist long_name = CHI_armry_party3 name = CHI_armry_party3 }
+		set_temp_variable = {
+			coalition_partner_var_temp = token:fascist
+		}
+		add_to_coalition = yes
+		set_temp_variable = {
+			coalition_partner_var_temp = token:national_socialist
+		}
+		add_to_coalition = yes
+	}
+}
+
+
+
+
 
 
 
