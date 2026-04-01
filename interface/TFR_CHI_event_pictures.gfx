@@ -40,4 +40,260 @@ spriteTypes = {
 		name = "GFX_ROCA_Military_inspection"
 		texturefile = "gfx/event_pictures/ROCA_Military_inspection.png"
 	}
+	SpriteType = {
+		name = "GFX_senkaku_jp"
+		texturefile = "gfx/event_pictures/senkaku_jp.png"
+	}
+	SpriteType = {
+		name = "GFX_senkaku_dis"
+		texturefile = "gfx/event_pictures/senkaku_dis.png"
+	}
+	SpriteType = {
+		name = "GFX_senkaku_yes"
+		texturefile = "gfx/event_pictures/senkaku_yes.png"
+	}
+	SpriteType = {
+		name = "SouthChinaSea_dis"
+		texturefile = "gfx/event_pictures/SouthChinaSea_dis.png"
+	}
+	SpriteType = {
+		name = "SouthChinaSea_CN"
+		texturefile = "gfx/event_pictures/SouthChinaSea_CN.png"
+	}
+	SpriteType = {
+		name = "SouthChinaSea_yes"
+		texturefile = "gfx/event_pictures/SouthChinaSea_yes.png"
+	}
+	SpriteType = {
+		name = "Kinmen_exists"
+		texturefile = "gfx/event_pictures/Kinmen_exists.png"
+	}
+	SpriteType = {
+		name = "Kinmen_lost"
+		texturefile = "gfx/event_pictures/Kinmen_lost.png"
+	}
+	SpriteType = {
+		name = "BattleofPenghu_1"
+		texturefile = "gfx/event_pictures/BattleofPenghu_1.png"
+	}
+	SpriteType = {
+		name = "PLAlands1"
+		texturefile = "gfx/event_pictures/PLAlands1.png"
+	}
+	SpriteType = {
+		name = "PLAlands2"
+		texturefile = "gfx/event_pictures/PLAlands2.png"
+	}
+	SpriteType = {
+		name = "PLAKillHK"
+		texturefile = "gfx/event_pictures/PLAKillHK.png"
+	}
+	SpriteType = {
+		name = "transportaircraft"
+		texturefile = "gfx/event_pictures/transportaircraft.png"
+	}
+	SpriteType = {
+		name = "This_is_ROC"
+		texturefile = "gfx/event_pictures/This_is_ROC.png"
+	}
+	SpriteType = {
+		name = "ROC_10_10_National_Day"
+		texturefile = "gfx/event_pictures/ROC_10_10_National_Day.png"
+	}
+	SpriteType = {
+		name = "ROC_228_Memoria_Day"
+		texturefile = "gfx/event_pictures/ROC_228_Memoria_Day.png"
+	}
+	SpriteType = {
+		name = "HanKuoyu_and_TsaiIngwen"
+		texturefile = "gfx/event_pictures/HanKuoyu_and_TsaiIngwen.png"
+	}
+	SpriteType = {
+		name = "PHI_civil_war1"
+		texturefile = "gfx/event_pictures/PHI_civil_war1.png"
+	}
+	SpriteType = {
+		name = "PHI_civil_war2"
+		texturefile = "gfx/event_pictures/PHI_civil_war2.png"
+	}
+	SpriteType = {
+		name = "PHI_civil_war3"
+		texturefile = "gfx/event_pictures/PHI_civil_war3.png"
+	}
+	SpriteType = {
+		name = "PHI_civil_war4"
+		texturefile = "gfx/event_pictures/PHI_civil_war4.png"
+	}
+	SpriteType = {
+		name = "PLAlands3"
+		texturefile = "gfx/event_pictures/PLAlands3.png"
+	}
+	SpriteType = {
+		name = "PLAlands4"
+		texturefile = "gfx/event_pictures/PLAlands4.png"
+	}
+	SpriteType = {
+		name = "ROC_taihai_Hospital"
+		texturefile = "gfx/event_pictures/ROC_taihai_Hospital.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_3"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_3.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_4_1"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_4_1.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_4_2"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_4_2.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_5"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_5.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_6"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_6.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_7"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_7.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_8"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_8.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_9"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_9.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_10"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_10.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_11"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_11.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_12"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_12.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_13"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_13.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_14"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_14.png"
+	}
+	SpriteType = {
+		name = "PLAlands5"
+		texturefile = "gfx/event_pictures/PLAlands5.png"
+	}
+	SpriteType = {
+		name = "Tsaiingwen_1"
+		texturefile = "gfx/event_pictures/Tsaiingwen_1.png"
+	}
+	SpriteType = {
+		name = "Tsaiingwen_2"
+		texturefile = "gfx/event_pictures/Tsaiingwen_2.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_16"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_15.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_17"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_17.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_18"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_18.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_19"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_19.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_20"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_20.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_21"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_21.png"
+	}
+	SpriteType = {
+		name = "ROC_PRC_Event_33"
+		texturefile = "gfx/event_pictures/ROC_PRC_Event_33.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_77"
+		texturefile = "gfx/event_pictures/ROC_Event_77.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_78"
+		texturefile = "gfx/event_pictures/ROC_Event_78.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_78_1"
+		texturefile = "gfx/event_pictures/ROC_Event_78_1.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_78_2"
+		texturefile = "gfx/event_pictures/ROC_Event_78_2.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_79"
+		texturefile = "gfx/event_pictures/ROC_Event_79.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_79_1"
+		texturefile = "gfx/event_pictures/ROC_Event_79_1.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_79_2"
+		texturefile = "gfx/event_pictures/ROC_Event_79_2.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_80"
+		texturefile = "gfx/event_pictures/ROC_Event_80.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_80_1"
+		texturefile = "gfx/event_pictures/ROC_Event_80_1.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_81"
+		texturefile = "gfx/event_pictures/ROC_Event_81.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_82"
+		texturefile = "gfx/event_pictures/ROC_Event_82.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_83"
+		texturefile = "gfx/event_pictures/ROC_Event_83.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_84"
+		texturefile = "gfx/event_pictures/ROC_Event_84.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_85"
+		texturefile = "gfx/event_pictures/ROC_Event_85.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_88"
+		texturefile = "gfx/event_pictures/ROC_Event_88.png"
+	}
+	SpriteType = {
+		name = "ROC_Event_90"
+		texturefile = "gfx/event_pictures/ROC_Event_90.png"
+	}
+	SpriteType = {
+		name = "ROC_PRC_Event_11"
+		texturefile = "gfx/event_pictures/ROC_PRC_Event_11.png"
+	}
 }
