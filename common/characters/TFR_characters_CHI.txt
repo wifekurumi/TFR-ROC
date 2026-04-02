@@ -35,6 +35,7 @@
 		
 		CHI_lin_de_wang_char = { #林德旺
 			country_leader={
+				desc = CHI_lin_de_wang_char_desc
 				ideology = marxism_leninism
 				expire = "1.1.1.1"
 			}
@@ -42,13 +43,15 @@
 
 		CHI_wu_rong_yuan_char = { #吴荣元
 			country_leader={
+				desc = CHI_wu_rong_yuan_char_desc
 				ideology = reformist_socialism
 				expire = "1.1.1.1"
 			}
 		}
 
-		CHI_chen_yi_qi_char = { #陈亦奇
+		CHI_chen_yi_qi_char = { #陈奕齐
 			country_leader={
+				desc = CHI_chen_yi_qi_char_desc
 				ideology = progressivism
 				expire = "1.1.1.1"
 			}
@@ -72,6 +75,7 @@
 				}
 			}
 			country_leader={
+				desc = CHI_chen_chen_hsiang_desc
 				ideology = national_spartanism
 				expire = "1.1.1.1"
 			}
@@ -84,6 +88,7 @@
 				}
 			}
 			country_leader={
+				desc = CHI_lai_ching_te_desc
 				ideology = classical_liberalism
 				expire = "1.1.1.1"
 			}
@@ -96,6 +101,7 @@
 				}
 			}
 			country_leader={
+				desc = CHI_chen_qi_mai_desc
 				ideology = progressivism
 				expire = "1.1.1.1"
 			}
@@ -108,6 +114,7 @@
 				}
 			}
 			country_leader={
+				desc = CHI_zheng_wen_can_desc
 				ideology = centrist
 				expire = "1.1.1.1"
 			}
@@ -120,6 +127,7 @@
 				}
 			}
 			country_leader={
+				desc = CHI_hou_yu_ih_desc
 				ideology = constitutionalist
 				expire = "1.1.1.1"
 			}
@@ -132,6 +140,7 @@
 				}
 			}
 			country_leader={
+				desc = CHI_ko_wen_je_desc
 				ideology = civic_nationalism
 				expire = "1.1.1.1"
 			}
@@ -144,6 +153,7 @@
 				}
 			}
 			country_leader={
+				desc = CHI_zhao_shao_kang_desc
 				ideology = taiwanese_liberal_populism
 				expire = "1.1.1.1"
 			}
@@ -156,6 +166,7 @@
 				}
 			}
 			country_leader={
+				desc = CHI_hung_chi_chang_desc
 				ideology = market_socialism
 				expire = "1.1.1.1"
 			}
@@ -167,6 +178,7 @@
 				}
 			}
 			country_leader={
+				desc = CHI_cai_yanming_desc
 				ideology = market_socialism
 				expire = "1.1.1.1"
 			}
@@ -207,6 +219,7 @@
 				}
 			}
 			country_leader={
+				desc = CHI_Chen_xinxing_desc
 				ideology = maoism
 				expire = "1.1.1.1"
 			}
@@ -218,6 +231,7 @@
 				}
 			}
 			country_leader={
+				desc = CHI_Xu_yongming_desc
 				ideology = social_democracy
 				expire = "1.1.1.1"
 			}
@@ -229,6 +243,7 @@
 				}
 			}
 			country_leader={
+				desc = CHI_Qiu_xianzhi_desc
 				ideology = social_democracy
 				expire = "1.1.1.1"
 			}
@@ -240,6 +255,7 @@
 				}
 			}
 			country_leader={
+				desc = CHI_Gao_yuting_desc
 				ideology = social_democracy
 				expire = "1.1.1.1"
 			}
@@ -251,6 +267,7 @@
 				}
 			}
 			country_leader={
+				desc = CHI_Chen_Jiaohua_desc
 				ideology = social_democracy
 				expire = "1.1.1.1"
 			}
@@ -1189,4 +1206,5 @@ MCU_Ho_Iat_Seng ={
 			expire="1.1.1.1"
 			id=-1
 		}
+	}
 	}
