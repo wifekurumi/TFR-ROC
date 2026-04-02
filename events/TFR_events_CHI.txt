@@ -8,13 +8,13 @@ add_namespace = taiwan_detente
 # 中華民國2020年大選
 country_event = {
 	id = CHI.1
-	title = CHI.1.t
-	desc = CHI.1.d
-	picture = GFX_CHI_2020_Election
-	fire_only_once = no
+	title = taiwan.4.t
+	desc = taiwan.4.d
+	picture = GFX_Taiwan_Election
+	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = CHI.1.a
+		name = taiwan.4.a
 		complete_national_focus = Taiwan_will_win
 		hidden_effect = {
 			add_ideas = CHI_KMT_protests
@@ -53,7 +53,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CHI.1.b
+		name = taiwan.4.b
 		complete_national_focus = Taiwan_safe_people_reach
 		custom_effect_tooltip = CHI_chen_qi_mai_gaoxiong_tt
 		hidden_effect = {
@@ -139,6 +139,7 @@ country_event = {
 		}
 	}
 }
+
 
 #零號病患
 country_event = {

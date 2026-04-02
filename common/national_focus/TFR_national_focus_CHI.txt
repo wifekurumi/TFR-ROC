@@ -53,6 +53,10 @@ focus_tree = {
 				ideology = social_democrat
 				popularity = 0.01
 			}
+			add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = 0.1
+			}
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = "CHII_taiwanese_independence_movement_idea1"
@@ -237,6 +241,10 @@ focus_tree = {
 		cost = 4
 		completion_reward = {
 			add_political_power = 50
+			add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = 0.1
+			}
 			effect_tooltip = {
 				swap_ideas = {
 					add_idea = "CHI_independence_We_are_already_independent_country"
@@ -288,6 +296,10 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = -0.1
+			}
 			add_political_power = 25
 			add_popularity = {
 				ideology = conservative
@@ -444,6 +456,10 @@ focus_tree = {
 		cost = 4
 		completion_reward = {
 			add_political_power = 50
+			add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = -0.1
+			}
 			swap_ideas = {
 				add_idea = "CHI_prc_embargo_idea2"
 				remove_idea = "CHI_prc_embargo_idea1"
@@ -644,18 +660,30 @@ focus_tree = {
 					remove_idea = CHI_taiwanese_independence_movement_idea
 					add_idea = CHI_independence_our_next_step
 				}
+				add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = 0.1
+			}
 				custom_effect_tooltip = tooltip_white_line
 				custom_effect_tooltip = our_next_step_2_tooltip
 				swap_ideas = {
 					remove_idea = Republic_of_China_idea
 					add_idea = Republic_of_China_our_next_step_idea
 				}
+				add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = -0.1
+			}
 			}
 			hidden_effect = {
 				if = {
 					limit = {
 						has_completed_focus = Taiwan_will_win
 					}
+					add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = 0.1
+			}
 					add_to_variable = {
 						var = CHI_taiwanese_independence_core_attack_var
 						value = 0.05
@@ -677,6 +705,10 @@ focus_tree = {
 					limit = {
 						has_completed_focus = Taiwan_safe_people_reach
 					}
+					add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = -0.1
+			}
 					add_to_variable = {
 						var = CHI_Republic_of_China_core_attack_var
 						value = 0.05
@@ -694,6 +726,7 @@ focus_tree = {
 						value = 0.1
 					}
 				}
+				
 			}
 		}
 		relative_position_id = CHI_election
@@ -2632,6 +2665,10 @@ focus_tree = {
 			effect_tooltip = {
 				add_ideas = CHI_NSM_idea_1
 			}
+			add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = -0.1
+			}
 			hidden_effect = {
 				add_dynamic_modifier = {
 					modifier = CHI_NSM_dynamic
@@ -2683,6 +2720,10 @@ focus_tree = {
 		completion_reward = {
 			effect_tooltip = {
 				add_ideas = CHI_Defend_Taiwan_ideas_1
+			}
+			add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = 0.1
 			}
 			hidden_effect = {
 				add_dynamic_modifier = {
@@ -2976,6 +3017,10 @@ PRC = {
 		}
 		completion_reward = {
 			add_ideas = CHI_CHI_from_Taiwan_ideas_1
+			add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = 0.1
+			}
 		}
 	}
 	focus = {
@@ -3160,6 +3205,10 @@ PRC = {
 		completion_reward = {
 			add_war_support = 0.05
 			add_ideas = CHI_AD_idea_1
+			add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = -0.1
+			}
 		}
 	}
 	focus = {
