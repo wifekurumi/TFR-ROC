@@ -352,4 +352,20 @@ spriteTypes = {
 		name = "ROC_CHI_Event_34"
 		texturefile = "gfx/event_pictures/ROC_CHI_Event_34.png"
 	}
+	SpriteType = {
+		name = "ROC_CHI_Event_41"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_41.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_40"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_40.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_39"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_39.png"
+	}
+	SpriteType = {
+		name = "ROC_CHI_Event_38"
+		texturefile = "gfx/event_pictures/ROC_CHI_Event_38.png"
+	}
 }
