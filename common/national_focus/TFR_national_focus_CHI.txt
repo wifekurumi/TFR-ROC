@@ -2574,10 +2574,6 @@ focus_tree = {
 			}
 			custom_effect_tooltip = CHI_taiwan_war_begun_tooltip
 			hidden_effect = {
-				country_event = {
-					id = ROC.40
-					days = 40
-				}
 				if = {
 					limit = {
 						NOT = {
