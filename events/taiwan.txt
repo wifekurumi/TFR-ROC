@@ -3509,7 +3509,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			country_event = {
-				id ROC_CHI.22
+				id = ROC_CHI.22
 				days = 3
 			}
 		}
