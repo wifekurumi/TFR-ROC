@@ -472,6 +472,9 @@ PRC_Chineseslavery = {
 	enable = {
 		always = yes
 	}
+	combat_width_factor = -0.30
+	pocket_penalty = -0.30
+	supply_consumption_factor = -0.30
 	combat_width_factor = -0.10
 	base_fuel_gain = 10
 	base_fuel_gain_factor = 10
