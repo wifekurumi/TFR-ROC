@@ -1257,7 +1257,7 @@ PDTO_taiwan_war = {
 			}
 			if = {
    				limit = {has_idea = CHI_TaiHai_IDEA_3}
-				country_event = {id = ROC_CHI.40}	
+				country_event = {id = ROC.40}	
    			swap_ideas = {
         	remove_idea = CHI_TaiHai_IDEA_3
         	add_idea = CHI_TaiHai_IDEA_4
