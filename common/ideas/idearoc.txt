@@ -1711,11 +1711,6 @@ PRC_TaiHai_IDEA = {
 		production_factory_max_efficiency_factor = 0.20
 		industrial_capacity_factory = 0.20
     }
-	targeted_modifier = {
-	tag = CHI
-	attack_bonus_against = 0.20
-	breakthrough_bonus_against = 0.20
-	}
 	on_add = {
 	PRC = {
 		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
@@ -1756,11 +1751,7 @@ PRC_TaiHai_IDEA_1 = {
 		production_factory_max_efficiency_factor = 0.15
 		industrial_capacity_factory = 0.15
     }
-	targeted_modifier = {
-	tag = CHI
-	attack_bonus_against = 0.15
-	breakthrough_bonus_against = 0.15
-	}
+	
 	on_add = {
 	PRC = {
 		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
@@ -1801,11 +1792,7 @@ PRC_TaiHai_IDEA_2 = {
 		production_factory_max_efficiency_factor = 0.10
 		industrial_capacity_factory = 0.10
     }
-	targeted_modifier = {
-	tag = CHI
-	attack_bonus_against = 0.10
-	breakthrough_bonus_against = 0.10
-	}
+
 	on_add = {
 	PRC = {
 		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
@@ -1846,11 +1833,7 @@ PRC_TaiHai_IDEA_3 = {
 		production_factory_max_efficiency_factor = 0.05
 		industrial_capacity_factory = 0.05
     }
-	targeted_modifier = {
-	tag = CHI
-	attack_bonus_against = 0.05
-	breakthrough_bonus_against = 0.05
-	}
+
 	on_add = {
 	PRC = {
 		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
@@ -2679,21 +2662,7 @@ PRC_TaiHai_IDEA_22 = {
 		academic_development_monthly = -0.20
 		ai_focus_aggressive_factor = 75
     }
-	targeted_modifier = {
-	tag = CHI
-	attack_bonus_against = 0.05
-	breakthrough_bonus_against = 0.05
-	}
-	targeted_modifier = {
-	tag = JAP
-	attack_bonus_against = 0.05
-	breakthrough_bonus_against = 0.05
-	}
-	targeted_modifier = {
-	tag = AST
-	attack_bonus_against = 0.05
-	breakthrough_bonus_against = 0.05
-	}
+	
 	on_add = {
 	PRC = {
 		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
@@ -2742,21 +2711,7 @@ PRC_TaiHai_IDEA_23 = {
 		academic_development_monthly = -0.20
 		ai_focus_aggressive_factor = 100
     }
-	targeted_modifier = {
-	tag = CHI
-	attack_bonus_against = 0.15
-	breakthrough_bonus_against = 0.15
-	}
-	targeted_modifier = {
-	tag = JAP
-	attack_bonus_against = 0.10
-	breakthrough_bonus_against = 0.10
-	}
-	targeted_modifier = {
-	tag = AST
-	attack_bonus_against = 0.10
-	breakthrough_bonus_against = 0.10
-	}
+	
 	on_add = {
 	PRC = {
 		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
@@ -2805,21 +2760,7 @@ PRC_TaiHai_IDEA_24 = {
 		academic_development_monthly = -0.20
 		ai_focus_aggressive_factor = 100
     }
-	targeted_modifier = {
-	tag = CHI
-	attack_bonus_against = 0.30
-	breakthrough_bonus_against = 0.30
-	}
-	targeted_modifier = {
-	tag = JAP
-	attack_bonus_against = 0.10
-	breakthrough_bonus_against = 0.10
-	}
-	targeted_modifier = {
-	tag = AST
-	attack_bonus_against = 0.10
-	breakthrough_bonus_against = 0.10
-	}
+	
 	on_add = {
 	PRC = {
 		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
@@ -2868,21 +2809,7 @@ PRC_TaiHai_IDEA_25 = {
 		academic_development_monthly = -0.20
 		ai_focus_aggressive_factor = 100
     }
-	targeted_modifier = {
-	tag = CHI
-	attack_bonus_against = 0.30
-	breakthrough_bonus_against = 0.30
-	}
-	targeted_modifier = {
-	tag = JAP
-	attack_bonus_against = 0.10
-	breakthrough_bonus_against = 0.10
-	}
-	targeted_modifier = {
-	tag = AST
-	attack_bonus_against = 0.10
-	breakthrough_bonus_against = 0.10
-	}
+	
 	on_add = {
 	PRC = {
 		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
