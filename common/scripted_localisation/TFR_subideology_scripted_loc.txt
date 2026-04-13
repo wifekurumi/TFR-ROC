@@ -2390,12 +2390,6 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = CHI_Shina_Destructionism
-		}
-		localization_key = CHI_Shina_Destructionism
-	}
-	text = {
-		trigger = {
 			has_country_leader_ideology = fascist_xi_jinping_thought
 		}
 		localization_key = PRC_xi_jinping_thought
