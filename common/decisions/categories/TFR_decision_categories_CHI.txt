@@ -56,7 +56,6 @@ CHI_Legislative_Yuan_decisions = {
 }
 
 CHI_test_of_will2 = {
-	意志的試煉
 	icon = GFX_CHI_test_of_will_category_anim
 	picture = GFX_CHI_test_of_will_banner_animated
 	priority = 4

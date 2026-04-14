@@ -52,13 +52,6 @@ mediocre_administrator = { #中庸的管理者
 	}
 }
 
-remember_my_class_next_semester = { #下學期記得修我開的課
-	random = no
-	academic_development_monthly = 0.01 #每月學術增長 +1%
-	ai_will_do = {
-		factor = 1
-	}
-}
 public_health_scholar = { #公共衛生學者
 	random = no
 	monthly_population = 0.02 #月度人口 +2%
