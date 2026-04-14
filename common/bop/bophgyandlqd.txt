@@ -172,6 +172,8 @@ CHI_Identity_dispute = {
 						id = ROC.91
 						dyas = 3
 					}
+				}
+				effect_tooltip = {
 					country_event = {
 						id = ROC.92
 						dyas = 7

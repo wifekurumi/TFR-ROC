@@ -108,7 +108,7 @@ ideas = {
 			}
 		}
 		forward_planning_idea = {
-			picture = CHI_ROC_army
+			picture = CHI_green_energy
 			allowed = {
 				always = no
 			}
