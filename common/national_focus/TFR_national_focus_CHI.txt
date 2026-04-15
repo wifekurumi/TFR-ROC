@@ -377,7 +377,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		# 擴建情報體系  
+		# 擴建情報體系
 		id = Expand_intelligence_system
 		icon = GFX_focus_CHI_Expand_intelligence_system
 		x = -1
@@ -1466,7 +1466,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 	}
 	focus = {
 		# 能源無虞之島

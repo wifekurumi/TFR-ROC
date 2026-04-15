@@ -401,7 +401,6 @@ buildings = {
 			dam_building
 		}
 		spawn_point = dam_spawn
-		damage_factor = -1
 		is_buildable = no
 		need_detection = yes
 		detecting_intel_type = civilian

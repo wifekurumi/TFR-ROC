@@ -123,7 +123,7 @@ ideas = {
 				research_speed_factor = 0.15
 				production_speed_energy_farm_factor = 0.15
 			}
-				on_remove = {
+			on_remove = {
 				add_idaes = CHI_farplanning_infrastructure1
 			}
 		}
@@ -1598,7 +1598,7 @@ ideas = {
 				inflation_monthly = 0.04
 				business_value_factor = -0.15
 				personal_value_factor = -0.10
-				poverty_development_monthly = -0.03				
+				poverty_development_monthly = -0.03
 			}
 		}
 		financial_crisis_2 = {
