@@ -15,9 +15,7 @@ ideas = {
 			}
 			traits = {
 				CHI_minister_DPP				#民進黨黨籍
-				Black_Fireball				#黑火球
-				veteran_politician				#老練政治家
-				witness_of_darkness				#見證黑暗之人
+				Black_Fireball				#電火球
 			}
 		}
 		CHI_Johnny_Chiang_hog = {
