@@ -19,7 +19,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 		remove_effect = {
 		}
-	}	
+	}
 	CHI_DPP_agenda = {
 		icon = GFX_CHI_Legislative_Yuan_decisions_DPP
 		available = {
@@ -43,15 +43,15 @@ CHI_Legislative_Yuan_decisions = {
 		}
 		remove_effect = {
 		}
-	}	
-	CHI_DPP_agenda2 = {
-		icon = GFX_CHI_Legislative_Yuan_decisions_DPP
+	}
+	CHI_Criticizing_the_KMT = {
+		icon = GFX_CHI_Criticizing_the_KMT
 		available = {
 			OR = {
-					NOT = {
-				has_country_flag = KMT_agenda
-				has_country_flag = TPP_agenda
-					}
+				NOT = {
+					has_country_flag = KMT_agenda
+					has_country_flag = TPP_agenda
+				}
 			}
 		}
 		visible = {
@@ -65,56 +65,41 @@ CHI_Legislative_Yuan_decisions = {
 			modifier = {
 				factor = 50
 				CHI_tsai_ing_wen_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 			modifier = {
 				factor = 0
 				CHI_han_kuo_yu_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 		}
 		priority = 60
 		fire_only_once = no
 		cancel_if_not_visible = no
-		cost = 100
+		cost = 30
 		days_remove = 30
 		days_re_enable = 30
 		modifier = {
-			political_power_gain = -0.25
-			stability_weekly_factor = -0.0025
-			war_support_weekly_factor = 0.0025
-			conservative_drift = -0.01
-			communist_drift = -0.01
-			authoritarian_democrat_drift = -0.01
+			power_balance_weekly = 0.01
+			conservative_drift = -0.08
+			communist_drift = -0.08
+			authoritarian_democrat_drift = -0.08
+			stability_weekly = -0.005
 		}
 		complete_effect = {
 			set_country_flag = DPP_agenda
 		}
-		remove_effect = {
-			clr_country_flag = DPP_agenda
-			 effect_tooltip = {
-       			 swap_ideas = {
-         		 remove_idea = CHI_LY_of_the_roc_0
-        		  add_idea = CHI_LY_of_the_roc_1
-        			}
-      			}
-			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.05}
-			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
-			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = -0.005}
-			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = 0.005}
-
-		}
-	}	
-	CHI_DPP_agenda3 = {
-		icon = GFX_CHI_Legislative_Yuan_decisions_DPP
+	}
+	CHI_Upholding_Taiwan_Consensus = {
+		icon = GFX_CHI_Upholding_Taiwan_Consensus
 		available = {
-				OR = {
-					NOT = {
-				has_country_flag = KMT_agenda
-				has_country_flag = TPP_agenda
-					}
+			OR = {
+				NOT = {
+					has_country_flag = KMT_agenda
+					has_country_flag = TPP_agenda
+				}
 			}
 		}
 		visible = {
@@ -128,29 +113,28 @@ CHI_Legislative_Yuan_decisions = {
 			modifier = {
 				factor = 50
 				CHI_tsai_ing_wen_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 			modifier = {
 				factor = 0
 				CHI_han_kuo_yu_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 		}
 		priority = 60
 		fire_only_once = no
 		cancel_if_not_visible = no
-		cost = 100
+		cost = 50
 		days_remove = 30
 		days_re_enable = 30
 		modifier = {
-			political_power_gain = -0.25
-			army_core_defence_factor = 0.005
-			war_support_weekly_factor = 0.0025
-			social_liberal_drift = 0.01
-			market_liberal_drift = 0.01
-			social_democrat_drift = 0.01
+			power_balance_weekly = 0.02
+			social_liberal_drift = 0.05
+			market_liberal_drift = 0.05
+			social_democrat_drift = 0.05
+			stability_weekly = 0.01
 		}
 		complete_effect = {
 			set_country_flag = DPP_agenda
@@ -158,25 +142,26 @@ CHI_Legislative_Yuan_decisions = {
 		remove_effect = {
 			clr_country_flag = DPP_agenda
 			effect_tooltip = {
-       			 swap_ideas = {
-         		 remove_idea = CHI_LY_of_the_roc_0
-        		  add_idea = CHI_LY_of_the_roc_2
-        			}
-      			}
-			add_to_variable = {var = CHI_LFY_army_core_defence_factor value = 0.003}
-			add_to_variable = {var = CHI_LFY_army_core_attack_factor value = 0.003}
-			add_to_variable = {var = CHI_LFY_mobilization_speed value = 0.003}
-		
+				swap_ideas = {
+					remove_idea = CHI_LY_of_the_roc_0
+					add_idea = CHI_LY_of_the_roc_2
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {var = CHI_LFY_army_core_defence_factor value = 0.003}
+				add_to_variable = {var = CHI_LFY_army_core_attack_factor value = 0.003}
+				add_to_variable = {var = CHI_LFY_mobilization_speed value = 0.003}
+			}
 		}
-	}	
-	CHI_DPP_agenda4 = {
-		icon = GFX_CHI_Legislative_Yuan_decisions_DPP
+	}
+	CHI_nuclear_with_green = {
+		icon = GFX_CHI_nuclear_with_green
 		available = {
-				OR = {
-					NOT = {
-				has_country_flag = KMT_agenda
-				has_country_flag = TPP_agenda
-					}
+			OR = {
+				NOT = {
+					has_country_flag = KMT_agenda
+					has_country_flag = TPP_agenda
+				}
 			}
 		}
 		visible = {
@@ -190,25 +175,27 @@ CHI_Legislative_Yuan_decisions = {
 			modifier = {
 				factor = 50
 				CHI_tsai_ing_wen_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 			modifier = {
 				factor = 0
 				CHI_han_kuo_yu_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 		}
 		priority = 60
 		fire_only_once = no
 		cancel_if_not_visible = no
-		cost = 175
+		cost = 75
 		days_remove = 90
 		days_re_enable = 90
 		modifier = {
+			civilian_factory_use = 5
 			expense_growth_factor = 0.05
-			industrial_development_monthly = -0.01
+			farming_development_monthly = 0.005
+			production_speed_energy_farm_factor = 0.15
 		}
 		complete_effect = {
 			set_country_flag = DPP_agenda
@@ -216,81 +203,81 @@ CHI_Legislative_Yuan_decisions = {
 		remove_effect = {
 			clr_country_flag = DPP_agenda
 			effect_tooltip = {
-       			 swap_ideas = {
-         		 remove_idea = CHI_LY_of_the_roc_0
-        		  add_idea = CHI_LY_of_the_roc_3
-        			}
-      			}
-				add_to_variable = {var = CHI_LFY_production_speed_nuclear_reactor_factor value = -0.003}
-				add_to_variable = {var = CHI_LFY_production_speed_energy_farm_factor value = 0.003}
+				swap_ideas = {
+					remove_idea = CHI_LY_of_the_roc_0
+					add_idea = CHI_LY_of_the_roc_3
+				}
+			}
+			add_to_variable = {var = CHI_LFY_production_speed_nuclear_reactor_factor value = -0.025}
+			add_to_variable = {var = CHI_LFY_production_speed_energy_farm_factor value = 0.05}
 			random_list = {
-				25 = {
-					1148 = {
-					add_building_construction = {
-						type = energy_farm
-						level = 1
-						instant_build = yes
-					}
-					remove_building  = {
-						type = nuclear_reactor
-						level = 1
-						instant_build = yes
-					}
-				}
-				}
-				25 = {
-					1150 = {
-					add_building_construction = {
-						type = energy_farm
-						level = 1
-						instant_build = yes
-					}
-					remove_building  = {
-						type = nuclear_reactor
-						level = 1
-						instant_build = yes
-					}
-				}
-				}
-				25 = {
+				75 = {
 					1149 = {
-					add_building_construction = {
-						type = energy_farm
-						level = 1
-						instant_build = yes
-					}
-					remove_building  = {
-						type = nuclear_reactor
-						level = 1
-						instant_build = yes
+						add_building_construction = {
+							type = energy_farm
+							level = 1
+							instant_build = yes
+						}
+						remove_building  = {
+							type = nuclear_reactor
+							level = 1
+							instant_build = yes
+						}
 					}
 				}
+				50 = {
+					1150 = {
+						add_building_construction = {
+							type = energy_farm
+							level = 1
+							instant_build = yes
+						}
+						remove_building  = {
+							type = nuclear_reactor
+							level = 1
+							instant_build = yes
+						}
+					}
 				}
-				25 = {
+				20 = {
 					524 = {
-					add_building_construction = {
-						type = energy_farm
-						level = 1
-						instant_build = yes
-					}
-					remove_building  = {
-						type = nuclear_reactor
-						level = 1
-						instant_build = yes
+						add_building_construction = {
+							type = energy_farm
+							level = 1
+							instant_build = yes
+						}
+						remove_building  = {
+							type = nuclear_reactor
+							level = 1
+							instant_build = yes
+						}
 					}
 				}
+				20 = {
+					1148 = {
+						add_building_construction = {
+							type = energy_farm
+							level = 1
+							instant_build = yes
+						}
+						remove_building  = {
+							type = nuclear_reactor
+							level = 1
+							instant_build = yes
+						}
+					}
 				}
 			}
 		}
-	}	
-	CHI_DPP_agenda5 = {
-		icon = GFX_CHI_Legislative_Yuan_decisions_DPP
+	}
+	CHI_Crack_sell_Taiwan = {
+		icon = GFX_CHI_Crack_sell_Taiwan
 		available = {
-				OR = {
-					NOT = {
-				has_country_flag = KMT_agenda
-				has_country_flag = TPP_agenda
-					}
+			OR = {
+				NOT = {
+					has_country_flag = KMT_agenda
+					has_country_flag = TPP_agenda
+				}
 			}
 		}
 		visible = {
@@ -301,17 +288,17 @@ CHI_Legislative_Yuan_decisions = {
 		}
 		ai_will_do = {
 			base = 10
-		modifier = {
+			modifier = {
 				factor = 50
 				CHI_tsai_ing_wen_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 			modifier = {
 				factor = 0
 				CHI_han_kuo_yu_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 		}
 		priority = 60
@@ -321,33 +308,29 @@ CHI_Legislative_Yuan_decisions = {
 		days_remove = 30
 		days_re_enable = 60
 		modifier = {
-			conservative_drift = -0.01
-			communist_drift = -0.01
-			authoritarian_democrat_drift = -0.01
-			fascist_drift = -0.05
-			national_socialist_drift = -0.05
+			conservative_drift = -0.05
+			communist_drift = -0.05
+			authoritarian_democrat_drift = -0.05
+			fascist_drift = -0.08
+			national_socialist_drift = -0.08
+			stability_weekly = -0.01
 		}
 		complete_effect = {
-			set_country_flag = DPP_agenda
 		}
 		remove_effect = {
 			clr_country_flag = DPP_agenda
-			effect_tooltip = {
-       			 swap_ideas = {
-         		 remove_idea = CHI_LY_of_the_roc_0
-        		  add_idea = CHI_LY_of_the_roc_4
-        			}
-      			}
-				add_to_variable = {var = CHI_LFY_political_power_gain value = 0.25}
-				add_to_variable = {var = CHI_LFY_master_ideology_drift value = 0.001}
-				add_to_variable = {var = opinion_gain_monthly_same_ideology_factor value = 0.003}
-		
+			set_country_flag = DPP_agenda
+			set_temp_variable = {
+				var = CHI_PRC_Infiltration_progress_temp
+				value = -25
+			}
+			PRC_Infiltration_change = yes
 		}
-	}	
+	}
 	CHI_KMT_agenda = {
 		icon = GFX_CHI_Legislative_Yuan_decisions_KMT
 		available = {
-						always = no
+			always = no
 		}
 		visible = {
 			OR = {
@@ -359,14 +342,14 @@ CHI_Legislative_Yuan_decisions = {
 			modifier = {
 				factor = 50
 				CHI_han_kuo_yu_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 			modifier = {
 				factor = 0
 				CHI_tsai_ing_wen_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 		}
 		priority = 40
@@ -378,15 +361,15 @@ CHI_Legislative_Yuan_decisions = {
 		}
 		remove_effect = {
 		}
-	}	
-	CHI_KMT_agenda2 = {
-		icon = GFX_CHI_Legislative_Yuan_decisions_KMT
+	}
+	CHI_Criticizing_the_DPP = {
+		icon = GFX_CHI_Criticizing_the_DPP
 		available = {
 			OR = {
-					NOT = {
-				has_country_flag = DPP_agenda
-				has_country_flag = TPP_agenda
-					}
+				NOT = {
+					has_country_flag = DPP_agenda
+					has_country_flag = TPP_agenda
+				}
 			}
 		}
 		visible = {
@@ -400,14 +383,14 @@ CHI_Legislative_Yuan_decisions = {
 			modifier = {
 				factor = 50
 				CHI_han_kuo_yu_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 			modifier = {
 				factor = 0
 				CHI_tsai_ing_wen_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 		}
 		priority = 40
@@ -428,27 +411,27 @@ CHI_Legislative_Yuan_decisions = {
 		}
 		remove_effect = {
 			clr_country_flag = KMT_agenda
-			 effect_tooltip = {
-       			 swap_ideas = {
-         		 remove_idea = CHI_LY_of_the_roc_0
-        		  add_idea = CHI_LY_of_the_roc_5
-        			}
-      			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_LY_of_the_roc_0
+					add_idea = CHI_LY_of_the_roc_5
+				}
+			}
 			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.05}
 			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
 			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.005}
 			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = -0.005}
-		
+
 		}
-	}	
-	CHI_KMT_agenda3 = {
-		icon = GFX_CHI_Legislative_Yuan_decisions_KMT
+	}
+	CHI_Adhere_1992_Consensus = {
+		icon = GFX_CHI_Adhere_1992_Consensus
 		available = {
 			OR = {
-					NOT = {
-				has_country_flag = DPP_agenda
-				has_country_flag = TPP_agenda
-					}
+				NOT = {
+					has_country_flag = DPP_agenda
+					has_country_flag = TPP_agenda
+				}
 			}
 		}
 		visible = {
@@ -461,14 +444,14 @@ CHI_Legislative_Yuan_decisions = {
 			modifier = {
 				factor = 50
 				CHI_han_kuo_yu_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 			modifier = {
 				factor = 0
 				CHI_tsai_ing_wen_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 		}
 		priority = 40
@@ -496,27 +479,27 @@ CHI_Legislative_Yuan_decisions = {
 		}
 		remove_effect = {
 			clr_country_flag = KMT_agenda
-			 effect_tooltip = {
-       			 swap_ideas = {
-         		 remove_idea = CHI_LY_of_the_roc_0
-        		  add_idea = CHI_LY_of_the_roc_6
-        			}
-      			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_LY_of_the_roc_0
+					add_idea = CHI_LY_of_the_roc_6
+				}
+			}
 			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.25}
 			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.003}
 			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.001}
 			add_to_variable = {var = CHI_LFY_CHI_LFY_society_development_monthly value = 0.01}
-			
+
 		}
-	}	
-	CHI_KMT_agenda4 = {
-		icon = GFX_CHI_Legislative_Yuan_decisions_KMT
+	}
+	CHI_Continued_nuclear_energy = {
+		icon = GFX_CHI_Continued_nuclear_energy
 		available = {
 			OR = {
-					NOT = {
-				has_country_flag = DPP_agenda
-				has_country_flag = TPP_agenda
-					}
+				NOT = {
+					has_country_flag = DPP_agenda
+					has_country_flag = TPP_agenda
+				}
 			}
 		}
 		visible = {
@@ -530,14 +513,14 @@ CHI_Legislative_Yuan_decisions = {
 			modifier = {
 				factor = 50
 				CHI_han_kuo_yu_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 			modifier = {
 				factor = 0
 				CHI_tsai_ing_wen_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 		}
 		priority = 40
@@ -555,64 +538,64 @@ CHI_Legislative_Yuan_decisions = {
 		}
 		remove_effect = {
 			clr_country_flag = KMT_agenda
-			 effect_tooltip = {
-       			 swap_ideas = {
-         		 remove_idea = CHI_LY_of_the_roc_0
-        		  add_idea = CHI_LY_of_the_roc_7
-        			}
-      			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_LY_of_the_roc_0
+					add_idea = CHI_LY_of_the_roc_7
+				}
+			}
 			add_to_variable = {var = CHI_LFY_industrial_capacity_factory value = 0.1}
 			add_to_variable = {var = CHI_LFY_production_speed_nuclear_reactor_factor value = 0.1}
 			add_to_variable = {var = CHI_LFY_production_speed_power_plant_factor value = 0.1}
 			random_list = {
 				25 = {
 					1148 = {
-					add_building_construction = {
-						type = nuclear_reactor
-						level = 1
-						instant_build = yes
+						add_building_construction = {
+							type = nuclear_reactor
+							level = 1
+							instant_build = yes
+						}
+
 					}
-					
-				}
 				}
 				25 = {
 					1150 = {
-					add_building_construction = {
-						type = nuclear_reactor
-						level = 1
-						instant_build = yes
+						add_building_construction = {
+							type = nuclear_reactor
+							level = 1
+							instant_build = yes
+						}
 					}
-				}
 				}
 				25 = {
 					1149 = {
-					add_building_construction = {
-						type = nuclear_reactor
-						level = 1
-						instant_build = yes
+						add_building_construction = {
+							type = nuclear_reactor
+							level = 1
+							instant_build = yes
+						}
 					}
-				}
 				}
 				25 = {
 					524 = {
-					add_building_construction = {
-						type = nuclear_reactor
-						level = 1
-						instant_build = yes
+						add_building_construction = {
+							type = nuclear_reactor
+							level = 1
+							instant_build = yes
+						}
 					}
-				}
 				}
 			}
 		}
-	}	
-	CHI_KMT_agenda5 = {
-		icon = GFX_CHI_Legislative_Yuan_decisions_KMT
+	}
+	CHI_Maintaining_social_stability = {
+		icon = GFX_CHI_Maintaining_social_stability
 		available = {
 			OR = {
-					NOT = {
-				has_country_flag = DPP_agenda
-				has_country_flag = TPP_agenda
-					}
+				NOT = {
+					has_country_flag = DPP_agenda
+					has_country_flag = TPP_agenda
+				}
 			}
 		}
 		visible = {
@@ -623,17 +606,17 @@ CHI_Legislative_Yuan_decisions = {
 		}
 		ai_will_do = {
 			base = 10
-		modifier = {
+			modifier = {
 				factor = 50
 				CHI_han_kuo_yu_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 			modifier = {
 				factor = 0
 				CHI_tsai_ing_wen_char = {
-						is_country_leader = yes
-					}
+					is_country_leader = yes
+				}
 			}
 		}
 		priority = 40
@@ -660,22 +643,22 @@ CHI_Legislative_Yuan_decisions = {
 		}
 		remove_effect = {
 			clr_country_flag = KMT_agenda
-			 effect_tooltip = {
-       			 swap_ideas = {
-         		 remove_idea = CHI_LY_of_the_roc_0
-        		  add_idea = CHI_LY_of_the_roc_8
-        			}
-      			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_LY_of_the_roc_0
+					add_idea = CHI_LY_of_the_roc_8
+				}
+			}
 			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.005}
 			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.25}
 			add_to_variable = {var = CHI_LFY_consumer_goods_factor value = 0.01}
-			
+
 		}
-	}	
+	}
 	CHI_TPP_agenda = {
 		icon = GFX_CHI_Legislative_Yuan_decisions_TPP
 		available = {
-						always = no
+			always = no
 		}
 		visible = {
 			OR = {
@@ -695,15 +678,15 @@ CHI_Legislative_Yuan_decisions = {
 		}
 		remove_effect = {
 		}
-	}	
-	CHI_TPP_agenda2 = {
-		icon = GFX_CHI_Legislative_Yuan_decisions_TPP
+	}
+	CHI_Making_deals_with_KMT = {
+		icon = GFX_CHI_Making_deals_with_KMT
 		available = {
 			OR = {
-					NOT = {
-				has_country_flag = KMT_agenda
-				has_country_flag = DPP_agenda
-					}
+				NOT = {
+					has_country_flag = KMT_agenda
+					has_country_flag = DPP_agenda
+				}
 			}
 		}
 		visible = {
@@ -722,34 +705,34 @@ CHI_Legislative_Yuan_decisions = {
 		days_remove = 45
 		days_re_enable = 45
 		modifier = {
-			
+
 		}
 		complete_effect = {
 			set_country_flag = TPP_agenda
 		}
 		remove_effect = {
 			clr_country_flag = TPP_agenda
-			 effect_tooltip = {
-       			 swap_ideas = {
-         		 remove_idea = CHI_LY_of_the_roc_0
-        		  add_idea = CHI_LY_of_the_roc_5
-        			}
-      			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_LY_of_the_roc_0
+					add_idea = CHI_LY_of_the_roc_5
+				}
+			}
 			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.05}
 			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
 			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.005}
 			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = -0.005}
-			
+
 		}
-	}	
-	CHI_TPP_agenda3 = {
-		icon = GFX_CHI_Legislative_Yuan_decisions_TPP
+	}
+	CHI_Making_deals_with_DPP = {
+		icon = GFX_CHI_Making_deals_with_DPP
 		available = {
 			OR = {
-					NOT = {
-				has_country_flag = KMT_agenda
-				has_country_flag = DPP_agenda
-					}
+				NOT = {
+					has_country_flag = KMT_agenda
+					has_country_flag = DPP_agenda
+				}
 			}
 		}
 		visible = {
@@ -768,34 +751,34 @@ CHI_Legislative_Yuan_decisions = {
 		days_remove = 45
 		days_re_enable = 45
 		modifier = {
-			
+
 		}
 		complete_effect = {
 			set_country_flag = TPP_agenda
 		}
 		remove_effect = {
 			clr_country_flag = TPP_agenda
-			 effect_tooltip = {
-       			 swap_ideas = {
-         		 remove_idea = CHI_LY_of_the_roc_0
-        		  add_idea = CHI_LY_of_the_roc_1
-        			}
-      			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_LY_of_the_roc_0
+					add_idea = CHI_LY_of_the_roc_1
+				}
+			}
 			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.05}
 			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
 			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = -0.005}
 			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = 0.005}
-				
+
 		}
-	}	
-	CHI_TPP_agenda4 = {
-		icon = GFX_CHI_Legislative_Yuan_decisions_TPP
+	}
+	CHI_Increase_enterprise_construction = {
+		icon = GFX_CHI_Increase_enterprise_construction
 		available = {
 			OR = {
-					NOT = {
-				has_country_flag = KMT_agenda
-				has_country_flag = DPP_agenda
-					}
+				NOT = {
+					has_country_flag = KMT_agenda
+					has_country_flag = DPP_agenda
+				}
 			}
 		}
 		visible = {
@@ -814,19 +797,19 @@ CHI_Legislative_Yuan_decisions = {
 		days_remove = 80
 		days_re_enable = 80
 		modifier = {
-			
+
 		}
 		complete_effect = {
 			set_country_flag = TPP_agenda
 		}
 		remove_effect = {
 			clr_country_flag = TPP_agenda
-			 effect_tooltip = {
-       			 swap_ideas = {
-         		 remove_idea = CHI_LY_of_the_roc_0
-        		  add_idea = CHI_LY_of_the_roc_9
-        			}
-      			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_LY_of_the_roc_0
+					add_idea = CHI_LY_of_the_roc_9
+				}
+			}
 			add_to_variable = {var = CHI_LFY_society_development_monthly value = 0.003}
 			add_to_variable = {var = CHI_LFY_production_speed_office_park_factor value = 0.01}
 			add_to_variable = {var = business_value_factor value = 0.006}
@@ -834,52 +817,52 @@ CHI_Legislative_Yuan_decisions = {
 			random_list = {
 				25 = {
 					1148 = {
-					add_building_construction = {
-						type = office_park
-						level = 1
-						instant_build = yes
+						add_building_construction = {
+							type = office_park
+							level = 1
+							instant_build = yes
+						}
+
 					}
-					
-				}
 				}
 				25 = {
 					1150 = {
-					add_building_construction = {
-						type = office_park
-						level = 1
-						instant_build = yes
+						add_building_construction = {
+							type = office_park
+							level = 1
+							instant_build = yes
+						}
 					}
-				}
 				}
 				25 = {
 					1149 = {
-					add_building_construction = {
-						type = office_park
-						level = 1
-						instant_build = yes
+						add_building_construction = {
+							type = office_park
+							level = 1
+							instant_build = yes
+						}
 					}
-				}
 				}
 				25 = {
 					524 = {
-					add_building_construction = {
-						type = office_park
-						level = 1
-						instant_build = yes
+						add_building_construction = {
+							type = office_park
+							level = 1
+							instant_build = yes
+						}
 					}
-				}
 				}
 			}
 		}
-	}	
-	CHI_TPP_agenda5 = {
-		icon = GFX_CHI_Legislative_Yuan_decisions_TPP
+	}
+	CHI_Deepen_civil_rights = {
+		icon = GFX_CHI_Deepen_civil_rights
 		available = {
 			OR = {
-					NOT = {
-				has_country_flag = KMT_agenda
-				has_country_flag = DPP_agenda
-					}
+				NOT = {
+					has_country_flag = KMT_agenda
+					has_country_flag = DPP_agenda
+				}
 			}
 		}
 		visible = {
@@ -909,20 +892,20 @@ CHI_Legislative_Yuan_decisions = {
 		}
 		remove_effect = {
 			clr_country_flag = TPP_agenda
-			 effect_tooltip = {
-       			 swap_ideas = {
-         		 remove_idea = CHI_LY_of_the_roc_0
-        		  add_idea = CHI_LY_of_the_roc_10
-        			}
-      			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_LY_of_the_roc_0
+					add_idea = CHI_LY_of_the_roc_10
+				}
+			}
 			add_to_variable = {var = CHI_LFY_personal_value_factor value = 0.002}
 			add_to_variable = {var = CHI_LFY_business_value_factor value = 0.002}
 			add_to_variable = {var = CHI_LFY_income_growth_factor value = 0.002}
 			add_to_variable = {var = CHI_LFY_poverty_development_monthly value = 0.001}
 			add_to_variable = {var = CHI_LFY_society_development_monthly value = 0.001}
-			
+
 		}
-	}	
+	}
 }
 
 
@@ -931,2804 +914,2805 @@ CHI_Legislative_Yuan_decisions = {
 
 #################################################################
 
-	CHI_test_of_will2 = {
-		CHI_test_of_will_blank = {
-			icon = GFX_CHI_test_of_will_blank_animated
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				always = no
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			priority = 51
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 1 }
-					check_variable = { CHI_will_visible = 2 }
-					check_variable = { CHI_will_visible = 3 }
-					check_variable = { CHI_will_visible = 4 }
-					check_variable = { CHI_will_visible = 5 }
-					check_variable = { CHI_will_visible = 6 }
-					#check_variable = { CHI_test_of_will_blank_variable < 4 }
-				}
-			}
+CHI_test_of_will2 = {
+	CHI_test_of_will_blank = {
+		icon = GFX_CHI_test_of_will_blank_animated
+		allowed = {
+			original_tag = CHI
 		}
-		CHI_JAPANDAST_Military_aid = {
-			icon = GFX_CHI_test_of_will_rise_up_taiwan
-			allowed = { 
-				tag = CHI
-			}
-			activation = {
-				always = no
-			}
-			available = { 
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			hidden_trigger = {
 				is_ally_with = PRC
 			}
-			visible = {
-				has_completed_focus = CHI_Requesting_material_assistance_from_allies
-				has_global_flag = PRC_ongoing_taiwan_war
-				has_country_flag = CHI_taihai_war
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			priority = 50
-			is_good = no
-			selectable_mission = no
-			days_mission_timeout = 30
-			timeout_effect = {
-				random_list = {
-					30 = {
-						country_event = {
-							id = ROC.35
-						}
-					}
-					70 = {
-						country_event = {
-							id = ROC.34
-						}
-					}
-				}
-				activate_mission = CHI_JAPANDAST_Military_aid
-			}
-			complete_effect = {
+		}
+		priority = 51
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 1 }
+				check_variable = { CHI_will_visible = 2 }
+				check_variable = { CHI_will_visible = 3 }
+				check_variable = { CHI_will_visible = 4 }
+				check_variable = { CHI_will_visible = 5 }
+				check_variable = { CHI_will_visible = 6 }
+				#check_variable = { CHI_test_of_will_blank_variable < 4 }
 			}
 		}
-		CHI_test_of_will_second_blank = {
-			icon = GFX_CHI_test_of_will_blank_animated
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				always = no
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			visible = {
-				OR = {
-					check_variable = { CHI_test_of_will_blank_second_variable < 4 }
-				}
+	}
+	CHI_JAPANDAST_Military_aid = {
+		icon = GFX_CHI_test_of_will_rise_up_taiwan
+		allowed = {
+			tag = CHI
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			is_ally_with = PRC
+		}
+		visible = {
+			has_completed_focus = CHI_Requesting_material_assistance_from_allies
+			has_global_flag = PRC_ongoing_taiwan_war
+			has_country_flag = CHI_taihai_war
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
 			}
 		}
-		######進口
-		CHI_import_korean_weapons = {
-			icon = GFX_CHI_test_of_will_korean_arms
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = KOR
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
+		priority = 50
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 30
+		timeout_effect = {
+			random_list = {
+				30 = {
+					country_event = {
+						id = ROC.35
+					}
+				}
+				70 = {
+					country_event = {
+						id = ROC.34
+					}
 				}
 			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
+			activate_mission = CHI_JAPANDAST_Military_aid
+		}
+		complete_effect = {
+		}
+	}
+	CHI_test_of_will_second_blank = {
+		icon = GFX_CHI_test_of_will_blank_animated
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
 			}
-			cost = 100
-			days_remove = 180
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_test_of_will_blank_second_variable < 4 }
+			}
+		}
+	}
+	######進口
+	CHI_import_korean_weapons = {
+		icon = GFX_CHI_test_of_will_korean_arms
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = KOR
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			base = 0
 			modifier = {
-				misc_expense = 2
+				add = 30
+				has_political_power > 150
 			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
+		}
+		cost = 100
+		days_remove = 180
+		modifier = {
+			misc_expense = 2
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+				}
+				add_opinion_modifier = {
+					target = KOR
+					modifier = CHI_korean_valuable_partners
+				}
+				KOR = {
 					add_opinion_modifier = {
-						target = KOR
+						target = CHI
 						modifier = CHI_korean_valuable_partners
 					}
-					KOR = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 650 producer = KOR }
-				add_equipment_to_stockpile = {type = support_equipment amount = 100 producer = KOR }
-				add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 75 producer = KOR }
-				add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 50 producer = KOR }
-				add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 50 producer = KOR }
-				hidden_effect = {
-					KOR = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 2
-						}
-						add_income_with_inflation = yes
-					}
 				}
 			}
 		}
-		
-		CHI_import_korean_vehicles = {
-			icon = GFX_CHI_test_of_will_korean_vehicles
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = KOR
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			cost = 110
-			days_remove = 180
-			modifier = {
-				misc_expense = 4
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = KOR
-						modifier = CHI_korean_valuable_partners
-					}
-					KOR = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 100 producer = KOR }
-				add_equipment_to_stockpile = {type = spaa_equipment amount = 100 producer = KOR }
-				add_equipment_to_stockpile = {type = light_mechanized_equipment_1 amount = 75 producer = KOR }
-				add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_1 amount = 75 producer = KOR }
-				hidden_effect = {
-					KOR = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 4
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		
-		CHI_import_korean_armoured_vehicles = {
-			icon = GFX_CHI_test_of_will_korean_armoured_vehicles
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = KOR
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			cost = 120
-			days_remove = 180
-			modifier = {
-				misc_expense = 8
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = KOR
-						modifier = CHI_korean_valuable_partners
-					}
-					KOR = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = mechanized_equipment_1 amount = 125 producer = KOR }
-				add_equipment_to_stockpile = {type = light_tank_equipment_1 amount = 50 producer = KOR }
-				add_equipment_to_stockpile = {type = modern_tank_equipment_1 amount = 50 producer = KOR }
-				hidden_effect = {
-					KOR = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 8
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		CHI_import_korean_aviation = {
-			icon = GFX_CHI_test_of_will_korean_armoured_vehicles
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = KOR
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			cost = 130
-			days_remove = 180
-			modifier = {
-				misc_expense = 10
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = KOR
-						modifier = CHI_korean_valuable_partners
-					}
-					KOR = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = attack_helicopter_equipment_1 amount = 20 producer = KOR }
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					add_equipment_to_stockpile = {
-						type = small_plane_airframe_1
-						variant_name = "F-16V Viper"
-						amount = 40
-						producer = KOR
-					}									
-				}
-				else = {
-					add_equipment_to_stockpile = {
-						type = fighter_equipment
-						amount = 40
-						producer = KOR
-					}
-				}
-				hidden_effect = {
-					KOR = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 10
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		CHI_import_JAP_weapons = {
-			icon = GFX_CHI_test_of_will_korean_arms
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = JAP
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			visible = {
-				NOT = {
-					has_global_flag = PRC_ongoing_taiwan_war
-				}
-			}
-			cost = 100
-			days_remove = 180
-			modifier = {
-				misc_expense = 2
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = JAP
-						modifier = CHI_korean_valuable_partners
-					}
-					JAP = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 650 producer = JAP }
-				add_equipment_to_stockpile = {type = support_equipment amount = 100 producer = JAP }
-				add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 75 producer = JAP }
-				add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 50 producer = JAP }
-				add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 50 producer = JAP }
-				hidden_effect = {
-					JAP = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 2
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		CHI_import_JAP_vehicles = {
-			icon = GFX_CHI_test_of_will_korean_vehicles
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = JAP
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			visible = {
-				NOT = {
-					has_global_flag = PRC_ongoing_taiwan_war
-				}
-			}
-			cost = 110
-			days_remove = 180
-			modifier = {
-				misc_expense = 4
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = JAP
-						modifier = CHI_korean_valuable_partners
-					}
-					JAP = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 100 producer = JAP }
-				add_equipment_to_stockpile = {type = spaa_equipment amount = 100 producer = JAP }
-				add_equipment_to_stockpile = {type = light_mechanized_equipment_1 amount = 75 producer = JAP }
-				add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_1 amount = 75 producer = JAP }
-				hidden_effect = {
-					JAP = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 4
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		CHI_import_JAP_armoured_vehicles = {
-			icon = GFX_CHI_test_of_will_korean_armoured_vehicles
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = JAP
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			visible = {
-				NOT = {
-					has_global_flag = PRC_ongoing_taiwan_war
-				}
-			}
-			cost = 120
-			days_remove = 180
-			modifier = {
-				misc_expense = 8
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = JAP
-						modifier = CHI_korean_valuable_partners
-					}
-					JAP = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = mechanized_equipment_1 amount = 125 producer = JAP }
-				add_equipment_to_stockpile = {type = light_tank_equipment_1 amount = 50 producer = JAP }
-				add_equipment_to_stockpile = {type = modern_tank_equipment_1 amount = 50 producer = JAP }
-				hidden_effect = {
-					JAP = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 8
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		CHI_import_JAP_aviation = {
-			icon = GFX_CHI_test_of_will_korean_armoured_vehicles
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = JAP
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			visible = {
-				NOT = {
-					has_global_flag = PRC_ongoing_taiwan_war
-				}
-			}
-			cost = 130
-			days_remove = 180
-			modifier = {
-				misc_expense = 10
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = JAP
-						modifier = CHI_korean_valuable_partners
-					}
-					JAP = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = attack_helicopter_equipment_1 amount = 20 producer = JAP }
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					add_equipment_to_stockpile = {
-						type = small_plane_airframe_1
-						variant_name = "F-16V Viper"
-						amount = 40
-						producer = JAP
-					}									
-				}
-				else = {
-					add_equipment_to_stockpile = {
-						type = fighter_equipment
-						amount = 40
-						producer = JAP
-					}
-				}
-				hidden_effect = {
-					JAP = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 10
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		CHI_import_AST_vehicles = {
-			icon = GFX_CHI_test_of_will_korean_vehicles
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = AST
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			visible = {
-				NOT = {
-					has_global_flag = PRC_ongoing_taiwan_war
-				}
-			}
-			cost = 110
-			days_remove = 180
-			modifier = {
-				misc_expense = 4
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = AST
-						modifier = CHI_korean_valuable_partners
-					}
-					AST = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 100 producer = AST }
-				add_equipment_to_stockpile = {type = spaa_equipment amount = 100 producer = AST }
-				add_equipment_to_stockpile = {type = light_mechanized_equipment_1 amount = 75 producer = AST }
-				add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_1 amount = 75 producer = AST }
-				hidden_effect = {
-					AST = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 4
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		CHI_import_AST_armoured_vehicles = {
-			icon = GFX_CHI_test_of_will_korean_armoured_vehicles
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = AST
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			visible = {
-				NOT = {
-					has_global_flag = PRC_ongoing_taiwan_war
-				}
-			}
-			cost = 120
-			days_remove = 180
-			modifier = {
-				misc_expense = 8
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = AST
-						modifier = CHI_korean_valuable_partners
-					}
-					AST = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = mechanized_equipment_1 amount = 125 producer = AST }
-				add_equipment_to_stockpile = {type = light_tank_equipment_1 amount = 50 producer = AST }
-				add_equipment_to_stockpile = {type = modern_tank_equipment_1 amount = 50 producer = AST }
-				hidden_effect = {
-					AST = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 8
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		CHI_import_AST_aviation = {
-			icon = GFX_CHI_test_of_will_korean_armoured_vehicles
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = AST
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			visible = {
-				NOT = {
-					has_global_flag = PRC_ongoing_taiwan_war
-				}
-			}
-			cost = 130
-			days_remove = 180
-			modifier = {
-				misc_expense = 10
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = AST
-						modifier = CHI_korean_valuable_partners
-					}
-					AST = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = attack_helicopter_equipment_1 amount = 20 producer = AST }
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					add_equipment_to_stockpile = {
-						type = small_plane_airframe_1
-						variant_name = "F-16V Viper"
-						amount = 40
-						producer = AST
-					}									
-				}
-				else = {
-					add_equipment_to_stockpile = {
-						type = fighter_equipment
-						amount = 40
-						producer = AST
-					}
-				}
-				hidden_effect = {
-					AST = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 10
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		CHI_import_AST_weapons = {
-			icon = GFX_CHI_test_of_will_korean_arms
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = AST
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			visible = {
-				NOT = {
-					has_global_flag = PRC_ongoing_taiwan_war
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			cost = 100
-			days_remove = 180
-			modifier = {
-				misc_expense = 2
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = AST
-						modifier = CHI_korean_valuable_partners
-					}
-					AST = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 650 producer = AST }
-				add_equipment_to_stockpile = {type = support_equipment amount = 100 producer = AST }
-				add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 75 producer = AST }
-				add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 50 producer = AST }
-				add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 50 producer = AST }
-				hidden_effect = {
-					AST = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 2
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		CHI_import_USA_vehicles = {
-			icon = GFX_CHI_test_of_will_korean_vehicles
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = USA
-			}
-			visible = {
-				country_exists = USA
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			cost = 110
-			days_remove = 180
-			modifier = {
-				misc_expense = 4
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = USA
-						modifier = CHI_korean_valuable_partners
-					}
-					USA = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 100 producer = USA }
-				add_equipment_to_stockpile = {type = spaa_equipment amount = 100 producer = USA }
-				add_equipment_to_stockpile = {type = light_mechanized_equipment_1 amount = 75 producer = USA }
-				add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_1 amount = 75 producer = USA }
-				hidden_effect = {
-					USA = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 4
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		CHI_import_USA_armoured_vehicles = {
-			icon = GFX_CHI_test_of_will_korean_vehicles
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = USA
-			}
-			visible = {
-				country_exists = USA
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			cost = 120
-			days_remove = 180
-			modifier = {
-				misc_expense = 8
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = USA
-						modifier = CHI_korean_valuable_partners
-					}
-					USA = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = mechanized_equipment_1 amount = 125 producer = USA }
-				add_equipment_to_stockpile = {type = light_tank_equipment_1 amount = 50 producer = USA }
-				add_equipment_to_stockpile = {type = modern_tank_equipment_1 amount = 50 producer = USA }
-				hidden_effect = {
-					USA = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 8
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		CHI_import_USA_aviation = {
-			icon = GFX_CHI_test_of_will_korean_armoured_vehicles
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = USA
-			}
-			visible = {
-				country_exists = USA
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			cost = 130
-			days_remove = 180
-			modifier = {
-				misc_expense = 10
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = USA
-						modifier = CHI_korean_valuable_partners
-					}
-					USA = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = attack_helicopter_equipment_1 amount = 20 producer = USA }
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					add_equipment_to_stockpile = {
-						type = small_plane_airframe_1
-						variant_name = "F-16V Viper"
-						amount = 40
-						producer = USA
-					}									
-				}
-				else = {
-					add_equipment_to_stockpile = {
-						type = fighter_equipment
-						amount = 40
-						producer = USA
-					}
-				}
-				hidden_effect = {
-					USA = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 10
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		CHI_import_USA_weapons = {
-			icon = GFX_CHI_test_of_will_korean_arms
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				country_exists = USA
-			}
-			visible = {
-				country_exists = USA
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 30
-					has_political_power > 150
-				}
-			}
-			cost = 100
-			days_remove = 180
-			modifier = {
-				misc_expense = 2
-			}
-			complete_effect = {
-				if = {
-					limit = { 
-						NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
-					}
-					add_opinion_modifier = {
-						target = USA
-						modifier = CHI_korean_valuable_partners
-					}
-					USA = {
-						add_opinion_modifier = {
-							target = CHI
-							modifier = CHI_korean_valuable_partners
-						}	
-					}
-				}
-			}
-			remove_effect = {
-				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 650 producer = USA }
-				add_equipment_to_stockpile = {type = support_equipment amount = 100 producer = USA }
-				add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 75 producer = USA }
-				add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 50 producer = USA }
-				add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 50 producer = USA }
-				hidden_effect = {
-					USA = { 
-						set_temp_variable = {
-							var = income_var_temp
-							value = 2
-						}
-						add_income_with_inflation = yes
-					}
-				}
-			}
-		}
-		#####
-
-		
-		CHI_request_pdto_fuel_shipments = {
-			icon = GFX_CHI_test_of_will_rise_up_taiwan
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				has_war = yes
-				has_country_flag = CHI_request_pdto_fuel_flag
-			}
-			visible = {
-				has_war = yes
-				is_ally_with = JAP
-				NOT = { has_idea = CHI_pdto_fuel_shipments_idea }
-				has_country_flag = CHI_request_pdto_fuel_flag
-				OR = {
-					is_ai = yes
-				}
-			}
-			ai_will_do = {
-				factor = 100
-			}
-			custom_cost_trigger = { command_power > 49 }
-			custom_cost_text = CHI_decision_cost_50_command_power
-			complete_effect = {
-				add_fuel = 30000
-				add_timed_idea = {
-					idea = CHI_pdto_fuel_shipments_idea
-					days = 420
-				}
-				set_temp_variable = {
-					var = income_var_temp
-					value = -50
-				}
-				add_income_with_inflation = yes
-				JAP = {
+		remove_effect = {
+			add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 650 producer = KOR }
+			add_equipment_to_stockpile = {type = support_equipment amount = 100 producer = KOR }
+			add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 75 producer = KOR }
+			add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 50 producer = KOR }
+			add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 50 producer = KOR }
+			hidden_effect = {
+				KOR = {
 					set_temp_variable = {
 						var = income_var_temp
-						value = 50
+						value = 2
 					}
 					add_income_with_inflation = yes
 				}
-				hidden_effect = {
-					add_command_power  = -50
-				}
 			}
 		}
-		
-		CHI_rise_up_taiwan_agitation = {
-			icon = GFX_CHI_test_of_will_rise_up_taiwan
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				has_war = yes
-			}
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 1 }
-					check_variable = { CHI_will_visible = 2 }
-					check_variable = { CHI_will_visible = 3 }
-					check_variable = { CHI_will_visible = 4 }
-					check_variable = { CHI_will_visible = 5 }
-					check_variable = { CHI_will_visible = 6 }
-					is_ai = yes
-				}
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			custom_cost_trigger = { command_power > 49 }
-			custom_cost_text = CHI_decision_cost_50_command_power
-			days_remove = 90
-			days_re_enable = 14
-			modifier = {
-				defence = 0.05
-				army_org_factor = 0.1
-				army_org_regain = 0.1
-				cas_damage_reduction = 0.15
-			}
-			complete_effect = {
-				hidden_effect = {
-					add_command_power  = -50
-				}
-			}
-		}
-		
-		CHI_damage_zkaohsiung_port = {
-			icon = GFX_CHI_test_of_will_port_damaging
-			allowed = {
-				original_tag = CHI
-			}
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 3 }
-					is_ai = yes
-				}
-			}
-			available = {
-				NOT = { controls_province = 12068 }
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 100
-			}
-			priority = 50
-			custom_cost_trigger = { command_power > 9 }
-			custom_cost_text = CHI_decision_cost_10_command_power
-			days_re_enable = 200
-			complete_effect = {
-				1150 = {
-					damage_building = {
-						type = naval_base
-						damage = 10
-						repair_speed_modifier = -0.8
-						province = 12068
-					}
-				}
-				hidden_effect = {
-					add_command_power = -10
-				}
-			}
-		}
-		
-		
-		
-		CHI_damage_taichung_port = {
-			icon = GFX_CHI_test_of_will_port_damaging
-			allowed = {
-				original_tag = CHI
-			}
-			visible = {
-				OR = {
-					is_ai = yes
-					check_variable = { CHI_will_visible = 2 }
-				}
-			}
-			available = {
-				NOT = { controls_province = 13968 }
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 100
-			}
-			priority = 50
-			custom_cost_trigger = { command_power > 9 }
-			custom_cost_text = CHI_decision_cost_10_command_power
-			days_re_enable = 200
-			complete_effect = {
-				1149 = {
-					damage_building = {
-						type = naval_base
-						damage = 10
-						repair_speed_modifier = -0.8
-						province = 13968
-					}
-				}
-				hidden_effect = {
-					add_command_power = -10
-				}
-			}
-		}
-		
-		CHI_damage_taoyuan_port = {
-			icon = GFX_CHI_test_of_will_port_damaging
-			allowed = {
-				original_tag = CHI
-			}
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 4 }
-					is_ai = yes
-				}
-			}
-			available = {
-				NOT = { controls_province = 13961 }
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 100
-			}
-			priority = 50
-			custom_cost_trigger = { command_power > 9 }
-			custom_cost_text = CHI_decision_cost_10_command_power
-			days_re_enable = 200
-			complete_effect = {
-				1148 = {
-					damage_building = {
-						type = naval_base
-						damage = 10
-						repair_speed_modifier = -0.8
-						province = 13961
-					}
-				}
-				hidden_effect = {
-					add_command_power = -10
-				}
-			}
-		}
-		
-		CHI_damage_taipei_port = {
-			icon = GFX_CHI_test_of_will_port_damaging
-			allowed = {
-				original_tag = CHI
-			}
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 4 }
-					is_ai = yes
-				}
-			}
-			available = {
-				NOT = { controls_province = 7186 }
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 100
-			}
-			priority = 50
-			custom_cost_trigger = { command_power > 9 }
-			custom_cost_text = CHI_decision_cost_10_command_power
-			days_re_enable = 200
-			complete_effect = {
-				1148 = {
-					damage_building = {
-						type = naval_base
-						damage = 10
-						repair_speed_modifier = -0.8
-						province = 7186
-					}
-				}
-				hidden_effect = {
-					add_command_power = -10
-				}
-			}
-		}
-		
-		CHI_damage_keelung_port = {
-			icon = GFX_CHI_test_of_will_port_damaging
-			allowed = {
-				original_tag = CHI
-			}
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 3 }
-					is_ai = yes
-				}
-			}
-			available = {
-				NOT = { controls_province = 14937 }
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 100
-			}
-			priority = 50
-			custom_cost_trigger = { command_power > 9 }
-			custom_cost_text = CHI_decision_cost_10_command_power
-			days_re_enable = 200
-			complete_effect = {
-				1148 = {
-					damage_building = {
-						type = naval_base
-						damage = 10
-						repair_speed_modifier = -0.8
-						province = 14937
-					}
-				}
-				hidden_effect = {
-					add_command_power = -10
-				}
-			}
-		}
+	}
 
-		#臺中
-		CHI_prepare_coastal_defences_in_taizhong = {
-			icon = GFX_CHI_test_of_will_coastal
-			allowed = {
-				original_tag = CHI
+	CHI_import_korean_vehicles = {
+		icon = GFX_CHI_test_of_will_korean_vehicles
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = KOR
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
 			}
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 2 }
-					is_ai = yes
-				}
-			}
-			available = {
-				owns_state = 1149
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			cost = 85
-			fire_only_once = no
-			days_remove = 120
-			ays_re_enable = 14
+		}
+		ai_will_do = {
+			base = 0
 			modifier = {
-				misc_expense = 1.5
-				civilian_factory_use = 1
+				add = 30
+				has_political_power > 150
 			}
-			complete_effect = {
-				add_to_variable = { CHI_test_of_will_blank_second_variable = 1 }
-			}
-			remove_effect = {
-				1149 = {
-					add_building_construction = {
-						type = coastal_bunker
-						level = 1
-						instant_build = yes
-						province = 13968
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+		}
+		cost = 110
+		days_remove = 180
+		modifier = {
+			misc_expense = 4
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
 				}
-				if = {
-					limit = { 
-						NOT = {has_template = "陸軍後備動員部隊"}
-					}
-					division_template = {			
-						name = "中華民國陸軍後備動員部隊"
-						division_names_group = CHI_INF_13
-						priority = 1
-						regiments = {
-						    infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-						   }
-						support = {
-							recon = { x = 0 y = 3 }
-							engineer = { x = 0 y = 2 }
-							anti_tank = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							
-						}
-					}
+				add_opinion_modifier = {
+					target = KOR
+					modifier = CHI_korean_valuable_partners
 				}
-				1149 = {
-					create_unit = {
-						division = "name = \"陸軍後備動員部隊\" division_template = \"陸軍後備動員部隊\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 1
+				KOR = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
 					}
 				}
 			}
 		}
-		CHI_Organize_the_militia_in_taizhong = {
-			icon = GFX_CHI_test_of_will_aa
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				owns_state = 1149
-				has_war = yes
-			}
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 2 }
-					is_ai = yes
+		remove_effect = {
+			add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 100 producer = KOR }
+			add_equipment_to_stockpile = {type = spaa_equipment amount = 100 producer = KOR }
+			add_equipment_to_stockpile = {type = light_mechanized_equipment_1 amount = 75 producer = KOR }
+			add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_1 amount = 75 producer = KOR }
+			hidden_effect = {
+				KOR = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 4
+					}
+					add_income_with_inflation = yes
 				}
 			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
+		}
+	}
+
+	CHI_import_korean_armoured_vehicles = {
+		icon = GFX_CHI_test_of_will_korean_armoured_vehicles
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = KOR
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
 			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			cost = 85
-			fire_only_once = no
-			days_remove = 90
-			days_re_enable = 14
+		}
+		ai_will_do = {
+			base = 0
 			modifier = {
-				misc_expense = 2.5
-				civilian_factory_use = 2
+				add = 30
+				has_political_power > 150
 			}
-			complete_effect = {
-			}
-			remove_effect = {
-				if = {
-					limit = { 
-						NOT = {has_template = "陸軍後備動員部隊"}
-					}
-					division_template = {			
-						name = "中華民國陸軍後備動員部隊"
-						division_names_group = CHI_INF_13
-						priority = 1
-						regiments = {
-						    infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-						   }
-						support = {
-							recon = { x = 0 y = 3 }
-							engineer = { x = 0 y = 2 }
-							anti_tank = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							
-						}
-					}
+		}
+		cost = 120
+		days_remove = 180
+		modifier = {
+			misc_expense = 8
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
 				}
-				1149 = {
-					create_unit = {
-						division = "name = \"陸軍後備動員部隊\" division_template = \"陸軍後備動員部隊\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 4
+				add_opinion_modifier = {
+					target = KOR
+					modifier = CHI_korean_valuable_partners
+				}
+				KOR = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
 					}
 				}
 			}
 		}
-		CHI_set_up_anti_air_in_taizhong = {
-			icon = GFX_CHI_test_of_will_aa
-			allowed = {
-				original_tag = CHI
-			}
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 2 }
-					is_ai = yes
+		remove_effect = {
+			add_equipment_to_stockpile = {type = mechanized_equipment_1 amount = 125 producer = KOR }
+			add_equipment_to_stockpile = {type = light_tank_equipment_1 amount = 50 producer = KOR }
+			add_equipment_to_stockpile = {type = modern_tank_equipment_1 amount = 50 producer = KOR }
+			hidden_effect = {
+				KOR = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 8
+					}
+					add_income_with_inflation = yes
 				}
 			}
-			available = {
-				owns_state = 1149
+		}
+	}
+	CHI_import_korean_aviation = {
+		icon = GFX_CHI_test_of_will_korean_armoured_vehicles
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = KOR
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
 			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			cost = 75
-			fire_only_once = no
-			days_remove = 120
-			ays_re_enable = 14
+		}
+		ai_will_do = {
+			base = 0
 			modifier = {
-				misc_expense = 2
-				civilian_factory_use = 1
+				add = 30
+				has_political_power > 150
 			}
-			complete_effect = {
-				add_to_variable = { CHI_test_of_will_blank_variable = 1 }
-			}
-			remove_effect = {
-				1149 = {
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+		}
+		cost = 130
+		days_remove = 180
+		modifier = {
+			misc_expense = 10
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
 				}
-				if = {
-					limit = { 
-						NOT = {has_template = "中華民國陸軍地區守備部隊"}
-					}
-					division_template = {			
-						name = "中華民國陸軍地區守備部隊"
-						division_names_group = CHI_INF_12
-						priority = 2
-						regiments = {
-						    spaa_brigade = { x = 0 y = 0 }
-							spaa_brigade = { x = 0 y = 1 }
-							spaa_brigade = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-						   }
-						support = {
-							spaa_company = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							engineer = { x = 0 y = 2 }
-							recon = { x = 0 y = 3 }
-						}
-					}
+				add_opinion_modifier = {
+					target = KOR
+					modifier = CHI_korean_valuable_partners
 				}
-				1149 = {
-					create_unit = {
-						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 1
+				KOR = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
 					}
 				}
 			}
 		}
-		##臺北
-		CHI_set_up_anti_air_in_taibei = {
-			icon = GFX_CHI_test_of_will_aa
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				owns_state = 1148
-			}
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 4 }
-					is_ai = yes
+		remove_effect = {
+			add_equipment_to_stockpile = {type = attack_helicopter_equipment_1 amount = 20 producer = KOR }
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					variant_name = "F-16V Viper"
+					amount = 40
+					producer = KOR
 				}
 			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
+			else = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment
+					amount = 40
+					producer = KOR
 				}
 			}
-			ai_will_do = {
-				factor = 50
+			hidden_effect = {
+				KOR = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 10
+					}
+					add_income_with_inflation = yes
+				}
 			}
-			priority = 50
-			cost = 75
-			fire_only_once = no
-			days_remove = 120
-			ays_re_enable = 14
+		}
+	}
+	CHI_import_JAP_weapons = {
+		icon = GFX_CHI_test_of_will_korean_arms
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = JAP
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			base = 0
 			modifier = {
-				misc_expense = 2
-				civilian_factory_use = 1
+				add = 30
+				has_political_power > 150
 			}
-			complete_effect = {
-				add_to_variable = { CHI_test_of_will_blank_variable = 1 }
+		}
+		visible = {
+			NOT = {
+				has_global_flag = PRC_ongoing_taiwan_war
 			}
-			remove_effect = {
-				1148 = {
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+		}
+		cost = 100
+		days_remove = 180
+		modifier = {
+			misc_expense = 2
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
 				}
-				if = {
-					limit = { 
-						NOT = {has_template = "中華民國陸軍地區守備部隊"}
-					}
-					division_template = {			
-						name = "中華民國陸軍地區守備部隊"
-						division_names_group = CHI_INF_12
-						priority = 2
-						regiments = {
-						    spaa_brigade = { x = 0 y = 0 }
-							spaa_brigade = { x = 0 y = 1 }
-							spaa_brigade = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-						   }
-						support = {
-							spaa_company = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							engineer = { x = 0 y = 2 }
-							recon = { x = 0 y = 3 }
-						}
-					}
+				add_opinion_modifier = {
+					target = JAP
+					modifier = CHI_korean_valuable_partners
 				}
-				1148 = {
-					create_unit = {
-						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 1
+				JAP = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
 					}
 				}
 			}
 		}
-		CHI_prepare_coastal_defences_in_taibei = {
-			icon = GFX_CHI_test_of_will_coastal
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				owns_state = 1148
-			}
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 4 }
-					is_ai = yes
+		remove_effect = {
+			add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 650 producer = JAP }
+			add_equipment_to_stockpile = {type = support_equipment amount = 100 producer = JAP }
+			add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 75 producer = JAP }
+			add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 50 producer = JAP }
+			add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 50 producer = JAP }
+			hidden_effect = {
+				JAP = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 2
+					}
+					add_income_with_inflation = yes
 				}
 			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
+		}
+	}
+	CHI_import_JAP_vehicles = {
+		icon = GFX_CHI_test_of_will_korean_vehicles
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = JAP
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
 			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			cost = 85
-			fire_only_once = no
-			days_remove = 120
-			ays_re_enable = 14
+		}
+		ai_will_do = {
+			base = 0
 			modifier = {
-				misc_expense = 2.5
-				civilian_factory_use = 2
+				add = 30
+				has_political_power > 150
 			}
-			complete_effect = {
-				add_to_variable = { CHI_test_of_will_blank_second_variable = 1 }
+		}
+		visible = {
+			NOT = {
+				has_global_flag = PRC_ongoing_taiwan_war
 			}
-			remove_effect = {
-				1148 = {
-					add_building_construction = {
-						type = coastal_bunker
-						level = 1
-						instant_build = yes
-						province = 14937
-					}
-					add_building_construction = {
-						type = coastal_bunker
-						level = 1
-						instant_build = yes
-						province = 13961
-					}
+		}
+		cost = 110
+		days_remove = 180
+		modifier = {
+			misc_expense = 4
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
 				}
-				if = {
-					limit = { 
-						NOT = {has_template = "中華民國陸軍地區守備部隊"}
-					}
-					division_template = {			
-						name = "中華民國陸軍地區守備部隊"
-						division_names_group = CHI_INF_12
-						priority = 2
-						regiments = {
-						    spaa_brigade = { x = 0 y = 0 }
-							spaa_brigade = { x = 0 y = 1 }
-							spaa_brigade = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-						   }
-						support = {
-							spaa_company = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							engineer = { x = 0 y = 2 }
-							recon = { x = 0 y = 3 }
-						}
-					}
+				add_opinion_modifier = {
+					target = JAP
+					modifier = CHI_korean_valuable_partners
 				}
-				1148 = {
-					create_unit = {
-						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 1
+				JAP = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
 					}
 				}
 			}
 		}
-		CHI_Organize_the_militia_in_taibei = {
-			icon = GFX_CHI_test_of_will_coastal
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				owns_state = 1148
-				has_war = yes
-			}
-			visible = {
-				
-				OR = {
-					check_variable = { CHI_will_visible = 4 }
-					is_ai = yes
+		remove_effect = {
+			add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 100 producer = JAP }
+			add_equipment_to_stockpile = {type = spaa_equipment amount = 100 producer = JAP }
+			add_equipment_to_stockpile = {type = light_mechanized_equipment_1 amount = 75 producer = JAP }
+			add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_1 amount = 75 producer = JAP }
+			hidden_effect = {
+				JAP = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 4
+					}
+					add_income_with_inflation = yes
 				}
 			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
+		}
+	}
+	CHI_import_JAP_armoured_vehicles = {
+		icon = GFX_CHI_test_of_will_korean_armoured_vehicles
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = JAP
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
 			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			cost = 85
-			fire_only_once = no
-			days_remove = 90
-			days_re_enable = 14
+		}
+		ai_will_do = {
+			base = 0
 			modifier = {
-				misc_expense = 2.5
-				civilian_factory_use = 2
+				add = 30
+				has_political_power > 150
 			}
-			complete_effect = {
+		}
+		visible = {
+			NOT = {
+				has_global_flag = PRC_ongoing_taiwan_war
 			}
-			remove_effect = {
-				if = {
-					limit = { 
-						NOT = {has_template = "陸軍後備動員部隊"}
-					}
-					division_template = {			
-						name = "中華民國陸軍後備動員部隊"
-						division_names_group = CHI_INF_13
-						priority = 1
-						regiments = {
-						    infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-						   }
-						support = {
-							recon = { x = 0 y = 3 }
-							engineer = { x = 0 y = 2 }
-							anti_tank = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							
-						}
-					}
+		}
+		cost = 120
+		days_remove = 180
+		modifier = {
+			misc_expense = 8
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
 				}
-				1148 = {
-					create_unit = {
-						division = "name = \"陸軍後備動員部隊\" division_template = \"陸軍後備動員部隊\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 4
+				add_opinion_modifier = {
+					target = JAP
+					modifier = CHI_korean_valuable_partners
+				}
+				JAP = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
 					}
 				}
 			}
 		}
-		#臺南
-		CHI_Organize_the_militia_in_tainan = {
-			icon = GFX_CHI_test_of_will_aa
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				owns_state = 1150
-				has_war = yes
-			}
-			visible = {
-				
-				OR = {
-					check_variable = { CHI_will_visible = 3 }
-					is_ai = yes
+		remove_effect = {
+			add_equipment_to_stockpile = {type = mechanized_equipment_1 amount = 125 producer = JAP }
+			add_equipment_to_stockpile = {type = light_tank_equipment_1 amount = 50 producer = JAP }
+			add_equipment_to_stockpile = {type = modern_tank_equipment_1 amount = 50 producer = JAP }
+			hidden_effect = {
+				JAP = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 8
+					}
+					add_income_with_inflation = yes
 				}
 			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
+		}
+	}
+	CHI_import_JAP_aviation = {
+		icon = GFX_CHI_test_of_will_korean_armoured_vehicles
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = JAP
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
 			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			cost = 85
-			fire_only_once = no
-			days_remove = 90
-			days_re_enable = 14
+		}
+		ai_will_do = {
+			base = 0
 			modifier = {
-				misc_expense = 2.5
-				civilian_factory_use = 2
+				add = 30
+				has_political_power > 150
 			}
-			complete_effect = {
+		}
+		visible = {
+			NOT = {
+				has_global_flag = PRC_ongoing_taiwan_war
 			}
-			remove_effect = {
-				if = {
-					limit = { 
-						NOT = {has_template = "陸軍後備動員部隊"}
-					}
-					division_template = {			
-						name = "中華民國陸軍後備動員部隊"
-						division_names_group = CHI_INF_13
-						priority = 1
-						regiments = {
-						    infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-						   }
-						support = {
-							recon = { x = 0 y = 3 }
-							engineer = { x = 0 y = 2 }
-							anti_tank = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							
-						}
-					}
+		}
+		cost = 130
+		days_remove = 180
+		modifier = {
+			misc_expense = 10
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
 				}
-				1150 = {
-					create_unit = {
-						division = "name = \"陸軍後備動員部隊\" division_template = \"陸軍後備動員部隊\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 4
+				add_opinion_modifier = {
+					target = JAP
+					modifier = CHI_korean_valuable_partners
+				}
+				JAP = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
 					}
 				}
 			}
 		}
-		CHI_set_up_anti_air_in_tainan = {
-			icon = GFX_CHI_test_of_will_aa
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				owns_state = 1150
-			}
-			visible = {
-				
-				OR = {
-					check_variable = { CHI_will_visible = 3 }
-					is_ai = yes
+		remove_effect = {
+			add_equipment_to_stockpile = {type = attack_helicopter_equipment_1 amount = 20 producer = JAP }
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					variant_name = "F-16V Viper"
+					amount = 40
+					producer = JAP
 				}
 			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
+			else = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment
+					amount = 40
+					producer = JAP
 				}
 			}
-			ai_will_do = {
-				factor = 50
+			hidden_effect = {
+				JAP = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 10
+					}
+					add_income_with_inflation = yes
+				}
 			}
-			priority = 50
-			cost = 75
-			fire_only_once = no
-			days_remove = 90
-			ays_re_enable = 14
+		}
+	}
+	CHI_import_AST_vehicles = {
+		icon = GFX_CHI_test_of_will_korean_vehicles
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = AST
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			base = 0
 			modifier = {
-				misc_expense = 2
-				civilian_factory_use = 1
+				add = 30
+				has_political_power > 150
 			}
-			complete_effect = {
-				add_to_variable = { CHI_test_of_will_blank_variable = 1 }
+		}
+		visible = {
+			NOT = {
+				has_global_flag = PRC_ongoing_taiwan_war
 			}
-			remove_effect = {
-				1150 = {
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+		}
+		cost = 110
+		days_remove = 180
+		modifier = {
+			misc_expense = 4
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
 				}
-				if = {
-					limit = { 
-						NOT = {has_template = "中華民國陸軍地區守備部隊"}
-					}
-					division_template = {			
-						name = "中華民國陸軍地區守備部隊"
-						division_names_group = CHI_INF_12
-						priority = 2
-						regiments = {
-						    spaa_brigade = { x = 0 y = 0 }
-							spaa_brigade = { x = 0 y = 1 }
-							spaa_brigade = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-						   }
-						support = {
-							spaa_company = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							engineer = { x = 0 y = 2 }
-							recon = { x = 0 y = 3 }
-						}
-					}
+				add_opinion_modifier = {
+					target = AST
+					modifier = CHI_korean_valuable_partners
 				}
-				1150 = {
-					create_unit = {
-						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 1
+				AST = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
 					}
 				}
 			}
 		}
-		CHI_damage_tainan_port = {
-			icon = GFX_CHI_test_of_will_port_damaging
-			allowed = {
-				original_tag = CHI
+		remove_effect = {
+			add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 100 producer = AST }
+			add_equipment_to_stockpile = {type = spaa_equipment amount = 100 producer = AST }
+			add_equipment_to_stockpile = {type = light_mechanized_equipment_1 amount = 75 producer = AST }
+			add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_1 amount = 75 producer = AST }
+			hidden_effect = {
+				AST = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 4
+					}
+					add_income_with_inflation = yes
+				}
 			}
-			visible = {
-				has_war = yes
-				has_country_flag = CHI_damage_ports_flag
-				OR = {
+		}
+	}
+	CHI_import_AST_armoured_vehicles = {
+		icon = GFX_CHI_test_of_will_korean_armoured_vehicles
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = AST
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 30
+				has_political_power > 150
+			}
+		}
+		visible = {
+			NOT = {
+				has_global_flag = PRC_ongoing_taiwan_war
+			}
+		}
+		cost = 120
+		days_remove = 180
+		modifier = {
+			misc_expense = 8
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+				}
+				add_opinion_modifier = {
+					target = AST
+					modifier = CHI_korean_valuable_partners
+				}
+				AST = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
+					}
+				}
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {type = mechanized_equipment_1 amount = 125 producer = AST }
+			add_equipment_to_stockpile = {type = light_tank_equipment_1 amount = 50 producer = AST }
+			add_equipment_to_stockpile = {type = modern_tank_equipment_1 amount = 50 producer = AST }
+			hidden_effect = {
+				AST = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 8
+					}
+					add_income_with_inflation = yes
+				}
+			}
+		}
+	}
+	CHI_import_AST_aviation = {
+		icon = GFX_CHI_test_of_will_korean_armoured_vehicles
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = AST
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 30
+				has_political_power > 150
+			}
+		}
+		visible = {
+			NOT = {
+				has_global_flag = PRC_ongoing_taiwan_war
+			}
+		}
+		cost = 130
+		days_remove = 180
+		modifier = {
+			misc_expense = 10
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+				}
+				add_opinion_modifier = {
+					target = AST
+					modifier = CHI_korean_valuable_partners
+				}
+				AST = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
+					}
+				}
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {type = attack_helicopter_equipment_1 amount = 20 producer = AST }
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					variant_name = "F-16V Viper"
+					amount = 40
+					producer = AST
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment
+					amount = 40
+					producer = AST
+				}
+			}
+			hidden_effect = {
+				AST = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 10
+					}
+					add_income_with_inflation = yes
+				}
+			}
+		}
+	}
+	CHI_import_AST_weapons = {
+		icon = GFX_CHI_test_of_will_korean_arms
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = AST
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		visible = {
+			NOT = {
+				has_global_flag = PRC_ongoing_taiwan_war
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 30
+				has_political_power > 150
+			}
+		}
+		cost = 100
+		days_remove = 180
+		modifier = {
+			misc_expense = 2
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+				}
+				add_opinion_modifier = {
+					target = AST
+					modifier = CHI_korean_valuable_partners
+				}
+				AST = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
+					}
+				}
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 650 producer = AST }
+			add_equipment_to_stockpile = {type = support_equipment amount = 100 producer = AST }
+			add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 75 producer = AST }
+			add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 50 producer = AST }
+			add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 50 producer = AST }
+			hidden_effect = {
+				AST = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 2
+					}
+					add_income_with_inflation = yes
+				}
+			}
+		}
+	}
+	CHI_import_USA_vehicles = {
+		icon = GFX_CHI_test_of_will_korean_vehicles
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = USA
+		}
+		visible = {
+			country_exists = USA
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 30
+				has_political_power > 150
+			}
+		}
+		cost = 110
+		days_remove = 180
+		modifier = {
+			misc_expense = 4
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = CHI_korean_valuable_partners
+				}
+				USA = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
+					}
+				}
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 100 producer = USA }
+			add_equipment_to_stockpile = {type = spaa_equipment amount = 100 producer = USA }
+			add_equipment_to_stockpile = {type = light_mechanized_equipment_1 amount = 75 producer = USA }
+			add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_1 amount = 75 producer = USA }
+			hidden_effect = {
+				USA = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 4
+					}
+					add_income_with_inflation = yes
+				}
+			}
+		}
+	}
+	CHI_import_USA_armoured_vehicles = {
+		icon = GFX_CHI_test_of_will_korean_vehicles
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = USA
+		}
+		visible = {
+			country_exists = USA
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 30
+				has_political_power > 150
+			}
+		}
+		cost = 120
+		days_remove = 180
+		modifier = {
+			misc_expense = 8
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = CHI_korean_valuable_partners
+				}
+				USA = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
+					}
+				}
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {type = mechanized_equipment_1 amount = 125 producer = USA }
+			add_equipment_to_stockpile = {type = light_tank_equipment_1 amount = 50 producer = USA }
+			add_equipment_to_stockpile = {type = modern_tank_equipment_1 amount = 50 producer = USA }
+			hidden_effect = {
+				USA = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 8
+					}
+					add_income_with_inflation = yes
+				}
+			}
+		}
+	}
+	CHI_import_USA_aviation = {
+		icon = GFX_CHI_test_of_will_korean_armoured_vehicles
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = USA
+		}
+		visible = {
+			country_exists = USA
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 30
+				has_political_power > 150
+			}
+		}
+		cost = 130
+		days_remove = 180
+		modifier = {
+			misc_expense = 10
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = CHI_korean_valuable_partners
+				}
+				USA = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
+					}
+				}
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {type = attack_helicopter_equipment_1 amount = 20 producer = USA }
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					variant_name = "F-16V Viper"
+					amount = 40
+					producer = USA
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment
+					amount = 40
+					producer = USA
+				}
+			}
+			hidden_effect = {
+				USA = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 10
+					}
+					add_income_with_inflation = yes
+				}
+			}
+		}
+	}
+	CHI_import_USA_weapons = {
+		icon = GFX_CHI_test_of_will_korean_arms
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			country_exists = USA
+		}
+		visible = {
+			country_exists = USA
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 30
+				has_political_power > 150
+			}
+		}
+		cost = 100
+		days_remove = 180
+		modifier = {
+			misc_expense = 2
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = CHI_korean_valuable_partners
+				}
+				USA = {
+					add_opinion_modifier = {
+						target = CHI
+						modifier = CHI_korean_valuable_partners
+					}
+				}
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 650 producer = USA }
+			add_equipment_to_stockpile = {type = support_equipment amount = 100 producer = USA }
+			add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 75 producer = USA }
+			add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 50 producer = USA }
+			add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 50 producer = USA }
+			hidden_effect = {
+				USA = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 2
+					}
+					add_income_with_inflation = yes
+				}
+			}
+		}
+	}
+	#####
+
+
+	CHI_request_pdto_fuel_shipments = {
+		icon = GFX_CHI_test_of_will_rise_up_taiwan
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			has_war = yes
+			has_country_flag = CHI_request_pdto_fuel_flag
+		}
+		visible = {
+			has_war = yes
+			is_ally_with = JAP
+			NOT = { has_idea = CHI_pdto_fuel_shipments_idea }
+			has_country_flag = CHI_request_pdto_fuel_flag
+			OR = {
+				is_ai = yes
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		custom_cost_trigger = { command_power > 49 }
+		custom_cost_text = CHI_decision_cost_50_command_power
+		complete_effect = {
+			add_fuel = 30000
+			add_timed_idea = {
+				idea = CHI_pdto_fuel_shipments_idea
+				days = 420
+			}
+			set_temp_variable = {
+				var = income_var_temp
+				value = -50
+			}
+			add_income_with_inflation = yes
+			JAP = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = 50
+				}
+				add_income_with_inflation = yes
+			}
+			hidden_effect = {
+				add_command_power  = -50
+			}
+		}
+	}
+
+	CHI_rise_up_taiwan_agitation = {
+		icon = GFX_CHI_test_of_will_rise_up_taiwan
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			has_war = yes
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 1 }
+				check_variable = { CHI_will_visible = 2 }
+				check_variable = { CHI_will_visible = 3 }
+				check_variable = { CHI_will_visible = 4 }
+				check_variable = { CHI_will_visible = 5 }
+				check_variable = { CHI_will_visible = 6 }
+				is_ai = yes
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		custom_cost_trigger = { command_power > 49 }
+		custom_cost_text = CHI_decision_cost_50_command_power
+		days_remove = 90
+		days_re_enable = 14
+		modifier = {
+			defence = 0.05
+			army_org_factor = 0.1
+			army_org_regain = 0.1
+			cas_damage_reduction = 0.15
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power  = -50
+			}
+		}
+	}
+
+	CHI_damage_zkaohsiung_port = {
+		icon = GFX_CHI_test_of_will_port_damaging
+		allowed = {
+			original_tag = CHI
+		}
+		visible = {
+			OR = {
 				check_variable = { CHI_will_visible = 3 }
 				is_ai = yes
+			}
+		}
+		available = {
+			NOT = { controls_province = 12068 }
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		priority = 50
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = CHI_decision_cost_10_command_power
+		days_re_enable = 200
+		complete_effect = {
+			1150 = {
+				damage_building = {
+					type = naval_base
+					damage = 10
+					repair_speed_modifier = -0.8
+					province = 12068
 				}
 			}
-			available = {
-				NOT = { controls_province = 13965 }
+			hidden_effect = {
+				add_command_power = -10
 			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
+		}
+	}
+
+
+
+	CHI_damage_taichung_port = {
+		icon = GFX_CHI_test_of_will_port_damaging
+		allowed = {
+			original_tag = CHI
+		}
+		visible = {
+			OR = {
+				is_ai = yes
+				check_variable = { CHI_will_visible = 2 }
+			}
+		}
+		available = {
+			NOT = { controls_province = 13968 }
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		priority = 50
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = CHI_decision_cost_10_command_power
+		days_re_enable = 200
+		complete_effect = {
+			1149 = {
+				damage_building = {
+					type = naval_base
+					damage = 10
+					repair_speed_modifier = -0.8
+					province = 13968
 				}
 			}
-			ai_will_do = {
-				factor = 100
+			hidden_effect = {
+				add_command_power = -10
 			}
-			priority = 50
-			custom_cost_trigger = { command_power > 9 }
-			custom_cost_text = CHI_decision_cost_10_command_power
-			days_re_enable = 200
-			ays_re_enable = 14
-			complete_effect = {
-				1150 = {
-					damage_building = {
-						type = naval_base
-						damage = 10
-						repair_speed_modifier = -0.8
-						province = 13965
+		}
+	}
+
+	CHI_damage_taoyuan_port = {
+		icon = GFX_CHI_test_of_will_port_damaging
+		allowed = {
+			original_tag = CHI
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 4 }
+				is_ai = yes
+			}
+		}
+		available = {
+			NOT = { controls_province = 13961 }
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		priority = 50
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = CHI_decision_cost_10_command_power
+		days_re_enable = 200
+		complete_effect = {
+			1148 = {
+				damage_building = {
+					type = naval_base
+					damage = 10
+					repair_speed_modifier = -0.8
+					province = 13961
+				}
+			}
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+	}
+
+	CHI_damage_taipei_port = {
+		icon = GFX_CHI_test_of_will_port_damaging
+		allowed = {
+			original_tag = CHI
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 4 }
+				is_ai = yes
+			}
+		}
+		available = {
+			NOT = { controls_province = 7186 }
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		priority = 50
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = CHI_decision_cost_10_command_power
+		days_re_enable = 200
+		complete_effect = {
+			1148 = {
+				damage_building = {
+					type = naval_base
+					damage = 10
+					repair_speed_modifier = -0.8
+					province = 7186
+				}
+			}
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+	}
+
+	CHI_damage_keelung_port = {
+		icon = GFX_CHI_test_of_will_port_damaging
+		allowed = {
+			original_tag = CHI
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 3 }
+				is_ai = yes
+			}
+		}
+		available = {
+			NOT = { controls_province = 14937 }
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		priority = 50
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = CHI_decision_cost_10_command_power
+		days_re_enable = 200
+		complete_effect = {
+			1148 = {
+				damage_building = {
+					type = naval_base
+					damage = 10
+					repair_speed_modifier = -0.8
+					province = 14937
+				}
+			}
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+	}
+
+	#臺中
+	CHI_prepare_coastal_defences_in_taizhong = {
+		icon = GFX_CHI_test_of_will_coastal
+		allowed = {
+			original_tag = CHI
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 2 }
+				is_ai = yes
+			}
+		}
+		available = {
+			owns_state = 1149
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		cost = 85
+		fire_only_once = no
+		days_remove = 120
+		ays_re_enable = 14
+		modifier = {
+			misc_expense = 1.5
+			civilian_factory_use = 1
+		}
+		complete_effect = {
+			add_to_variable = { CHI_test_of_will_blank_second_variable = 1 }
+		}
+		remove_effect = {
+			1149 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+					province = 13968
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = {has_template = "陸軍後備動員部隊"}
+				}
+				division_template = {
+					name = "中華民國陸軍後備動員部隊"
+					division_names_group = CHI_INF_13
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+					}
+					support = {
+						recon = { x = 0 y = 3 }
+						engineer = { x = 0 y = 2 }
+						anti_tank = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+
 					}
 				}
-				hidden_effect = {
-					add_command_power = -10
+			}
+			1149 = {
+				create_unit = {
+					division = "name = \"陸軍後備動員部隊\" division_template = \"陸軍後備動員部隊\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 1
 				}
 			}
 		}
-		CHI_prepare_coastal_defences_in_tainan = {
-			icon = GFX_CHI_test_of_will_coastal
-			allowed = {
-				original_tag = CHI
+	}
+	CHI_Organize_the_militia_in_taizhong = {
+		icon = GFX_CHI_test_of_will_aa
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			owns_state = 1149
+			has_war = yes
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 2 }
+				is_ai = yes
 			}
-			available = {
-				owns_state = 1150
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
 			}
-			visible = {
-				
-				OR = {
-					check_variable = { CHI_will_visible = 3 }
-					is_ai = yes
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		cost = 85
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 14
+		modifier = {
+			misc_expense = 2.5
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {has_template = "陸軍後備動員部隊"}
+				}
+				division_template = {
+					name = "中華民國陸軍後備動員部隊"
+					division_names_group = CHI_INF_13
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+					}
+					support = {
+						recon = { x = 0 y = 3 }
+						engineer = { x = 0 y = 2 }
+						anti_tank = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+
+					}
 				}
 			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			cost = 85
-			fire_only_once = no
-			days_remove = 120
-			ays_re_enable = 14
-			modifier = {
-				misc_expense = 2.5
-				civilian_factory_use = 2
-			}
-			complete_effect = {
-				add_to_variable = { CHI_test_of_will_blank_second_variable = 1 }
-			}
-			remove_effect = {
-				1150 = {
-					add_building_construction = {
-						type = coastal_bunker
-						level = 1
-						instant_build = yes
-						province = 13965
-					}
-					add_building_construction = {
-						type = coastal_bunker
-						level = 1
-						instant_build = yes
-						province = 12068
-					}
-				}
-				if = {
-					limit = { 
-						NOT = {has_template = "中華民國陸軍地區守備部隊"}
-					}
-					division_template = {			
-						name = "中華民國陸軍地區守備部隊"
-						division_names_group = CHI_INF_12
-						priority = 2
-						regiments = {
-						    spaa_brigade = { x = 0 y = 0 }
-							spaa_brigade = { x = 0 y = 1 }
-							spaa_brigade = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-						   }
-						support = {
-							spaa_company = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							engineer = { x = 0 y = 2 }
-							recon = { x = 0 y = 3 }
-						}
-					}
-				}
-				1150 = {
-					create_unit = {
-						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 1
-					}
+			1149 = {
+				create_unit = {
+					division = "name = \"陸軍後備動員部隊\" division_template = \"陸軍後備動員部隊\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 4
 				}
 			}
 		}
-		#花蓮
-		CHI_set_up_anti_air_in_hualien = {
-		
-			icon = GFX_CHI_test_of_will_aa
-
-			allowed = {
-				original_tag = CHI
+	}
+	CHI_set_up_anti_air_in_taizhong = {
+		icon = GFX_CHI_test_of_will_aa
+		allowed = {
+			original_tag = CHI
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 2 }
+				is_ai = yes
 			}
-			
-			visible = {
-				
-				OR = {
-					check_variable = { CHI_will_visible = 1 }
-					is_ai = yes
+		}
+		available = {
+			owns_state = 1149
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		cost = 75
+		fire_only_once = no
+		days_remove = 120
+		ays_re_enable = 14
+		modifier = {
+			misc_expense = 2
+			civilian_factory_use = 1
+		}
+		complete_effect = {
+			add_to_variable = { CHI_test_of_will_blank_variable = 1 }
+		}
+		remove_effect = {
+			1149 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
 				}
 			}
-
-			available = {
-				owns_state = 524
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
+			if = {
+				limit = {
+					NOT = {has_template = "中華民國陸軍地區守備部隊"}
+				}
+				division_template = {
+					name = "中華民國陸軍地區守備部隊"
+					division_names_group = CHI_INF_12
+					priority = 2
+					regiments = {
+						spaa_brigade = { x = 0 y = 0 }
+						spaa_brigade = { x = 0 y = 1 }
+						spaa_brigade = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						spaa_company = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+						engineer = { x = 0 y = 2 }
+						recon = { x = 0 y = 3 }
+					}
 				}
 			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			cost = 75
-			fire_only_once = no
-			days_remove = 120
-			ays_re_enable = 14
-			#days_re_enable = 35
-
-			#cancel_if_not_visible = yes
-
-			modifier = {
-				misc_expense = 2
-				civilian_factory_use = 1
-			}
-
-			complete_effect = {
-				add_to_variable = { CHI_test_of_will_blank_variable = 1 }
-			}
-
-			remove_effect = {
-				524 = {
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-				}
-				if = {
-					limit = { 
-						NOT = {has_template = "中華民國陸軍地區守備部隊"}
-					}
-					division_template = {			
-						name = "中華民國陸軍地區守備部隊"
-						division_names_group = CHI_INF_12
-						priority = 2
-						regiments = {
-						    spaa_brigade = { x = 0 y = 0 }
-							spaa_brigade = { x = 0 y = 1 }
-							spaa_brigade = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-						   }
-						support = {
-							spaa_company = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							engineer = { x = 0 y = 2 }
-							recon = { x = 0 y = 3 }
-						}
-					}
-				}
-				524 = {
-					create_unit = {
-						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 1
-					}
+			1149 = {
+				create_unit = {
+					division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 1
 				}
 			}
 		}
-		CHI_Organize_the_militia_in_hualien = {
-			icon = GFX_CHI_test_of_will_aa
-			allowed = {
-				original_tag = CHI
+	}
+	##臺北
+	CHI_set_up_anti_air_in_taibei = {
+		icon = GFX_CHI_test_of_will_aa
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			owns_state = 1148
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 4 }
+				is_ai = yes
 			}
-			available = {
-				owns_state = 524
-				has_war = yes
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
 			}
-			visible = {
-				
-				OR = {
-					check_variable = { CHI_will_visible = 1 }
-					is_ai = yes
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		cost = 75
+		fire_only_once = no
+		days_remove = 120
+		ays_re_enable = 14
+		modifier = {
+			misc_expense = 2
+			civilian_factory_use = 1
+		}
+		complete_effect = {
+			add_to_variable = { CHI_test_of_will_blank_variable = 1 }
+		}
+		remove_effect = {
+			1148 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
 				}
 			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
+			if = {
+				limit = {
+					NOT = {has_template = "中華民國陸軍地區守備部隊"}
+				}
+				division_template = {
+					name = "中華民國陸軍地區守備部隊"
+					division_names_group = CHI_INF_12
+					priority = 2
+					regiments = {
+						spaa_brigade = { x = 0 y = 0 }
+						spaa_brigade = { x = 0 y = 1 }
+						spaa_brigade = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						spaa_company = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+						engineer = { x = 0 y = 2 }
+						recon = { x = 0 y = 3 }
+					}
 				}
 			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			cost = 85
-			fire_only_once = no
-			days_remove = 90
-			days_re_enable = 14
-			modifier = {
-				misc_expense = 2.5
-				civilian_factory_use = 2
-			}
-			complete_effect = {
-			}
-			remove_effect = {
-				if = {
-					limit = { 
-						NOT = {has_template = "陸軍後備動員部隊"}
-					}
-					division_template = {			
-						name = "中華民國陸軍後備動員部隊"
-						division_names_group = CHI_INF_13
-						priority = 1
-						regiments = {
-						    infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-						   }
-						support = {
-							recon = { x = 0 y = 3 }
-							engineer = { x = 0 y = 2 }
-							anti_tank = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							
-						}
-					}
-				}
-				524 = {
-					create_unit = {
-						division = "name = \"陸軍後備動員部隊\" division_template = \"陸軍後備動員部隊\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 4
-					}
+			1148 = {
+				create_unit = {
+					division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 1
 				}
 			}
 		}
-		CHI_damage_hualien_port = {
-			icon = GFX_CHI_test_of_will_port_damaging
-			allowed = {
-				original_tag = CHI
+	}
+	CHI_prepare_coastal_defences_in_taibei = {
+		icon = GFX_CHI_test_of_will_coastal
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			owns_state = 1148
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 4 }
+				is_ai = yes
 			}
-			visible = {
-				OR = {
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		cost = 85
+		fire_only_once = no
+		days_remove = 120
+		ays_re_enable = 14
+		modifier = {
+			misc_expense = 2.5
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			add_to_variable = { CHI_test_of_will_blank_second_variable = 1 }
+		}
+		remove_effect = {
+			1148 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+					province = 14937
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+					province = 13961
+				}
+			}
+			if = {
+				limit = {
+					NOT = {has_template = "中華民國陸軍地區守備部隊"}
+				}
+				division_template = {
+					name = "中華民國陸軍地區守備部隊"
+					division_names_group = CHI_INF_12
+					priority = 2
+					regiments = {
+						spaa_brigade = { x = 0 y = 0 }
+						spaa_brigade = { x = 0 y = 1 }
+						spaa_brigade = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						spaa_company = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+						engineer = { x = 0 y = 2 }
+						recon = { x = 0 y = 3 }
+					}
+				}
+			}
+			1148 = {
+				create_unit = {
+					division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 1
+				}
+			}
+		}
+	}
+	CHI_Organize_the_militia_in_taibei = {
+		icon = GFX_CHI_test_of_will_coastal
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			owns_state = 1148
+			has_war = yes
+		}
+		visible = {
+
+			OR = {
+				check_variable = { CHI_will_visible = 4 }
+				is_ai = yes
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		cost = 85
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 14
+		modifier = {
+			misc_expense = 2.5
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {has_template = "陸軍後備動員部隊"}
+				}
+				division_template = {
+					name = "中華民國陸軍後備動員部隊"
+					division_names_group = CHI_INF_13
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+					}
+					support = {
+						recon = { x = 0 y = 3 }
+						engineer = { x = 0 y = 2 }
+						anti_tank = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+
+					}
+				}
+			}
+			1148 = {
+				create_unit = {
+					division = "name = \"陸軍後備動員部隊\" division_template = \"陸軍後備動員部隊\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 4
+				}
+			}
+		}
+	}
+	#臺南
+	CHI_Organize_the_militia_in_tainan = {
+		icon = GFX_CHI_test_of_will_aa
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			owns_state = 1150
+			has_war = yes
+		}
+		visible = {
+
+			OR = {
+				check_variable = { CHI_will_visible = 3 }
+				is_ai = yes
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		cost = 85
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 14
+		modifier = {
+			misc_expense = 2.5
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {has_template = "陸軍後備動員部隊"}
+				}
+				division_template = {
+					name = "中華民國陸軍後備動員部隊"
+					division_names_group = CHI_INF_13
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+					}
+					support = {
+						recon = { x = 0 y = 3 }
+						engineer = { x = 0 y = 2 }
+						anti_tank = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+
+					}
+				}
+			}
+			1150 = {
+				create_unit = {
+					division = "name = \"陸軍後備動員部隊\" division_template = \"陸軍後備動員部隊\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 4
+				}
+			}
+		}
+	}
+	CHI_set_up_anti_air_in_tainan = {
+		icon = GFX_CHI_test_of_will_aa
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			owns_state = 1150
+		}
+		visible = {
+
+			OR = {
+				check_variable = { CHI_will_visible = 3 }
+				is_ai = yes
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		cost = 75
+		fire_only_once = no
+		days_remove = 90
+		ays_re_enable = 14
+		modifier = {
+			misc_expense = 2
+			civilian_factory_use = 1
+		}
+		complete_effect = {
+			add_to_variable = { CHI_test_of_will_blank_variable = 1 }
+		}
+		remove_effect = {
+			1150 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = {has_template = "中華民國陸軍地區守備部隊"}
+				}
+				division_template = {
+					name = "中華民國陸軍地區守備部隊"
+					division_names_group = CHI_INF_12
+					priority = 2
+					regiments = {
+						spaa_brigade = { x = 0 y = 0 }
+						spaa_brigade = { x = 0 y = 1 }
+						spaa_brigade = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						spaa_company = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+						engineer = { x = 0 y = 2 }
+						recon = { x = 0 y = 3 }
+					}
+				}
+			}
+			1150 = {
+				create_unit = {
+					division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 1
+				}
+			}
+		}
+	}
+	CHI_damage_tainan_port = {
+		icon = GFX_CHI_test_of_will_port_damaging
+		allowed = {
+			original_tag = CHI
+		}
+		visible = {
+			has_war = yes
+			has_country_flag = CHI_damage_ports_flag
+			OR = {
+				check_variable = { CHI_will_visible = 3 }
+				is_ai = yes
+			}
+		}
+		available = {
+			NOT = { controls_province = 13965 }
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		priority = 50
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = CHI_decision_cost_10_command_power
+		days_re_enable = 200
+		ays_re_enable = 14
+		complete_effect = {
+			1150 = {
+				damage_building = {
+					type = naval_base
+					damage = 10
+					repair_speed_modifier = -0.8
+					province = 13965
+				}
+			}
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+	}
+	CHI_prepare_coastal_defences_in_tainan = {
+		icon = GFX_CHI_test_of_will_coastal
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			owns_state = 1150
+		}
+		visible = {
+
+			OR = {
+				check_variable = { CHI_will_visible = 3 }
+				is_ai = yes
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		cost = 85
+		fire_only_once = no
+		days_remove = 120
+		ays_re_enable = 14
+		modifier = {
+			misc_expense = 2.5
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			add_to_variable = { CHI_test_of_will_blank_second_variable = 1 }
+		}
+		remove_effect = {
+			1150 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+					province = 13965
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+					province = 12068
+				}
+			}
+			if = {
+				limit = {
+					NOT = {has_template = "中華民國陸軍地區守備部隊"}
+				}
+				division_template = {
+					name = "中華民國陸軍地區守備部隊"
+					division_names_group = CHI_INF_12
+					priority = 2
+					regiments = {
+						spaa_brigade = { x = 0 y = 0 }
+						spaa_brigade = { x = 0 y = 1 }
+						spaa_brigade = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						spaa_company = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+						engineer = { x = 0 y = 2 }
+						recon = { x = 0 y = 3 }
+					}
+				}
+			}
+			1150 = {
+				create_unit = {
+					division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 1
+				}
+			}
+		}
+	}
+	#花蓮
+	CHI_set_up_anti_air_in_hualien = {
+
+		icon = GFX_CHI_test_of_will_aa
+
+		allowed = {
+			original_tag = CHI
+		}
+
+		visible = {
+
+			OR = {
 				check_variable = { CHI_will_visible = 1 }
 				is_ai = yes
+			}
+		}
+
+		available = {
+			owns_state = 524
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		cost = 75
+		fire_only_once = no
+		days_remove = 120
+		ays_re_enable = 14
+		#days_re_enable = 35
+
+		#cancel_if_not_visible = yes
+
+		modifier = {
+			misc_expense = 2
+			civilian_factory_use = 1
+		}
+
+		complete_effect = {
+			add_to_variable = { CHI_test_of_will_blank_variable = 1 }
+		}
+
+		remove_effect = {
+			524 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
 				}
 			}
-			available = {
-				NOT = { controls_province = 4096 }
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
+			if = {
+				limit = {
+					NOT = {has_template = "中華民國陸軍地區守備部隊"}
 				}
-			}
-			ai_will_do = {
-				factor = 100
-			}
-			priority = 50
-			custom_cost_trigger = { command_power > 9 }
-			custom_cost_text = CHI_decision_cost_10_command_power
-			days_re_enable = 200
-			complete_effect = {
-				524 = {
-					damage_building = {
-						type = naval_base
-						damage = 10
-						repair_speed_modifier = -0.8
-						province = 4096
+				division_template = {
+					name = "中華民國陸軍地區守備部隊"
+					division_names_group = CHI_INF_12
+					priority = 2
+					regiments = {
+						spaa_brigade = { x = 0 y = 0 }
+						spaa_brigade = { x = 0 y = 1 }
+						spaa_brigade = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						spaa_company = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+						engineer = { x = 0 y = 2 }
+						recon = { x = 0 y = 3 }
 					}
 				}
-				hidden_effect = {
-					add_command_power = -10
+			}
+			524 = {
+				create_unit = {
+					division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 1
 				}
 			}
 		}
-		CHI_prepare_coastal_defences_in_hualien = {
-			icon = GFX_CHI_test_of_will_coastal
-			allowed = {
-				original_tag = CHI
+	}
+	CHI_Organize_the_militia_in_hualien = {
+		icon = GFX_CHI_test_of_will_aa
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			owns_state = 524
+			has_war = yes
+		}
+		visible = {
+
+			OR = {
+				check_variable = { CHI_will_visible = 1 }
+				is_ai = yes
 			}
-			available = {
-				owns_state = 524
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
 			}
-			visible = {
-				
-				OR = {
-					check_variable = { CHI_will_visible = 1 }
-					is_ai = yes
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		cost = 85
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 14
+		modifier = {
+			misc_expense = 2.5
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {has_template = "陸軍後備動員部隊"}
+				}
+				division_template = {
+					name = "中華民國陸軍後備動員部隊"
+					division_names_group = CHI_INF_13
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+					}
+					support = {
+						recon = { x = 0 y = 3 }
+						engineer = { x = 0 y = 2 }
+						anti_tank = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+
+					}
 				}
 			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			cost = 85
-			fire_only_once = no
-			days_remove = 120
-			modifier = {
-				misc_expense = 2.5
-				civilian_factory_use = 2
-			}
-			complete_effect = {
-				add_to_variable = { CHI_test_of_will_blank_second_variable = 1 }
-			}
-			remove_effect = {
-				524 = {
-					add_building_construction = {
-						type = coastal_bunker
-						level = 1
-						instant_build = yes
-						province = 4096
-					}
-					add_building_construction = {
-						type = coastal_bunker
-						level = 1
-						instant_build = yes
-						province = 11914
-					}
-				}
-				if = {
-					limit = { 
-						NOT = {has_template = "中華民國陸軍地區守備部隊"}
-					}
-					division_template = {			
-						name = "中華民國陸軍地區守備部隊"
-						division_names_group = CHI_INF_12
-						priority = 2
-						regiments = {
-						    spaa_brigade = { x = 0 y = 0 }
-							spaa_brigade = { x = 0 y = 1 }
-							spaa_brigade = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-						   }
-						support = {
-							spaa_company = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							engineer = { x = 0 y = 2 }
-							recon = { x = 0 y = 3 }
-						}
-					}
-				}
-				524 = {
-					create_unit = {
-						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 1
-					}
+			524 = {
+				create_unit = {
+					division = "name = \"陸軍後備動員部隊\" division_template = \"陸軍後備動員部隊\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 4
 				}
 			}
 		}
-		CHI_with_Japanese_to_retake_Penghu = {
-			icon = GFX_CHI_test_of_will_rise_up_taiwan
-			allowed = {
-				original_tag = CHI
+	}
+	CHI_damage_hualien_port = {
+		icon = GFX_CHI_test_of_will_port_damaging
+		allowed = {
+			original_tag = CHI
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 1 }
+				is_ai = yes
 			}
-			available = {
-				has_war = yes
-				NOT = {
-					owns_state = 1451
-				}
-				
+		}
+		available = {
+			NOT = { controls_province = 4096 }
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
 			}
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 5 }
-					is_ai = yes
-				}
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			custom_cost_trigger = { command_power > 9 }
-			custom_cost_text = CHI_decision_cost_10_command_power
-			days_remove = 30
-			modifier = {
-			}
-			complete_effect = {
-				hidden_effect = {
-					add_command_power = -10
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		priority = 50
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = CHI_decision_cost_10_command_power
+		days_re_enable = 200
+		complete_effect = {
+			524 = {
+				damage_building = {
+					type = naval_base
+					damage = 10
+					repair_speed_modifier = -0.8
+					province = 4096
 				}
 			}
-			remove_effect = {
-				if = {
-					limit = { 
-						NOT = {has_template = "中華民國陸軍地區守備部隊"}
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+	}
+	CHI_prepare_coastal_defences_in_hualien = {
+		icon = GFX_CHI_test_of_will_coastal
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			owns_state = 524
+		}
+		visible = {
+
+			OR = {
+				check_variable = { CHI_will_visible = 1 }
+				is_ai = yes
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		cost = 85
+		fire_only_once = no
+		days_remove = 120
+		modifier = {
+			misc_expense = 2.5
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			add_to_variable = { CHI_test_of_will_blank_second_variable = 1 }
+		}
+		remove_effect = {
+			524 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+					province = 4096
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+					province = 11914
+				}
+			}
+			if = {
+				limit = {
+					NOT = {has_template = "中華民國陸軍地區守備部隊"}
+				}
+				division_template = {
+					name = "中華民國陸軍地區守備部隊"
+					division_names_group = CHI_INF_12
+					priority = 2
+					regiments = {
+						spaa_brigade = { x = 0 y = 0 }
+						spaa_brigade = { x = 0 y = 1 }
+						spaa_brigade = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
 					}
-					division_template = {			
-						name = "中華民國陸軍地區守備部隊"
-						division_names_group = CHI_INF_12
-						priority = 2
-						regiments = {
-						    spaa_brigade = { x = 0 y = 0 }
-							spaa_brigade = { x = 0 y = 1 }
-							spaa_brigade = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-						   }
-						support = {
-							spaa_company = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							engineer = { x = 0 y = 2 }
-							recon = { x = 0 y = 3 }
-						}
-					}
-				}
-				1149 = {
-					create_unit = {
-						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 1
-					}
-				}}
-			}
-			CHI_with_Japanese_to_retake_Penghu2 = {
-			icon = GFX_CHI_test_of_will_rise_up_taiwan
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				has_war = yes
-					owns_state = 1451
-			}
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 5 }
-					is_ai = yes
-				}
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			custom_cost_trigger = { command_power > 9 }
-			custom_cost_text = CHI_decision_cost_10_command_power
-			days_remove = 30
-			modifier = {
-			}
-			complete_effect = {
-				hidden_effect = {
-					add_command_power = -10
-				}
-			}
-			remove_effect = {
-				if = {
-					limit = { 
-						NOT = {has_template = "中華民國陸軍地區守備部隊"}
-					}
-					division_template = {			
-						name = "中華民國陸軍地區守備部隊"
-						division_names_group = CHI_INF_12
-						priority = 2
-						regiments = {
-						    spaa_brigade = { x = 0 y = 0 }
-							spaa_brigade = { x = 0 y = 1 }
-							spaa_brigade = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-						   }
-						support = {
-							spaa_company = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							engineer = { x = 0 y = 2 }
-							recon = { x = 0 y = 3 }
-						}
+					support = {
+						spaa_company = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+						engineer = { x = 0 y = 2 }
+						recon = { x = 0 y = 3 }
 					}
 				}
-				1149 = {
-					create_unit = {
-						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 1
-					}
+			}
+			524 = {
+				create_unit = {
+					division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 1
 				}
 			}
 		}
-		CHI_with_Japanese_to_retake_jinmen = {
-			icon = GFX_CHI_test_of_will_rise_up_taiwan
-			allowed = {
-				original_tag = CHI
+	}
+	CHI_with_Japanese_to_retake_Penghu = {
+		icon = GFX_CHI_test_of_will_rise_up_taiwan
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			has_war = yes
+			NOT = {
+				owns_state = 1451
 			}
-			available = {
-				has_war = yes
-				NOT = {
-					owns_state = 648
+
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 5 }
+				is_ai = yes
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = CHI_decision_cost_10_command_power
+		days_remove = 30
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {has_template = "中華民國陸軍地區守備部隊"}
 				}
-			}
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 6 }
-					is_ai = yes
-				}
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			custom_cost_trigger = { command_power > 9 }
-			custom_cost_text = CHI_decision_cost_10_command_power
-			days_remove = 30
-			modifier = {
-			}
-			complete_effect = {
-				hidden_effect = {
-					add_command_power = -10
-				}
-			}
-			remove_effect = {
-				if = {
-					limit = { 
-						NOT = {has_template = "中華民國陸軍地區守備部隊"}
+				division_template = {
+					name = "中華民國陸軍地區守備部隊"
+					division_names_group = CHI_INF_12
+					priority = 2
+					regiments = {
+						spaa_brigade = { x = 0 y = 0 }
+						spaa_brigade = { x = 0 y = 1 }
+						spaa_brigade = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
 					}
-					division_template = {			
-						name = "中華民國陸軍地區守備部隊"
-						division_names_group = CHI_INF_12
-						priority = 2
-						regiments = {
-						    spaa_brigade = { x = 0 y = 0 }
-							spaa_brigade = { x = 0 y = 1 }
-							spaa_brigade = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-						   }
-						support = {
-							spaa_company = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							engineer = { x = 0 y = 2 }
-							recon = { x = 0 y = 3 }
-						}
+					support = {
+						spaa_company = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+						engineer = { x = 0 y = 2 }
+						recon = { x = 0 y = 3 }
 					}
 				}
-				1149 = {
-					create_unit = {
-						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 1
-					}
+			}
+			1149 = {
+				create_unit = {
+					division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 1
 				}
 			}
 		}
-		CHI_with_Japanese_to_retake_jinmen2 = {
-			icon = GFX_CHI_test_of_will_rise_up_taiwan
-			allowed = {
-				original_tag = CHI
+	}
+	CHI_with_Japanese_to_retake_Penghu2 = {
+		icon = GFX_CHI_test_of_will_rise_up_taiwan
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			has_war = yes
+			owns_state = 1451
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 5 }
+				is_ai = yes
 			}
-			available = {
-				has_war = yes
-					owns_state = 648
-					JAP = {
-						has_completed_focus = JAP_kinmen_operation
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = CHI_decision_cost_10_command_power
+		days_remove = 30
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {has_template = "中華民國陸軍地區守備部隊"}
+				}
+				division_template = {
+					name = "中華民國陸軍地區守備部隊"
+					division_names_group = CHI_INF_12
+					priority = 2
+					regiments = {
+						spaa_brigade = { x = 0 y = 0 }
+						spaa_brigade = { x = 0 y = 1 }
+						spaa_brigade = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
 					}
-			}
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 6 }
-					is_ai = yes
-				}
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			custom_cost_trigger = { command_power > 9 }
-			custom_cost_text = CHI_decision_cost_10_command_power
-			days_remove = 30
-			modifier = {
-			}
-			complete_effect = {
-				hidden_effect = {
-					add_command_power = -10
-				}
-			}
-			remove_effect = {
-				if = {
-					limit = { 
-						NOT = {has_template = "中華民國陸軍地區守備部隊"}
-					}
-					division_template = {			
-						name = "中華民國陸軍地區守備部隊"
-						division_names_group = CHI_INF_12
-						priority = 2
-						regiments = {
-						    spaa_brigade = { x = 0 y = 0 }
-							spaa_brigade = { x = 0 y = 1 }
-							spaa_brigade = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-						   }
-						support = {
-							spaa_company = { x = 0 y = 0 }
-							anti_air = { x = 0 y = 1 }
-							engineer = { x = 0 y = 2 }
-							recon = { x = 0 y = 3 }
-						}
+					support = {
+						spaa_company = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+						engineer = { x = 0 y = 2 }
+						recon = { x = 0 y = 3 }
 					}
 				}
-				1149 = {
-					create_unit = {
-						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = CHI
-						count = 1
-					}
+			}
+			1149 = {
+				create_unit = {
+					division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 1
 				}
 			}
 		}
+	}
+	CHI_with_Japanese_to_retake_jinmen = {
+		icon = GFX_CHI_test_of_will_rise_up_taiwan
+		allowed = {
+			original_tag = CHI
 		}
+		available = {
+			has_war = yes
+			NOT = {
+				owns_state = 648
+			}
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 6 }
+				is_ai = yes
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = CHI_decision_cost_10_command_power
+		days_remove = 30
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {has_template = "中華民國陸軍地區守備部隊"}
+				}
+				division_template = {
+					name = "中華民國陸軍地區守備部隊"
+					division_names_group = CHI_INF_12
+					priority = 2
+					regiments = {
+						spaa_brigade = { x = 0 y = 0 }
+						spaa_brigade = { x = 0 y = 1 }
+						spaa_brigade = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						spaa_company = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+						engineer = { x = 0 y = 2 }
+						recon = { x = 0 y = 3 }
+					}
+				}
+			}
+			1149 = {
+				create_unit = {
+					division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 1
+				}
+			}
+		}
+	}
+	CHI_with_Japanese_to_retake_jinmen2 = {
+		icon = GFX_CHI_test_of_will_rise_up_taiwan
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			has_war = yes
+			owns_state = 648
+			JAP = {
+				has_completed_focus = JAP_kinmen_operation
+			}
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_will_visible = 6 }
+				is_ai = yes
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = CHI_decision_cost_10_command_power
+		days_remove = 30
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {has_template = "中華民國陸軍地區守備部隊"}
+				}
+				division_template = {
+					name = "中華民國陸軍地區守備部隊"
+					division_names_group = CHI_INF_12
+					priority = 2
+					regiments = {
+						spaa_brigade = { x = 0 y = 0 }
+						spaa_brigade = { x = 0 y = 1 }
+						spaa_brigade = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						spaa_company = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+						engineer = { x = 0 y = 2 }
+						recon = { x = 0 y = 3 }
+					}
+				}
+			}
+			1149 = {
+				create_unit = {
+					division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = CHI
+					count = 1
+				}
+			}
+		}
+	}
+}
 
 CHI_armry_test = {
 	CHI_imps = {
 		#icon = GFX_CHI_Legislative_Yuan_decisions
 		available = {
-			      hidden_effect = {
-			NOT = {
-				OR = {
-				has_country_flag = CHI_Strengthentraining
-				has_country_flag = CHI_ETJTNRA
+			hidden_effect = {
+				NOT = {
+					OR = {
+						has_country_flag = CHI_Strengthentraining
+						has_country_flag = CHI_ETJTNRA
+					}
 				}
 			}
 		}
-	}
 		visible = {
 		}
 		ai_will_do = {
@@ -3746,25 +3730,25 @@ CHI_armry_test = {
 			army_morale_factor = 0.05
 		}
 		complete_effect = {
-			
+
 			set_country_flag = CHI_imps
-			
+
 		}
 		remove_effect = {
 			clr_country_flag = CHI_imps
 		}
-	}	
+	}
 	CHI_Strengthentraining = {
 		#icon = GFX_CHI_Legislative_Yuan_decisions
 		available = {
 			hidden_effect = {
-			NOT = {
-				OR = {
-				has_country_flag = CHI_imps
-				has_country_flag = CHI_ETJTNRA
+				NOT = {
+					OR = {
+						has_country_flag = CHI_imps
+						has_country_flag = CHI_ETJTNRA
+					}
 				}
 			}
-		}
 		}
 		visible = {
 		}
@@ -3783,7 +3767,7 @@ CHI_armry_test = {
 			air_training_xp_gain_factor = 0.15
 			acclimatization_cold_climate_gain_factor = 0.10
 			acclimatization_hot_climate_gain_factor = 0.10
-			
+
 		}
 		complete_effect = {
 			set_country_flag = CHI_Strengthentraining
@@ -3794,18 +3778,18 @@ CHI_armry_test = {
 			add_air_experience  = 25
 			clr_country_flag = CHI_Strengthentraining
 		}
-	}	
+	}
 	CHI_ETJTNRA = {
 		#icon = GFX_CHI_Legislative_Yuan_decisions
 		available = {
 			hidden_effect = {
-			NOT = {
-				OR = {
-				has_country_flag = CHI_imps
-				has_country_flag = CHI_Strengthentraining
+				NOT = {
+					OR = {
+						has_country_flag = CHI_imps
+						has_country_flag = CHI_Strengthentraining
+					}
 				}
 			}
-		}
 		}
 		visible = {
 		}
@@ -3821,7 +3805,7 @@ CHI_armry_test = {
 		modifier = {
 			conscription_factor = 0.15
 			land_reinforce_rate = 0.15
-			
+
 		}
 		complete_effect = {
 			set_country_flag = CHI_ETJTNRA
@@ -3829,7 +3813,7 @@ CHI_armry_test = {
 		remove_effect = {
 			clr_country_flag = CHI_ETJTNRA
 		}
-	}	
+	}
 	CHI_buy_USA_destroyers = {
 		visible = {
 			USN = {
@@ -3876,10 +3860,10 @@ CHI_armry_test = {
 		available = {
 		}
 		#custom_cost_trigger = {
-			#check_variable = {
-			#	var = income_var
-			#	value = 25
-			#}
+		#check_variable = {
+		#	var = income_var
+		#	value = 25
+		#}
 		#	political_power > 74
 		#}
 		cost = 75
@@ -4078,7 +4062,7 @@ CHI_armry_test = {
 }
 CHI_taihai_war = {
 	Time_is_of_the_essence = {
-		#icon = 
+		#icon =
 		allowed = {
 			always = no
 		}
@@ -4089,8 +4073,8 @@ CHI_taihai_war = {
 		}
 		visible = {
 			OR = {
-			tag = CHI
-			tag = PRC
+				tag = CHI
+				tag = PRC
 			}
 		}
 		priority = 190
@@ -4104,8 +4088,8 @@ CHI_taihai_war = {
 					check_variable = { CHI_waidao_zhuangbei_progress_temp < 80 }
 				}
 				news_event = {
-						id = ROC.18
-					}
+					id = ROC.18
+				}
 			}
 			if = {
 				limit = {
@@ -4121,14 +4105,14 @@ CHI_taihai_war = {
 		}
 	}
 	Time_is_of_the_essence2 = {
-		#icon = 
+		#icon =
 		allowed = {
 			always = no
 		}
 		cancel_trigger = {
 			OR = {
-			has_country_flag = CHI_PRC_KinmenBattle
-			has_country_flag = CHI_PRC_KinmenBattle2
+				has_country_flag = CHI_PRC_KinmenBattle
+				has_country_flag = CHI_PRC_KinmenBattle2
 			}
 		}
 		available = {
@@ -4138,9 +4122,9 @@ CHI_taihai_war = {
 			tag = CHI
 			NOT = {
 				OR = {
-			has_country_flag = CHI_PRC_KinmenBattle
-			has_country_flag = CHI_PRC_KinmenBattle2
-			}
+					has_country_flag = CHI_PRC_KinmenBattle
+					has_country_flag = CHI_PRC_KinmenBattle2
+				}
 			}
 		}
 		priority = 190
@@ -4150,79 +4134,79 @@ CHI_taihai_war = {
 		timeout_effect = {
 			activate_mission = Time_is_of_the_essence2
 			random_list = {
-			20 = {
-       			 set_temp_variable = {
-				var = CHI_waidao_renyuan_progress_temp
-				value = -3
+				20 = {
+					set_temp_variable = {
+						var = CHI_waidao_renyuan_progress_temp
+						value = -3
+					}
+					CHI_waidao_renyuan_progress = yes
+					set_temp_variable = {
+						var = CHI_waidao_zhuangbei_progress_temp
+						value = -3
+					}
+					CHI_waidao_zhuangbei_progress = yes
+				}
+				30 = {
+					set_temp_variable = {
+						var = CHI_waidao_renyuan_progress_temp
+						value = -5
+					}
+					CHI_waidao_renyuan_progress = yes
+					set_temp_variable = {
+						var = CHI_waidao_zhuangbei_progress_temp
+						value = -5
+					}
+					CHI_waidao_zhuangbei_progress = yes
+				}
+				50 = {
+					set_temp_variable = {
+						var = CHI_waidao_renyuan_progress_temp
+						value = -7
+					}
+					CHI_waidao_renyuan_progress = yes
+					set_temp_variable = {
+						var = CHI_waidao_zhuangbei_progress_temp
+						value = -7
+					}
+					CHI_waidao_zhuangbei_progress = yes
+				}
 			}
-			CHI_waidao_renyuan_progress = yes
-			set_temp_variable = {
-				var = CHI_waidao_zhuangbei_progress_temp
-				value = -3
-			}
-			CHI_waidao_zhuangbei_progress = yes
-   		 }
-		 30 = {
-       			 set_temp_variable = {
-				var = CHI_waidao_renyuan_progress_temp
-				value = -5
-			}
-			CHI_waidao_renyuan_progress = yes
-			set_temp_variable = {
-				var = CHI_waidao_zhuangbei_progress_temp
-				value = -5
-			}
-			CHI_waidao_zhuangbei_progress = yes
-   		 }
-		 50 = {
-       			 set_temp_variable = {
-				var = CHI_waidao_renyuan_progress_temp
-				value = -7
-			}
-			CHI_waidao_renyuan_progress = yes
-			set_temp_variable = {
-				var = CHI_waidao_zhuangbei_progress_temp
-				value = -7
-			}
-			CHI_waidao_zhuangbei_progress = yes
-   		 }
-		}
 		}
 	}
 	CHI_ReinforcementsKinmen = {
-			#icon = GFX_CHI_test_of_will_rise_up_taiwan
-			allowed = {
-				original_tag = CHI
+		#icon = GFX_CHI_test_of_will_rise_up_taiwan
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			has_completed_focus = CHI_Reinforcements_for_Kinmen
+		}
+		visible = {
+			tag = CHI
+			OR = {
+				is_ai = yes
 			}
-			available = {
-				has_completed_focus = CHI_Reinforcements_for_Kinmen
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
 			}
-			visible = {
-				tag = CHI
-				OR = {
-					is_ai = yes
-				}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = CHI_decision_cost_10_command_power
+		days_remove = 3
+		days_re_enable = 3
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
 			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			custom_cost_trigger = { command_power > 9 }
-			custom_cost_text = CHI_decision_cost_10_command_power
-			days_remove = 3
-			days_re_enable = 3
-			complete_effect = {
-				hidden_effect = {
-					add_command_power = -10
-				}
-			}
-			remove_effect = {
-				set_temp_variable = {
+		}
+		remove_effect = {
+			set_temp_variable = {
 				var = CHI_waidao_renyuan_progress_temp
 				value = 5
 			}
@@ -4232,42 +4216,42 @@ CHI_taihai_war = {
 				value = 5
 			}
 			CHI_waidao_zhuangbei_progress = yes
+		}
+	}
+	CHI_ReinforcementsMazu = {
+		#icon = GFX_CHI_test_of_will_rise_up_taiwan
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			has_completed_focus = CHI_Strengthen_the_defense_of_Matsu
+		}
+		visible = {
+			tag = CHI
+			OR = {
+				is_ai = yes
 			}
 		}
-		CHI_ReinforcementsMazu = {
-			#icon = GFX_CHI_test_of_will_rise_up_taiwan
-			allowed = {
-				original_tag = CHI
+		cancel_trigger = {
+			hidden_trigger = {
+				is_ally_with = PRC
 			}
-			available = {
-				has_completed_focus = CHI_Strengthen_the_defense_of_Matsu
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		priority = 50
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = CHI_decision_cost_10_command_power
+		days_remove = 3
+		days_re_enable = 3
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
 			}
-			visible = {
-				tag = CHI
-				OR = {
-					is_ai = yes
-				}
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			ai_will_do = {
-				factor = 50
-			}
-			priority = 50
-			custom_cost_trigger = { command_power > 9 }
-			custom_cost_text = CHI_decision_cost_10_command_power
-			days_remove = 3
-			days_re_enable = 3
-			complete_effect = {
-				hidden_effect = {
-					add_command_power = -10
-				}
-			}
-			remove_effect = {
-				set_temp_variable = {
+		}
+		remove_effect = {
+			set_temp_variable = {
 				var = CHI_waidao_renyuan_progress_temp
 				value = 5
 			}
@@ -4277,8 +4261,8 @@ CHI_taihai_war = {
 				value = 5
 			}
 			CHI_waidao_zhuangbei_progress = yes
-			}
 		}
+	}
 }
 PDTO_solidarity = {
 	PDTO_military_exercise = {
@@ -4306,23 +4290,23 @@ PDTO_solidarity = {
 		days_re_enable = 14
 		complete_effect = {
 			hidden_effect = {
-					add_command_power = -20
-				}
+				add_command_power = -20
+			}
 		}
 		remove_effect = {
-		every_country = {
-			limit = {
-				OR = {
-				is_in_faction_with = JAP
-				is_in_faction_with = CHI
+			every_country = {
+				limit = {
+					OR = {
+						is_in_faction_with = JAP
+						is_in_faction_with = CHI
+					}
 				}
+				army_experience = 30
+				navy_experience = 30
+				air_experience = 30
 			}
-			army_experience = 30
-			navy_experience = 30
-			air_experience = 30
 		}
-	}	
-	modifier = {
+		modifier = {
 			experience_gain_navy = 0.1
 			experience_gain_air = 0.1
 			experience_gain_army = 0.1
@@ -4352,20 +4336,20 @@ PDTO_solidarity = {
 		days_re_enable = 90
 		complete_effect = {
 			every_country = {
-			limit = {
-				OR = {
-				is_in_faction_with = JAP
-				is_in_faction_with = CHI
+				limit = {
+					OR = {
+						is_in_faction_with = JAP
+						is_in_faction_with = CHI
+					}
 				}
-			}
-			add_timed_idea = {
-				idea = PDTO_Trade_Agreement_idea
-				days = 90
-			}
+				add_timed_idea = {
+					idea = PDTO_Trade_Agreement_idea
+					days = 90
+				}
 			}
 		}
 		remove_effect = {
-	}	
+		}
 	}
 	PDTO_Mineral_Detection = {
 		icon = GFX_PDTO_dec
@@ -4394,21 +4378,21 @@ PDTO_solidarity = {
 		days_re_enable = 90
 		complete_effect = {
 			every_country = {
-			limit = {
-				OR = {
-				is_in_faction_with = JAP
-				is_in_faction_with = CHI
+				limit = {
+					OR = {
+						is_in_faction_with = JAP
+						is_in_faction_with = CHI
+					}
 				}
-			}
-			add_timed_idea = {
-				idea = PDTO_Mineral_Detection_idea
-				days = 90
-			}
+				add_timed_idea = {
+					idea = PDTO_Mineral_Detection_idea
+					days = 90
+				}
 			}
 		}
 		remove_effect = {
-	}	
-	modifier = {
+		}
+		modifier = {
 			local_resources_factor = 0.10
 			production_lack_of_resource_penalty_factor = -0.25
 		}
@@ -4438,30 +4422,30 @@ PDTO_solidarity = {
 			PDTO_unity_increase2 = yes
 			hidden_effect = {
 				every_country = {
-		limit = {
-			OR = {
-				has_country_flag = pdto_member
-			}
-		}
-		unlock_decision_category_tooltip = PDTO_solidarity
-				unlock_decision_tooltip = PDTO_military_exercise
-				unlock_decision_tooltip = PDTO_Trade_Agreement
-				unlock_decision_tooltip = PDTO_Mineral_Detection
-				unlock_decision_tooltip = PDTO_Unity_up
+					limit = {
+						OR = {
+							has_country_flag = pdto_member
+						}
+					}
+					unlock_decision_category_tooltip = PDTO_solidarity
+					unlock_decision_tooltip = PDTO_military_exercise
+					unlock_decision_tooltip = PDTO_Trade_Agreement
+					unlock_decision_tooltip = PDTO_Mineral_Detection
+					unlock_decision_tooltip = PDTO_Unity_up
 				}
 			}
-	}	
+		}
 	}
 }
 The_CCP_Difficulty_Selection = {
 	The_CCP_Difficulty_Selection_1 = {
 		available = {
-			
+
 		}
 		visible = {
 			original_tag = CHI
 			is_ai = no
-		
+
 		}
 		ai_will_do = {
 			base = 0
@@ -4474,46 +4458,46 @@ The_CCP_Difficulty_Selection = {
 		}
 		remove_effect = {
 			PRC = {
-			remove_ideas = Red_Nobility
-	remove_ideas = Crony_capitalismy
-	remove_ideas = Techno_nationalism
-	remove_ideas = PRC_yingxue
-	remove_ideas = Chinese_education
-	remove_ideas = BPRC_china
-	remove_ideas = PRC_organ_trade
-		}
-		hidden_effect = {
-		if = {
-			limit = {
-				PRC = {
-					has_ideas = Red_Nobility2
-	has_ideas = Crony_capitalismy2
-	has_ideas = Techno_nationalism2
-	has_ideas = PRC_yingxue2
-	has_ideas = Chinese_education2
-	has_ideas = BPRC_china2
-	has_ideas = PRC_organ_trade2
+				remove_ideas = Red_Nobility
+				remove_ideas = Crony_capitalismy
+				remove_ideas = Techno_nationalism
+				remove_ideas = PRC_yingxue
+				remove_ideas = Chinese_education
+				remove_ideas = BPRC_china
+				remove_ideas = PRC_organ_trade
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						PRC = {
+							has_ideas = Red_Nobility2
+							has_ideas = Crony_capitalismy2
+							has_ideas = Techno_nationalism2
+							has_ideas = PRC_yingxue2
+							has_ideas = Chinese_education2
+							has_ideas = BPRC_china2
+							has_ideas = PRC_organ_trade2
+						}
+					}
+					remove_ideas = Red_Nobility2
+					remove_ideas = Crony_capitalismy2
+					remove_ideas = Techno_nationalism2
+					remove_ideas = PRC_yingxue2
+					remove_ideas = Chinese_education2
+					remove_ideas = BPRC_china2
+					remove_ideas = PRC_organ_trade2
 				}
 			}
-			remove_ideas = Red_Nobility2
-	remove_ideas = Crony_capitalismy2
-	remove_ideas = Techno_nationalism2
-	remove_ideas = PRC_yingxue2
-	remove_ideas = Chinese_education2
-	remove_ideas = BPRC_china2
-	remove_ideas = PRC_organ_trade2
-		}
-		}
 		}
 	}
 	The_CCP_Difficulty_Selection_2 = {
 		available = {
-	
+
 		}
 		visible = {
 			original_tag = CHI
 			is_ai = no
-		
+
 		}
 		ai_will_do = {
 			base = 0
@@ -4526,32 +4510,32 @@ The_CCP_Difficulty_Selection = {
 		}
 		remove_effect = {
 			effect_tooltip = {
-		add_ideas = Red_Nobility2
-	add_ideas = Crony_capitalismy2
-	add_ideas = Techno_nationalism2
-	add_ideas = PRC_yingxue2
-		}
-		hidden_effect = {
-	PRC = {
-			swap_ideas = {
-				remove_idea = Red_Nobility
-				add_idea = Red_Nobility2
+				add_ideas = Red_Nobility2
+				add_ideas = Crony_capitalismy2
+				add_ideas = Techno_nationalism2
+				add_ideas = PRC_yingxue2
 			}
-			swap_ideas = {
-				remove_idea = Crony_capitalismy
-				add_idea = Crony_capitalismy2
+			hidden_effect = {
+				PRC = {
+					swap_ideas = {
+						remove_idea = Red_Nobility
+						add_idea = Red_Nobility2
+					}
+					swap_ideas = {
+						remove_idea = Crony_capitalismy
+						add_idea = Crony_capitalismy2
+					}
+					swap_ideas = {
+						remove_idea = Techno_nationalism
+						add_idea = Techno_nationalism2
+					}
+					swap_ideas = {
+						remove_idea = PRC_yingxue
+						add_idea = PRC_yingxue2
+					}
+				}
 			}
-			swap_ideas = {
-				remove_idea = Techno_nationalism
-				add_idea = Techno_nationalism2
-			}
-			swap_ideas = {
-				remove_idea = PRC_yingxue
-				add_idea = PRC_yingxue2
-			}
-	}
-		}
-		every_state = {
+			every_state = {
 				limit = {
 					is_owned_by = PRC
 				}
@@ -4563,12 +4547,12 @@ The_CCP_Difficulty_Selection = {
 	}
 	The_CCP_Difficulty_Selection_3 = {
 		available = {
-	
+
 		}
 		visible = {
 			original_tag = CHI
 			is_ai = no
-		
+
 		}
 		ai_will_do = {
 			base = 0
@@ -4581,47 +4565,47 @@ The_CCP_Difficulty_Selection = {
 		}
 		remove_effect = {
 			effect_tooltip = {
-		add_ideas = Red_Nobility2
-	add_ideas = Crony_capitalismy2
-	add_ideas = Techno_nationalism2
-	add_ideas = PRC_yingxue2
-	add_ideas = Chinese_education2
-	add_ideas = BPRC_china2
-	add_ideas = PRC_organ_trade2
-		}
-		hidden_effect = {
-	PRC = {
-			swap_ideas = {
-				remove_idea = Red_Nobility
-				add_idea = Red_Nobility2
+				add_ideas = Red_Nobility2
+				add_ideas = Crony_capitalismy2
+				add_ideas = Techno_nationalism2
+				add_ideas = PRC_yingxue2
+				add_ideas = Chinese_education2
+				add_ideas = BPRC_china2
+				add_ideas = PRC_organ_trade2
 			}
-			swap_ideas = {
-				remove_idea = Crony_capitalismy
-				add_idea = Crony_capitalismy2
+			hidden_effect = {
+				PRC = {
+					swap_ideas = {
+						remove_idea = Red_Nobility
+						add_idea = Red_Nobility2
+					}
+					swap_ideas = {
+						remove_idea = Crony_capitalismy
+						add_idea = Crony_capitalismy2
+					}
+					swap_ideas = {
+						remove_idea = Techno_nationalism
+						add_idea = Techno_nationalism2
+					}
+					swap_ideas = {
+						remove_idea = PRC_yingxue
+						add_idea = PRC_yingxue2
+					}
+					swap_ideas = {
+						remove_idea = Chinese_education
+						add_idea = Chinese_education2
+					}
+					swap_ideas = {
+						remove_idea = BPRC_china
+						add_idea = BPRC_china2
+					}
+					swap_ideas = {
+						remove_idea = PRC_organ_trade
+						add_idea = PRC_organ_trade2
+					}
+				}
 			}
-			swap_ideas = {
-				remove_idea = Techno_nationalism
-				add_idea = Techno_nationalism2
-			}
-			swap_ideas = {
-				remove_idea = PRC_yingxue
-				add_idea = PRC_yingxue2
-			}
-			swap_ideas = {
-				remove_idea = Chinese_education
-				add_idea = Chinese_education2
-			}
-			swap_ideas = {
-				remove_idea = BPRC_china
-				add_idea = BPRC_china2
-			}
-			swap_ideas = {
-				remove_idea = PRC_organ_trade
-				add_idea = PRC_organ_trade2
-			}
-	}
-		}
-		every_state = {
+			every_state = {
 				limit = {
 					is_owned_by = PRC
 				}
@@ -4636,12 +4620,12 @@ The_CCP_Difficulty_Selection = {
 	}
 	The_CCP_Difficulty_Selection_4 = {
 		available = {
-	
+
 		}
 		visible = {
 			original_tag = CHI
 			is_ai = no
-		
+
 		}
 		ai_will_do = {
 			base = 0
@@ -4668,12 +4652,12 @@ The_CCP_Difficulty_Selection = {
 	}
 	The_CCP_Difficulty_Selection_5 = {
 		available = {
-	
+
 		}
 		visible = {
 			original_tag = CHI
 			is_ai = no
-		
+
 		}
 		ai_will_do = {
 			base = 0
@@ -4697,12 +4681,12 @@ The_CCP_Difficulty_Selection = {
 	}
 	The_CCP_Difficulty_Selection_6 = {
 		available = {
-	
+
 		}
 		visible = {
 			original_tag = CHI
 			is_ai = no
-		
+
 		}
 		ai_will_do = {
 			base = 0
@@ -4726,12 +4710,12 @@ The_CCP_Difficulty_Selection = {
 	}
 	The_CCP_Difficulty_Selection_7 = {
 		available = {
-	
+
 		}
 		visible = {
 			original_tag = CHI
 			is_ai = no
-		
+
 		}
 		ai_will_do = {
 			base = 0
@@ -4751,12 +4735,12 @@ The_CCP_Difficulty_Selection = {
 	}
 	The_CCP_Difficulty_Selection_8 = {
 		available = {
-	
+
 		}
 		visible = {
 			original_tag = CHI
 			is_ai = no
-		
+
 		}
 		ai_will_do = {
 			base = 0
@@ -4773,43 +4757,43 @@ The_CCP_Difficulty_Selection = {
 				add_idea = Chinese_education2
 			}
 			PRC = {
-			remove_ideas = Red_Nobility
-	remove_ideas = Crony_capitalismy
-	remove_ideas = Techno_nationalism
-	remove_ideas = PRC_yingxue
-	remove_ideas = BPRC_china
-	remove_ideas = PRC_organ_trade
-		}
-		hidden_effect = {
-		if = {
-			limit = {
-				PRC = {
-					has_ideas = Red_Nobility2
-	has_ideas = Crony_capitalismy2
-	has_ideas = Techno_nationalism2
-	has_ideas = PRC_yingxue2
-	has_ideas = BPRC_china2
-	has_ideas = PRC_organ_trade2
+				remove_ideas = Red_Nobility
+				remove_ideas = Crony_capitalismy
+				remove_ideas = Techno_nationalism
+				remove_ideas = PRC_yingxue
+				remove_ideas = BPRC_china
+				remove_ideas = PRC_organ_trade
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						PRC = {
+							has_ideas = Red_Nobility2
+							has_ideas = Crony_capitalismy2
+							has_ideas = Techno_nationalism2
+							has_ideas = PRC_yingxue2
+							has_ideas = BPRC_china2
+							has_ideas = PRC_organ_trade2
+						}
+					}
+					remove_ideas = Red_Nobility2
+					remove_ideas = Crony_capitalismy2
+					remove_ideas = Techno_nationalism2
+					remove_ideas = PRC_yingxue2
+					remove_ideas = BPRC_china2
+					remove_ideas = PRC_organ_trade2
 				}
 			}
-			remove_ideas = Red_Nobility2
-	remove_ideas = Crony_capitalismy2
-	remove_ideas = Techno_nationalism2
-	remove_ideas = PRC_yingxue2
-	remove_ideas = BPRC_china2
-	remove_ideas = PRC_organ_trade2
-		}
-		}
 		}
 	}
 	The_CCP_Difficulty_Selection_9 = {
 		available = {
-	
+
 		}
 		visible = {
 			original_tag = CHI
 			is_ai = no
-		
+
 		}
 		ai_will_do = {
 			base = 0
@@ -4829,12 +4813,12 @@ The_CCP_Difficulty_Selection = {
 	}
 	The_CCP_Difficulty_Selection_10 = {
 		available = {
-	
+
 		}
 		visible = {
 			original_tag = CHI
 			is_ai = no
-		
+
 		}
 		ai_will_do = {
 			base = 0
@@ -4851,43 +4835,43 @@ The_CCP_Difficulty_Selection = {
 				add_idea = PRC_yingxue2
 			}
 			PRC = {
-			remove_ideas = Red_Nobility
-	remove_ideas = Crony_capitalismy
-	remove_ideas = Techno_nationalism
-	remove_ideas = Chinese_education
-	remove_ideas = BPRC_china
-	remove_ideas = PRC_organ_trade
-		}
-		hidden_effect = {
-		if = {
-			limit = {
-				PRC = {
-					has_ideas = Red_Nobility2
-	has_ideas = Crony_capitalismy2
-	has_ideas = Techno_nationalism2
-	has_ideas = Chinese_education2
-	has_ideas = BPRC_china2
-	has_ideas = PRC_organ_trade2
+				remove_ideas = Red_Nobility
+				remove_ideas = Crony_capitalismy
+				remove_ideas = Techno_nationalism
+				remove_ideas = Chinese_education
+				remove_ideas = BPRC_china
+				remove_ideas = PRC_organ_trade
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						PRC = {
+							has_ideas = Red_Nobility2
+							has_ideas = Crony_capitalismy2
+							has_ideas = Techno_nationalism2
+							has_ideas = Chinese_education2
+							has_ideas = BPRC_china2
+							has_ideas = PRC_organ_trade2
+						}
+					}
+					remove_ideas = Red_Nobility2
+					remove_ideas = Crony_capitalismy2
+					remove_ideas = Techno_nationalism2
+					remove_ideas = Chinese_education2
+					remove_ideas = BPRC_china2
+					remove_ideas = PRC_organ_trade2
 				}
 			}
-			remove_ideas = Red_Nobility2
-	remove_ideas = Crony_capitalismy2
-	remove_ideas = Techno_nationalism2
-	remove_ideas = Chinese_education2
-	remove_ideas = BPRC_china2
-	remove_ideas = PRC_organ_trade2
-		}
-		}
 		}
 	}
 	The_CCP_Difficulty_Selection_11 = {
 		available = {
-	
+
 		}
 		visible = {
 			original_tag = CHI
 			is_ai = no
-		
+
 		}
 		ai_will_do = {
 			base = 0
@@ -4911,12 +4895,12 @@ The_CCP_Difficulty_Selection = {
 	}
 	The_CCP_Difficulty_Selection_12 = {
 		available = {
-	
+
 		}
 		visible = {
 			original_tag = CHI
 			is_ai = no
-		
+
 		}
 		ai_will_do = {
 			base = 0
@@ -4937,30 +4921,30 @@ The_CCP_Difficulty_Selection = {
 				add_idea = Chinese_education2
 			}
 			PRC = {
-			remove_ideas = Red_Nobility
-	remove_ideas = Crony_capitalismy
-	remove_ideas = Techno_nationalism
-	remove_ideas = BPRC_china
-	remove_ideas = PRC_organ_trade
-		}
-		hidden_effect = {
-		if = {
-			limit = {
-				PRC = {
-					has_ideas = Red_Nobility2
-	has_ideas = Crony_capitalismy2
-	has_ideas = Techno_nationalism2
-	has_ideas = BPRC_china2
-	has_ideas = PRC_organ_trade2
+				remove_ideas = Red_Nobility
+				remove_ideas = Crony_capitalismy
+				remove_ideas = Techno_nationalism
+				remove_ideas = BPRC_china
+				remove_ideas = PRC_organ_trade
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						PRC = {
+							has_ideas = Red_Nobility2
+							has_ideas = Crony_capitalismy2
+							has_ideas = Techno_nationalism2
+							has_ideas = BPRC_china2
+							has_ideas = PRC_organ_trade2
+						}
+					}
+					remove_ideas = Red_Nobility2
+					remove_ideas = Crony_capitalismy2
+					remove_ideas = Techno_nationalism2
+					remove_ideas = BPRC_china2
+					remove_ideas = PRC_organ_trade2
 				}
 			}
-			remove_ideas = Red_Nobility2
-	remove_ideas = Crony_capitalismy2
-	remove_ideas = Techno_nationalism2
-	remove_ideas = BPRC_china2
-	remove_ideas = PRC_organ_trade2
-		}
-		}
 		}
 	}
 }
@@ -4974,23 +4958,23 @@ EastAsia_taiwan_war_dec = {
 			always = no
 		}
 		available = {
-		OR = {
-			PRC = {
-				524 = {is_fully_controlled_by = PRC}
-				1150 = {is_fully_controlled_by = PRC}
-				1149 = {is_fully_controlled_by = PRC}
-				1148 = {is_fully_controlled_by = PRC}
-				648 = {is_fully_controlled_by = PRC}
-					}
-			has_war = no
-		}
+			OR = {
+				PRC = {
+					524 = {is_fully_controlled_by = PRC}
+					1150 = {is_fully_controlled_by = PRC}
+					1149 = {is_fully_controlled_by = PRC}
+					1148 = {is_fully_controlled_by = PRC}
+					648 = {is_fully_controlled_by = PRC}
+				}
+				has_war = no
+			}
 		}
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 14
 		timeout_effect = {
-        EADI_taiwan_war = yes
-    }
+			EADI_taiwan_war = yes
+		}
 	}
 	THECHI_taiwan_war_countdown = {
 		#icon = GFX_decision_generic_crossed_guns
@@ -5000,20 +4984,20 @@ EastAsia_taiwan_war_dec = {
 		activation = {
 			always = no
 		}
-		available = { 
+		available = {
 			OR = {
-			CHI = {
-				is_ally_with = PRC
+				CHI = {
+					is_ally_with = PRC
+				}
+				has_war = no
 			}
-			has_war = no
-			}
-			}
+		}
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 14
 		timeout_effect = {
-        PDTO_taiwan_war = yes
-    }
+			PDTO_taiwan_war = yes
+		}
 	}
 	THEJAP_taiwan_war_countdown = {
 		#icon = GFX_decision_generic_crossed_guns
@@ -5023,28 +5007,28 @@ EastAsia_taiwan_war_dec = {
 		activation = {
 			always = no
 		}
-		available = { 
+		available = {
 			OR = {
-			CHI = {
-				is_ally_with = PRC
+				CHI = {
+					is_ally_with = PRC
+				}
+				has_war = no
 			}
-			has_war = no
-			}
-			}
+		}
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 14
 		timeout_effect = {
-        PDTO2_taiwan_war = yes
-    }
+			PDTO2_taiwan_war = yes
+		}
 	}
 	CHI_war_propaganda = {
 		icon = GFX_decision_generic_propaganda_campaigns
 		allowed = {
 			OR = {
-			tag = PRC
-			tag = JAP
-			tag = CHI
+				tag = PRC
+				tag = JAP
+				tag = CHI
 			}
 		}
 		fire_only_once = no
@@ -5107,9 +5091,9 @@ EastAsia_taiwan_war_dec = {
 					is_ally_with = JAP
 				}
 				add_timed_idea = {
-				idea = CHI_anti_western_proaganda_idea
-				days = 30
-			}
+					idea = CHI_anti_western_proaganda_idea
+					days = 30
+				}
 			}
 		}
 		ai_will_do = {
@@ -5120,20 +5104,20 @@ EastAsia_taiwan_war_dec = {
 		icon = GFX_PRC_soliders
 		allowed = {
 			OR = {
-			tag = PRC
-			tag = JAP
-			tag = CHI
-			tag = AST
+				tag = PRC
+				tag = JAP
+				tag = CHI
+				tag = AST
 			}
 		}
 		visible = {
 			OR = {
-			PRC = {
-			has_completed_focus = PRC_adapt_to_current_realities_of_battles
-			}
-			tag = JAP
-			tag = CHI
-			tag = AST
+				PRC = {
+					has_completed_focus = PRC_adapt_to_current_realities_of_battles
+				}
+				tag = JAP
+				tag = CHI
+				tag = AST
 			}
 		}
 		available = {
@@ -5177,20 +5161,20 @@ EastAsia_taiwan_war_dec = {
 		icon = GFX_PRC_soliders
 		allowed = {
 			OR = {
-			tag = PRC
-			tag = JAP
-			tag = CHI
-			tag = AST
+				tag = PRC
+				tag = JAP
+				tag = CHI
+				tag = AST
 			}
 		}
 		visible = {
 			OR = {
-			PRC = {
-			has_completed_focus = PRC_adapt_to_current_realities_of_battles
-			}
-			tag = JAP
-			tag = CHI
-			tag = AST
+				PRC = {
+					has_completed_focus = PRC_adapt_to_current_realities_of_battles
+				}
+				tag = JAP
+				tag = CHI
+				tag = AST
 			}
 		}
 		available = {
@@ -5234,20 +5218,20 @@ EastAsia_taiwan_war_dec = {
 		icon = GFX_decision_generic_air
 		allowed = {
 			OR = {
-			tag = PRC
-			tag = JAP
-			tag = CHI
-			tag = AST
+				tag = PRC
+				tag = JAP
+				tag = CHI
+				tag = AST
 			}
 		}
 		visible = {
 			OR = {
-			PRC = {
-			has_completed_focus = PRC_adapt_to_current_realities_of_battles
-			}
-			tag = JAP
-			tag = CHI
-			tag = AST
+				PRC = {
+					has_completed_focus = PRC_adapt_to_current_realities_of_battles
+				}
+				tag = JAP
+				tag = CHI
+				tag = AST
 			}
 		}
 		available = {
@@ -5267,33 +5251,33 @@ EastAsia_taiwan_war_dec = {
 		}
 	}
 	#PRC_Nuke_PDTO = {
-		#ai_will_do = {
-			#base = 10
-		#}
-		#icon = GFX_PRC_new_left_decision
-		#available = {
-		#NOT = { has_country_flag = PRC_Nuke_PDTO_1 }
-		#}
-		#state_target = yes
-		#on_map_mode = map_only
-		#cost = 0
-		#fire_only_once = no
-		#days_remove = 7
-		#visible = {
-		#	tag = PRC
-		#	OR = {
-		#	has_war_with = FROM 
-		#}
-		#}
-		#complete_effect = {
-		#set_country_flag = PRC_Nuke_PDTO_1                                          
-		#}
-		#remove_effect = {
-		#clr_country_flag = PRC_Nuke_PDTO_1                       
-		#launch_nuke = {
-	   # state = FROM
-	   # use_nuke = yes	
-		#}	
+	#ai_will_do = {
+	#base = 10
+	#}
+	#icon = GFX_PRC_new_left_decision
+	#available = {
+	#NOT = { has_country_flag = PRC_Nuke_PDTO_1 }
+	#}
+	#state_target = yes
+	#on_map_mode = map_only
+	#cost = 0
+	#fire_only_once = no
+	#days_remove = 7
+	#visible = {
+	#	tag = PRC
+	#	OR = {
+	#	has_war_with = FROM
+	#}
+	#}
+	#complete_effect = {
+	#set_country_flag = PRC_Nuke_PDTO_1
+	#}
+	#remove_effect = {
+	#clr_country_flag = PRC_Nuke_PDTO_1
+	#launch_nuke = {
+	# state = FROM
+	# use_nuke = yes
+	#}
 	#}
 	#}
 	PRC_destroy_taiwan_infr2 = {
@@ -5312,13 +5296,13 @@ EastAsia_taiwan_war_dec = {
 		}
 		#state_target = yes
 		#on_map_mode = map_only
-		highlight_states = {	
-		highlight_state_targets = { 
-			state = 1148
-			state = 1149
-			state = 1150
-			state = 524
-		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1148
+				state = 1149
+				state = 1150
+				state = 524
+			}
 		}
 		cost = 30
 		fire_only_once = no
@@ -5332,66 +5316,66 @@ EastAsia_taiwan_war_dec = {
 			if = {
 				limit = {
 					1148 = {
-    is_owned_by = CHI
-}
+						is_owned_by = CHI
+					}
 				}
 				damage_units = {
-				state = 1148
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+					state = 1148
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 			}
 			if = {
 				limit = {
 					1149 = {
-    is_owned_by = CHI
-}
+						is_owned_by = CHI
+					}
 				}
 				damage_units = {
-				state = 1149
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+					state = 1149
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 			}
 			if = {
 				limit = {
 					1150 = {
-    is_owned_by = CHI
-}
+						is_owned_by = CHI
+					}
 				}
 				damage_units = {
-				state = 1150
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+					state = 1150
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 			}
 			if = {
 				limit = {
 					524 = {
-    is_owned_by = CHI
-}
+						is_owned_by = CHI
+					}
 				}
 				damage_units = {
-				state = 524
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+					state = 524
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 			}
 			CHI = {
 				every_controlled_state = {
@@ -5401,7 +5385,7 @@ EastAsia_taiwan_war_dec = {
 					}
 					add_manpower = -2000
 					add_stability = -0.025
-				add_war_support = 0.05
+					add_war_support = 0.05
 				}
 			}
 		}
@@ -5423,13 +5407,13 @@ EastAsia_taiwan_war_dec = {
 		cost = 30
 		fire_only_once = no
 		days_remove = 7
-		highlight_states = {	
-		highlight_state_targets = { 
-			state = 1148
-			state = 1149
-			state = 1150
-			state = 524
-		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1148
+				state = 1149
+				state = 1150
+				state = 524
+			}
 		}
 		complete_effect = {
 			set_country_flag = PRC_Preparing_airstrike
@@ -5440,66 +5424,66 @@ EastAsia_taiwan_war_dec = {
 			if = {
 				limit = {
 					1148 = {
-    is_owned_by = CHI
-}
+						is_owned_by = CHI
+					}
 				}
 				damage_units = {
-				state = 1148
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+					state = 1148
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 			}
 			if = {
 				limit = {
 					1149 = {
-    is_owned_by = CHI
-}
+						is_owned_by = CHI
+					}
 				}
 				damage_units = {
-				state = 1149
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+					state = 1149
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 			}
 			if = {
 				limit = {
 					1150 = {
-    is_owned_by = CHI
-}
+						is_owned_by = CHI
+					}
 				}
 				damage_units = {
-				state = 1150
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+					state = 1150
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 			}
 			if = {
 				limit = {
 					524 = {
-    is_owned_by = CHI
-}
+						is_owned_by = CHI
+					}
 				}
 				damage_units = {
-				state = 524
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+					state = 524
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 			}
 			CHI = {
 				every_controlled_state = {
@@ -5509,7 +5493,7 @@ EastAsia_taiwan_war_dec = {
 					}
 					add_manpower = -2000
 					add_stability = -0.025
-				add_war_support = 0.05
+					add_war_support = 0.05
 				}
 			}
 		}
@@ -5531,16 +5515,16 @@ EastAsia_taiwan_war_dec = {
 		cost = 30
 		fire_only_once = no
 		days_remove = 7
-		highlight_states = {	
-		highlight_state_targets = { 
-			state = 1148
-			state = 1149
-			state = 1150
-			state = 524
-		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1148
+				state = 1149
+				state = 1150
+				state = 524
+			}
 		}
 		complete_effect = {
-			
+
 			set_country_flag = PRC_Preparing_airstrike
 		}
 		remove_effect = {
@@ -5549,66 +5533,66 @@ EastAsia_taiwan_war_dec = {
 			if = {
 				limit = {
 					1148 = {
-    is_owned_by = CHI
-}
+						is_owned_by = CHI
+					}
 				}
 				damage_units = {
-				state = 1148
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+					state = 1148
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 			}
 			if = {
 				limit = {
 					1149 = {
-    is_owned_by = CHI
-}
+						is_owned_by = CHI
+					}
 				}
 				damage_units = {
-				state = 1149
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+					state = 1149
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 			}
 			if = {
 				limit = {
 					1150 = {
-    is_owned_by = CHI
-}
+						is_owned_by = CHI
+					}
 				}
 				damage_units = {
-				state = 1150
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+					state = 1150
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 			}
 			if = {
 				limit = {
 					524 = {
-    is_owned_by = CHI
-}
+						is_owned_by = CHI
+					}
 				}
 				damage_units = {
-				state = 524
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+					state = 524
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 			}
 			CHI = {
 				every_controlled_state = {
@@ -5616,9 +5600,9 @@ EastAsia_taiwan_war_dec = {
 						type = arms_factory
 						damage = 0.5
 					}
-					add_manpower = -2000			
-				add_stability = -0.025
-				add_war_support = 0.05
+					add_manpower = -2000
+					add_stability = -0.025
+					add_war_support = 0.05
 				}
 			}
 		}
@@ -5641,10 +5625,10 @@ EastAsia_taiwan_war_dec = {
 				has_full_control_of_state = 876
 			}
 		}
-		highlight_states = {	
-		highlight_state_targets = { 
-			state = 876
-		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 876
+			}
 		}
 		cost = 30
 		fire_only_once = no
@@ -5670,15 +5654,15 @@ EastAsia_taiwan_war_dec = {
 					}
 					add_manpower = -2000
 				}
-			damage_units = {
-				state = 876
-				damage = 0.3
-				org_damage = 0.3
-				str_damage = 0.3
-				ratio = yes
-				army = yes
-				navy = no
-			}
+				damage_units = {
+					state = 876
+					damage = 0.3
+					org_damage = 0.3
+					str_damage = 0.3
+					ratio = yes
+					army = yes
+					navy = no
+				}
 				add_stability = -0.025
 				add_war_support = 0.025
 			}
@@ -5702,10 +5686,10 @@ EastAsia_taiwan_war_dec = {
 				has_full_control_of_state = 526
 			}
 		}
-		highlight_states = {	
-		highlight_state_targets = { 
-			state = 526
-		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 526
+			}
 		}
 		cost = 30
 		fire_only_once = no
@@ -5731,15 +5715,15 @@ EastAsia_taiwan_war_dec = {
 					}
 					add_manpower = -2000
 				}
-			damage_units = {
-				state = 526
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+				damage_units = {
+					state = 526
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 				add_stability = -0.025
 				add_war_support = 0.025
 			}
@@ -5760,11 +5744,11 @@ EastAsia_taiwan_war_dec = {
 			}
 			has_war_with = JAP
 		}
-		highlight_states = {	
-		highlight_state_targets = { 
-			state = 528
-			state = 1338
-		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 528
+				state = 1338
+			}
 		}
 		cost = 30
 		fire_only_once = no
@@ -5806,24 +5790,24 @@ EastAsia_taiwan_war_dec = {
 					}
 					add_manpower = -2000
 				}
-			damage_units = {
-				state = 528
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
-			damage_units = {
-				state = 1338
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+				damage_units = {
+					state = 528
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
+				damage_units = {
+					state = 1338
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 				add_stability = -0.025
 				add_war_support = 0.025
 			}
@@ -5863,29 +5847,29 @@ EastAsia_taiwan_war_dec = {
 		}
 		visible = {
 			PRC = {
-			has_completed_focus = PRC_indiscriminate_missile_strikes
+				has_completed_focus = PRC_indiscriminate_missile_strikes
 			}
 		}
 		available = {
 			OR = {
-			NOT = {
-				JAP = {
-					has_country_flag = PRC_Preparing_airstrike
-				}
-				CHI = {
-					has_country_flag = PRC_Preparing_airstrike
-				}
-				AST = {
-					has_country_flag = PRC_Preparing_airstrike
+				NOT = {
+					JAP = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
+					CHI = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
+					AST = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
 				}
 			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1431
 			}
-		}
-		
-		highlight_states = {	
-		highlight_state_targets = { 
-			state = 1431
-		}
 		}
 		cost = 30
 		fire_only_once = no
@@ -5912,15 +5896,15 @@ EastAsia_taiwan_war_dec = {
 					}
 					add_manpower = -2000
 				}
-			damage_units = {
-				state = 1431
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+				damage_units = {
+					state = 1431
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 				add_stability = -0.025
 				add_war_support = 0.025
 			}
@@ -5937,29 +5921,29 @@ EastAsia_taiwan_war_dec = {
 		}
 		visible = {
 			PRC = {
-			has_completed_focus = PRC_indiscriminate_missile_strikes
+				has_completed_focus = PRC_indiscriminate_missile_strikes
 			}
 		}
 		available = {
 			OR = {
-			NOT = {
-				JAP = {
-					has_country_flag = PRC_Preparing_airstrike
-				}
-				CHI = {
-					has_country_flag = PRC_Preparing_airstrike
-				}
-				AST = {
-					has_country_flag = PRC_Preparing_airstrike
+				NOT = {
+					JAP = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
+					CHI = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
+					AST = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
 				}
 			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 595
 			}
-		}
-		
-		highlight_states = {	
-		highlight_state_targets = { 
-			state = 595
-		}
 		}
 		cost = 30
 		fire_only_once = no
@@ -5986,15 +5970,15 @@ EastAsia_taiwan_war_dec = {
 					}
 					add_manpower = -2000
 				}
-			damage_units = {
-				state = 595
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+				damage_units = {
+					state = 595
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 				add_stability = -0.025
 				add_war_support = 0.025
 			}
@@ -6011,29 +5995,29 @@ EastAsia_taiwan_war_dec = {
 		}
 		visible = {
 			PRC = {
-			has_completed_focus = PRC_indiscriminate_missile_strikes
+				has_completed_focus = PRC_indiscriminate_missile_strikes
 			}
 		}
 		available = {
 			OR = {
-			NOT = {
-				JAP = {
-					has_country_flag = PRC_Preparing_airstrike
-				}
-				CHI = {
-					has_country_flag = PRC_Preparing_airstrike
-				}
-				AST = {
-					has_country_flag = PRC_Preparing_airstrike
+				NOT = {
+					JAP = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
+					CHI = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
+					AST = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
 				}
 			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1218
 			}
-		}
-		
-		highlight_states = {	
-		highlight_state_targets = { 
-			state = 1218
-		}
 		}
 		cost = 30
 		fire_only_once = no
@@ -6060,15 +6044,15 @@ EastAsia_taiwan_war_dec = {
 					}
 					add_manpower = -2000
 				}
-			damage_units = {
-				state = 1218
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+				damage_units = {
+					state = 1218
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 				add_stability = -0.025
 				add_war_support = 0.025
 			}
@@ -6085,29 +6069,29 @@ EastAsia_taiwan_war_dec = {
 		}
 		visible = {
 			PRC = {
-			has_completed_focus = PRC_indiscriminate_missile_strikes
+				has_completed_focus = PRC_indiscriminate_missile_strikes
 			}
 		}
 		available = {
 			OR = {
-			NOT = {
-				JAP = {
-					has_country_flag = PRC_Preparing_airstrike
-				}
-				CHI = {
-					has_country_flag = PRC_Preparing_airstrike
-				}
-				AST = {
-					has_country_flag = PRC_Preparing_airstrike
+				NOT = {
+					JAP = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
+					CHI = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
+					AST = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
 				}
 			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1206
 			}
-		}
-		
-		highlight_states = {	
-		highlight_state_targets = { 
-			state = 1206
-		}
 		}
 		cost = 30
 		fire_only_once = no
@@ -6134,15 +6118,15 @@ EastAsia_taiwan_war_dec = {
 					}
 					add_manpower = -2000
 				}
-			damage_units = {
-				state = 1206
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+				damage_units = {
+					state = 1206
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 				add_stability = -0.025
 				add_war_support = 0.025
 			}
@@ -6159,29 +6143,29 @@ EastAsia_taiwan_war_dec = {
 		}
 		visible = {
 			PRC = {
-			has_completed_focus = PRC_indiscriminate_missile_strikes
+				has_completed_focus = PRC_indiscriminate_missile_strikes
 			}
 		}
 		available = {
 			OR = {
-			NOT = {
-				JAP = {
-					has_country_flag = PRC_Preparing_airstrike
-				}
-				CHI = {
-					has_country_flag = PRC_Preparing_airstrike
-				}
-				AST = {
-					has_country_flag = PRC_Preparing_airstrike
+				NOT = {
+					JAP = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
+					CHI = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
+					AST = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
 				}
 			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 596
 			}
-		}
-		
-		highlight_states = {	
-		highlight_state_targets = { 
-			state = 596
-		}
 		}
 		cost = 30
 		fire_only_once = no
@@ -6208,15 +6192,15 @@ EastAsia_taiwan_war_dec = {
 					}
 					add_manpower = -2000
 				}
-			damage_units = {
-				state = 596
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+				damage_units = {
+					state = 596
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 				add_stability = -0.025
 				add_war_support = 0.025
 			}
@@ -6233,29 +6217,29 @@ EastAsia_taiwan_war_dec = {
 		}
 		visible = {
 			PRC = {
-			has_completed_focus = PRC_indiscriminate_missile_strikes
+				has_completed_focus = PRC_indiscriminate_missile_strikes
 			}
 		}
 		available = {
 			OR = {
-			NOT = {
-				JAP = {
-					has_country_flag = PRC_Preparing_airstrike
-				}
-				CHI = {
-					has_country_flag = PRC_Preparing_airstrike
-				}
-				AST = {
-					has_country_flag = PRC_Preparing_airstrike
+				NOT = {
+					JAP = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
+					CHI = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
+					AST = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
 				}
 			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1215
 			}
-		}
-		
-		highlight_states = {	
-		highlight_state_targets = { 
-			state = 1215
-		}
 		}
 		cost = 30
 		fire_only_once = no
@@ -6282,15 +6266,15 @@ EastAsia_taiwan_war_dec = {
 					}
 					add_manpower = -2000
 				}
-			damage_units = {
-				state = 1215
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+				damage_units = {
+					state = 1215
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 				add_stability = -0.025
 				add_war_support = 0.025
 			}
@@ -6307,29 +6291,29 @@ EastAsia_taiwan_war_dec = {
 		}
 		visible = {
 			PRC = {
-			has_completed_focus = PRC_indiscriminate_missile_strikes
+				has_completed_focus = PRC_indiscriminate_missile_strikes
 			}
 		}
 		available = {
 			OR = {
-			NOT = {
-				JAP = {
-					has_country_flag = PRC_Preparing_airstrike
-				}
-				CHI = {
-					has_country_flag = PRC_Preparing_airstrike
-				}
-				AST = {
-					has_country_flag = PRC_Preparing_airstrike
+				NOT = {
+					JAP = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
+					CHI = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
+					AST = {
+						has_country_flag = PRC_Preparing_airstrike
+					}
 				}
 			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1219
 			}
-		}
-		
-		highlight_states = {	
-		highlight_state_targets = { 
-			state = 1219
-		}
 		}
 		cost = 30
 		fire_only_once = no
@@ -6356,30 +6340,18 @@ EastAsia_taiwan_war_dec = {
 					}
 					add_manpower = -2000
 				}
-			damage_units = {
-				state = 1219
-				damage = 0.15
-				org_damage = 0.15
-				str_damage = 0.15
-				ratio = yes
-				army = yes
-				navy = no
-			}
+				damage_units = {
+					state = 1219
+					damage = 0.15
+					org_damage = 0.15
+					str_damage = 0.15
+					ratio = yes
+					army = yes
+					navy = no
+				}
 				add_stability = -0.025
 				add_war_support = 0.025
 			}
 		}
 	}
 }
-CHI_Taiwan_will = {
-	
-}
-
-
-
-
-
-
-
-
-

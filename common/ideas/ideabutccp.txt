@@ -5,19 +5,19 @@ ideas = {
 			allowed = {
 				always = yes
 			}
-			  traits = {
-			        ZZZ_blank_idea_trait
-			    }
+			traits = {
+				ZZZ_blank_idea_trait
+			}
 			allowed_civil_war = {
 				always = yes
 			}
 			cancel = {
 			}
 			removal_cost = -1
-			
+
 			modifier = {
 				political_power_gain = -0.1
-                industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.05
 				consumer_goods_factor = 0.10
 				planning_speed_factor = -0.1
 				income_growth_factor = 0.05
@@ -38,10 +38,10 @@ ideas = {
 				has_global_flag = PRC_china_collapse
 			}
 			removal_cost = -1
-			
+
 			modifier = {
 				political_power_gain = -0.1
-                industrial_capacity_factory = -0.05
+				industrial_capacity_factory = -0.05
 				consumer_goods_factor = 0.10
 				planning_speed_factor = -0.1
 				income_growth_factor = -0.05
@@ -58,11 +58,11 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-cancel = {
+			cancel = {
 				has_global_flag = PRC_china_collapse
 			}
 			removal_cost = -1
-			
+
 			modifier = {
 				production_speed_buildings_factor = -0.2
 				line_change_production_efficiency_factor = 0.1
@@ -80,16 +80,16 @@ cancel = {
 			allowed_civil_war = {
 				always = yes
 			}
-cancel = {
+			cancel = {
 				has_global_flag = PRC_china_collapse
 			}
 			removal_cost = -1
-			
+
 			modifier = {
-                research_speed_factor = -0.05           
-                consumer_goods_factor = -0.05 
-                political_power_gain = 0.10  
-                stability_factor = 0.05
+				research_speed_factor = -0.05
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.10
+				stability_factor = 0.05
 				master_ideology_drift = 0.01
 			}
 		}
@@ -102,19 +102,19 @@ cancel = {
 			allowed_civil_war = {
 				always = yes
 			}
-cancel = {
+			cancel = {
 				has_global_flag = PRC_china_collapse
 			}
 			removal_cost = -1
-			
+
 			modifier = {
-                political_power_gain = 0.50
-                stability_factor = 0.20
-                war_support_factor = 0.25
-                research_speed_factor = -0.05
-                poverty_development_monthly = -0.001
-                academic_development_monthly = -0.001
-                society_development_monthly = -0.001
+				political_power_gain = 0.50
+				stability_factor = 0.20
+				war_support_factor = 0.25
+				research_speed_factor = -0.05
+				poverty_development_monthly = -0.001
+				academic_development_monthly = -0.001
+				society_development_monthly = -0.001
 			}
 		}
 		Chinese_education = {
@@ -126,19 +126,19 @@ cancel = {
 			allowed_civil_war = {
 				always = yes
 			}
-cancel = {
+			cancel = {
 				has_global_flag = PRC_china_collapse
 			}
 			removal_cost = -1
-			
+
 			modifier = {
-				research_speed_factor = -0.05   
+				research_speed_factor = -0.05
 				training_time_factor = -0.10
 				monthly_population = -0.01
 				mobilization_speed = 0.25
 				drift_defence_factor = 0.25
-				academic_development_monthly = 0.001   
-                society_development_monthly = -0.001      
+				academic_development_monthly = 0.001
+				society_development_monthly = -0.001
 				income_growth_factor = 0.05
 			}
 		}
@@ -151,43 +151,43 @@ cancel = {
 			allowed_civil_war = {
 				always = yes
 			}
-cancel = {
+			cancel = {
 				has_global_flag = PRC_china_collapse
 			}
 			removal_cost = -1
-			
-			modifier = {      
-				research_speed_factor = -0.05 
+
+			modifier = {
+				research_speed_factor = -0.05
 				mobilization_speed = 0.25
 				monthly_population = -0.01
 				training_time_factor = -0.10
-			    academic_development_monthly = -0.001
-			    society_development_monthly = -0.001
+				academic_development_monthly = -0.001
+				society_development_monthly = -0.001
 				income_growth_factor = 0.05
 			}
 		}
 		PRC_organ_trade = {
-    picture = PRC_organ_trade
-    name = PRC_organ_trade
+			picture = PRC_organ_trade
+			name = PRC_organ_trade
 
-    allowed = {
-        always = no
-    }
+			allowed = {
+				always = no
+			}
 
-    allowed_civil_war = {
-        always = yes
-    }
-    cancel = {
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
 				has_global_flag = PRC_china_collapse
 			}
-    removal_cost = -1
-    modifier = {
-        political_power_cost = -0.5
-        stability_factor = -0.05
-        monthly_population = -0.001
-		income_growth_factor = 0.05
-    }
-}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.5
+				stability_factor = -0.05
+				monthly_population = -0.001
+				income_growth_factor = 0.05
+			}
+		}
 	}
 	country = {
 		Red_Nobility2 = {
@@ -200,11 +200,11 @@ cancel = {
 			allowed_civil_war = {
 				always = yes
 			}
-cancel = {
+			cancel = {
 				has_global_flag = PRC_china_collapse
 			}
 			removal_cost = -1
-			
+
 			modifier = {
 				political_power_gain = 2
 				consumer_goods_factor = 0.10
@@ -227,11 +227,11 @@ cancel = {
 			allowed_civil_war = {
 				always = yes
 			}
-cancel = {
+			cancel = {
 				has_global_flag = PRC_china_collapse
 			}
 			removal_cost = -1
-			
+
 			modifier = {
 				production_speed_buildings_factor = 0.2
 				line_change_production_efficiency_factor = 0.1
@@ -255,20 +255,20 @@ cancel = {
 			allowed_civil_war = {
 				always = yes
 			}
-cancel = {
+			cancel = {
 				has_global_flag = PRC_china_collapse
 			}
 			removal_cost = -1
-			
+
 			modifier = {
-                research_speed_factor = 0.15           
-                consumer_goods_factor = -0.05 
-                political_power_gain = 0.50
+				research_speed_factor = 0.15
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.50
 				industrial_capacity_factory = 0.25
 				production_speed_buildings_factor = 0.25
 				production_speed_rail_way_factor = 0.25
 				production_speed_supply_node_factor = 0.25
-                stability_factor = 0.05
+				stability_factor = 0.05
 				master_ideology_drift = 0.01
 				monthly_population = -0.05
 				conscription_factor = 0.30
@@ -284,15 +284,15 @@ cancel = {
 			allowed_civil_war = {
 				always = yes
 			}
-cancel = {
+			cancel = {
 				has_global_flag = PRC_china_collapse
 			}
 			removal_cost = -1
-			
+
 			modifier = {
-                political_power_gain = 1
-                stability_factor = 0.20
-                war_support_factor = 0.50
+				political_power_gain = 1
+				stability_factor = 0.20
+				war_support_factor = 0.50
 				party_popularity_stability_factor = 0.10
 				master_ideology_drift = 0.01
 				monthly_population = -0.05
@@ -339,20 +339,20 @@ cancel = {
 			allowed_civil_war = {
 				always = yes
 			}
-cancel = {
+			cancel = {
 				has_global_flag = PRC_china_collapse
 			}
 			removal_cost = -1
-			
+
 			modifier = {
-				research_speed_factor = 0.15   
+				research_speed_factor = 0.15
 				training_time_factor = -0.10
 				mobilization_speed = 0.50
 				minimum_training_level = -0.10
 				drift_defence_factor = 0.25
 				max_dig_in_factor = 0.05
-				academic_development_monthly =0.1   
-                society_development_monthly = 0.1      
+				academic_development_monthly =0.1
+				society_development_monthly = 0.1
 				income_growth_factor = 0.05
 				monthly_population = -0.05
 				conscription_factor = 0.30
@@ -389,7 +389,7 @@ cancel = {
 			}
 		}
 		BPRC_china2 = {
-			 name = BPRC_china
+			name = BPRC_china
 			picture = BPRC_china
 			allowed = {
 				always = yes
@@ -398,12 +398,12 @@ cancel = {
 			allowed_civil_war = {
 				always = yes
 			}
-cancel = {
+			cancel = {
 				has_global_flag = PRC_china_collapse
 			}
 			removal_cost = -1
-			
-			modifier = {      
+
+			modifier = {
 				max_dig_in_factor = 0.05
 				acclimatization_cold_climate_gain_factor = 0.25
 				acclimatization_hot_climate_gain_factor = 0.25
@@ -411,8 +411,8 @@ cancel = {
 				monthly_population = -0.05
 				training_time_factor = -0.10
 				minimum_training_level = -0.10
-			    academic_development_monthly = 0.1
-			    society_development_monthly = 0.1
+				academic_development_monthly = 0.1
+				society_development_monthly = 0.1
 				income_growth_factor = 0.10
 				conscription_factor = 0.30
 			}
@@ -448,27 +448,27 @@ cancel = {
 			}
 		}
 		PRC_organ_trade2 = {
-    picture = PRC_organ_trade
-    name = PRC_organ_trade
+			picture = PRC_organ_trade
+			name = PRC_organ_trade
 
-    allowed = {
-        always = no
-    }
+			allowed = {
+				always = no
+			}
 
-    allowed_civil_war = {
-        always = yes
-    }
-    cancel = {
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
 				has_global_flag = PRC_china_collapse
 			}
-    removal_cost = -1
-    modifier = {
-        monthly_population = -0.15
-		income_growth_factor = 0.15
-		business_value_factor = 0.15
-		personal_expense_factor = 0.15
-		poverty_development_monthly = -0.1
-    }
-}
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.15
+				income_growth_factor = 0.15
+				business_value_factor = 0.15
+				personal_expense_factor = 0.15
+				poverty_development_monthly = -0.1
+			}
+		}
 	}
 }

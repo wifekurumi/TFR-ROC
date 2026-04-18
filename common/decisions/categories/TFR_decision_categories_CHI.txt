@@ -20,7 +20,7 @@ CHI_PRC_Infiltration_decisions = {
 	#滲透度
 	icon = GFX_PRC_Infiltration
 	#picture = GFX_CHI_test_of_will_banner_animated
-	priority = 15
+	priority = 1
 	#visible_when_empty = yes
 	allowed = {
 		original_tag = CHI
@@ -44,7 +44,7 @@ CHI_PRC_Infiltration_decisions = {
 CHI_Legislative_Yuan_decisions = {
 	#立法院
 	icon = GFX_CHI_Legislative_Yuan_decisions
-	priority = 1
+	priority = 5
 	visible_when_empty = yes
 	allowed = {
 		original_tag = CHI
@@ -84,7 +84,7 @@ CHI_armry_test = {
 	#中華民國國軍
 	#picture = GFX_CHI_armry_test
 	#icon = GFX_CHI_test_of_will_category_anim
-	priority = 30
+	priority = 2
 	visible_when_empty = yes
 	allowed = {
 		original_tag = CHI
@@ -127,7 +127,7 @@ CHI_armry_test = {
 PDTO_solidarity = {
 	#太約
 	icon = GFX_PDTO_dec
-	priority = 30
+	priority = 3
 	visible_when_empty = yes
 	allowed = {
 		has_country_flag = pdto_member

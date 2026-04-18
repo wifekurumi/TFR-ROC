@@ -66,16 +66,52 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/generic/CHI_Legislative_Yuan_decisions.png"
 	}
 	SpriteType = {
-		name = "GFX_CHI_Legislative_Yuan_decisions_DPP"
-		texturefile = "gfx/interface/decisions/generic/CHI_Legislative_Yuan_decisions_DPP.png"
+		name = "GFX_CHI_nuclear_with_green"
+		texturefile = "gfx/interface/decisions/CHI/nuclear_with_green.png"
 	}
 	SpriteType = {
-		name = "GFX_CHI_Legislative_Yuan_decisions_KMT"
-		texturefile = "gfx/interface/decisions/generic/CHI_Legislative_Yuan_decisions_KMT.png"
+		name = "GFX_CHI_Upholding_Taiwan_Consensus"
+		texturefile = "gfx/interface/decisions/CHI/Upholding_Taiwan_Consensus.png"
 	}
 	SpriteType = {
-		name = "GFX_CHI_Legislative_Yuan_decisions_TPP"
-		texturefile = "gfx/interface/decisions/generic/CHI_Legislative_Yuan_decisions_TPP.png"
+		name = "GFX_CHI_Criticizing_the_KMT"
+		texturefile = "gfx/interface/decisions/CHI/Criticizing_the_KMT.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_Crack_sell_Taiwan"
+		texturefile = "gfx/interface/decisions/CHI/Crack_sell_Taiwan.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_Criticizing_the_DPP"
+		texturefile = "gfx/interface/decisions/CHI/Criticizing_the_DPP.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_Adhere_1992_Consensus"
+		texturefile = "gfx/interface/decisions/CHI/Adhere_1992_Consensus.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_Continued_nuclear_energy"
+		texturefile = "gfx/interface/decisions/CHI/Continued_nuclear_energy.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_Maintaining_social_stability"
+		texturefile = "gfx/interface/decisions/CHI/Maintaining_social_stability.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_Making_deals_with_KMT"
+		texturefile = "gfx/interface/decisions/CHI/Making_deals_with_KMT.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_Making_deals_with_DPP"
+		texturefile = "gfx/interface/decisions/CHI/Making_deals_with_DPP.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_Increase_enterprise_construction"
+		texturefile = "gfx/interface/decisions/CHI/Increase_enterprise_construction.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_Deepen_civil_rights"
+		texturefile = "gfx/interface/decisions/CHI/Deepen_civil_rights.png"
 	}
 	SpriteType = {
 		name = "CHI_small_blockade"

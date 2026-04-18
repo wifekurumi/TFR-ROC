@@ -1079,8 +1079,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_nuclear_reactor_factor = -0.003
-				production_speed_energy_farm_factor = 0.003
+				production_speed_nuclear_reactor_factor = -0.025
+				production_speed_energy_farm_factor = 0.05
 			}
 			}
 			CHI_LY_of_the_roc_4 = {
