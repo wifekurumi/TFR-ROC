@@ -131,7 +131,6 @@ CHI_Legislative_Yuan_decisions = {
 		modifier = {
 			power_balance_weekly = 0.02
 			social_liberal_drift = 0.05
-			market_liberal_drift = 0.05
 			social_democrat_drift = 0.05
 			stability_weekly = 0.01
 		}
@@ -647,28 +646,20 @@ CHI_Legislative_Yuan_decisions = {
 		priority = 50
 		fire_only_once = no
 		cancel_if_not_visible = no
-		cost = 100
+		cost = 45
 		days_remove = 45
 		days_re_enable = 45
 		modifier = {
-
+			conservative_drift = 0.05
+			authoritarian_democrat_drift = 0.05
+			political_power_gain = -0.05
+			market_liberal_drift = 0.08
 		}
 		complete_effect = {
 			set_country_flag = TPP_agenda
 		}
 		remove_effect = {
 			clr_country_flag = TPP_agenda
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = CHI_LY_of_the_roc_0
-					add_idea = CHI_LY_of_the_roc_5
-				}
-			}
-			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.05}
-			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
-			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.005}
-			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = -0.005}
-
 		}
 	}
 	CHI_Making_deals_with_DPP = {
@@ -693,28 +684,20 @@ CHI_Legislative_Yuan_decisions = {
 		priority = 50
 		fire_only_once = no
 		cancel_if_not_visible = no
-		cost = 100
+		cost = 45
 		days_remove = 45
 		days_re_enable = 45
 		modifier = {
-
+			political_power_gain = -0.05
+			social_liberal_drift = 0.05
+			market_liberal_drift = 0.08
+			social_democrat_drift = 0.05
 		}
 		complete_effect = {
 			set_country_flag = TPP_agenda
 		}
 		remove_effect = {
 			clr_country_flag = TPP_agenda
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = CHI_LY_of_the_roc_0
-					add_idea = CHI_LY_of_the_roc_1
-				}
-			}
-			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.05}
-			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
-			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = -0.005}
-			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = 0.005}
-
 		}
 	}
 	CHI_Increase_enterprise_construction = {
@@ -756,12 +739,11 @@ CHI_Legislative_Yuan_decisions = {
 					add_idea = CHI_LY_of_the_roc_9
 				}
 			}
-			add_to_variable = {var = CHI_LFY_society_development_monthly value = 0.003}
-			add_to_variable = {var = CHI_LFY_production_speed_office_park_factor value = 0.01}
-			add_to_variable = {var = business_value_factor value = 0.006}
-			add_to_variable = {var = business_value value = 0.3}
+			add_to_variable = {var = CHI_LFY_society_development_monthly value = 0.005}
+			add_to_variable = {var = CHI_LFY_production_speed_office_park_factor value = 0.05}
+			add_to_variable = {var = business_value_factor value = 0.05}
 			random_list = {
-				25 = {
+				30 = {
 					1148 = {
 						add_building_construction = {
 							type = office_park
@@ -771,7 +753,7 @@ CHI_Legislative_Yuan_decisions = {
 
 					}
 				}
-				25 = {
+				30 = {
 					1150 = {
 						add_building_construction = {
 							type = office_park
@@ -780,7 +762,7 @@ CHI_Legislative_Yuan_decisions = {
 						}
 					}
 				}
-				25 = {
+				30 = {
 					1149 = {
 						add_building_construction = {
 							type = office_park
@@ -789,7 +771,7 @@ CHI_Legislative_Yuan_decisions = {
 						}
 					}
 				}
-				25 = {
+				10 = {
 					524 = {
 						add_building_construction = {
 							type = office_park

@@ -1212,10 +1212,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_office_park_factor = 0.003
-				society_development_monthly = 0.01
-				business_value_factor = 0.006
-				business_value  = 0.3
+				production_speed_office_park_factor = 0.005
+				society_development_monthly = 0.05
+				business_value_factor = 0.05
 			}
 			}
 			CHI_LY_of_the_roc_10 = {

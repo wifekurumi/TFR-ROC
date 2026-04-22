@@ -179,7 +179,6 @@ CHI_LY_of_the_roc_dynamic = {
 	consumer_goods_factor = CHI_LFY_consumer_goods_factor
 	production_speed_office_park_factor = CHI_LFY_production_speed_office_park_factor
 	business_value_factor = CHI_LFY_business_value_factor
-	business_value = CHI_LFY_business_value
 	personal_value_factor = CHI_LFY_personal_value_factor
 	income_growth_factor = CHI_LFY_income_growth_factor
 	poverty_development_monthly = CHI_LFY_poverty_development_monthly
