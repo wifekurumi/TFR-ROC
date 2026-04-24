@@ -159,7 +159,6 @@ CHI_LY_of_the_roc_dynamic = {
 	stability_factor = CHI_LFY_stability_factor
 	political_power_gain = CHI_LFY_political_power_gain
 	party_popularity_stability_factor = CHI_LFY_party_popularity_stability_factor
-	stability_weekly_factor = CHI_LFY_stability_weekly_factor
 	war_support_weekly_factor = CHI_LFY_war_support_weekly_factor
 	social_liberal_drift = CHI_LFY_social_liberal_drift
 	market_liberal_drift = CHI_LFY_market_liberal_drift
