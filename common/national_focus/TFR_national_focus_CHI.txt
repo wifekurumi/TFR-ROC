@@ -2217,7 +2217,7 @@ focus_tree = {
 		#緊急金融管制
 		id = emergency_financial_controls
 		icon = GFX_focus_CHI_emergency_financial_controls
-		cost = 1
+		cost = 3
 		x = -1
 		y = 1
 		prerequisite = {
@@ -2247,7 +2247,7 @@ focus_tree = {
 		#啟動臺日緊急協商
 		id = TJ_hold_emergency_talks
 		icon = GFX_focus_CHI_TJ_hold_emergency_talks
-		cost = 1
+		cost = 4
 		x = -4
 		y = 1
 		available = {
@@ -2280,7 +2280,7 @@ focus_tree = {
 		#出口市場轉向
 		id = Export_market_shifts
 		icon = GFX_focus_CHI_Export_market_shifts
-		cost = 1
+		cost = 3
 		x = 2
 		y = 1
 		prerequisite = {
@@ -2310,7 +2310,7 @@ focus_tree = {
 		#重估外匯存底
 		id = Revaluation_foreign_exchange_reserves
 		icon = GFX_focus_CHI_Revaluation_foreign_exchange_reserves
-		cost = 1
+		cost = 3
 		x = 0
 		y = 1
 		prerequisite = {
@@ -2340,7 +2340,7 @@ focus_tree = {
 		#澳洲資源互換協定
 		id = Aus_Resource_Swap_Agreement
 		icon = GFX_focus_CHI_Aus_Resource_Swap_Agreement
-		cost = 1
+		cost = 4
 		x = -2
 		y = 1
 		prerequisite = {
@@ -2380,7 +2380,7 @@ focus_tree = {
 		#對日科技與產業合作框架
 		id = Japan_Science_Technology_Industry_Cooperation
 		icon = GFX_focus_CHI_Japan_Science_Technology_Industry_Cooperation
-		cost = 1
+		cost = 5
 		x = 1
 		y = 2
 		prerequisite = {
@@ -2397,7 +2397,10 @@ focus_tree = {
 			effect_tooltip = {
 				remove_ideas = financial_crisis_6
 			}
-			add_ideas = TJ_Technology_Cooperation
+			add_timed_idea = {
+				idea = TJ_Technology_Cooperation
+				days = 150
+			}
 			hidden_effect = {
 				remove_dynamic_modifier = {
 					modifier = financial_crisis_dynamic
@@ -2409,7 +2412,7 @@ focus_tree = {
 		#半導體產業動員
 		id = Semiconductor_mobilization
 		icon = GFX_focus_CHI_Semiconductor_mobilization
-		cost = 1
+		cost = 5
 		x = 2
 		y = 1
 		available = {
@@ -2435,7 +2438,7 @@ focus_tree = {
 		#國家級人工智慧戰略
 		id = National_Artificial_Intelligence_Strategy
 		icon = GFX_focus_National_Artificial_Intelligence_Strategy
-		cost = 1
+		cost = 4
 		x = -1
 		y = 1
 		prerequisite = {
@@ -2457,7 +2460,7 @@ focus_tree = {
 		#吸引美國AI企業
 		id = Attracting_US_AI_companies
 		icon = GFX_focus_Attracting_US_AI_companies
-		cost = 1
+		cost = 4
 		x = 1
 		y = 1
 		prerequisite = {
@@ -2487,7 +2490,7 @@ focus_tree = {
 		#晶片複合體
 		id = chip_complex
 		icon = GFX_focus_chip_complex
-		cost = 1
+		cost = 5
 		x = 0
 		y = 2
 		prerequisite = {
@@ -2505,7 +2508,7 @@ focus_tree = {
 		#招募美國難民人才
 		id = Recruiting_US_refugee_talent
 		icon = GFX_focus_Recruiting_US_refugee_talent
-		cost = 1
+		cost = 3
 		x = 2
 		y = 0
 		available = {

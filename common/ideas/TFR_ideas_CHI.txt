@@ -1696,7 +1696,7 @@ ideas = {
 				personal_value_factor = 0.05
 				business_value_factor = 0.05
 				income_growth_factor = 0.1
-				research_speed_factor = 0.15
+				research_speed_factor = 0.10
 			}
 		}
 	}
