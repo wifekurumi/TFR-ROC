@@ -138,7 +138,7 @@ CHI_Identity_dispute = {
 	}
 	side = {
 		id = CHI_Identity_dispute_ROC_side
-		icon = GFX_CHI_Identity_dispute_ROC
+		icon = GFX_bop_CHI_ROC
 		range = {
 			id = CHI_Identity_dispute_ROC_total_control_range
 			min = -1
@@ -471,7 +471,7 @@ CHI_Identity_dispute = {
 	}
 	side = {
 		id = CHI_Identity_dispute_TW_side
-		icon = GFX_CHI_Identity_dispute_TW
+		icon = GFX_bop_CHI_TW
 		range = {
 			id = CHI_Identity_dispute_TW_lean_range
 			min = 0.15

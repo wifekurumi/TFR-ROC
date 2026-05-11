@@ -164,13 +164,13 @@ spriteTypes = {
 	}
 	########3
 	spriteType = {
-		name = "GFX_CHI_Identity_dispute_ROC"
-		texturefile = "gfx/texticons/CHI/CHI_Identity_dispute_ROC.png"
+		name = "GFX_bop_CHI_ROC"
+		texturefile = "gfx/interface/bop/bop_CHI_ROC.png"
 		alwaystransparent = yes
 	}
 	spriteType = {
-		name = "GFX_CHI_Identity_dispute_TW"
-		texturefile = "gfx/texticons/CHI/CHI_Identity_dispute_TW.png"
+		name = "GFX_bop_CHI_TW"
+		texturefile = "gfx/interface/bop/bop_CHI_TW.png""
 		alwaystransparent = yes
 	}
 }
