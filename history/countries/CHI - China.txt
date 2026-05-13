@@ -96,7 +96,7 @@ recruit_character = CHI_lee_hsi_min_char
 recruit_character = CHI_lin_chen_yi_char
 recruit_character = CHI_tang_hua_char
 recruit_character = CHI_liu_chih_pin_char
-set_research_slots = 3
+set_research_slots = 5
 set_convoys = 700
 set_stability = 0.8
 set_country_flag = CHI_PRC_Infiltration_start_flg
@@ -229,6 +229,8 @@ if = {
 		early_ship_hull_carrier = 1
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
 		smoke_generator = 1
 		sonar = 1
 		basic_depth_charges = 1
@@ -463,6 +465,42 @@ create_equipment_variant = {
 	obsolete = yes
 }
 
+
+
+	## 巡邏艦 ##
+	create_equipment_variant = { #Corvette 2
+		name = "錦江級巡邏艦"
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = { #Corvette 2
+		name = "沱江級飛彈巡邏艦"
+		type = ship_hull_light_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_battery_2
+			rear_2_custom_slot = ship_light_battery_2
+		}
+	}
+
+
 create_equipment_variant = {
 	name = "M60A3主戰坦克"
 	type = modern_tank_chassis_1
@@ -582,7 +620,7 @@ if = {
 	## Frigates ##
 	create_equipment_variant = {
 		#Frigate 1
-		name = "濟陽級巡防艦"
+		name = "Knox Class"
 		type = ship_hull_cruiser_1
 		parent_version = 0
 		modules = {
