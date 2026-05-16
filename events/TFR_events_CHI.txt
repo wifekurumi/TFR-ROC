@@ -54,7 +54,7 @@ country_event = {
 	}
 	option = {
 		name = taiwan.4.b
-		complete_national_focus = Taiwan_safe_people_reach
+		complete_national_focus = Taiwan_safe_people_rich
 		custom_effect_tooltip = CHI_chen_qi_mai_gaoxiong_tt
 		hidden_effect = {
 			set_temp_variable = {

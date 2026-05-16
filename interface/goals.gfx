@@ -34,8 +34,8 @@ spriteTypes = {
 	}
 	#KMT
 	SpriteType = {
-		name = "GFX_focus_CHI_Taiwan_safe_people_reach"
-		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_safe_people_reach.png"
+		name = "GFX_focus_CHI_Taiwan_safe_people_rich"
+		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_safe_people_rich.png"
 	}
 	SpriteType = {
 		name = "GFX_focus_CHI_Taiwan_makes_fortune"

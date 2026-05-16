@@ -15,7 +15,7 @@ bookmarks = {
 				CHI_american_protection_idea
 			}
 			focuses = {
-				Taiwan_safe_people_reach
+				Taiwan_safe_people_rich
 				CHI_election
 				Taiwan_will_win
 			}
