@@ -1,5 +1,5 @@
 focus_tree = {
-	id = taiwan_focus
+	id = CHI_tree_focus
 	country = {
 		factor = 0
 		modifier = {
