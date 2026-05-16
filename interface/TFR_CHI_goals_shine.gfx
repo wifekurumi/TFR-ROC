@@ -219,11 +219,11 @@ spriteTypes = {
 	}
 	#KMT
 	SpriteType = {
-		name = "GFX_focus_CHI_Taiwan_safe_people_reach_shine"
-		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_safe_people_reach.png"
+		name = "GFX_focus_CHI_Taiwan_safe_people_rich_shine"
+		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_safe_people_rich.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHI/CHI_Taiwan_safe_people_reach.png"
+			animationmaskfile = "gfx/interface/goals/CHI/CHI_Taiwan_safe_people_rich.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -236,7 +236,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHI/CHI_Taiwan_safe_people_reach.png"
+			animationmaskfile = "gfx/interface/goals/CHI/CHI_Taiwan_safe_people_rich.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
