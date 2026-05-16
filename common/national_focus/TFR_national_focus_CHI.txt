@@ -1,10 +1,10 @@
 focus_tree = {
-	id = CHI_tree_focus
+	id = taiwan_focus
 	country = {
 		factor = 0
 		modifier = {
-			add = 30
-			original_tag = CHI
+			add = 10
+			tag = CHI
 		}
 	}
 	#Election
