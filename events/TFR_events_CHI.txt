@@ -54,7 +54,7 @@ country_event = {
 	}
 	option = {
 		name = taiwan.4.b
-		complete_national_focus = Taiwan_safe_people_reach
+		complete_national_focus = Taiwan_safe_people_rich
 		custom_effect_tooltip = CHI_chen_qi_mai_gaoxiong_tt
 		hidden_effect = {
 			set_temp_variable = {
@@ -1159,21 +1159,6 @@ country_event = {
 	}
 	option = {
 		name = taiwan.35.a
-	}
-}
-
-country_event = {
-	id = taiwan.36
-	title = taiwan.36.t
-	desc = taiwan.36.d
-	picture = GFX_CHI_event_taiwan_32
-	is_triggered_only = yes
-	fire_only_once = yes
-	trigger = {
-	}
-	option = {
-		name = taiwan.36.a
-		load_focus_tree = CHI_taiwan_transition
 	}
 }
 
