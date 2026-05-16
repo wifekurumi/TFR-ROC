@@ -323,7 +323,7 @@ PRC_Infiltration_change = {
 	}
 }
 
-CHI_oli_crash_idea = {
+CHI_oil_crash_idea = {
 	if = {
 		limit = {
 			has_idea = CHI_oil_crash1
