@@ -2223,7 +2223,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_Restart_core_four_shine"
+		name = "GFX_focus_CHI_Restart_core_four_shine"
 		texturefile = "gfx/interface/goals/CHI/CHI_Restart_core_four.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
