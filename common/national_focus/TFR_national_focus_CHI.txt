@@ -1323,7 +1323,7 @@ focus_tree = {
 	focus = {
 		# 電廠火力全開
 		id = The_power_plant_on_full_fire
-		icon = GFX_The_power_plant_on_full_fire
+		icon = GFX_focus_CHI_The_power_plant_on_full_fire
 		x = -1
 		y = 1
 		cost = 2

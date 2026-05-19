@@ -342,8 +342,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/CHI/CHI_Expand_investment_green_energy_companies.png"
 	}
 	SpriteType = {
-		name = "GFX_The_power_plant_on_full_fire"
-		texturefile = "gfx/interface/goals/CHI/GFX_The_power_plant_on_full_fire.png"
+		name = "GFX_focus_CHI_The_power_plant_on_full_fire"
+		texturefile = "gfx/interface/goals/CHI/CHI_The_power_plant_on_full_fire.png"
 	}
 	SpriteType = {
 		name = "GFX_Photovoltaic_panels_everywhere"

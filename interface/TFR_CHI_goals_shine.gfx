@@ -2319,11 +2319,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_The_power_plant_on_full_fire_shine"
-		texturefile = "gfx/interface/goals/CHI/GFX_The_power_plant_on_full_fire.png"
+		name = "GFX_focus_CHI_The_power_plant_on_full_fire_shine"
+		texturefile = "gfx/interface/goals/CHI/CHI_The_power_plant_on_full_fire.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHI/GFX_The_power_plant_on_full_fire.png"
+			animationmaskfile = "gfx/interface/goals/CHI/CHI_The_power_plant_on_full_fire.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -2336,7 +2336,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHI/GFX_The_power_plant_on_full_fire.png"
+			animationmaskfile = "gfx/interface/goals/CHI/CHI_The_power_plant_on_full_fire.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
