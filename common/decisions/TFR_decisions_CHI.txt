@@ -179,6 +179,7 @@ CHI_NHCC_decisions = {
 				clr_country_flag = Handling_epidemic
 				clr_country_flag = Vaccine_research_end
 				custom_effect_tooltip = CHI_no_covid_tt
+				focus_unlock = yes
 			}
 			else = {
 				CHI_decrease_coroldpirus = yes

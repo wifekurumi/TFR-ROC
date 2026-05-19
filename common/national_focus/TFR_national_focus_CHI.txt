@@ -1442,6 +1442,7 @@ focus_tree = {
 			}
 			hidden_effect = {
 				clr_country_flag = CHI_has_oil_crash1
+				focus_unlock = yes
 				if = {
 					limit = {
 						has_ideas = CHI_oil_crash11
