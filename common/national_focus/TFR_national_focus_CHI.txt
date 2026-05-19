@@ -637,7 +637,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			has_country_flag = covid_happen3
-			has_country_flag =_crash3
+			has_country_flag = CHI_has_oil_crash3
 		}
 		completion_reward = {
 			add_political_power = 150
