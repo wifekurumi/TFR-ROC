@@ -166,6 +166,12 @@ air_wings = {
 			version_name = "E-2K空中預警機"
 		}
 
+		transport_plane_equipment_1 = {
+			owner = "CHI"
+			amount = 19
+			version_name = "C-130H運輸機"
+		}
+
 	}
 
 	### 台中清泉崗 ###
@@ -198,8 +204,9 @@ air_wings = {
 			owner = "CHI"
 			amount = 55
 			version_name = "幻象2000-5戰鬥機"
-		attack_helicopter_equipment_1 =  { owner = "JAP" amount = 29 }
 		}
+		attack_helicopter_equipment_1 =  { owner = "CHI" amount = 29 }
+		
 
 	}
 
