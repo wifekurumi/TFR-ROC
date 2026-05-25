@@ -12,7 +12,7 @@ focus_tree = {
 		y = 0
 		completion_reward = { }
 	}
-	
+
 	focus = {
 		id = CHI_Survivor_celebration
 		icon = GFX_focus_CHI_survivor_celebration
@@ -22,7 +22,7 @@ focus_tree = {
 		y = 0
 		completion_reward = { }
 	}
-	
+
 	focus = {
 		id = CHI_Self_sutureing_trauma
 		icon = GFX_focus_CHI_Self_sutureing_trauma
@@ -38,7 +38,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	
+
 	focus = {
 		id = CHI_Eliminate_communist_traitors
 		icon = GFX_focus_CHI_Eliminate_communist_traitors
@@ -54,7 +54,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	
+
 	focus = {
 		id = CHI_Preserving_diverse_voices
 		icon = GFX_focus_CHI_Preserving_diverse_voices
@@ -82,7 +82,7 @@ focus_tree = {
 			focus = CHI_Eliminate_communist_traitors
 			focus = CHI_Preserving_diverse_voices
 		}
-		
+
 		mutually_exclusive = {
 			focus = CHI_Restart_Temporary_Provisions
 		}

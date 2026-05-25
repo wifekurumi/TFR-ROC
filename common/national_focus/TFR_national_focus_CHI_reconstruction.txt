@@ -73,7 +73,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Post_war_personnel_issues
 		}
-		
+
 		mutually_exclusive = {
 			focus = CHI_Temporarily_reserve_military_personnel
 		}

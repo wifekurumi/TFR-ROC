@@ -2460,7 +2460,7 @@ focus_tree = {
 			focus = National_Artificial_Intelligence_Strategy
 		}
 		relative_position_id = Semiconductor_mobilization
-		completion_reward = {			
+		completion_reward = {
 			add_timed_idea = {
 				idea = CHI_toughen_industries
 				days = 365

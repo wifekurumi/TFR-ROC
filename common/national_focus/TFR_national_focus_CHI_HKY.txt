@@ -1,7 +1,7 @@
 focus_tree = {
 	id = CHI_HKY
 	country = {
-		factor = 0		
+		factor = 0
 	}
 	focus = {
 		id = Heaven_earth_may_break_but_passion_never_break
