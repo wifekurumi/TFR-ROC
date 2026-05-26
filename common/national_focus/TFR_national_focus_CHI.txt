@@ -841,7 +841,7 @@ focus_tree = {
       has_country_flag = covid_happen
     }
     completion_reward = {
-      pass
+      custom_effect_tooltip = border_closure_effect
     }
     ai_will_do = {
       factor = 1

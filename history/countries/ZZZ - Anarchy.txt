@@ -264,13 +264,6 @@ PRC = {
     id = ROC.64
     days = 912
   }
-  #add_ideas = Red_Nobility
-  #add_ideas = Crony_capitalismy
-  #add_ideas = Techno_nationalism
-  #add_ideas = PRC_yingxue
-  #add_ideas = Chinese_education
-  #add_ideas = BPRC_china
-  #add_ideas = PRC_organ_trade
   add_dynamic_modifier = {
     modifier = PRC_illegal_organ_trade
   }

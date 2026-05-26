@@ -169,26 +169,6 @@ PHI_civil_war_dec = {
     }
   }
 }
-The_CCP_Difficulty_Selection = {
-  #中國困難選擇
-  visible_when_empty = yes
-  priority = 100
-
-  visible = {
-    original_tag = CHI
-    is_ai = no
-    date < 2020.1.14
-    NOT = {
-      has_country_flag = The_CCP_Difficulty_Selection_1_flag
-    }
-  }
-
-  allowed = {
-    or = {
-      original_tag = CHI
-    }
-  }
-}
 EastAsia_taiwan_war_dec = {
   #臺海戰爭
   visible_when_empty = no

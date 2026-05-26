@@ -20,18 +20,8 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_TFR_game_rule_flag_PRC_empire2NEW"
-		texturefile = "gfx/flags/small/PRC_empire2.tga"
-		legacy_lazy_load = no
-	}
-	spriteType = {
 		name = "GFX_TFR_game_rule_flag_PRC_empire3NEW"
 		texturefile = "gfx/flags/small/PRC_empire3.tga"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_TFR_game_rule_flag_CHI_empire3NEW"
-		texturefile = "gfx/flags/small/CHI_empire.tga"
 		legacy_lazy_load = no
 	}
 	spriteType = {

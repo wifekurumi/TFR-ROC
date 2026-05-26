@@ -126,7 +126,3 @@
 		conservative = 20
 		nationalist = 10
 	}
-
-	add_ideas = {
-
-	}
