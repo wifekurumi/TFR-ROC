@@ -197,9 +197,9 @@ CHI_population_aging_dynamic = {
 
   monthly_population = population_aging_monthly_population
 }
-# 金融危機
+# 外匯危機
 financial_crisis_dynamic = {
-  icon = GFX_idea_TAI_taiwanese_independence_movements
+  icon = GFX_idea_CHI_financial_crisis
 
   enable = {
     has_country_flag = American_Civil_War_happen_flg
@@ -278,7 +278,7 @@ CHI_influence_LP_dynamic = {
 
 # 國民精神總動員
 CHI_NSM_dynamic = {
-  #icon = GFX_idea_CHI_LY_of_the_roc_dynamic
+  icon = GFX_idea_CHI_LY_of_the_roc_dynamic
   enable = {
     tag = CHI
   }
@@ -300,7 +300,7 @@ CHI_NSM_dynamic = {
 }
 # 保衛台灣
 CHI_Defend_Taiwan_dynamic = {
-  #icon = GFX_idea_CHI_LY_of_the_roc_dynamic
+  icon = GFX_idea_CHI_LY_of_the_roc_dynamic
   enable = {
     tag = CHI
   }
@@ -314,4 +314,24 @@ CHI_Defend_Taiwan_dynamic = {
   monthly_population = CHI_Defend_Taiwan_monthly_population
   local_intel_to_enemies = CHI_Defend_Taiwan_local_intel_to_enemies
   # = CHI_Defend_Taiwan_
+}
+
+CHI_TaiHai_dynamic = {
+  icon = GFX_idea_JAP_Taiwan_Intervention
+  enable = {
+    tag = CHI
+  }
+  consumer_goods_factor = TH_consumer_goods_factor
+  stability_factor = TH_SF
+  industry_repair_factor = TH_industry_repair_factor
+  army_core_attack_factor = TH_all
+  army_core_defence_factor = TH_all
+  supply_combat_penalties_on_core_factor = TH_SF
+  resistance_growth_on_our_occupied_states = TH_RGOS
+  income_growth_factor = TH_one_to_twenty
+  business_value_factor = TH_one_to_twenty
+  industrial_development_monthly = TH_one_to_fifteen
+  farming_development_monthly = TH_one_to_fifteen
+  poverty_development_monthly = TH_one_to_ten
+  society_development_monthly = TH_one_to_ten
 }

@@ -58,7 +58,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_CHI_army_decisions_Icon"
-		texturefile = "gfx/interface/decisions/CHI/CHI_army.png"
+		texturefile = "gfx/interface/decisions/CHI/CHI_army_decisions.png"
 	}
 	spriteType = {
 		name = "GFX_CHI_Legislative_Yuan_decisions"
@@ -167,8 +167,9 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_CHI_army"
+		name = "GFX_CHI_army_banner"
 		textureFile = "gfx/texticons/banners/CHI/CHI_army_banner.png"
+		legacy_lazy_load = no
 	}
 	########3
 	spriteType = {

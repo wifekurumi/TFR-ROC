@@ -1,3 +1,16 @@
+CHI_debug = {
+  icon = GFX_CHI_test_of_will_category_anim
+  picture = GFX_CHI_test_of_will_banner_animated
+  priority = 100
+  visible_when_empty = yes
+  allowed = {
+    is_debug = yes
+  }
+  visible = {
+    is_debug = yes
+  }
+}
+
 CHI_NHCC_decisions = {
   #疫情
   icon = NHCC
@@ -40,6 +53,7 @@ CHI_PRC_Infiltration_decisions = {
   }
   scripted_gui = PRC_Infiltration_gui
 }
+
 CHI_Legislative_Yuan_decisions = {
   #立法院
   icon = GFX_CHI_Legislative_Yuan_decisions
@@ -79,7 +93,7 @@ CHI_test_of_will2 = {
   scripted_gui = test_of_will_taiwan_gui
 }
 
-CHI_army = {
+CHI_army_decisions = {
   icon = GFX_CHI_army_decisions_Icon
   #中華民國國軍
   priority = 2
@@ -88,7 +102,6 @@ CHI_army = {
     original_tag = CHI
   }
   visible = {
-    original_tag = CHI
     has_completed_focus = Rectify_weakening_military_preparedness
   }
 }
@@ -123,25 +136,27 @@ PHI_civil_war_dec = {
     }
   }
 }
-EastAsia_taiwan_war_dec = {
+
+CHI_taiwan_war_category = {
   #臺海戰爭
   visible_when_empty = no
   priority = 99
 
   visible = {
     has_global_flag = PRC_ongoing_taiwan_war
-    #has_war = yes
+    NOT = {
+      OR = {
+        has_global_flag = JAP_japan_lost
+        has_global_flag = JAP_japan_victory
+      }
+    }
   }
 
   allowed = {
-    or = {
-      original_tag = PRC
-      original_tag = CHI
-      original_tag = JAP
-      original_tag = AST
-    }
+    original_tag = CHI
   }
 }
+
 CHI_Taiwan_will = {
   #大中華局勢
   visible_when_empty = yes

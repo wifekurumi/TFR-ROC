@@ -13,10 +13,6 @@ CHI_Identity_dispute = {
 			stability_weekly = -0.025
 			party_popularity_stability_factor = -0.05
 		}
-		on_activate = {
-		}
-		on_deactivate = {
-		}
 	}
 	side = {
 		id = CHI_Identity_dispute_ROC_side

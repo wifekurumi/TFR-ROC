@@ -1340,11 +1340,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_focus_CHI_from_Taiwan_shine"
-		texturefile = "gfx/interface/goals/CHI/CHI_from_Taiwan.png"
+		name = "GFX_focus_CHI_Taiwan_the_Bravest_shine"
+		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_the_Bravest.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHI/CHI_from_Taiwan.png"
+			animationmaskfile = "gfx/interface/goals/CHI/CHI_Taiwan_the_Bravest.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1357,7 +1357,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHI/CHI_from_Taiwan.png"
+			animationmaskfile = "gfx/interface/goals/CHI/CHI_Taiwan_the_Bravest.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1495,11 +1495,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_focus_CHI_Wartime_resource_allocation_shine"
-		texturefile = "gfx/interface/goals/CHI/CHI_Wartime_resource_allocation.png"
+		name = "GFX_focus_CHI_Coordinating_Allied_Bombing_Operations_shine"
+		texturefile = "gfx/interface/goals/CHI/CHI_Coordinating_Allied_Bombing_Operations.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHI/CHI_Wartime_resource_allocation.png"
+			animationmaskfile = "gfx/interface/goals/CHI/CHI_Coordinating_Allied_Bombing_Operations.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1512,7 +1512,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHI/CHI_Wartime_resource_allocation.png"
+			animationmaskfile = "gfx/interface/goals/CHI/CHI_Coordinating_Allied_Bombing_Operations.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

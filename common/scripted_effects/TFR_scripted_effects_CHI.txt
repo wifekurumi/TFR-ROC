@@ -1,2275 +1,2449 @@
 CHI_increase_coronavirus = {
-	if = {
-		limit = {
-			has_idea = CHI_covid_idea_1
-		}
-		swap_ideas = {
-			remove_idea = CHI_covid_idea_1
-			add_idea = CHI_covid_idea_2
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_covid_idea_2
-		}
-		swap_ideas = {
-			remove_idea = CHI_covid_idea_2
-			add_idea = CHI_covid_idea_3
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_covid_idea_3
-		}
-		swap_ideas = {
-			remove_idea = CHI_covid_idea_3
-			add_idea = CHI_covid_idea_4
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_covid_idea_4
-		}
-		swap_ideas = {
-			remove_idea = CHI_covid_idea_4
-			add_idea = CHI_covid_idea_5
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_covid_idea_5
-		}
-		add_stability = -0.05
-	}
-	else = {
-		add_ideas = CHI_covid_idea_1
-	}
+  if = {
+    limit = {
+      has_idea = CHI_covid_idea_1
+    }
+    swap_ideas = {
+      remove_idea = CHI_covid_idea_1
+      add_idea = CHI_covid_idea_2
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_covid_idea_2
+    }
+    swap_ideas = {
+      remove_idea = CHI_covid_idea_2
+      add_idea = CHI_covid_idea_3
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_covid_idea_3
+    }
+    swap_ideas = {
+      remove_idea = CHI_covid_idea_3
+      add_idea = CHI_covid_idea_4
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_covid_idea_4
+    }
+    swap_ideas = {
+      remove_idea = CHI_covid_idea_4
+      add_idea = CHI_covid_idea_5
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_covid_idea_5
+    }
+    add_stability = -0.05
+  }
+  else = {
+    add_ideas = CHI_covid_idea_1
+  }
 }
 
 CHI_decrease_coroldpirus = {
-	if = {
-		limit = {
-			has_idea = CHI_covid_idea_1
-		}
-		remove_ideas = CHI_covid_idea_1
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_covid_idea_2
-		}
-		swap_ideas = {
-			remove_idea = CHI_covid_idea_2
-			add_idea = CHI_covid_idea_1
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_covid_idea_3
-		}
-		swap_ideas = {
-			remove_idea = CHI_covid_idea_3
-			add_idea = CHI_covid_idea_2
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_covid_idea_4
-		}
-		swap_ideas = {
-			remove_idea = CHI_covid_idea_4
-			add_idea = CHI_covid_idea_3
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_covid_idea_5
-		}
-		swap_ideas = {
-			remove_idea = CHI_covid_idea_5
-			add_idea = CHI_covid_idea_4
-		}
-	}
+  if = {
+    limit = {
+      has_idea = CHI_covid_idea_1
+    }
+    remove_ideas = CHI_covid_idea_1
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_covid_idea_2
+    }
+    swap_ideas = {
+      remove_idea = CHI_covid_idea_2
+      add_idea = CHI_covid_idea_1
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_covid_idea_3
+    }
+    swap_ideas = {
+      remove_idea = CHI_covid_idea_3
+      add_idea = CHI_covid_idea_2
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_covid_idea_4
+    }
+    swap_ideas = {
+      remove_idea = CHI_covid_idea_4
+      add_idea = CHI_covid_idea_3
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_covid_idea_5
+    }
+    swap_ideas = {
+      remove_idea = CHI_covid_idea_5
+      add_idea = CHI_covid_idea_4
+    }
+  }
 }
 
 CHI_increase_tsmc_idea = {
-	if = {
-		limit = {
-			has_idea = CHI_tsmc_idea
-		}
-		swap_ideas = {
-			remove_idea = CHI_tsmc_idea
-			add_idea = CHI_tsmc_1_idea
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_tsmc_1_idea
-		}
-		swap_ideas = {
-			remove_idea = CHI_tsmc_1_idea
-			add_idea = CHI_tsmc_2_idea
-		}
-	}
+  if = {
+    limit = {
+      has_idea = CHI_tsmc_idea
+    }
+    swap_ideas = {
+      remove_idea = CHI_tsmc_idea
+      add_idea = CHI_tsmc_1_idea
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_tsmc_1_idea
+    }
+    swap_ideas = {
+      remove_idea = CHI_tsmc_1_idea
+      add_idea = CHI_tsmc_2_idea
+    }
+  }
 }
 
 CHI_increase_prc_embargo_idea = {
-	if = {
-		limit = {
-			has_idea = CHI_prc_embargo_idea
-		}
-		swap_ideas = {
-			remove_idea = CHI_prc_embargo_idea
-			add_idea = CHI_prc_embargo_idea1
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_prc_embargo_idea1
-		}
-		swap_ideas = {
-			remove_idea = CHI_prc_embargo_idea1
-			add_idea = CHI_prc_embargo_idea2
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_prc_embargo_idea2
-		}
-		swap_ideas = {
-			remove_idea = CHI_prc_embargo_idea2
-			add_idea = CHI_prc_embargo_idea3
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_prc_embargo_idea3
-		}
-		remove_idea = CHI_prc_embargo_idea3
-	}
+  if = {
+    limit = {
+      has_idea = CHI_prc_embargo_idea
+    }
+    swap_ideas = {
+      remove_idea = CHI_prc_embargo_idea
+      add_idea = CHI_prc_embargo_idea1
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_prc_embargo_idea1
+    }
+    swap_ideas = {
+      remove_idea = CHI_prc_embargo_idea1
+      add_idea = CHI_prc_embargo_idea2
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_prc_embargo_idea2
+    }
+    swap_ideas = {
+      remove_idea = CHI_prc_embargo_idea2
+      add_idea = CHI_prc_embargo_idea3
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_prc_embargo_idea3
+    }
+    remove_idea = CHI_prc_embargo_idea3
+  }
 }
 
 CHI_financial_crisis_increase_coronavirus = {
-	if = {
-		limit = {
-			has_idea = financial_crisis_1
-		}
-		swap_ideas = {
-			remove_idea = financial_crisis_1
-			add_idea = financial_crisis_2
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = financial_crisis_2
-		}
-		swap_ideas = {
-			remove_idea = financial_crisis_2
-			add_idea = financial_crisis_3
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = financial_crisis_3
-		}
-		swap_ideas = {
-			remove_idea = financial_crisis_3
-			add_idea = financial_crisis_4
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = financial_crisis_4
-		}
-		swap_ideas = {
-			remove_idea = financial_crisis_4
-			add_idea = financial_crisis_5
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = financial_crisis_5
-		}
-		swap_ideas = {
-			remove_idea = financial_crisis_5
-			add_idea = financial_crisis_6
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = financial_crisis_6
-		}
-		remove_ideas = financial_crisis_6
-	}
+  if = {
+    limit = {
+      has_idea = financial_crisis_1
+    }
+    swap_ideas = {
+      remove_idea = financial_crisis_1
+      add_idea = financial_crisis_2
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = financial_crisis_2
+    }
+    swap_ideas = {
+      remove_idea = financial_crisis_2
+      add_idea = financial_crisis_3
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = financial_crisis_3
+    }
+    swap_ideas = {
+      remove_idea = financial_crisis_3
+      add_idea = financial_crisis_4
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = financial_crisis_4
+    }
+    swap_ideas = {
+      remove_idea = financial_crisis_4
+      add_idea = financial_crisis_5
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = financial_crisis_5
+    }
+    swap_ideas = {
+      remove_idea = financial_crisis_5
+      add_idea = financial_crisis_6
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = financial_crisis_6
+    }
+    remove_ideas = financial_crisis_6
+  }
 }
 
 CHI_vaccine_progress = {
-	add_to_variable = {
-		var = CHI_vaccine_progress
-		value = CHI_vaccine_progress_temp
-	}
-	clamp_variable = {
-		var = CHI_vaccine_progress
-		min = 0
-		max = 100
-	}
+  add_to_variable = {
+    var = CHI_vaccine_progress
+    value = CHI_vaccine_progress_temp
+  }
+  clamp_variable = {
+    var = CHI_vaccine_progress
+    min = 0
+    max = 100
+  }
+}
+
+CHI_add_Infiltration_growth_time = {
+  custom_effect_tooltip = CHI_add_Infiltration_growth_time_tooltip
+  add_to_variable = {
+    var = CHI_PRC_Infiltration_timeout_mission_var
+    value = CHI_PRC_Infiltration_timeout_mission_var_temp
+  }
 }
 
 CHI_PRC_jinmen_calc = {
-	add_to_variable = {
-		var = CHI_PRC_jinmen_calc
-		value = CHI_PRC_jinmen_calc_temp
-	}
-	clamp_variable = {
-		var = CHI_PRC_jinmen_calc
-		min = 0
-		max = 100
-	}
-}
-
-PRC_PRC_jinmen_calc = {
-	add_to_variable = {
-		var = PRC_PRC_jinmen_calc
-		value = PRC_PRC_jinmen_calc_temp
-	}
-	clamp_variable = {
-		var = PRC_PRC_jinmen_calc
-		min = 0
-		max = 100
-	}
+  add_to_variable = {
+    var = CHI_PRC_jinmen_calc
+    value = CHI_PRC_jinmen_calc_temp
+  }
+  clamp_variable = {
+    var = CHI_PRC_jinmen_calc
+    min = 0
+    max = 100
+  }
 }
 
 CHI_vaccine_value = {
-	custom_effect_tooltip = CHI_vaccine_value_change_tooltip
-	add_to_variable = {
-		var = CHI_vaccine_value
-		value = CHI_vaccine_value_temp
-	}
+  custom_effect_tooltip = CHI_vaccine_value_change_tooltip
+  add_to_variable = {
+    var = CHI_vaccine_value
+    value = CHI_vaccine_value_temp
+  }
 }
 
 PRC_Infiltration_change = {
-	custom_effect_tooltip = PRC_Infiltration_change_tooltip
-	# 進度累加
-	add_to_variable = {
-		var = CHI_PRC_Infiltration_progress
-		value = CHI_PRC_Infiltration_progress_temp
-	}
-	clamp_variable = {
-		var = CHI_PRC_Infiltration_progress
-		min = 0
-		max = 100
-	}
-	# 用 number 當計算用變數
-	set_variable = {
-		var = number
-		value = CHI_PRC_Infiltration_progress_temp
-	}
-	divide_variable = {
-		var = number
-		value = 1000
-	}
-	multiply_variable = {
-		var = number
-		value = -1
-	}
-	# 累加 buff
-	add_to_variable = {
-		var = CHI_PRC_Infiltration_buff
-		value = number
-	}
-	clamp_variable = {
-		var = CHI_PRC_Infiltration_buff
-		min = -0.1
-		max = 0
-	}
-	if = {
-		limit = {
-			check_variable = { CHI_PRC_Infiltration_progress < 25 }
-		}
-		hidden_effect = {
-			remove_ideas = CHI_PRC_infiltration_low
-			remove_ideas = CHI_PRC_infiltration_middle
-			remove_ideas = CHI_PRC_infiltration_high
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = { CHI_PRC_Infiltration_progress > 10 }
-			check_variable = { CHI_PRC_Infiltration_progress < 50 }
-		}
-		hidden_effect = {
-			add_ideas = CHI_PRC_infiltration_low
-			remove_ideas = CHI_PRC_infiltration_middle
-			remove_ideas = CHI_PRC_infiltration_high
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = { CHI_PRC_Infiltration_progress > 50 }
-			check_variable = { CHI_PRC_Infiltration_progress < 99 }
-		}
-		hidden_effect = {
-			remove_ideas = CHI_PRC_infiltration_low
-			add_ideas = CHI_PRC_infiltration_middle
-			remove_ideas = CHI_PRC_infiltration_high
-		}
-	}
-	else_if = {
-		limit = { check_variable = { CHI_PRC_Infiltration_progress = 100 } }
-		hidden_effect = {
-			remove_ideas = CHI_PRC_infiltration_low
-			remove_ideas = CHI_PRC_infiltration_middle
-			add_ideas = CHI_PRC_infiltration_high
-		}
-	}
+  custom_effect_tooltip = PRC_Infiltration_change_tooltip
+  # 進度累加
+  add_to_variable = {
+    var = CHI_PRC_Infiltration_progress
+    value = CHI_PRC_Infiltration_progress_temp
+  }
+  clamp_variable = {
+    var = CHI_PRC_Infiltration_progress
+    min = 0
+    max = 100
+  }
+  # 用 number 當計算用變數
+  set_variable = {
+    var = number
+    value = CHI_PRC_Infiltration_progress_temp
+  }
+  divide_variable = {
+    var = number
+    value = 1000
+  }
+  multiply_variable = {
+    var = number
+    value = -1
+  }
+  # 累加 buff
+  add_to_variable = {
+    var = CHI_PRC_Infiltration_buff
+    value = number
+  }
+  clamp_variable = {
+    var = CHI_PRC_Infiltration_buff
+    min = -0.1
+    max = 0
+  }
+  if = {
+    limit = {
+      check_variable = { CHI_PRC_Infiltration_progress < 25 }
+    }
+    hidden_effect = {
+      remove_ideas = CHI_PRC_infiltration_low
+      remove_ideas = CHI_PRC_infiltration_middle
+      remove_ideas = CHI_PRC_infiltration_high
+    }
+  }
+  else_if = {
+    limit = {
+      check_variable = { CHI_PRC_Infiltration_progress > 10 }
+      check_variable = { CHI_PRC_Infiltration_progress < 50 }
+    }
+    hidden_effect = {
+      add_ideas = CHI_PRC_infiltration_low
+      remove_ideas = CHI_PRC_infiltration_middle
+      remove_ideas = CHI_PRC_infiltration_high
+    }
+  }
+  else_if = {
+    limit = {
+      check_variable = { CHI_PRC_Infiltration_progress > 50 }
+      check_variable = { CHI_PRC_Infiltration_progress < 99 }
+    }
+    hidden_effect = {
+      remove_ideas = CHI_PRC_infiltration_low
+      add_ideas = CHI_PRC_infiltration_middle
+      remove_ideas = CHI_PRC_infiltration_high
+    }
+  }
+  else_if = {
+    limit = { check_variable = { CHI_PRC_Infiltration_progress = 100 } }
+    hidden_effect = {
+      remove_ideas = CHI_PRC_infiltration_low
+      remove_ideas = CHI_PRC_infiltration_middle
+      add_ideas = CHI_PRC_infiltration_high
+    }
+  }
 }
 
 CHI_oil_crash_idea = {
-	if = {
-		limit = {
-			has_idea = CHI_oil_crash1
-		}
-		swap_ideas = {
-			remove_idea = CHI_oil_crash1
-			add_idea = CHI_oil_crash2
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_oil_crash2
-		}
-		swap_ideas = {
-			remove_idea = CHI_oil_crash2
-			add_idea = CHI_oil_crash3
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_oil_crash3
-		}
-		swap_ideas = {
-			remove_idea = CHI_oil_crash3
-			add_idea = CHI_oil_crash4
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_oil_crash4
-		}
-		swap_ideas = {
-			remove_idea = CHI_oil_crash4
-			add_idea = CHI_oil_crash5
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_oil_crash5
-		}
-		swap_ideas = {
-			remove_idea = CHI_oil_crash5
-			add_idea = CHI_oil_crash6
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_oil_crash6
-		}
-		swap_ideas = {
-			remove_idea = CHI_oil_crash6
-			add_idea = CHI_oil_crash7
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_oil_crash7
-		}
-		swap_ideas = {
-			remove_idea = CHI_oil_crash7
-			add_idea = CHI_oil_crash8
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_oil_crash8
-		}
-		swap_ideas = {
-			remove_idea = CHI_oil_crash8
-			add_idea = CHI_oil_crash9
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_oil_crash9
-		}
-		swap_ideas = {
-			remove_idea = CHI_oil_crash9
-			add_idea = CHI_oil_crash10
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_oil_crash10
-		}
-		swap_ideas = {
-			remove_idea = CHI_oil_crash10
-			add_idea = CHI_oil_crash11
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_oil_crash11
-		}
-		swap_ideas = {
-			remove_idea = CHI_oil_crash11
-			add_idea = CHI_oil_crash12
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_oil_crash12
-		}
-		swap_ideas = {
-			remove_idea = CHI_oil_crash12
-			add_idea = CHI_oil_crash13
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_oil_crash13
-		}
-		remove_idea = CHI_oil_crash13
-	}
-	else = {
-		add_ideas = CHI_oil_crash1
-	}
+  if = {
+    limit = {
+      has_idea = CHI_oil_crash1
+    }
+    swap_ideas = {
+      remove_idea = CHI_oil_crash1
+      add_idea = CHI_oil_crash2
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_oil_crash2
+    }
+    swap_ideas = {
+      remove_idea = CHI_oil_crash2
+      add_idea = CHI_oil_crash3
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_oil_crash3
+    }
+    swap_ideas = {
+      remove_idea = CHI_oil_crash3
+      add_idea = CHI_oil_crash4
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_oil_crash4
+    }
+    swap_ideas = {
+      remove_idea = CHI_oil_crash4
+      add_idea = CHI_oil_crash5
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_oil_crash5
+    }
+    swap_ideas = {
+      remove_idea = CHI_oil_crash5
+      add_idea = CHI_oil_crash6
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_oil_crash6
+    }
+    swap_ideas = {
+      remove_idea = CHI_oil_crash6
+      add_idea = CHI_oil_crash7
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_oil_crash7
+    }
+    swap_ideas = {
+      remove_idea = CHI_oil_crash7
+      add_idea = CHI_oil_crash8
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_oil_crash8
+    }
+    swap_ideas = {
+      remove_idea = CHI_oil_crash8
+      add_idea = CHI_oil_crash9
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_oil_crash9
+    }
+    swap_ideas = {
+      remove_idea = CHI_oil_crash9
+      add_idea = CHI_oil_crash10
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_oil_crash10
+    }
+    swap_ideas = {
+      remove_idea = CHI_oil_crash10
+      add_idea = CHI_oil_crash11
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_oil_crash11
+    }
+    swap_ideas = {
+      remove_idea = CHI_oil_crash11
+      add_idea = CHI_oil_crash12
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_oil_crash12
+    }
+    swap_ideas = {
+      remove_idea = CHI_oil_crash12
+      add_idea = CHI_oil_crash13
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_oil_crash13
+    }
+    remove_idea = CHI_oil_crash13
+  }
+  else = {
+    add_ideas = CHI_oil_crash1
+  }
 }
 
 PRC_the_separatist_problem_ideas = {
-	if = {
-		limit = {
-			has_idea = PRC_the_separatist_problem
-		}
-		swap_ideas = {
-			remove_idea = PRC_the_separatist_problem
-			add_idea = PRC_the_separatist_problem_2
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = PRC_the_separatist_problem_2
-		}
-		swap_ideas = {
-			remove_idea = PRC_the_separatist_problem_2
-			add_idea = PRC_the_separatist_problem_3
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = PRC_the_separatist_problem_3
-		}
-		swap_ideas = {
-			remove_idea = PRC_the_separatist_problem_3
-			add_idea = PRC_the_separatist_problem_4
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = PRC_the_separatist_problem_4
-		}
-		remove_idea = PRC_the_separatist_problem_4
-	}
-	else = {
-		add_ideas = PRC_the_separatist_problem
-	}
-	PRC_the_separatist_problem_ideas = {
-		if = {
-			limit = {
-				has_idea = PRC_the_separatist_problem
-			}
-			swap_ideas = {
-				remove_idea = PRC_the_separatist_problem
-				add_idea = PRC_the_separatist_problem_2
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = PRC_the_separatist_problem_2
-			}
-			swap_ideas = {
-				remove_idea = PRC_the_separatist_problem_2
-				add_idea = PRC_the_separatist_problem_3
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = PRC_the_separatist_problem_3
-			}
-			swap_ideas = {
-				remove_idea = PRC_the_separatist_problem_3
-				add_idea = PRC_the_separatist_problem_4
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = PRC_the_separatist_problem_4
-			}
-			remove_idea = PRC_the_separatist_problem_4
-		}
-		else = {
-			add_ideas = PRC_the_separatist_problem
-		}
-	}
-	CHI_waidao_renyuan_progress = {
-		custom_effect_tooltip = CHI_waidao_renyuan_progress_tooltip
-		add_to_variable = {
-			var = CHI_waidao_renyuan_progress
-			value = CHI_waidao_renyuan_progress_temp
-		}
-		clamp_variable = {
-			var = CHI_waidao_renyuan_progress
-			min = 0
-			max = 100
-		}
-		divide_variable = {
-			var = CHI_waidao_renyuan_progress_temp
-			value = -1000			# 正數
-		}
-		# 複製到臨時變數
-		set_variable = {
-			var = number
-			value = CHI_waidao_renyuan_progresss_temp
-		}
-	}
-	CHI_waidao_zhuangbei_progress = {
-		custom_effect_tooltip = CHI_waidao_zhuangbeiprogress_tooltip
-		add_to_variable = {
-			var = CHI_waidao_zhuangbei_progress
-			value = CHI_waidao_zhuangbei_progress_temp
-		}
-		clamp_variable = {
-			var = CHI_waidao_zhuangbei_progress
-			min = 0
-			max = 100
-		}
-		divide_variable = {
-			var = CHI_waidao_zhuangbei_progress_temp
-			value = -1000			# 正數
-		}
-		# 複製到臨時變數
-		set_variable = {
-			var = number
-			value = CHI_waidao_zhuangbei_progress_temp
-		}
-	}
+  if = {
+    limit = {
+      has_idea = PRC_the_separatist_problem
+    }
+    swap_ideas = {
+      remove_idea = PRC_the_separatist_problem
+      add_idea = PRC_the_separatist_problem_2
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = PRC_the_separatist_problem_2
+    }
+    swap_ideas = {
+      remove_idea = PRC_the_separatist_problem_2
+      add_idea = PRC_the_separatist_problem_3
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = PRC_the_separatist_problem_3
+    }
+    swap_ideas = {
+      remove_idea = PRC_the_separatist_problem_3
+      add_idea = PRC_the_separatist_problem_4
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = PRC_the_separatist_problem_4
+    }
+    remove_idea = PRC_the_separatist_problem_4
+  }
+  else = {
+    add_ideas = PRC_the_separatist_problem
+  }
+  PRC_the_separatist_problem_ideas = {
+    if = {
+      limit = {
+        has_idea = PRC_the_separatist_problem
+      }
+      swap_ideas = {
+        remove_idea = PRC_the_separatist_problem
+        add_idea = PRC_the_separatist_problem_2
+      }
+    }
+    else_if = {
+      limit = {
+        has_idea = PRC_the_separatist_problem_2
+      }
+      swap_ideas = {
+        remove_idea = PRC_the_separatist_problem_2
+        add_idea = PRC_the_separatist_problem_3
+      }
+    }
+    else_if = {
+      limit = {
+        has_idea = PRC_the_separatist_problem_3
+      }
+      swap_ideas = {
+        remove_idea = PRC_the_separatist_problem_3
+        add_idea = PRC_the_separatist_problem_4
+      }
+    }
+    else_if = {
+      limit = {
+        has_idea = PRC_the_separatist_problem_4
+      }
+      remove_idea = PRC_the_separatist_problem_4
+    }
+    else = {
+      add_ideas = PRC_the_separatist_problem
+    }
+  }
+  CHI_waidao_renyuan_progress = {
+    custom_effect_tooltip = CHI_waidao_renyuan_progress_tooltip
+    add_to_variable = {
+      var = CHI_waidao_renyuan_progress
+      value = CHI_waidao_renyuan_progress_temp
+    }
+    clamp_variable = {
+      var = CHI_waidao_renyuan_progress
+      min = 0
+      max = 100
+    }
+    divide_variable = {
+      var = CHI_waidao_renyuan_progress_temp
+      value = -1000			# 正數
+    }
+    # 複製到臨時變數
+    set_variable = {
+      var = number
+      value = CHI_waidao_renyuan_progresss_temp
+    }
+  }
+  CHI_waidao_zhuangbei_progress = {
+    custom_effect_tooltip = CHI_waidao_zhuangbeiprogress_tooltip
+    add_to_variable = {
+      var = CHI_waidao_zhuangbei_progress
+      value = CHI_waidao_zhuangbei_progress_temp
+    }
+    clamp_variable = {
+      var = CHI_waidao_zhuangbei_progress
+      min = 0
+      max = 100
+    }
+    divide_variable = {
+      var = CHI_waidao_zhuangbei_progress_temp
+      value = -1000			# 正數
+    }
+    # 複製到臨時變數
+    set_variable = {
+      var = number
+      value = CHI_waidao_zhuangbei_progress_temp
+    }
+  }
 }
+
 PDTO_unity = {
-	every_country = {
-		limit = {
-			NOT = {
-				has_ideas = PDTO_unity_1
-			}
-		}
-	}
+  every_country = {
+    limit = {
+      NOT = {
+        has_ideas = PDTO_unity_1
+      }
+    }
+  }
 }
+
 PDTO_unity_increase2 = {
-	custom_effect_tooltip = PDTO_unity_tt1
-	every_country = {
-		limit = {
-			OR = {
-				has_country_flag = pdto_member
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = PDTO_unity
-				has_idea = PDTO_unity_1
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_1
-				add_idea = PDTO_unity_2
-			}
-		}
-		else_if = {
-			limit = {
-				has_country_flag = PDTO_unity
-				has_idea = PDTO_unity_2
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_2
-				add_idea = PDTO_unity_3
-			}
-		}
-		else_if = {
-			limit = {
-				has_country_flag = PDTO_unity
-				has_idea = PDTO_unity_3
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_3
-				add_idea = PDTO_unity_4
-			}
-		}
-		else_if = {
-			limit = {
-				has_country_flag = PDTO_unity
-				has_idea = PDTO_unity_4
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_4
-				add_idea = PDTO_unity_5
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					has_country_flag = PDTO_unity
-					has_ideas = PDTO_unity_1
-				}
-			}
-			set_country_flag = PDTO_unity
-			add_ideas = PDTO_unity_1
-		}
-	}
+  custom_effect_tooltip = PDTO_unity_tt1
+  every_country = {
+    limit = {
+      OR = {
+        has_country_flag = pdto_member
+      }
+    }
+    if = {
+      limit = {
+        has_country_flag = PDTO_unity
+        has_idea = PDTO_unity_1
+      }
+      swap_ideas = {
+        remove_idea = PDTO_unity_1
+        add_idea = PDTO_unity_2
+      }
+    }
+    else_if = {
+      limit = {
+        has_country_flag = PDTO_unity
+        has_idea = PDTO_unity_2
+      }
+      swap_ideas = {
+        remove_idea = PDTO_unity_2
+        add_idea = PDTO_unity_3
+      }
+    }
+    else_if = {
+      limit = {
+        has_country_flag = PDTO_unity
+        has_idea = PDTO_unity_3
+      }
+      swap_ideas = {
+        remove_idea = PDTO_unity_3
+        add_idea = PDTO_unity_4
+      }
+    }
+    else_if = {
+      limit = {
+        has_country_flag = PDTO_unity
+        has_idea = PDTO_unity_4
+      }
+      swap_ideas = {
+        remove_idea = PDTO_unity_4
+        add_idea = PDTO_unity_5
+      }
+    }
+    else_if = {
+      limit = {
+        NOT = {
+          has_country_flag = PDTO_unity
+          has_ideas = PDTO_unity_1
+        }
+      }
+      set_country_flag = PDTO_unity
+      add_ideas = PDTO_unity_1
+    }
+  }
 
 }
 
 PDTO_unity_decrease2 = {
-	custom_effect_tooltip = PDTO_unity_tt2
-	hidden_effect = {
-		every_country = {
-			limit = {
-				OR = {
-					has_country_flag = pdto_member
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = PDTO_unity
-					has_idea = PDTO_unity_5
-				}
-				swap_ideas = {
-					remove_idea = PDTO_unity_5
-					add_idea = PDTO_unity_4
-				}
-			}
-			else_if = {
-				limit = {
-					has_country_flag = PDTO_unity
-					has_idea = PDTO_unity_4
-				}
-				swap_ideas = {
-					remove_idea = PDTO_unity_4
-					add_idea = PDTO_unity_3
-				}
-			}
-			else_if = {
-				limit = {
-					has_country_flag = PDTO_unity
-					has_idea = PDTO_unity_3
-				}
-				swap_ideas = {
-					remove_idea = PDTO_unity_3
-					add_idea = PDTO_unity_2
-				}
-			}
-			else_if = {
-				limit = {
-					has_country_flag = PDTO_unity
-					has_idea = PDTO_unity_2
-				}
-				swap_ideas = {
-					remove_idea = PDTO_unity_2
-					add_idea = PDTO_unity_1
-				}
-			}
-			else_if = {
-				limit = {
-					has_country_flag = PDTO_unity
-					has_ideas = PDTO_unity_1
-				}
-				clr_country_flag = PDTO_unity
-				remove_ideas = PDTO_unity_1
-			}
-		}
-	}
+  custom_effect_tooltip = PDTO_unity_tt2
+  hidden_effect = {
+    every_country = {
+      limit = {
+        OR = {
+          has_country_flag = pdto_member
+        }
+      }
+      if = {
+        limit = {
+          has_country_flag = PDTO_unity
+          has_idea = PDTO_unity_5
+        }
+        swap_ideas = {
+          remove_idea = PDTO_unity_5
+          add_idea = PDTO_unity_4
+        }
+      }
+      else_if = {
+        limit = {
+          has_country_flag = PDTO_unity
+          has_idea = PDTO_unity_4
+        }
+        swap_ideas = {
+          remove_idea = PDTO_unity_4
+          add_idea = PDTO_unity_3
+        }
+      }
+      else_if = {
+        limit = {
+          has_country_flag = PDTO_unity
+          has_idea = PDTO_unity_3
+        }
+        swap_ideas = {
+          remove_idea = PDTO_unity_3
+          add_idea = PDTO_unity_2
+        }
+      }
+      else_if = {
+        limit = {
+          has_country_flag = PDTO_unity
+          has_idea = PDTO_unity_2
+        }
+        swap_ideas = {
+          remove_idea = PDTO_unity_2
+          add_idea = PDTO_unity_1
+        }
+      }
+      else_if = {
+        limit = {
+          has_country_flag = PDTO_unity
+          has_ideas = PDTO_unity_1
+        }
+        clr_country_flag = PDTO_unity
+        remove_ideas = PDTO_unity_1
+      }
+    }
+  }
 }
 
 CHI_influence_KMT_add = {
-	custom_effect_tooltip = CHI_influence_KMT_tt
-	add_to_variable = {
-		var = CHI_influence_KMT
-		value = CHI_influence_KMT_temp
-	}
-	clamp_variable = {
-		var = CHI_influence_KMT
-		min = 0
-		max = 1
-	}
-	set_variable = {
-		var = CHI_influence_KMT_dynamic_var
-		value = CHI_influence_KMT
-	}
-	multiply_variable = {
-		var = CHI_influence_KMT_dynamic_var
-		value = 0.2
-	}
+  custom_effect_tooltip = CHI_influence_KMT_tt
+  add_to_variable = {
+    var = CHI_influence_KMT
+    value = CHI_influence_KMT_temp
+  }
+  clamp_variable = {
+    var = CHI_influence_KMT
+    min = 0
+    max = 1
+  }
+  set_variable = {
+    var = CHI_influence_KMT_dynamic_var
+    value = CHI_influence_KMT
+  }
+  multiply_variable = {
+    var = CHI_influence_KMT_dynamic_var
+    value = 0.2
+  }
 }
 
 CHI_influence_DPP_add = {
-	custom_effect_tooltip = CHI_influence_DPP_tt
-	add_to_variable = {
-		var = CHI_influence_DPP
-		value = CHI_influence_DPP_temp
-	}
-	clamp_variable = {
-		var = CHI_influence_DPP
-		min = 0
-		max = 1
-	}
-	set_variable = {
-		var = CHI_influence_DPP_dynamic_var
-		value = CHI_influence_DPP
-	}
-	multiply_variable = {
-		var = CHI_influence_DPP_dynamic_var
-		value = 0.2
-	}
+  custom_effect_tooltip = CHI_influence_DPP_tt
+  add_to_variable = {
+    var = CHI_influence_DPP
+    value = CHI_influence_DPP_temp
+  }
+  clamp_variable = {
+    var = CHI_influence_DPP
+    min = 0
+    max = 1
+  }
+  set_variable = {
+    var = CHI_influence_DPP_dynamic_var
+    value = CHI_influence_DPP
+  }
+  multiply_variable = {
+    var = CHI_influence_DPP_dynamic_var
+    value = 0.2
+  }
 }
 
 CHI_influence_TPP_add = {
-	custom_effect_tooltip = CHI_influence_TPP_tt
-	add_to_variable = {
-		var = CHI_influence_TPP
-		value = CHI_influence_TPP_temp
-	}
-	clamp_variable = {
-		var = CHI_influence_TPP
-		min = 0
-		max = 1
-	}
-	set_variable = {
-		var = CHI_influence_TPP_dynamic_var
-		value = CHI_influence_TPP
-	}
-	multiply_variable = {
-		var = CHI_influence_TPP_dynamic_var
-		value = 0.2
-	}
+  custom_effect_tooltip = CHI_influence_TPP_tt
+  add_to_variable = {
+    var = CHI_influence_TPP
+    value = CHI_influence_TPP_temp
+  }
+  clamp_variable = {
+    var = CHI_influence_TPP
+    min = 0
+    max = 1
+  }
+  set_variable = {
+    var = CHI_influence_TPP_dynamic_var
+    value = CHI_influence_TPP
+  }
+  multiply_variable = {
+    var = CHI_influence_TPP_dynamic_var
+    value = 0.2
+  }
 }
 
 CHI_influence_NPSU_add = {
-	custom_effect_tooltip = CHI_influence_NPSU_tt
-	add_to_variable = {
-		var = CHI_influence_NPSU
-		value = CHI_influence_NPSU_temp
-	}
-	clamp_variable = {
-		var = CHI_influence_NPSU
-		min = 0
-		max = 1
-	}
-	set_variable = {
-		var = CHI_influence_NPSU_dynamic_var
-		value = CHI_influence_NPSU
-	}
-	multiply_variable = {
-		var = CHI_influence_NPSU_dynamic_var
-		value = 0.2
-	}
+  custom_effect_tooltip = CHI_influence_NPSU_tt
+  add_to_variable = {
+    var = CHI_influence_NPSU
+    value = CHI_influence_NPSU_temp
+  }
+  clamp_variable = {
+    var = CHI_influence_NPSU
+    min = 0
+    max = 1
+  }
+  set_variable = {
+    var = CHI_influence_NPSU_dynamic_var
+    value = CHI_influence_NPSU
+  }
+  multiply_variable = {
+    var = CHI_influence_NPSU_dynamic_var
+    value = 0.2
+  }
 }
 
 CHI_influence_NPP_add = {
-	custom_effect_tooltip = CHI_influence_NPP_tt
-	add_to_variable = {
-		var = CHI_influence_NPP
-		value = CHI_influence_NPP_temp
-	}
-	clamp_variable = {
-		var = CHI_influence_NPP
-		min = 0
-		max = 1
-	}
-	set_variable = {
-		var = CHI_influence_NPP_dynamic_var
-		value = CHI_influence_NPP
-	}
-	multiply_variable = {
-		var = CHI_influence_NPP_dynamic_var
-		value = 0.2
-	}
+  custom_effect_tooltip = CHI_influence_NPP_tt
+  add_to_variable = {
+    var = CHI_influence_NPP
+    value = CHI_influence_NPP_temp
+  }
+  clamp_variable = {
+    var = CHI_influence_NPP
+    min = 0
+    max = 1
+  }
+  set_variable = {
+    var = CHI_influence_NPP_dynamic_var
+    value = CHI_influence_NPP
+  }
+  multiply_variable = {
+    var = CHI_influence_NPP_dynamic_var
+    value = 0.2
+  }
 }
 
 CHI_influence_TSP_add = {
-	custom_effect_tooltip = CHI_influence_TSP_tt
-	add_to_variable = {
-		var = CHI_influence_TSP
-		value = CHI_influence_TSP_temp
-	}
-	clamp_variable = {
-		var = CHI_influence_TSP
-		min = 0
-		max = 1
-	}
-	set_variable = {
-		var = CHI_influence_TSP_dynamic_var
-		value = CHI_influence_TSP
-	}
-	multiply_variable = {
-		var = CHI_influence_TSP_dynamic_var
-		value = 0.2
-	}
+  custom_effect_tooltip = CHI_influence_TSP_tt
+  add_to_variable = {
+    var = CHI_influence_TSP
+    value = CHI_influence_TSP_temp
+  }
+  clamp_variable = {
+    var = CHI_influence_TSP
+    min = 0
+    max = 1
+  }
+  set_variable = {
+    var = CHI_influence_TSP_dynamic_var
+    value = CHI_influence_TSP
+  }
+  multiply_variable = {
+    var = CHI_influence_TSP_dynamic_var
+    value = 0.2
+  }
 }
 
 CHI_influence_SDP_add = {
-	custom_effect_tooltip = CHI_influence_SDP_tt
-	add_to_variable = {
-		var = CHI_influence_SDP
-		value = CHI_influence_SDP_temp
-	}
-	clamp_variable = {
-		var = CHI_influence_SDP
-		min = 0
-		max = 1
-	}
-	set_variable = {
-		var = CHI_influence_SDP_dynamic_var
-		value = CHI_influence_SDP
-	}
-	multiply_variable = {
-		var = CHI_influence_SDP_dynamic_var
-		value = 0.2
-	}
+  custom_effect_tooltip = CHI_influence_SDP_tt
+  add_to_variable = {
+    var = CHI_influence_SDP
+    value = CHI_influence_SDP_temp
+  }
+  clamp_variable = {
+    var = CHI_influence_SDP
+    min = 0
+    max = 1
+  }
+  set_variable = {
+    var = CHI_influence_SDP_dynamic_var
+    value = CHI_influence_SDP
+  }
+  multiply_variable = {
+    var = CHI_influence_SDP_dynamic_var
+    value = 0.2
+  }
 }
 EADI_taiwan_war = {
-	if = {
-		limit = {
-			NOT = { has_idea = PRC_TaiHai_IDEA_25  }
-		}
-		activate_mission = THEPRC_taiwan_war_countdown
-
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_25}
-		country_event = {id = ROC_PRC.32}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_24}
-		country_event = {id = ROC_PRC.31}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_24
-			add_idea = PRC_TaiHai_IDEA_25
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_23}
-		country_event = {id = ROC_PRC.29}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_23
-			add_idea = PRC_TaiHai_IDEA_24
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_22}
-		country_event = {id = ROC_PRC.28}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_22
-			add_idea = PRC_TaiHai_IDEA_23
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_21}
-		country_event = {id = ROC_PRC.27}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_21
-			add_idea = PRC_TaiHai_IDEA_22
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_20}
-		country_event = {id = ROC_PRC.26}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_20
-			add_idea = PRC_TaiHai_IDEA_21
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_19}
-		country_event = {id = ROC_PRC.25}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_19
-			add_idea = PRC_TaiHai_IDEA_20
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_18}
-		country_event = {id = ROC_PRC.23}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_18
-			add_idea = PRC_TaiHai_IDEA_19
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_17}
-		country_event = {id = ROC_PRC.21}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_17
-			add_idea = PRC_TaiHai_IDEA_18
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_16}
-		country_event = {id =  ROC_PRC.20}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_16
-			add_idea = PRC_TaiHai_IDEA_17
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_15}
-		country_event = {id = ROC_PRC.19}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_15
-			add_idea = PRC_TaiHai_IDEA_16
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_14}
-		country_event = {id = ROC_PRC.18}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_14
-			add_idea = PRC_TaiHai_IDEA_15
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_13}
-		country_event = {id = ROC_PRC.16}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_13
-			add_idea = PRC_TaiHai_IDEA_14
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_12}
-		country_event = {id = ROC_PRC.14}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_12
-			add_idea = PRC_TaiHai_IDEA_13
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_11}
-		country_event = {id = ROC_PRC.12}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_11
-			add_idea = PRC_TaiHai_IDEA_12
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_10}
-		news_event = {
-			id = ROC_PRC.11
-		}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_10
-			add_idea = PRC_TaiHai_IDEA_11
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_9}
-		country_event = {id = ROC_PRC.10}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_9
-			add_idea = PRC_TaiHai_IDEA_10
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_8}
-		country_event = {id = ROC_PRC.9}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_8
-			add_idea = PRC_TaiHai_IDEA_9
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_7}
-		country_event = {id = ROC_PRC.8}
-		hidden_effect = {
-			CHI = {
-				country_event = {
-					id = ROC.26
-					days = 7
-				}
-			}
-		}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_7
-			add_idea = PRC_TaiHai_IDEA_8
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_6}
-		country_event = {id = ROC_PRC.7}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_6
-			add_idea = PRC_TaiHai_IDEA_7
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_5}
-		country_event = {id = ROC_PRC.6}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_5
-			add_idea = PRC_TaiHai_IDEA_6
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_4}
-		country_event = {id = ROC_PRC.5}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_4
-			add_idea = PRC_TaiHai_IDEA_5
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_3}
-		country_event = {id = ROC_PRC.4}
-		hidden_effect = {
-			CHI = {
-				country_event = {
-					id = ROC.28
-					days = 7
-				}
-			}
-		}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_3
-			add_idea = PRC_TaiHai_IDEA_4
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_2}
-		country_event = {id = ROC_PRC.3}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_2
-			add_idea = PRC_TaiHai_IDEA_3
-		}
-	}
-	if = {
-		limit = {has_idea = PRC_TaiHai_IDEA_1}
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA_1
-			add_idea = PRC_TaiHai_IDEA_2
-		}
-		country_event = {id = ROC_PRC.2}
-	}
-	if = {
-		limit = {
-			NOT = {has_country_flag = Taiwan_war}
-		}
-		set_country_flag = Taiwan_war
-		swap_ideas = {
-			remove_idea = PRC_TaiHai_IDEA
-			add_idea = PRC_TaiHai_IDEA_1
-		}
-		country_event = {
-			id = ROC_PRC.13
-		}
-	}
+  if = {
+    limit = {
+      NOT = { has_idea = PRC_TaiHai_IDEA_25  }
+    }
+    activate_mission = THEPRC_taiwan_war_countdown
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_25}
+    country_event = {id = ROC_PRC.32}
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_24}
+    country_event = {id = ROC_PRC.31}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_24
+      add_idea = PRC_TaiHai_IDEA_25
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_23}
+    country_event = {id = ROC_PRC.29}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_23
+      add_idea = PRC_TaiHai_IDEA_24
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_22}
+    country_event = {id = ROC_PRC.28}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_22
+      add_idea = PRC_TaiHai_IDEA_23
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_21}
+    country_event = {id = ROC_PRC.27}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_21
+      add_idea = PRC_TaiHai_IDEA_22
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_20}
+    country_event = {id = ROC_PRC.26}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_20
+      add_idea = PRC_TaiHai_IDEA_21
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_19}
+    country_event = {id = ROC_PRC.25}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_19
+      add_idea = PRC_TaiHai_IDEA_20
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_18}
+    country_event = {id = ROC_PRC.23}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_18
+      add_idea = PRC_TaiHai_IDEA_19
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_17}
+    country_event = {id = ROC_PRC.21}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_17
+      add_idea = PRC_TaiHai_IDEA_18
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_16}
+    country_event = {id =  ROC_PRC.20}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_16
+      add_idea = PRC_TaiHai_IDEA_17
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_15}
+    country_event = {id = ROC_PRC.19}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_15
+      add_idea = PRC_TaiHai_IDEA_16
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_14}
+    country_event = {id = ROC_PRC.18}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_14
+      add_idea = PRC_TaiHai_IDEA_15
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_13}
+    country_event = {id = ROC_PRC.16}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_13
+      add_idea = PRC_TaiHai_IDEA_14
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_12}
+    country_event = {id = ROC_PRC.14}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_12
+      add_idea = PRC_TaiHai_IDEA_13
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_11}
+    country_event = {id = ROC_PRC.12}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_11
+      add_idea = PRC_TaiHai_IDEA_12
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_10}
+    news_event = {
+      id = ROC_PRC.11
+    }
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_10
+      add_idea = PRC_TaiHai_IDEA_11
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_9}
+    country_event = {id = ROC_PRC.10}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_9
+      add_idea = PRC_TaiHai_IDEA_10
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_8}
+    country_event = {id = ROC_PRC.9}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_8
+      add_idea = PRC_TaiHai_IDEA_9
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_7}
+    country_event = {id = ROC_PRC.8}
+    hidden_effect = {
+      CHI = {
+        country_event = {
+          id = ROC.26
+          days = 7
+        }
+      }
+    }
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_7
+      add_idea = PRC_TaiHai_IDEA_8
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_6}
+    country_event = {id = ROC_PRC.7}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_6
+      add_idea = PRC_TaiHai_IDEA_7
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_5}
+    country_event = {id = ROC_PRC.6}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_5
+      add_idea = PRC_TaiHai_IDEA_6
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_4}
+    country_event = {id = ROC_PRC.5}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_4
+      add_idea = PRC_TaiHai_IDEA_5
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_3}
+    country_event = {id = ROC_PRC.4}
+    hidden_effect = {
+      CHI = {
+        country_event = {
+          id = ROC.28
+          days = 7
+        }
+      }
+    }
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_3
+      add_idea = PRC_TaiHai_IDEA_4
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_2}
+    country_event = {id = ROC_PRC.3}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_2
+      add_idea = PRC_TaiHai_IDEA_3
+    }
+  }
+  if = {
+    limit = {has_idea = PRC_TaiHai_IDEA_1}
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA_1
+      add_idea = PRC_TaiHai_IDEA_2
+    }
+    country_event = {id = ROC_PRC.2}
+  }
+  if = {
+    limit = {
+      NOT = {has_country_flag = Taiwan_war}
+    }
+    set_country_flag = Taiwan_war
+    swap_ideas = {
+      remove_idea = PRC_TaiHai_IDEA
+      add_idea = PRC_TaiHai_IDEA_1
+    }
+    country_event = {
+      id = ROC_PRC.13
+    }
+  }
 }
 PDTO_taiwan_war = {
-	if = {
-		limit = {
-			NOT = { has_idea = CHI_TaiHai_IDEA_25  }
-		}
-		activate_mission = THECHI_taiwan_war_countdown
+  if = {
+    limit = {
+      NOT = { has_country_flag = Taiwan_war }
+    }
+    set_country_flag = Taiwan_war
+    set_variable = { TWW_VAR = 2 }
+    effect_tooltip = {
+      add_ideas = CHI_TaiHai_idea_base
+    }
+    country_event = {id = ROC_CHI.2}
+    hidden_effect = {
+      add_dynamic_modifier = {
+        modifier = CHI_TaiHai_dynamic
+      }
+      add_to_variable = {
+        var = TH_consumer_goods_factor
+        value = 0.05
+      }
+      add_to_variable = {
+        var = TH_industry_repair_factor
+        value = -0.25
+      }
+      add_to_variable = {
+        var = TH_SF
+        value = -0.05
+      }
+      add_to_variable = {
+        var = TH_all
+        value = 0.01
+      }
+      add_to_variable = {
+        var = TH_one_to_twenty
+        value = -0.01
+      }
+      add_to_variable = {
+        var = TH_one_to_fifteen
+        value = -0.01
+      }
+      add_to_variable = {
+        var = TH_one_to_ten
+        value = -0.005
+      }
+    }
+  }
+  else_if = {
+    limit = {
+      check_variable = { TWW_VAR > 20}
+    }
+    effect_tooltip = {
+      swap_ideas = {
+        remove_idea = CHI_TaiHai_idea_base
+        add_idea = CHI_TaiHai_idea_base_6
+      }
+    }
+    hidden_effect = {
+      add_to_variable = {
+        var = TH_all
+        value = 0.01
+      }
+      add_to_variable = {
+        var = TH_SF
+        value = -0.01
+      }
+      add_to_variable = {
+        var = TH_RGOS
+        value = 0.01
+      }
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 26}
+      }
+      country_event = {id = taiwan.32}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 25}
+      }
+      country_event = {id = ROC_CHI.34}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 24}
+      }
+      country_event = {id = ROC_CHI.33}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 23}
+      }
+      country_event = {id = ROC_CHI.32}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 22}
+      }
+      country_event = {id = ROC_CHI.20}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 21}
+      }
+      country_event = {id = ROC_CHI.31}
+    }
 
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_25}
-		country_event = {id = taiwan.32}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_24}
-		country_event = {id = ROC_CHI.34}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_24
-			add_idea = CHI_TaiHai_IDEA_25
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_23}
-		country_event = {id = ROC_CHI.33}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_23
-			add_idea = CHI_TaiHai_IDEA_24
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_22}
-		country_event = {id = ROC_CHI.32}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_22
-			add_idea = CHI_TaiHai_IDEA_23
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_21}
-		country_event = {id = ROC_CHI.20}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_21
-			add_idea = CHI_TaiHai_IDEA_22
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_20}
-		country_event = {id = ROC_CHI.31}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_20
-			add_idea = CHI_TaiHai_IDEA_21
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_19}
-		country_event = {id = ROC_CHI.29}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_19
-			add_idea = CHI_TaiHai_IDEA_20
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_18}
-		country_event = {id = ROC_CHI.28}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_18
-			add_idea = CHI_TaiHai_IDEA_19
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_17}
-		country_event = {id = ROC_CHI.27}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_17
-			add_idea = CHI_TaiHai_IDEA_18
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_16}
-		country_event = {id = ROC_CHI.21}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_16
-			add_idea = CHI_TaiHai_IDEA_17
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_15}
-		country_event = {id = ROC_CHI.41}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_15
-			add_idea = CHI_TaiHai_IDEA_16
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_14}
-		country_event = {id = ROC_CHI.40}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_14
-			add_idea = CHI_TaiHai_IDEA_15
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_13}
-		country_event = {id = ROC_CHI.39}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_13
-			add_idea = CHI_TaiHai_IDEA_14
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_12}
-		country_event = {id = ROC_CHI.17}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_12
-			add_idea = CHI_TaiHai_IDEA_13
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_11}
-		country_event = {id = ROC_CHI.38}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_11
-			add_idea = CHI_TaiHai_IDEA_12
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_10}
-		country_event = {id = ROC_CHI.15}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_10
-			add_idea = CHI_TaiHai_IDEA_11
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_9}
-		country_event = {id = ROC_CHI.18}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_9
-			add_idea = CHI_TaiHai_IDEA_10
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_8}
-		country_event = {id = ROC_CHI.12}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_8
-			add_idea = CHI_TaiHai_IDEA_9
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_7}
-		country_event = {id = ROC_CHI.14}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_7
-			add_idea = CHI_TaiHai_IDEA_8
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_6}
-		country_event = {id = ROC_CHI.11}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_6
-			add_idea = CHI_TaiHai_IDEA_7
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_5}
-		country_event = {id = ROC_CHI.9}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_5
-			add_idea = CHI_TaiHai_IDEA_6
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_4}
-		country_event = {id = ROC_CHI.8}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_4
-			add_idea = CHI_TaiHai_IDEA_5
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_3}
-		country_event = {id = ROC.40}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_3
-			add_idea = CHI_TaiHai_IDEA_4
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_2}
-		country_event = {id = ROC_CHI.6}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_2
-			add_idea = CHI_TaiHai_IDEA_3
-		}
-	}
-	if = {
-		limit = {has_idea = CHI_TaiHai_IDEA_1}
-		swap_ideas = {
-			remove_idea = CHI_TaiHai_IDEA_1
-			add_idea = CHI_TaiHai_IDEA_2
-		}
-		country_event = {id = ROC_CHI.5}
-	}
-	if = {
-		limit = {
-			NOT = {has_country_flag = Taiwan_war}
-		}
-		set_country_flag = Taiwan_war
-		add_ideas = CHI_TaiHai_IDEA_1
-		country_event = {id = ROC_CHI.2}
-	}
+    add_to_variable = {
+      var = TWW_VAR
+      value = 1
+    }
+  }
+  else_if = {
+    limit = {
+      AND = {
+        check_variable = { TWW_VAR > 15}
+        check_variable = { TWW_VAR < 21}
+      }
+    }
+    effect_tooltip = {
+      swap_ideas = {
+        remove_idea = CHI_TaiHai_idea_base
+        add_idea = CHI_TaiHai_idea_base_5
+      }
+    }
+    hidden_effect = {
+      add_to_variable = {
+        var = TH_all
+        value = 0.01
+      }
+      add_to_variable = {
+        var = TH_one_to_twenty
+        value = -0.01
+      }
+      add_to_variable = {
+        var = TH_SF
+        value = -0.01
+      }
+      add_to_variable = {
+        var = TH_RGOS
+        value = 0.01
+      }
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 20}
+      }
+      effect_tooltip = {
+        swap_ideas = {
+          remove_idea = CHI_TaiHai_idea_base
+          add_idea = CHI_TaiHai_idea_base_3
+        }
+      }
+      country_event = {id = ROC_CHI.29}
+      hidden_effect = {
+        add_to_variable = {
+          var = TH_industry_repair_factor
+          value = 0.2
+        }
+      }
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 19}
+      }
+      country_event = {id = ROC_CHI.28}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 18}
+      }
+      country_event = {id = ROC_CHI.27}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 17}
+      }
+      country_event = {id = ROC_CHI.21}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 16}
+      }
+      country_event = {id = ROC_CHI.41}
+    }
+
+    add_to_variable = {
+      var = TWW_VAR
+      value = 1
+    }
+  }
+  else_if = {
+    limit = {
+      AND = {
+        check_variable = { TWW_VAR > 10}
+        check_variable = { TWW_VAR < 16}
+      }
+    }
+    effect_tooltip = {
+      swap_ideas = {
+        remove_idea = CHI_TaiHai_idea_base
+        add_idea = CHI_TaiHai_idea_base_5
+      }
+    }
+    hidden_effect = {
+      add_to_variable = {
+        var = TH_all
+        value = 0.01
+      }
+      add_to_variable = {
+        var = TH_one_to_twenty
+        value = -0.01
+      }
+      add_to_variable = {
+        var = TH_one_to_fifteen
+        value = -0.01
+      }
+      add_to_variable = {
+        var = TH_SF
+        value = -0.01
+      }
+      add_to_variable = {
+        var = TH_RGOS
+        value = 0.01
+      }
+      add_to_variable = {
+        var = TH_one_to_ten
+        value = -0.005
+      }
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 15}
+      }
+      country_event = {id = ROC_CHI.40}
+      hidden_effect = {
+        add_to_variable = {
+          var = TH_consumer_goods_factor
+          value = 0.05
+        }
+        add_to_variable = {
+          var = TH_industry_repair_factor
+          value = 0.2
+        }
+      }
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 14}
+      }
+      country_event = {id = ROC_CHI.39}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 13}
+      }
+      country_event = {id = ROC_CHI.17}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 12}
+      }
+      country_event = {id = ROC_CHI.38}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 11}
+      }
+      country_event = {id = ROC_CHI.15}
+    }
+
+    add_to_variable = {
+      var = TWW_VAR
+      value = 1
+    }
+  }
+  else_if = {
+    limit = {
+      AND = {
+        check_variable = { TWW_VAR > 1}
+        check_variable = { TWW_VAR < 11}
+      }
+    }
+    effect_tooltip = {
+      swap_ideas = {
+        remove_idea = CHI_TaiHai_idea_base
+        add_idea = CHI_TaiHai_idea_base_2
+      }
+    }
+    hidden_effect = {
+      add_to_variable = {
+        var = TH_all
+        value = 0.01
+      }
+      add_to_variable = {
+        var = TH_one_to_twenty
+        value = -0.01
+      }
+      add_to_variable = {
+        var = TH_one_to_fifteen
+        value = -0.01
+      }
+      add_to_variable = {
+        var = TH_one_to_ten
+        value = -0.005
+      }
+      add_to_variable = {
+        var = TH_SF
+        value = -0.01
+      }
+      add_to_variable = {
+        var = TH_RGOS
+        value = 0.01
+      }
+
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 10}
+      }
+      country_event = {id = ROC_CHI.18}
+      swap_ideas = {
+        remove_idea = CHI_TaiHai_idea_base
+        add_idea = CHI_TaiHai_idea_base_4
+      }
+      hidden_effect = {
+        add_to_variable = {
+          var = TH_consumer_goods_factor
+          value = 0.05
+        }
+        add_to_variable = {
+          var = TH_industry_repair_factor
+          value = 0.25
+        }
+      }
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 9}
+      }
+      country_event = {id = ROC_CHI.12}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 8}
+      }
+      country_event = {id = ROC_CHI.14}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 7}
+      }
+      country_event = {id = ROC_CHI.11}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 6}
+      }
+      country_event = {id = ROC_CHI.9}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 5}
+      }
+      country_event = {id = ROC_CHI.8}
+      swap_ideas = {
+        remove_idea = CHI_TaiHai_idea_base
+        add_idea = CHI_TaiHai_idea_base_3
+      }
+      hidden_effect = {
+        add_to_variable = {
+          var = TH_consumer_goods_factor
+          value = 0.05
+        }
+        add_to_variable = {
+          var = TH_industry_repair_factor
+          value = 0.2
+        }
+      }
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 4}
+      }
+      country_event = {id = ROC.40}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 3}
+      }
+      country_event = {id = ROC_CHI.6}
+    }
+    if = {
+      limit = {
+        check_variable = { TWW_VAR = 2}
+      }
+      country_event = {id = ROC_CHI.5}
+    }
+    add_to_variable = {
+      var = TWW_VAR
+      value = 1
+    }
+  }
 }
 PDTO2_taiwan_war = {
-	if = {
-		limit = {
-			NOT = { has_idea = JAP_TaiHai_IDEA_25  }
-		}
-		activate_mission = THEJAP_taiwan_war_countdown
+  if = {
+    limit = {
+      NOT = { has_idea = JAP_TaiHai_IDEA_25  }
+    }
+    activate_mission = THEJAP_taiwan_war_countdown
 
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_25}
-		#country_event = {id = JAP_TaiHai_IDEA.29}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_24}
-		#country_event = {id = JAP_TaiHai_IDEA.29}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_24
-			add_idea = JAP_TaiHai_IDEA_25
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_23}
-		#country_event = {id = JAP_TaiHai_IDEA.29}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_23
-			add_idea = JAP_TaiHai_IDEA_24
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_22}
-		#country_event = {id = JAP_TaiHai_IDEA.29}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_22
-			add_idea = JAP_TaiHai_IDEA_23
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_21}
-		#country_event = {id = JAP_TaiHai_IDEA.25}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_21
-			add_idea = JAP_TaiHai_IDEA_22
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_20}
-		#country_event = {id = JAP_TaiHai_IDEA.24}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_20
-			add_idea = JAP_TaiHai_IDEA_21
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_19}
-		#country_event = {id = JAP_TaiHai_IDEA.22}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_19
-			add_idea = JAP_TaiHai_IDEA_20
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_18}
-		#country_event = {id = JAP_TaiHai_IDEA.21}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_18
-			add_idea = JAP_TaiHai_IDEA_19
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_17}
-		#country_event = {id = JAP_TaiHai_IDEA.20}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_17
-			add_idea = JAP_TaiHai_IDEA_18
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_16}
-		#country_event = {id =  JAP_TaiHai_IDEA.19}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_16
-			add_idea = JAP_TaiHai_IDEA_17
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_15}
-		#country_event = {id = JAP_TaiHai_IDEA.17}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_15
-			add_idea = JAP_TaiHai_IDEA_16
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_14}
-		#country_event = {id = JAP_TaiHai_IDEA.15}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_14
-			add_idea = JAP_TaiHai_IDEA_15
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_13}
-		#country_event = {id = JAP_TaiHai_IDEA.14}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_13
-			add_idea = JAP_TaiHai_IDEA_14
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_12}
-		#country_event = {id = JAP_TaiHai_IDEA.13}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_12
-			add_idea = JAP_TaiHai_IDEA_13
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_11}
-		#country_event = {id = JAP_TaiHai_IDEA.12}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_11
-			add_idea = JAP_TaiHai_IDEA_12
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_10}
-		#country_event = {id = JAP_TaiHai_IDEA.11}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_10
-			add_idea = JAP_TaiHai_IDEA_11
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_9}
-		#country_event = {id = JAP_TaiHai_IDEA.10}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_9
-			add_idea = JAP_TaiHai_IDEA_10
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_8}
-		#country_event = {id = JAP_TaiHai_IDEA.9}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_8
-			add_idea = JAP_TaiHai_IDEA_9
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_7}
-		#country_event = {id = JAP_TaiHai_IDEA.7}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_7
-			add_idea = JAP_TaiHai_IDEA_8
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_6}
-		#country_event = {id = JAP_TaiHai_IDEA.6}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_6
-			add_idea = JAP_TaiHai_IDEA_7
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_5}
-		#country_event = {id = JAP_TaiHai_IDEA.5}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_5
-			add_idea = JAP_TaiHai_IDEA_6
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_4}
-		#country_event = {id = JAP_TaiHai_IDEA.4}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_4
-			add_idea = JAP_TaiHai_IDEA_5
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_3}
-		#country_event = {id = JAP_TaiHai_IDEA.3}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_3
-			add_idea = JAP_TaiHai_IDEA_4
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_2}
-		#country_event = {id = JAP_TaiHai_IDEA.2}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_2
-			add_idea = JAP_TaiHai_IDEA_3
-		}
-	}
-	if = {
-		limit = {has_idea = JAP_TaiHai_IDEA_1}
-		swap_ideas = {
-			remove_idea = JAP_TaiHai_IDEA_1
-			add_idea = JAP_TaiHai_IDEA_2
-		}
-		#country_event = {id = JAP_TaiHai_IDEA.1}
-	}
-	if = {
-		limit = {
-			NOT = {has_country_flag = Taiwan_war}
-		}
-		set_country_flag = Taiwan_war
-		add_ideas = JAP_TaiHai_IDEA_1
-		#country_event = {id = JAP_TaiHai_IDEA.1}
-	}
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_25}
+    country_event = {id = JAP_TaiHai_IDEA.29}
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_24}
+    #country_event = {id = JAP_TaiHai_IDEA.29}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_24
+      add_idea = JAP_TaiHai_IDEA_25
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_23}
+    #country_event = {id = JAP_TaiHai_IDEA.29}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_23
+      add_idea = JAP_TaiHai_IDEA_24
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_22}
+    #country_event = {id = JAP_TaiHai_IDEA.29}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_22
+      add_idea = JAP_TaiHai_IDEA_23
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_21}
+    #country_event = {id = JAP_TaiHai_IDEA.25}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_21
+      add_idea = JAP_TaiHai_IDEA_22
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_20}
+    #country_event = {id = JAP_TaiHai_IDEA.24}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_20
+      add_idea = JAP_TaiHai_IDEA_21
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_19}
+    #country_event = {id = JAP_TaiHai_IDEA.22}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_19
+      add_idea = JAP_TaiHai_IDEA_20
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_18}
+    #country_event = {id = JAP_TaiHai_IDEA.21}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_18
+      add_idea = JAP_TaiHai_IDEA_19
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_17}
+    #country_event = {id = JAP_TaiHai_IDEA.20}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_17
+      add_idea = JAP_TaiHai_IDEA_18
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_16}
+    #country_event = {id =  JAP_TaiHai_IDEA.19}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_16
+      add_idea = JAP_TaiHai_IDEA_17
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_15}
+    #country_event = {id = JAP_TaiHai_IDEA.17}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_15
+      add_idea = JAP_TaiHai_IDEA_16
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_14}
+    #country_event = {id = JAP_TaiHai_IDEA.15}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_14
+      add_idea = JAP_TaiHai_IDEA_15
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_13}
+    #country_event = {id = JAP_TaiHai_IDEA.14}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_13
+      add_idea = JAP_TaiHai_IDEA_14
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_12}
+    #country_event = {id = JAP_TaiHai_IDEA.13}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_12
+      add_idea = JAP_TaiHai_IDEA_13
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_11}
+    #country_event = {id = JAP_TaiHai_IDEA.12}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_11
+      add_idea = JAP_TaiHai_IDEA_12
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_10}
+    #country_event = {id = JAP_TaiHai_IDEA.11}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_10
+      add_idea = JAP_TaiHai_IDEA_11
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_9}
+    #country_event = {id = JAP_TaiHai_IDEA.10}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_9
+      add_idea = JAP_TaiHai_IDEA_10
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_8}
+    #country_event = {id = JAP_TaiHai_IDEA.9}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_8
+      add_idea = JAP_TaiHai_IDEA_9
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_7}
+    #country_event = {id = JAP_TaiHai_IDEA.7}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_7
+      add_idea = JAP_TaiHai_IDEA_8
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_6}
+    #country_event = {id = JAP_TaiHai_IDEA.6}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_6
+      add_idea = JAP_TaiHai_IDEA_7
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_5}
+    #country_event = {id = JAP_TaiHai_IDEA.5}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_5
+      add_idea = JAP_TaiHai_IDEA_6
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_4}
+    #country_event = {id = JAP_TaiHai_IDEA.4}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_4
+      add_idea = JAP_TaiHai_IDEA_5
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_3}
+    #country_event = {id = JAP_TaiHai_IDEA.3}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_3
+      add_idea = JAP_TaiHai_IDEA_4
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_2}
+    #country_event = {id = JAP_TaiHai_IDEA.2}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_2
+      add_idea = JAP_TaiHai_IDEA_3
+    }
+  }
+  if = {
+    limit = {has_idea = JAP_TaiHai_IDEA_1}
+    swap_ideas = {
+      remove_idea = JAP_TaiHai_IDEA_1
+      add_idea = JAP_TaiHai_IDEA_2
+    }
+    #country_event = {id = JAP_TaiHai_IDEA.1}
+  }
+  if = {
+    limit = {
+      NOT = {has_country_flag = Taiwan_war}
+    }
+    set_country_flag = Taiwan_war
+    add_ideas = JAP_TaiHai_IDEA_1
+    #country_event = {id = JAP_TaiHai_IDEA.1}
+  }
 }
 PRC_end_taiwan_war2 = {
-	clr_global_flag = PRC_ongoing_taiwan_war
-	white_peace = AST
-	white_peace = JAP
-	annex_country = {
-		target = HKN
-		transfer_troops = no
-	}
-	annex_country = {
-		target = MCU
-		transfer_troops = no
-	}
-	annex_country = {
-		target = SHZ
-		transfer_troops = no
-	}
-	326 = {
-		add_dynamic_modifier = {
-			modifier = PRC_hong_kong
-		}
-	}
-	326 = {
-		remove_dynamic_modifier = {
-			modifier = PRC_hong_kong
-		}
-	}
-	1150 = {
-		country_event = {
-			id = china.254
-			days = 200
-		}
-		clr_global_flag = battle_of_okinawa
-		every_state = { #защита от дебила
-			limit = {
-				is_owned_by = JAP
-				NOT = {
-					OR = {
-						state = 526
-						state = 876
-					}
-				}
-			}
-			remove_dynamic_modifier = {
-				modifier = PRC_non_combat_area
-				scope = PRC #потом скоупы поменять
-			}
-		}
-		every_state = { #защита от дебила
-			limit = {
-				is_owned_by = AST
-			}
-			remove_dynamic_modifier = {
-				modifier = PRC_non_combat_area
-				scope = PRC
-			}
-		}
-		every_state = { #защита от дебила
-			limit = {
-				is_owned_by = PRC
-				is_coastal = yes
-				NOT = {
-					OR = {
-						state = 326
-						state = 648
-					}
-				}
-			}
-			remove_dynamic_modifier = {
-				modifier = PRC_non_combat_area
-			}
-		}
-		AST = {
-			country_event = Australia.18
-			remove_Taihai_idea = yes
-			remove_ideas = JAP_TaiHai_IDEA_1
-			remove_ideas = JAP_TaiHai_IDEA_2
-			remove_ideas = JAP_TaiHai_IDEA_3
-			remove_ideas = JAP_TaiHai_IDEA_4
-			remove_ideas = JAP_TaiHai_IDEA_5
-			remove_ideas = JAP_TaiHai_IDEA_6
-			remove_ideas = JAP_TaiHai_IDEA_7
-			remove_ideas = JAP_TaiHai_IDEA_8
-			remove_ideas = JAP_TaiHai_IDEA_9
-			remove_ideas = JAP_TaiHai_IDEA_10
-			remove_ideas = JAP_TaiHai_IDEA_11
-			remove_ideas = JAP_TaiHai_IDEA_12
-			remove_ideas = JAP_TaiHai_IDEA_13
-			remove_ideas = JAP_TaiHai_IDEA_14
-			remove_ideas = JAP_TaiHai_IDEA_15
-			remove_ideas = JAP_TaiHai_IDEA_16
-			remove_ideas = JAP_TaiHai_IDEA_17
-			remove_ideas = JAP_TaiHai_IDEA_18
-			remove_ideas = JAP_TaiHai_IDEA_19
-			remove_ideas = JAP_TaiHai_IDEA_20
-			remove_ideas = JAP_TaiHai_IDEA_21
-			remove_ideas = JAP_TaiHai_IDEA_22
-			remove_ideas = JAP_TaiHai_IDEA_23
-			remove_ideas = JAP_TaiHai_IDEA_24
-			remove_ideas = JAP_TaiHai_IDEA_25
-		}
-		JAP = {
-			remove_Taihai_idea = yes
-			country_event = {
-				id = jap.9
-				days = 3
-			}
-			remove_ideas = JAP_TaiHai_IDEA_1
-			remove_ideas = JAP_TaiHai_IDEA_2
-			remove_ideas = JAP_TaiHai_IDEA_3
-			remove_ideas = JAP_TaiHai_IDEA_4
-			remove_ideas = JAP_TaiHai_IDEA_5
-			remove_ideas = JAP_TaiHai_IDEA_6
-			remove_ideas = JAP_TaiHai_IDEA_7
-			remove_ideas = JAP_TaiHai_IDEA_8
-			remove_ideas = JAP_TaiHai_IDEA_9
-			remove_ideas = JAP_TaiHai_IDEA_10
-			remove_ideas = JAP_TaiHai_IDEA_11
-			remove_ideas = JAP_TaiHai_IDEA_12
-			remove_ideas = JAP_TaiHai_IDEA_13
-			remove_ideas = JAP_TaiHai_IDEA_14
-			remove_ideas = JAP_TaiHai_IDEA_15
-			remove_ideas = JAP_TaiHai_IDEA_16
-			remove_ideas = JAP_TaiHai_IDEA_17
-			remove_ideas = JAP_TaiHai_IDEA_18
-			remove_ideas = JAP_TaiHai_IDEA_19
-			remove_ideas = JAP_TaiHai_IDEA_20
-			remove_ideas = JAP_TaiHai_IDEA_21
-			remove_ideas = JAP_TaiHai_IDEA_22
-			remove_ideas = JAP_TaiHai_IDEA_23
-			remove_ideas = JAP_TaiHai_IDEA_24
-			remove_ideas = JAP_TaiHai_IDEA_25
-		}
-		CHI = {
-			remove_ideas = CHI_pdto_fuel_shipments_idea
-			remove_ideas = CHI_PRC_infiltration_high
-			remove_ideas = CHI_PRC_infiltration_middle
-			remove_ideas = CHI_PRC_infiltration_low
-			remove_ideas = CHI_low_international_recognition_idea
-			remove_ideas = CHI_prc_embargo_idea1
-			remove_ideas = CHI_prc_embargo_idea2
-			remove_ideas = CHI_prc_embargo_idea
-			remove_ideas = CHI_prc_embargo_low_idea
-			remove_ideas = CHI_TaiHai_IDEA_1
-			remove_ideas = CHI_low_international_recognition_KMT2_idea
-			remove_ideas = CHI_low_international_recognition_KMT_idea
-			remove_ideas = CHI_low_international_recognition_KMT1_idea
-			remove_ideas = CHI_TaiHai_IDEA_2
-			remove_ideas = CHI_TaiHai_IDEA_3
-			remove_ideas = CHI_TaiHai_IDEA_4
-			remove_ideas = CHI_TaiHai_IDEA_5
-			remove_ideas = CHI_TaiHai_IDEA_6
-			remove_ideas = CHI_TaiHai_IDEA_7
-			remove_ideas = CHI_TaiHai_IDEA_8
-			remove_ideas = CHI_TaiHai_IDEA_9
-			remove_ideas = CHI_TaiHai_IDEA_10
-			remove_ideas = CHI_TaiHai_IDEA_11
-			remove_ideas = CHI_TaiHai_IDEA_12
-			remove_ideas = CHI_TaiHai_IDEA_13
-			remove_ideas = CHI_TaiHai_IDEA_14
-			remove_ideas = CHI_TaiHai_IDEA_15
-			remove_ideas = CHI_TaiHai_IDEA_16
-			remove_ideas = CHI_TaiHai_IDEA_17
-			remove_ideas = CHI_TaiHai_IDEA_18
-			remove_ideas = CHI_TaiHai_IDEA_19
-			remove_ideas = CHI_TaiHai_IDEA_20
-			remove_ideas = CHI_TaiHai_IDEA_21
-			remove_ideas = CHI_TaiHai_IDEA_22
-			remove_ideas = CHI_TaiHai_IDEA_23
-			remove_ideas = CHI_TaiHai_IDEA_24
-			remove_ideas = CHI_TaiHai_IDEA_25
-			remove_Taihai_idea = yes
-		}
-		PRC = {
-			remove_Taihai_idea = yes
-			remove_ideas = PRC_TaiHai_IDEA_1
-			remove_ideas = PRC_TaiHai_IDEA_2
-			remove_ideas = PRC_TaiHai_IDEA_3
-			remove_ideas = PRC_TaiHai_IDEA_4
-			remove_ideas = PRC_TaiHai_IDEA_5
-			remove_ideas = PRC_TaiHai_IDEA_6
-			remove_ideas = PRC_TaiHai_IDEA_7
-			remove_ideas = PRC_TaiHai_IDEA_8
-			remove_ideas = PRC_TaiHai_IDEA_9
-			remove_ideas = PRC_TaiHai_IDEA_10
-			remove_ideas = PRC_TaiHai_IDEA_11
-			remove_ideas = PRC_TaiHai_IDEA_12
-			remove_ideas = PRC_TaiHai_IDEA_13
-			remove_ideas = PRC_TaiHai_IDEA_14
-			remove_ideas = PRC_TaiHai_IDEA_15
-			remove_ideas = PRC_TaiHai_IDEA_16
-			remove_ideas = PRC_TaiHai_IDEA_17
-			remove_ideas = PRC_TaiHai_IDEA_18
-			remove_ideas = PRC_TaiHai_IDEA_19
-			remove_ideas = PRC_TaiHai_IDEA_20
-			remove_ideas = PRC_TaiHai_IDEA_21
-			remove_ideas = PRC_TaiHai_IDEA_22
-			remove_ideas = PRC_TaiHai_IDEA_23
-			remove_ideas = PRC_TaiHai_IDEA_24
-			remove_ideas = PRC_TaiHai_IDEA_25
-			remove_ideas = PRC_TaiHai_IDEA_26
-		}
-		JAP = {
-			if = {
-				limit = {
-					OR = {
-						has_idea = low_society
-						has_idea = lower_society
-					}
-				}
-				add_ideas = medium_society
-				set_temp_variable = {
-					var = society_development_var_temp
-					value = 0.25
-				}
-				add_society_development = yes
-			}
-		}
-		if = {
-			limit = {
-				1382 = { controller = {  is_ally_with = JAP }}
-			}
-			CHI = {
-				transfer_state = 1382
-				add_core_of = 1382
-			}
-		}
-		if = {
-			limit = {
-				879 = { controller = {  is_ally_with = JAP }}
-			}
-			CHI = {
-				transfer_state = 879
-				add_core_of = 879
-			}
-		}
+  clr_global_flag = PRC_ongoing_taiwan_war
+  white_peace = AST
+  white_peace = JAP
+  annex_country = {
+    target = HKN
+    transfer_troops = no
+  }
+  annex_country = {
+    target = MCU
+    transfer_troops = no
+  }
+  annex_country = {
+    target = SHZ
+    transfer_troops = no
+  }
+  326 = {
+    add_dynamic_modifier = {
+      modifier = PRC_hong_kong
+    }
+  }
+  326 = {
+    remove_dynamic_modifier = {
+      modifier = PRC_hong_kong
+    }
+  }
+  1150 = {
+    country_event = {
+      id = china.254
+      days = 200
+    }
+    clr_global_flag = battle_of_okinawa
+    every_state = { #защита от дебила
+      limit = {
+        is_owned_by = JAP
+        NOT = {
+          state = 526
+          state = 876
+        }
+      }
+      remove_dynamic_modifier = {
+        modifier = PRC_non_combat_area
+        scope = PRC #потом скоупы поменять
+      }
+    }
+    every_state = { #защита от дебила
+      limit = {
+        is_owned_by = AST
+      }
+      remove_dynamic_modifier = {
+        modifier = PRC_non_combat_area
+        scope = PRC
+      }
+    }
+    every_state = { #защита от дебила
+      limit = {
+        is_owned_by = PRC
+        is_coastal = yes
+        NOT = {
+          state = 326
+          state = 648
+        }
+      }
+      remove_dynamic_modifier = {
+        modifier = PRC_non_combat_area
+      }
+    }
+    AST = {
+      country_event = Australia.18
+      remove_Taihai_idea = yes
+      remove_ideas = JAP_TaiHai_IDEA_1
+      remove_ideas = JAP_TaiHai_IDEA_2
+      remove_ideas = JAP_TaiHai_IDEA_3
+      remove_ideas = JAP_TaiHai_IDEA_4
+      remove_ideas = JAP_TaiHai_IDEA_5
+      remove_ideas = JAP_TaiHai_IDEA_6
+      remove_ideas = JAP_TaiHai_IDEA_7
+      remove_ideas = JAP_TaiHai_IDEA_8
+      remove_ideas = JAP_TaiHai_IDEA_9
+      remove_ideas = JAP_TaiHai_IDEA_10
+      remove_ideas = JAP_TaiHai_IDEA_11
+      remove_ideas = JAP_TaiHai_IDEA_12
+      remove_ideas = JAP_TaiHai_IDEA_13
+      remove_ideas = JAP_TaiHai_IDEA_14
+      remove_ideas = JAP_TaiHai_IDEA_15
+      remove_ideas = JAP_TaiHai_IDEA_16
+      remove_ideas = JAP_TaiHai_IDEA_17
+      remove_ideas = JAP_TaiHai_IDEA_18
+      remove_ideas = JAP_TaiHai_IDEA_19
+      remove_ideas = JAP_TaiHai_IDEA_20
+      remove_ideas = JAP_TaiHai_IDEA_21
+      remove_ideas = JAP_TaiHai_IDEA_22
+      remove_ideas = JAP_TaiHai_IDEA_23
+      remove_ideas = JAP_TaiHai_IDEA_24
+      remove_ideas = JAP_TaiHai_IDEA_25
+    }
+    JAP = {
+      remove_Taihai_idea = yes
+      country_event = {
+        id = jap.9
+        days = 3
+      }
+      remove_ideas = JAP_TaiHai_IDEA_1
+      remove_ideas = JAP_TaiHai_IDEA_2
+      remove_ideas = JAP_TaiHai_IDEA_3
+      remove_ideas = JAP_TaiHai_IDEA_4
+      remove_ideas = JAP_TaiHai_IDEA_5
+      remove_ideas = JAP_TaiHai_IDEA_6
+      remove_ideas = JAP_TaiHai_IDEA_7
+      remove_ideas = JAP_TaiHai_IDEA_8
+      remove_ideas = JAP_TaiHai_IDEA_9
+      remove_ideas = JAP_TaiHai_IDEA_10
+      remove_ideas = JAP_TaiHai_IDEA_11
+      remove_ideas = JAP_TaiHai_IDEA_12
+      remove_ideas = JAP_TaiHai_IDEA_13
+      remove_ideas = JAP_TaiHai_IDEA_14
+      remove_ideas = JAP_TaiHai_IDEA_15
+      remove_ideas = JAP_TaiHai_IDEA_16
+      remove_ideas = JAP_TaiHai_IDEA_17
+      remove_ideas = JAP_TaiHai_IDEA_18
+      remove_ideas = JAP_TaiHai_IDEA_19
+      remove_ideas = JAP_TaiHai_IDEA_20
+      remove_ideas = JAP_TaiHai_IDEA_21
+      remove_ideas = JAP_TaiHai_IDEA_22
+      remove_ideas = JAP_TaiHai_IDEA_23
+      remove_ideas = JAP_TaiHai_IDEA_24
+      remove_ideas = JAP_TaiHai_IDEA_25
+    }
+    CHI = {
+      remove_ideas = CHI_pdto_fuel_shipments_idea
+      remove_ideas = CHI_PRC_infiltration_high
+      remove_ideas = CHI_PRC_infiltration_middle
+      remove_ideas = CHI_PRC_infiltration_low
+      remove_ideas = CHI_low_international_recognition_idea
+      remove_ideas = CHI_prc_embargo_idea1
+      remove_ideas = CHI_prc_embargo_idea2
+      remove_ideas = CHI_prc_embargo_idea
+      remove_ideas = CHI_prc_embargo_low_idea
+      remove_ideas = CHI_TaiHai_IDEA_1
+      remove_ideas = CHI_low_international_recognition_KMT2_idea
+      remove_ideas = CHI_low_international_recognition_KMT_idea
+      remove_ideas = CHI_low_international_recognition_KMT1_idea
+      remove_ideas = CHI_TaiHai_IDEA_2
+      remove_ideas = CHI_TaiHai_IDEA_3
+      remove_ideas = CHI_TaiHai_IDEA_4
+      remove_ideas = CHI_TaiHai_IDEA_5
+      remove_ideas = CHI_TaiHai_IDEA_6
+      remove_ideas = CHI_TaiHai_IDEA_7
+      remove_ideas = CHI_TaiHai_IDEA_8
+      remove_ideas = CHI_TaiHai_IDEA_9
+      remove_ideas = CHI_TaiHai_IDEA_10
+      remove_ideas = CHI_TaiHai_IDEA_11
+      remove_ideas = CHI_TaiHai_IDEA_12
+      remove_ideas = CHI_TaiHai_IDEA_13
+      remove_ideas = CHI_TaiHai_IDEA_14
+      remove_ideas = CHI_TaiHai_IDEA_15
+      remove_ideas = CHI_TaiHai_IDEA_16
+      remove_ideas = CHI_TaiHai_IDEA_17
+      remove_ideas = CHI_TaiHai_IDEA_18
+      remove_ideas = CHI_TaiHai_IDEA_19
+      remove_ideas = CHI_TaiHai_IDEA_20
+      remove_ideas = CHI_TaiHai_IDEA_21
+      remove_ideas = CHI_TaiHai_IDEA_22
+      remove_ideas = CHI_TaiHai_IDEA_23
+      remove_ideas = CHI_TaiHai_IDEA_24
+      remove_ideas = CHI_TaiHai_IDEA_25
+      remove_Taihai_idea = yes
+    }
+    PRC = {
+      remove_Taihai_idea = yes
+      remove_ideas = PRC_TaiHai_IDEA_1
+      remove_ideas = PRC_TaiHai_IDEA_2
+      remove_ideas = PRC_TaiHai_IDEA_3
+      remove_ideas = PRC_TaiHai_IDEA_4
+      remove_ideas = PRC_TaiHai_IDEA_5
+      remove_ideas = PRC_TaiHai_IDEA_6
+      remove_ideas = PRC_TaiHai_IDEA_7
+      remove_ideas = PRC_TaiHai_IDEA_8
+      remove_ideas = PRC_TaiHai_IDEA_9
+      remove_ideas = PRC_TaiHai_IDEA_10
+      remove_ideas = PRC_TaiHai_IDEA_11
+      remove_ideas = PRC_TaiHai_IDEA_12
+      remove_ideas = PRC_TaiHai_IDEA_13
+      remove_ideas = PRC_TaiHai_IDEA_14
+      remove_ideas = PRC_TaiHai_IDEA_15
+      remove_ideas = PRC_TaiHai_IDEA_16
+      remove_ideas = PRC_TaiHai_IDEA_17
+      remove_ideas = PRC_TaiHai_IDEA_18
+      remove_ideas = PRC_TaiHai_IDEA_19
+      remove_ideas = PRC_TaiHai_IDEA_20
+      remove_ideas = PRC_TaiHai_IDEA_21
+      remove_ideas = PRC_TaiHai_IDEA_22
+      remove_ideas = PRC_TaiHai_IDEA_23
+      remove_ideas = PRC_TaiHai_IDEA_24
+      remove_ideas = PRC_TaiHai_IDEA_25
+      remove_ideas = PRC_TaiHai_IDEA_26
+    }
+    JAP = {
+      if = {
+        limit = {
+          OR = {
+            has_idea = low_society
+            has_idea = lower_society
+          }
+        }
+        add_ideas = medium_society
+        set_temp_variable = {
+          var = society_development_var_temp
+          value = 0.25
+        }
+        add_society_development = yes
+      }
+    }
+    if = {
+      limit = {
+        1382 = { controller = {  is_ally_with = JAP }}
+      }
+      CHI = {
+        transfer_state = 1382
+        add_core_of = 1382
+      }
+    }
+    if = {
+      limit = {
+        879 = { controller = {  is_ally_with = JAP }}
+      }
+      CHI = {
+        transfer_state = 879
+        add_core_of = 879
+      }
+    }
 
-	}
+  }
 }
 THE_ChineseCivilWarTroops = {
-	division_template = {
-		name = "infantry"
-		is_locked = yes
-		regiments = {
-			infantry = { x = 0 y = 0 }
-			infantry = { x = 0 y = 1 }
-			infantry = { x = 0 y = 2 }
-			infantry = { x = 1 y = 0 }
-			infantry = { x = 1 y = 1 }
-			infantry = { x = 1 y = 2 }
-		}
-
-		support = {
-		}
-	}
-	division_template = {
-		name = "tank"
-		is_locked = yes
-		regiments = {
-			mechanized = { x = 0 y = 0 }
-			mechanized = { x = 0 y = 1 }
-			mechanized = { x = 0 y = 2 }
-			mechanized = { x = 0 y = 3 }
-			modern_armor = { x = 2 y = 0 }
-			modern_armor = { x = 2 y = 1 }
-		}
-
-		support = {
-		}
-	}
-	random_owned_controlled_state = {
-		create_unit = {
-			division = "name = \"infantry Brigade\" division_template = \"infantry\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-			id = 1949
-			owner = ROOT
-			count = 4
-		}
-	}
-	random_owned_controlled_state = {
-		create_unit = {
-			division = "name = \"tank Brigade\" division_template = \"tank\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-			id = 1949
-			owner = ROOT
-			count = 1
-		}
-	}
+  division_template = {
+    name = "infantry"
+    is_locked = yes
+    regiments = {
+      infantry = { x = 0 y = 0 }
+      infantry = { x = 0 y = 1 }
+      infantry = { x = 0 y = 2 }
+      infantry = { x = 1 y = 0 }
+      infantry = { x = 1 y = 1 }
+      infantry = { x = 1 y = 2 }
+    }
+  }
+  division_template = {
+    name = "tank"
+    is_locked = yes
+    regiments = {
+      mechanized = { x = 0 y = 0 }
+      mechanized = { x = 0 y = 1 }
+      mechanized = { x = 0 y = 2 }
+      mechanized = { x = 0 y = 3 }
+      modern_armor = { x = 2 y = 0 }
+      modern_armor = { x = 2 y = 1 }
+    }
+  }
+  random_owned_controlled_state = {
+    create_unit = {
+      division = "name = \"infantry Brigade\" division_template = \"infantry\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+      id = 1949
+      owner = ROOT
+      count = 4
+    }
+  }
+  random_owned_controlled_state = {
+    create_unit = {
+      division = "name = \"tank Brigade\" division_template = \"tank\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+      id = 1949
+      owner = ROOT
+      count = 1
+    }
+  }
 
 }
 THE_ChineseCivilWarTroops2 = {
-	division_template = {
-		name = "Minbing"
-		is_locked = yes
-		regiments = {
-			militia = { x = 0 y = 0 }
-			militia = { x = 0 y = 1 }
-			militia = { x = 0 y = 2 }
-			militia = { x = 1 y = 0 }
-			militia = { x = 1 y = 1 }
-			militia = { x = 1 y = 2 }
-		}
-
-		support = {
-		}
-	}
-	random_owned_controlled_state = {
-		create_unit = {
-			division = "name = \"militia Brigade\" division_template = \"militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-			id = 1949
-			owner = ROOT
-			count = 7
-		}
-	}
+  division_template = {
+    name = "Minbing"
+    is_locked = yes
+    regiments = {
+      militia = { x = 0 y = 0 }
+      militia = { x = 0 y = 1 }
+      militia = { x = 0 y = 2 }
+      militia = { x = 1 y = 0 }
+      militia = { x = 1 y = 1 }
+      militia = { x = 1 y = 2 }
+    }
+  }
+  random_owned_controlled_state = {
+    create_unit = {
+      division = "name = \"militia Brigade\" division_template = \"militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+      id = 1949
+      owner = ROOT
+      count = 7
+    }
+  }
 
 }
 common_prosperity_law_idk = {
-	if = {
-		limit = {
-			has_idea = common_prosperity_law
-		}
-		swap_ideas = {
-			remove_idea = common_prosperity_law
-			add_idea = common_prosperity_law_1
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = common_prosperity_law_1
-		}
-		swap_ideas = {
-			remove_idea = common_prosperity_law_1
-			add_idea = common_prosperity_law_2
-		}
-	}
+  if = {
+    limit = {
+      has_idea = common_prosperity_law
+    }
+    swap_ideas = {
+      remove_idea = common_prosperity_law
+      add_idea = common_prosperity_law_1
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = common_prosperity_law_1
+    }
+    swap_ideas = {
+      remove_idea = common_prosperity_law_1
+      add_idea = common_prosperity_law_2
+    }
+  }
 }
 remove_Taihai_idea = {
-	PRC = {
-		remove_ideas = JAP_TaiHai_IDEA_1
-		remove_ideas = JAP_TaiHai_IDEA_2
-		remove_ideas = JAP_TaiHai_IDEA_3
-		remove_ideas = JAP_TaiHai_IDEA_4
-		remove_ideas = JAP_TaiHai_IDEA_5
-		remove_ideas = JAP_TaiHai_IDEA_6
-		remove_ideas = JAP_TaiHai_IDEA_7
-		remove_ideas = JAP_TaiHai_IDEA_8
-		remove_ideas = JAP_TaiHai_IDEA_9
-		remove_ideas = JAP_TaiHai_IDEA_10
-		remove_ideas = JAP_TaiHai_IDEA_11
-		remove_ideas = JAP_TaiHai_IDEA_12
-		remove_ideas = JAP_TaiHai_IDEA_13
-		remove_ideas = JAP_TaiHai_IDEA_14
-		remove_ideas = JAP_TaiHai_IDEA_15
-		remove_ideas = JAP_TaiHai_IDEA_16
-		remove_ideas = JAP_TaiHai_IDEA_17
-		remove_ideas = JAP_TaiHai_IDEA_18
-		remove_ideas = JAP_TaiHai_IDEA_19
-		remove_ideas = JAP_TaiHai_IDEA_20
-		remove_ideas = JAP_TaiHai_IDEA_21
-		remove_ideas = JAP_TaiHai_IDEA_22
-		remove_ideas = JAP_TaiHai_IDEA_23
-		remove_ideas = JAP_TaiHai_IDEA_24
-		remove_ideas = JAP_TaiHai_IDEA_25
-		remove_ideas = CHI_TaiHai_IDEA_1
-		remove_ideas = CHI_TaiHai_IDEA_2
-		remove_ideas = CHI_TaiHai_IDEA_3
-		remove_ideas = CHI_TaiHai_IDEA_4
-		remove_ideas = CHI_TaiHai_IDEA_5
-		remove_ideas = CHI_TaiHai_IDEA_6
-		remove_ideas = CHI_TaiHai_IDEA_7
-		remove_ideas = CHI_TaiHai_IDEA_8
-		remove_ideas = CHI_TaiHai_IDEA_9
-		remove_ideas = CHI_TaiHai_IDEA_10
-		remove_ideas = CHI_TaiHai_IDEA_11
-		remove_ideas = CHI_TaiHai_IDEA_12
-		remove_ideas = CHI_TaiHai_IDEA_13
-		remove_ideas = CHI_TaiHai_IDEA_14
-		remove_ideas = CHI_TaiHai_IDEA_15
-		remove_ideas = CHI_TaiHai_IDEA_16
-		remove_ideas = CHI_TaiHai_IDEA_17
-		remove_ideas = CHI_TaiHai_IDEA_18
-		remove_ideas = CHI_TaiHai_IDEA_19
-		remove_ideas = CHI_TaiHai_IDEA_20
-		remove_ideas = CHI_TaiHai_IDEA_21
-		remove_ideas = CHI_TaiHai_IDEA_22
-		remove_ideas = CHI_TaiHai_IDEA_23
-		remove_ideas = CHI_TaiHai_IDEA_24
-		remove_ideas = CHI_TaiHai_IDEA_25
-		remove_ideas = PRC_TaiHai_IDEA_1
-		remove_ideas = PRC_TaiHai_IDEA_2
-		remove_ideas = PRC_TaiHai_IDEA_3
-		remove_ideas = PRC_TaiHai_IDEA_4
-		remove_ideas = PRC_TaiHai_IDEA_5
-		remove_ideas = PRC_TaiHai_IDEA_6
-		remove_ideas = PRC_TaiHai_IDEA_7
-		remove_ideas = PRC_TaiHai_IDEA_8
-		remove_ideas = PRC_TaiHai_IDEA_9
-		remove_ideas = PRC_TaiHai_IDEA_10
-		remove_ideas = PRC_TaiHai_IDEA_11
-		remove_ideas = PRC_TaiHai_IDEA_12
-		remove_ideas = PRC_TaiHai_IDEA_13
-		remove_ideas = PRC_TaiHai_IDEA_14
-		remove_ideas = PRC_TaiHai_IDEA_15
-		remove_ideas = PRC_TaiHai_IDEA_16
-		remove_ideas = PRC_TaiHai_IDEA_17
-		remove_ideas = PRC_TaiHai_IDEA_18
-		remove_ideas = PRC_TaiHai_IDEA_19
-		remove_ideas = PRC_TaiHai_IDEA_20
-		remove_ideas = PRC_TaiHai_IDEA_21
-		remove_ideas = PRC_TaiHai_IDEA_22
-		remove_ideas = PRC_TaiHai_IDEA_23
-		remove_ideas = PRC_TaiHai_IDEA_24
-		remove_ideas = PRC_TaiHai_IDEA_25
-		remove_ideas = PRC_TaiHai_IDEA_26
-		remove_ideas = PRC_bombing_raids
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea2
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea3
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea4
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea5
-		clr_country_flag = Taiwan_war
-		clr_country_flag = CHI_taihai_war
-		clr_country_flag = PRC_adapt_to_modern_defense_time_flag
-	}
-	AST = {
-		remove_ideas = JAP_TaiHai_IDEA_1
-		remove_ideas = JAP_TaiHai_IDEA_2
-		remove_ideas = JAP_TaiHai_IDEA_3
-		remove_ideas = JAP_TaiHai_IDEA_4
-		remove_ideas = JAP_TaiHai_IDEA_5
-		remove_ideas = JAP_TaiHai_IDEA_6
-		remove_ideas = JAP_TaiHai_IDEA_7
-		remove_ideas = JAP_TaiHai_IDEA_8
-		remove_ideas = JAP_TaiHai_IDEA_9
-		remove_ideas = JAP_TaiHai_IDEA_10
-		remove_ideas = JAP_TaiHai_IDEA_11
-		remove_ideas = JAP_TaiHai_IDEA_12
-		remove_ideas = JAP_TaiHai_IDEA_13
-		remove_ideas = JAP_TaiHai_IDEA_14
-		remove_ideas = JAP_TaiHai_IDEA_15
-		remove_ideas = JAP_TaiHai_IDEA_16
-		remove_ideas = JAP_TaiHai_IDEA_17
-		remove_ideas = JAP_TaiHai_IDEA_18
-		remove_ideas = JAP_TaiHai_IDEA_19
-		remove_ideas = JAP_TaiHai_IDEA_20
-		remove_ideas = JAP_TaiHai_IDEA_21
-		remove_ideas = JAP_TaiHai_IDEA_22
-		remove_ideas = JAP_TaiHai_IDEA_23
-		remove_ideas = JAP_TaiHai_IDEA_24
-		remove_ideas = JAP_TaiHai_IDEA_25
-		remove_ideas = CHI_TaiHai_IDEA_1
-		remove_ideas = CHI_TaiHai_IDEA_2
-		remove_ideas = CHI_TaiHai_IDEA_3
-		remove_ideas = CHI_TaiHai_IDEA_4
-		remove_ideas = CHI_TaiHai_IDEA_5
-		remove_ideas = CHI_TaiHai_IDEA_6
-		remove_ideas = CHI_TaiHai_IDEA_7
-		remove_ideas = CHI_TaiHai_IDEA_8
-		remove_ideas = CHI_TaiHai_IDEA_9
-		remove_ideas = CHI_TaiHai_IDEA_10
-		remove_ideas = CHI_TaiHai_IDEA_11
-		remove_ideas = CHI_TaiHai_IDEA_12
-		remove_ideas = CHI_TaiHai_IDEA_13
-		remove_ideas = CHI_TaiHai_IDEA_14
-		remove_ideas = CHI_TaiHai_IDEA_15
-		remove_ideas = CHI_TaiHai_IDEA_16
-		remove_ideas = CHI_TaiHai_IDEA_17
-		remove_ideas = CHI_TaiHai_IDEA_18
-		remove_ideas = CHI_TaiHai_IDEA_19
-		remove_ideas = CHI_TaiHai_IDEA_20
-		remove_ideas = CHI_TaiHai_IDEA_21
-		remove_ideas = CHI_TaiHai_IDEA_22
-		remove_ideas = CHI_TaiHai_IDEA_23
-		remove_ideas = CHI_TaiHai_IDEA_24
-		remove_ideas = CHI_TaiHai_IDEA_25
-		remove_ideas = PRC_TaiHai_IDEA_1
-		remove_ideas = PRC_TaiHai_IDEA_2
-		remove_ideas = PRC_TaiHai_IDEA_3
-		remove_ideas = PRC_TaiHai_IDEA_4
-		remove_ideas = PRC_TaiHai_IDEA_5
-		remove_ideas = PRC_TaiHai_IDEA_6
-		remove_ideas = PRC_TaiHai_IDEA_7
-		remove_ideas = PRC_TaiHai_IDEA_8
-		remove_ideas = PRC_TaiHai_IDEA_9
-		remove_ideas = PRC_TaiHai_IDEA_10
-		remove_ideas = PRC_TaiHai_IDEA_11
-		remove_ideas = PRC_TaiHai_IDEA_12
-		remove_ideas = PRC_TaiHai_IDEA_13
-		remove_ideas = PRC_TaiHai_IDEA_14
-		remove_ideas = PRC_TaiHai_IDEA_15
-		remove_ideas = PRC_TaiHai_IDEA_16
-		remove_ideas = PRC_TaiHai_IDEA_17
-		remove_ideas = PRC_TaiHai_IDEA_18
-		remove_ideas = PRC_TaiHai_IDEA_19
-		remove_ideas = PRC_TaiHai_IDEA_20
-		remove_ideas = PRC_TaiHai_IDEA_21
-		remove_ideas = PRC_TaiHai_IDEA_22
-		remove_ideas = PRC_TaiHai_IDEA_23
-		remove_ideas = PRC_TaiHai_IDEA_24
-		remove_ideas = PRC_TaiHai_IDEA_25
-		remove_ideas = PRC_TaiHai_IDEA_26
-		remove_ideas = PRC_bombing_raids
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea2
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea3
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea4
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea5
-		clr_country_flag = Taiwan_war
-		clr_country_flag = CHI_taihai_war
-		clr_country_flag = PRC_adapt_to_modern_defense_time_flag
-	}
-	CHI = {
-		remove_ideas = JAP_TaiHai_IDEA_1
-		remove_ideas = JAP_TaiHai_IDEA_2
-		remove_ideas = JAP_TaiHai_IDEA_3
-		remove_ideas = JAP_TaiHai_IDEA_4
-		remove_ideas = JAP_TaiHai_IDEA_5
-		remove_ideas = JAP_TaiHai_IDEA_6
-		remove_ideas = JAP_TaiHai_IDEA_7
-		remove_ideas = JAP_TaiHai_IDEA_8
-		remove_ideas = JAP_TaiHai_IDEA_9
-		remove_ideas = JAP_TaiHai_IDEA_10
-		remove_ideas = JAP_TaiHai_IDEA_11
-		remove_ideas = JAP_TaiHai_IDEA_12
-		remove_ideas = JAP_TaiHai_IDEA_13
-		remove_ideas = JAP_TaiHai_IDEA_14
-		remove_ideas = JAP_TaiHai_IDEA_15
-		remove_ideas = JAP_TaiHai_IDEA_16
-		remove_ideas = JAP_TaiHai_IDEA_17
-		remove_ideas = JAP_TaiHai_IDEA_18
-		remove_ideas = JAP_TaiHai_IDEA_19
-		remove_ideas = JAP_TaiHai_IDEA_20
-		remove_ideas = JAP_TaiHai_IDEA_21
-		remove_ideas = JAP_TaiHai_IDEA_22
-		remove_ideas = JAP_TaiHai_IDEA_23
-		remove_ideas = JAP_TaiHai_IDEA_24
-		remove_ideas = JAP_TaiHai_IDEA_25
-		remove_ideas = CHI_TaiHai_IDEA_1
-		remove_ideas = CHI_TaiHai_IDEA_2
-		remove_ideas = CHI_TaiHai_IDEA_3
-		remove_ideas = CHI_TaiHai_IDEA_4
-		remove_ideas = CHI_TaiHai_IDEA_5
-		remove_ideas = CHI_TaiHai_IDEA_6
-		remove_ideas = CHI_TaiHai_IDEA_7
-		remove_ideas = CHI_TaiHai_IDEA_8
-		remove_ideas = CHI_TaiHai_IDEA_9
-		remove_ideas = CHI_TaiHai_IDEA_10
-		remove_ideas = CHI_TaiHai_IDEA_11
-		remove_ideas = CHI_TaiHai_IDEA_12
-		remove_ideas = CHI_TaiHai_IDEA_13
-		remove_ideas = CHI_TaiHai_IDEA_14
-		remove_ideas = CHI_TaiHai_IDEA_15
-		remove_ideas = CHI_TaiHai_IDEA_16
-		remove_ideas = CHI_TaiHai_IDEA_17
-		remove_ideas = CHI_TaiHai_IDEA_18
-		remove_ideas = CHI_TaiHai_IDEA_19
-		remove_ideas = CHI_TaiHai_IDEA_20
-		remove_ideas = CHI_TaiHai_IDEA_21
-		remove_ideas = CHI_TaiHai_IDEA_22
-		remove_ideas = CHI_TaiHai_IDEA_23
-		remove_ideas = CHI_TaiHai_IDEA_24
-		remove_ideas = CHI_TaiHai_IDEA_25
-		remove_ideas = PRC_TaiHai_IDEA_1
-		remove_ideas = PRC_TaiHai_IDEA_2
-		remove_ideas = PRC_TaiHai_IDEA_3
-		remove_ideas = PRC_TaiHai_IDEA_4
-		remove_ideas = PRC_TaiHai_IDEA_5
-		remove_ideas = PRC_TaiHai_IDEA_6
-		remove_ideas = PRC_TaiHai_IDEA_7
-		remove_ideas = PRC_TaiHai_IDEA_8
-		remove_ideas = PRC_TaiHai_IDEA_9
-		remove_ideas = PRC_TaiHai_IDEA_10
-		remove_ideas = PRC_TaiHai_IDEA_11
-		remove_ideas = PRC_TaiHai_IDEA_12
-		remove_ideas = PRC_TaiHai_IDEA_13
-		remove_ideas = PRC_TaiHai_IDEA_14
-		remove_ideas = PRC_TaiHai_IDEA_15
-		remove_ideas = PRC_TaiHai_IDEA_16
-		remove_ideas = PRC_TaiHai_IDEA_17
-		remove_ideas = PRC_TaiHai_IDEA_18
-		remove_ideas = PRC_TaiHai_IDEA_19
-		remove_ideas = PRC_TaiHai_IDEA_20
-		remove_ideas = PRC_TaiHai_IDEA_21
-		remove_ideas = PRC_TaiHai_IDEA_22
-		remove_ideas = PRC_TaiHai_IDEA_23
-		remove_ideas = PRC_TaiHai_IDEA_24
-		remove_ideas = PRC_TaiHai_IDEA_25
-		remove_ideas = PRC_TaiHai_IDEA_26
-		remove_ideas = PRC_bombing_raids
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea2
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea3
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea4
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea5
-		clr_country_flag = Taiwan_war
-		clr_country_flag = CHI_taihai_war
-		clr_country_flag = PRC_adapt_to_modern_defense_time_flag
-	}
-	JAP = {
-		remove_ideas = JAP_TaiHai_IDEA_1
-		remove_ideas = JAP_TaiHai_IDEA_2
-		remove_ideas = JAP_TaiHai_IDEA_3
-		remove_ideas = JAP_TaiHai_IDEA_4
-		remove_ideas = JAP_TaiHai_IDEA_5
-		remove_ideas = JAP_TaiHai_IDEA_6
-		remove_ideas = JAP_TaiHai_IDEA_7
-		remove_ideas = JAP_TaiHai_IDEA_8
-		remove_ideas = JAP_TaiHai_IDEA_9
-		remove_ideas = JAP_TaiHai_IDEA_10
-		remove_ideas = JAP_TaiHai_IDEA_11
-		remove_ideas = JAP_TaiHai_IDEA_12
-		remove_ideas = JAP_TaiHai_IDEA_13
-		remove_ideas = JAP_TaiHai_IDEA_14
-		remove_ideas = JAP_TaiHai_IDEA_15
-		remove_ideas = JAP_TaiHai_IDEA_16
-		remove_ideas = JAP_TaiHai_IDEA_17
-		remove_ideas = JAP_TaiHai_IDEA_18
-		remove_ideas = JAP_TaiHai_IDEA_19
-		remove_ideas = JAP_TaiHai_IDEA_20
-		remove_ideas = JAP_TaiHai_IDEA_21
-		remove_ideas = JAP_TaiHai_IDEA_22
-		remove_ideas = JAP_TaiHai_IDEA_23
-		remove_ideas = JAP_TaiHai_IDEA_24
-		remove_ideas = JAP_TaiHai_IDEA_25
-		remove_ideas = CHI_TaiHai_IDEA_1
-		remove_ideas = CHI_TaiHai_IDEA_2
-		remove_ideas = CHI_TaiHai_IDEA_3
-		remove_ideas = CHI_TaiHai_IDEA_4
-		remove_ideas = CHI_TaiHai_IDEA_5
-		remove_ideas = CHI_TaiHai_IDEA_6
-		remove_ideas = CHI_TaiHai_IDEA_7
-		remove_ideas = CHI_TaiHai_IDEA_8
-		remove_ideas = CHI_TaiHai_IDEA_9
-		remove_ideas = CHI_TaiHai_IDEA_10
-		remove_ideas = CHI_TaiHai_IDEA_11
-		remove_ideas = CHI_TaiHai_IDEA_12
-		remove_ideas = CHI_TaiHai_IDEA_13
-		remove_ideas = CHI_TaiHai_IDEA_14
-		remove_ideas = CHI_TaiHai_IDEA_15
-		remove_ideas = CHI_TaiHai_IDEA_16
-		remove_ideas = CHI_TaiHai_IDEA_17
-		remove_ideas = CHI_TaiHai_IDEA_18
-		remove_ideas = CHI_TaiHai_IDEA_19
-		remove_ideas = CHI_TaiHai_IDEA_20
-		remove_ideas = CHI_TaiHai_IDEA_21
-		remove_ideas = CHI_TaiHai_IDEA_22
-		remove_ideas = CHI_TaiHai_IDEA_23
-		remove_ideas = CHI_TaiHai_IDEA_24
-		remove_ideas = CHI_TaiHai_IDEA_25
-		remove_ideas = PRC_TaiHai_IDEA_1
-		remove_ideas = PRC_TaiHai_IDEA_2
-		remove_ideas = PRC_TaiHai_IDEA_3
-		remove_ideas = PRC_TaiHai_IDEA_4
-		remove_ideas = PRC_TaiHai_IDEA_5
-		remove_ideas = PRC_TaiHai_IDEA_6
-		remove_ideas = PRC_TaiHai_IDEA_7
-		remove_ideas = PRC_TaiHai_IDEA_8
-		remove_ideas = PRC_TaiHai_IDEA_9
-		remove_ideas = PRC_TaiHai_IDEA_10
-		remove_ideas = PRC_TaiHai_IDEA_11
-		remove_ideas = PRC_TaiHai_IDEA_12
-		remove_ideas = PRC_TaiHai_IDEA_13
-		remove_ideas = PRC_TaiHai_IDEA_14
-		remove_ideas = PRC_TaiHai_IDEA_15
-		remove_ideas = PRC_TaiHai_IDEA_16
-		remove_ideas = PRC_TaiHai_IDEA_17
-		remove_ideas = PRC_TaiHai_IDEA_18
-		remove_ideas = PRC_TaiHai_IDEA_19
-		remove_ideas = PRC_TaiHai_IDEA_20
-		remove_ideas = PRC_TaiHai_IDEA_21
-		remove_ideas = PRC_TaiHai_IDEA_22
-		remove_ideas = PRC_TaiHai_IDEA_23
-		remove_ideas = PRC_TaiHai_IDEA_24
-		remove_ideas = PRC_TaiHai_IDEA_25
-		remove_ideas = PRC_TaiHai_IDEA_26
-		remove_ideas = PRC_bombing_raids
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea2
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea3
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea4
-		remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea5
-		clr_country_flag = Taiwan_war
-		clr_country_flag = CHI_taihai_war
-		clr_country_flag = PRC_adapt_to_modern_defense_time_flag
-	}
+  PRC = {
+    remove_ideas = JAP_TaiHai_IDEA_1
+    remove_ideas = JAP_TaiHai_IDEA_2
+    remove_ideas = JAP_TaiHai_IDEA_3
+    remove_ideas = JAP_TaiHai_IDEA_4
+    remove_ideas = JAP_TaiHai_IDEA_5
+    remove_ideas = JAP_TaiHai_IDEA_6
+    remove_ideas = JAP_TaiHai_IDEA_7
+    remove_ideas = JAP_TaiHai_IDEA_8
+    remove_ideas = JAP_TaiHai_IDEA_9
+    remove_ideas = JAP_TaiHai_IDEA_10
+    remove_ideas = JAP_TaiHai_IDEA_11
+    remove_ideas = JAP_TaiHai_IDEA_12
+    remove_ideas = JAP_TaiHai_IDEA_13
+    remove_ideas = JAP_TaiHai_IDEA_14
+    remove_ideas = JAP_TaiHai_IDEA_15
+    remove_ideas = JAP_TaiHai_IDEA_16
+    remove_ideas = JAP_TaiHai_IDEA_17
+    remove_ideas = JAP_TaiHai_IDEA_18
+    remove_ideas = JAP_TaiHai_IDEA_19
+    remove_ideas = JAP_TaiHai_IDEA_20
+    remove_ideas = JAP_TaiHai_IDEA_21
+    remove_ideas = JAP_TaiHai_IDEA_22
+    remove_ideas = JAP_TaiHai_IDEA_23
+    remove_ideas = JAP_TaiHai_IDEA_24
+    remove_ideas = JAP_TaiHai_IDEA_25
+    remove_ideas = CHI_TaiHai_IDEA_1
+    remove_ideas = CHI_TaiHai_IDEA_2
+    remove_ideas = CHI_TaiHai_IDEA_3
+    remove_ideas = CHI_TaiHai_IDEA_4
+    remove_ideas = CHI_TaiHai_IDEA_5
+    remove_ideas = CHI_TaiHai_IDEA_6
+    remove_ideas = CHI_TaiHai_IDEA_7
+    remove_ideas = CHI_TaiHai_IDEA_8
+    remove_ideas = CHI_TaiHai_IDEA_9
+    remove_ideas = CHI_TaiHai_IDEA_10
+    remove_ideas = CHI_TaiHai_IDEA_11
+    remove_ideas = CHI_TaiHai_IDEA_12
+    remove_ideas = CHI_TaiHai_IDEA_13
+    remove_ideas = CHI_TaiHai_IDEA_14
+    remove_ideas = CHI_TaiHai_IDEA_15
+    remove_ideas = CHI_TaiHai_IDEA_16
+    remove_ideas = CHI_TaiHai_IDEA_17
+    remove_ideas = CHI_TaiHai_IDEA_18
+    remove_ideas = CHI_TaiHai_IDEA_19
+    remove_ideas = CHI_TaiHai_IDEA_20
+    remove_ideas = CHI_TaiHai_IDEA_21
+    remove_ideas = CHI_TaiHai_IDEA_22
+    remove_ideas = CHI_TaiHai_IDEA_23
+    remove_ideas = CHI_TaiHai_IDEA_24
+    remove_ideas = CHI_TaiHai_IDEA_25
+    remove_ideas = PRC_TaiHai_IDEA_1
+    remove_ideas = PRC_TaiHai_IDEA_2
+    remove_ideas = PRC_TaiHai_IDEA_3
+    remove_ideas = PRC_TaiHai_IDEA_4
+    remove_ideas = PRC_TaiHai_IDEA_5
+    remove_ideas = PRC_TaiHai_IDEA_6
+    remove_ideas = PRC_TaiHai_IDEA_7
+    remove_ideas = PRC_TaiHai_IDEA_8
+    remove_ideas = PRC_TaiHai_IDEA_9
+    remove_ideas = PRC_TaiHai_IDEA_10
+    remove_ideas = PRC_TaiHai_IDEA_11
+    remove_ideas = PRC_TaiHai_IDEA_12
+    remove_ideas = PRC_TaiHai_IDEA_13
+    remove_ideas = PRC_TaiHai_IDEA_14
+    remove_ideas = PRC_TaiHai_IDEA_15
+    remove_ideas = PRC_TaiHai_IDEA_16
+    remove_ideas = PRC_TaiHai_IDEA_17
+    remove_ideas = PRC_TaiHai_IDEA_18
+    remove_ideas = PRC_TaiHai_IDEA_19
+    remove_ideas = PRC_TaiHai_IDEA_20
+    remove_ideas = PRC_TaiHai_IDEA_21
+    remove_ideas = PRC_TaiHai_IDEA_22
+    remove_ideas = PRC_TaiHai_IDEA_23
+    remove_ideas = PRC_TaiHai_IDEA_24
+    remove_ideas = PRC_TaiHai_IDEA_25
+    remove_ideas = PRC_TaiHai_IDEA_26
+    remove_ideas = PRC_bombing_raids
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea2
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea3
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea4
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea5
+    clr_country_flag = Taiwan_war
+    clr_country_flag = CHI_taihai_war
+    clr_country_flag = PRC_adapt_to_modern_defense_time_flag
+  }
+  AST = {
+    remove_ideas = JAP_TaiHai_IDEA_1
+    remove_ideas = JAP_TaiHai_IDEA_2
+    remove_ideas = JAP_TaiHai_IDEA_3
+    remove_ideas = JAP_TaiHai_IDEA_4
+    remove_ideas = JAP_TaiHai_IDEA_5
+    remove_ideas = JAP_TaiHai_IDEA_6
+    remove_ideas = JAP_TaiHai_IDEA_7
+    remove_ideas = JAP_TaiHai_IDEA_8
+    remove_ideas = JAP_TaiHai_IDEA_9
+    remove_ideas = JAP_TaiHai_IDEA_10
+    remove_ideas = JAP_TaiHai_IDEA_11
+    remove_ideas = JAP_TaiHai_IDEA_12
+    remove_ideas = JAP_TaiHai_IDEA_13
+    remove_ideas = JAP_TaiHai_IDEA_14
+    remove_ideas = JAP_TaiHai_IDEA_15
+    remove_ideas = JAP_TaiHai_IDEA_16
+    remove_ideas = JAP_TaiHai_IDEA_17
+    remove_ideas = JAP_TaiHai_IDEA_18
+    remove_ideas = JAP_TaiHai_IDEA_19
+    remove_ideas = JAP_TaiHai_IDEA_20
+    remove_ideas = JAP_TaiHai_IDEA_21
+    remove_ideas = JAP_TaiHai_IDEA_22
+    remove_ideas = JAP_TaiHai_IDEA_23
+    remove_ideas = JAP_TaiHai_IDEA_24
+    remove_ideas = JAP_TaiHai_IDEA_25
+    remove_ideas = CHI_TaiHai_IDEA_1
+    remove_ideas = CHI_TaiHai_IDEA_2
+    remove_ideas = CHI_TaiHai_IDEA_3
+    remove_ideas = CHI_TaiHai_IDEA_4
+    remove_ideas = CHI_TaiHai_IDEA_5
+    remove_ideas = CHI_TaiHai_IDEA_6
+    remove_ideas = CHI_TaiHai_IDEA_7
+    remove_ideas = CHI_TaiHai_IDEA_8
+    remove_ideas = CHI_TaiHai_IDEA_9
+    remove_ideas = CHI_TaiHai_IDEA_10
+    remove_ideas = CHI_TaiHai_IDEA_11
+    remove_ideas = CHI_TaiHai_IDEA_12
+    remove_ideas = CHI_TaiHai_IDEA_13
+    remove_ideas = CHI_TaiHai_IDEA_14
+    remove_ideas = CHI_TaiHai_IDEA_15
+    remove_ideas = CHI_TaiHai_IDEA_16
+    remove_ideas = CHI_TaiHai_IDEA_17
+    remove_ideas = CHI_TaiHai_IDEA_18
+    remove_ideas = CHI_TaiHai_IDEA_19
+    remove_ideas = CHI_TaiHai_IDEA_20
+    remove_ideas = CHI_TaiHai_IDEA_21
+    remove_ideas = CHI_TaiHai_IDEA_22
+    remove_ideas = CHI_TaiHai_IDEA_23
+    remove_ideas = CHI_TaiHai_IDEA_24
+    remove_ideas = CHI_TaiHai_IDEA_25
+    remove_ideas = PRC_TaiHai_IDEA_1
+    remove_ideas = PRC_TaiHai_IDEA_2
+    remove_ideas = PRC_TaiHai_IDEA_3
+    remove_ideas = PRC_TaiHai_IDEA_4
+    remove_ideas = PRC_TaiHai_IDEA_5
+    remove_ideas = PRC_TaiHai_IDEA_6
+    remove_ideas = PRC_TaiHai_IDEA_7
+    remove_ideas = PRC_TaiHai_IDEA_8
+    remove_ideas = PRC_TaiHai_IDEA_9
+    remove_ideas = PRC_TaiHai_IDEA_10
+    remove_ideas = PRC_TaiHai_IDEA_11
+    remove_ideas = PRC_TaiHai_IDEA_12
+    remove_ideas = PRC_TaiHai_IDEA_13
+    remove_ideas = PRC_TaiHai_IDEA_14
+    remove_ideas = PRC_TaiHai_IDEA_15
+    remove_ideas = PRC_TaiHai_IDEA_16
+    remove_ideas = PRC_TaiHai_IDEA_17
+    remove_ideas = PRC_TaiHai_IDEA_18
+    remove_ideas = PRC_TaiHai_IDEA_19
+    remove_ideas = PRC_TaiHai_IDEA_20
+    remove_ideas = PRC_TaiHai_IDEA_21
+    remove_ideas = PRC_TaiHai_IDEA_22
+    remove_ideas = PRC_TaiHai_IDEA_23
+    remove_ideas = PRC_TaiHai_IDEA_24
+    remove_ideas = PRC_TaiHai_IDEA_25
+    remove_ideas = PRC_TaiHai_IDEA_26
+    remove_ideas = PRC_bombing_raids
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea2
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea3
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea4
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea5
+    clr_country_flag = Taiwan_war
+    clr_country_flag = CHI_taihai_war
+    clr_country_flag = PRC_adapt_to_modern_defense_time_flag
+  }
+  CHI = {
+    remove_ideas = JAP_TaiHai_IDEA_1
+    remove_ideas = JAP_TaiHai_IDEA_2
+    remove_ideas = JAP_TaiHai_IDEA_3
+    remove_ideas = JAP_TaiHai_IDEA_4
+    remove_ideas = JAP_TaiHai_IDEA_5
+    remove_ideas = JAP_TaiHai_IDEA_6
+    remove_ideas = JAP_TaiHai_IDEA_7
+    remove_ideas = JAP_TaiHai_IDEA_8
+    remove_ideas = JAP_TaiHai_IDEA_9
+    remove_ideas = JAP_TaiHai_IDEA_10
+    remove_ideas = JAP_TaiHai_IDEA_11
+    remove_ideas = JAP_TaiHai_IDEA_12
+    remove_ideas = JAP_TaiHai_IDEA_13
+    remove_ideas = JAP_TaiHai_IDEA_14
+    remove_ideas = JAP_TaiHai_IDEA_15
+    remove_ideas = JAP_TaiHai_IDEA_16
+    remove_ideas = JAP_TaiHai_IDEA_17
+    remove_ideas = JAP_TaiHai_IDEA_18
+    remove_ideas = JAP_TaiHai_IDEA_19
+    remove_ideas = JAP_TaiHai_IDEA_20
+    remove_ideas = JAP_TaiHai_IDEA_21
+    remove_ideas = JAP_TaiHai_IDEA_22
+    remove_ideas = JAP_TaiHai_IDEA_23
+    remove_ideas = JAP_TaiHai_IDEA_24
+    remove_ideas = JAP_TaiHai_IDEA_25
+    remove_ideas = CHI_TaiHai_IDEA_1
+    remove_ideas = CHI_TaiHai_IDEA_2
+    remove_ideas = CHI_TaiHai_IDEA_3
+    remove_ideas = CHI_TaiHai_IDEA_4
+    remove_ideas = CHI_TaiHai_IDEA_5
+    remove_ideas = CHI_TaiHai_IDEA_6
+    remove_ideas = CHI_TaiHai_IDEA_7
+    remove_ideas = CHI_TaiHai_IDEA_8
+    remove_ideas = CHI_TaiHai_IDEA_9
+    remove_ideas = CHI_TaiHai_IDEA_10
+    remove_ideas = CHI_TaiHai_IDEA_11
+    remove_ideas = CHI_TaiHai_IDEA_12
+    remove_ideas = CHI_TaiHai_IDEA_13
+    remove_ideas = CHI_TaiHai_IDEA_14
+    remove_ideas = CHI_TaiHai_IDEA_15
+    remove_ideas = CHI_TaiHai_IDEA_16
+    remove_ideas = CHI_TaiHai_IDEA_17
+    remove_ideas = CHI_TaiHai_IDEA_18
+    remove_ideas = CHI_TaiHai_IDEA_19
+    remove_ideas = CHI_TaiHai_IDEA_20
+    remove_ideas = CHI_TaiHai_IDEA_21
+    remove_ideas = CHI_TaiHai_IDEA_22
+    remove_ideas = CHI_TaiHai_IDEA_23
+    remove_ideas = CHI_TaiHai_IDEA_24
+    remove_ideas = CHI_TaiHai_IDEA_25
+    remove_ideas = PRC_TaiHai_IDEA_1
+    remove_ideas = PRC_TaiHai_IDEA_2
+    remove_ideas = PRC_TaiHai_IDEA_3
+    remove_ideas = PRC_TaiHai_IDEA_4
+    remove_ideas = PRC_TaiHai_IDEA_5
+    remove_ideas = PRC_TaiHai_IDEA_6
+    remove_ideas = PRC_TaiHai_IDEA_7
+    remove_ideas = PRC_TaiHai_IDEA_8
+    remove_ideas = PRC_TaiHai_IDEA_9
+    remove_ideas = PRC_TaiHai_IDEA_10
+    remove_ideas = PRC_TaiHai_IDEA_11
+    remove_ideas = PRC_TaiHai_IDEA_12
+    remove_ideas = PRC_TaiHai_IDEA_13
+    remove_ideas = PRC_TaiHai_IDEA_14
+    remove_ideas = PRC_TaiHai_IDEA_15
+    remove_ideas = PRC_TaiHai_IDEA_16
+    remove_ideas = PRC_TaiHai_IDEA_17
+    remove_ideas = PRC_TaiHai_IDEA_18
+    remove_ideas = PRC_TaiHai_IDEA_19
+    remove_ideas = PRC_TaiHai_IDEA_20
+    remove_ideas = PRC_TaiHai_IDEA_21
+    remove_ideas = PRC_TaiHai_IDEA_22
+    remove_ideas = PRC_TaiHai_IDEA_23
+    remove_ideas = PRC_TaiHai_IDEA_24
+    remove_ideas = PRC_TaiHai_IDEA_25
+    remove_ideas = PRC_TaiHai_IDEA_26
+    remove_ideas = PRC_bombing_raids
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea2
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea3
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea4
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea5
+    clr_country_flag = Taiwan_war
+    clr_country_flag = CHI_taihai_war
+    clr_country_flag = PRC_adapt_to_modern_defense_time_flag
+  }
+  JAP = {
+    remove_ideas = JAP_TaiHai_IDEA_1
+    remove_ideas = JAP_TaiHai_IDEA_2
+    remove_ideas = JAP_TaiHai_IDEA_3
+    remove_ideas = JAP_TaiHai_IDEA_4
+    remove_ideas = JAP_TaiHai_IDEA_5
+    remove_ideas = JAP_TaiHai_IDEA_6
+    remove_ideas = JAP_TaiHai_IDEA_7
+    remove_ideas = JAP_TaiHai_IDEA_8
+    remove_ideas = JAP_TaiHai_IDEA_9
+    remove_ideas = JAP_TaiHai_IDEA_10
+    remove_ideas = JAP_TaiHai_IDEA_11
+    remove_ideas = JAP_TaiHai_IDEA_12
+    remove_ideas = JAP_TaiHai_IDEA_13
+    remove_ideas = JAP_TaiHai_IDEA_14
+    remove_ideas = JAP_TaiHai_IDEA_15
+    remove_ideas = JAP_TaiHai_IDEA_16
+    remove_ideas = JAP_TaiHai_IDEA_17
+    remove_ideas = JAP_TaiHai_IDEA_18
+    remove_ideas = JAP_TaiHai_IDEA_19
+    remove_ideas = JAP_TaiHai_IDEA_20
+    remove_ideas = JAP_TaiHai_IDEA_21
+    remove_ideas = JAP_TaiHai_IDEA_22
+    remove_ideas = JAP_TaiHai_IDEA_23
+    remove_ideas = JAP_TaiHai_IDEA_24
+    remove_ideas = JAP_TaiHai_IDEA_25
+    remove_ideas = CHI_TaiHai_IDEA_1
+    remove_ideas = CHI_TaiHai_IDEA_2
+    remove_ideas = CHI_TaiHai_IDEA_3
+    remove_ideas = CHI_TaiHai_IDEA_4
+    remove_ideas = CHI_TaiHai_IDEA_5
+    remove_ideas = CHI_TaiHai_IDEA_6
+    remove_ideas = CHI_TaiHai_IDEA_7
+    remove_ideas = CHI_TaiHai_IDEA_8
+    remove_ideas = CHI_TaiHai_IDEA_9
+    remove_ideas = CHI_TaiHai_IDEA_10
+    remove_ideas = CHI_TaiHai_IDEA_11
+    remove_ideas = CHI_TaiHai_IDEA_12
+    remove_ideas = CHI_TaiHai_IDEA_13
+    remove_ideas = CHI_TaiHai_IDEA_14
+    remove_ideas = CHI_TaiHai_IDEA_15
+    remove_ideas = CHI_TaiHai_IDEA_16
+    remove_ideas = CHI_TaiHai_IDEA_17
+    remove_ideas = CHI_TaiHai_IDEA_18
+    remove_ideas = CHI_TaiHai_IDEA_19
+    remove_ideas = CHI_TaiHai_IDEA_20
+    remove_ideas = CHI_TaiHai_IDEA_21
+    remove_ideas = CHI_TaiHai_IDEA_22
+    remove_ideas = CHI_TaiHai_IDEA_23
+    remove_ideas = CHI_TaiHai_IDEA_24
+    remove_ideas = CHI_TaiHai_IDEA_25
+    remove_ideas = PRC_TaiHai_IDEA_1
+    remove_ideas = PRC_TaiHai_IDEA_2
+    remove_ideas = PRC_TaiHai_IDEA_3
+    remove_ideas = PRC_TaiHai_IDEA_4
+    remove_ideas = PRC_TaiHai_IDEA_5
+    remove_ideas = PRC_TaiHai_IDEA_6
+    remove_ideas = PRC_TaiHai_IDEA_7
+    remove_ideas = PRC_TaiHai_IDEA_8
+    remove_ideas = PRC_TaiHai_IDEA_9
+    remove_ideas = PRC_TaiHai_IDEA_10
+    remove_ideas = PRC_TaiHai_IDEA_11
+    remove_ideas = PRC_TaiHai_IDEA_12
+    remove_ideas = PRC_TaiHai_IDEA_13
+    remove_ideas = PRC_TaiHai_IDEA_14
+    remove_ideas = PRC_TaiHai_IDEA_15
+    remove_ideas = PRC_TaiHai_IDEA_16
+    remove_ideas = PRC_TaiHai_IDEA_17
+    remove_ideas = PRC_TaiHai_IDEA_18
+    remove_ideas = PRC_TaiHai_IDEA_19
+    remove_ideas = PRC_TaiHai_IDEA_20
+    remove_ideas = PRC_TaiHai_IDEA_21
+    remove_ideas = PRC_TaiHai_IDEA_22
+    remove_ideas = PRC_TaiHai_IDEA_23
+    remove_ideas = PRC_TaiHai_IDEA_24
+    remove_ideas = PRC_TaiHai_IDEA_25
+    remove_ideas = PRC_TaiHai_IDEA_26
+    remove_ideas = PRC_bombing_raids
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea2
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea3
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea4
+    remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea5
+    clr_country_flag = Taiwan_war
+    clr_country_flag = CHI_taihai_war
+    clr_country_flag = PRC_adapt_to_modern_defense_time_flag
+  }
 }
 CHI_de_prc_embargo_idea = {
-	if = {
-		limit = {
-			has_idea = CHI_prc_embargo_idea3
-		}
-		swap_ideas = {
-			remove_idea = CHI_prc_embargo_idea3
-			add_idea = CHI_prc_embargo_idea2
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_prc_embargo_idea2
-		}
-		swap_ideas = {
-			remove_idea = CHI_prc_embargo_idea2
-			add_idea = CHI_prc_embargo_idea1
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = CHI_prc_embargo_idea1
-		}
-		swap_ideas = {
-			remove_idea = CHI_prc_embargo_idea1
-			add_idea = CHI_prc_embargo_idea
-		}
-	}
+  if = {
+    limit = {
+      has_idea = CHI_prc_embargo_idea3
+    }
+    swap_ideas = {
+      remove_idea = CHI_prc_embargo_idea3
+      add_idea = CHI_prc_embargo_idea2
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_prc_embargo_idea2
+    }
+    swap_ideas = {
+      remove_idea = CHI_prc_embargo_idea2
+      add_idea = CHI_prc_embargo_idea1
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_prc_embargo_idea1
+    }
+    swap_ideas = {
+      remove_idea = CHI_prc_embargo_idea1
+      add_idea = CHI_prc_embargo_idea
+    }
+  }
 }
 CHI_influence_NP_add = {
-	custom_effect_tooltip = CHI_influence_NP_tt
-	add_to_variable = {
-		var = CHI_influence_NP
-		value = CHI_influence_NP_temp
-	}
-	clamp_variable = {
-		var = CHI_influence_NP
-		min = 0
-		max = 1
-	}
-	set_variable = {
-		var = CHI_influence_NP_dynamic_var
-		value = CHI_influence_NP
-	}
-	multiply_variable = {
-		var = CHI_influence_NP_dynamic_var
-		value = 0.2
-	}
+  custom_effect_tooltip = CHI_influence_NP_tt
+  add_to_variable = {
+    var = CHI_influence_NP
+    value = CHI_influence_NP_temp
+  }
+  clamp_variable = {
+    var = CHI_influence_NP
+    min = 0
+    max = 1
+  }
+  set_variable = {
+    var = CHI_influence_NP_dynamic_var
+    value = CHI_influence_NP
+  }
+  multiply_variable = {
+    var = CHI_influence_NP_dynamic_var
+    value = 0.2
+  }
 }
 CHI_influence_LP_add = {
-	custom_effect_tooltip = CHI_influence_LP_tt
-	add_to_variable = {
-		var = CHI_influence_LP
-		value = CHI_influence_LP_temp
-	}
-	clamp_variable = {
-		var = CHI_influence_LP
-		min = 0
-		max = 1
-	}
-	set_variable = {
-		var = CHI_influence_LP_dynamic_var
-		value = CHI_influence_LP
-	}
-	multiply_variable = {
-		var = CHI_influence_LP_dynamic_var
-		value = 0.2
-	}
+  custom_effect_tooltip = CHI_influence_LP_tt
+  add_to_variable = {
+    var = CHI_influence_LP
+    value = CHI_influence_LP_temp
+  }
+  clamp_variable = {
+    var = CHI_influence_LP
+    min = 0
+    max = 1
+  }
+  set_variable = {
+    var = CHI_influence_LP_dynamic_var
+    value = CHI_influence_LP
+  }
+  multiply_variable = {
+    var = CHI_influence_LP_dynamic_var
+    value = 0.2
+  }
 }
 CHI_influence_PFP_add = {
-	custom_effect_tooltip = CHI_influence_PFP_tt
-	add_to_variable = {
-		var = CHI_influence_PFP
-		value = CHI_influence_PFP_temp
-	}
-	clamp_variable = {
-		var = CHI_influence_PFP
-		min = 0
-		max = 1
-	}
-	set_variable = {
-		var = CHI_influence_PFP_dynamic_var
-		value = CHI_influence_PFP
-	}
-	multiply_variable = {
-		var = CHI_influence_PFP_dynamic_var
-		value = 0.2
-	}
+  custom_effect_tooltip = CHI_influence_PFP_tt
+  add_to_variable = {
+    var = CHI_influence_PFP
+    value = CHI_influence_PFP_temp
+  }
+  clamp_variable = {
+    var = CHI_influence_PFP
+    min = 0
+    max = 1
+  }
+  set_variable = {
+    var = CHI_influence_PFP_dynamic_var
+    value = CHI_influence_PFP
+  }
+  multiply_variable = {
+    var = CHI_influence_PFP_dynamic_var
+    value = 0.2
+  }
 }

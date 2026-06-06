@@ -1,3 +1,63 @@
+# 特殊DEBUG
+CHI_debug = {
+  #Debug 決議
+  Open_army_decisions = {
+    icon = generic_military
+    allowed = {
+      tag = CHI
+    }
+    activation = {
+      is_debug = yes
+    }
+    available = {
+      is_debug = yes
+    }
+    visible = {
+      is_debug = yes
+    }
+    complete_effect = {
+      complete_national_focus = Rectify_weakening_military_preparedness
+    }
+  }
+  CHI_taiwan_war_start = {
+    icon = generic_military
+    allowed = {
+      tag = CHI
+    }
+    activation = {
+      is_debug = yes
+    }
+    available = {
+      is_debug = yes
+    }
+    visible = {
+      is_debug = yes
+    }
+    complete_effect = {
+      PRC = {
+        load_focus_tree = PRC_taiwan_war_tree
+        complete_national_focus = PRC_the_final_opportunity
+        complete_national_focus = PRC_prepare_landing_craft
+        complete_national_focus = PRC_modern_combined_arms
+        complete_national_focus = PRC_blockade_taiwan
+        complete_national_focus = PRC_conduct_final_training
+        complete_national_focus = PRC_expand_the_j20_program
+        complete_national_focus = PRC_plan_on_high_alert
+        complete_national_focus = PRC_sieze_kinmen
+        complete_national_focus = PRC_operation_silent_dawn
+        complete_national_focus = PRC_finish_what_mao_started
+      }
+      JAP = {
+        country_event = {
+          id = jap.17
+        }
+        complete_national_focus = JAP_form_pdto2
+      }
+    }
+  }
+}
+
+# 疫苗
 CHI_NHCC_decisions = {
   #Debug 決議
   END_THE_Epidemic = {
@@ -312,11 +372,6 @@ CHI_NHCC_decisions = {
     selectable_mission = no
     days_mission_timeout = 30
     timeout_effect = {
-      CHI_decrease_coroldpirus = yes
-      set_temp_variable = {
-        var = CHI_vaccine_progress_temp
-        value = 20
-      }
       CHI_vaccine_progress = yes
       set_temp_variable = {
         var = CHI_vaccine_value_temp
@@ -389,7 +444,7 @@ CHI_NHCC_decisions = {
     fire_only_once = yes
     cost = 25
     days_remove = 14
-    
+
     complete_effect = {
       add_days_mission_timeout = {
         mission = Epidemic_is_getting_worse
@@ -416,7 +471,7 @@ CHI_NHCC_decisions = {
     cost = 25
     days_remove = 20
     days_re_enable = 30
-    
+
     remove_effect = {
       add_days_mission_timeout = {
         mission = Epidemic_is_getting_worse
@@ -443,7 +498,7 @@ CHI_NHCC_decisions = {
     fire_only_once = yes
     cost = 5
     days_remove = 20
-    
+
     complete_effect = {
       add_days_mission_timeout = {
         mission = Epidemic_is_getting_worse
@@ -557,17 +612,8 @@ CHI_NHCC_decisions = {
     icon = Buying_vaccine
     available = {
       has_completed_focus = Buy_vaccines
-      has_completed_focus = CHI_KMT_Win
+      has_completed_focus = Taiwan_safe_people_rich
       has_country_flag = Handling_epidemic
-      OR = {
-        PRC = {
-          has_opinion = {
-            target = ROOT
-            value > 49
-          }
-        }
-        is_ai = yes
-      }
     }
     visible = {
       has_completed_focus = Buy_vaccines
@@ -708,8 +754,6 @@ CHI_PRC_Infiltration_decisions = {
       }
       PRC_Infiltration_change = yes
       activate_mission = PRC_infiltration_becoming_serious_mission
-    }
-    cancel_trigger = {
     }
   }
   # 在軍隊中搜索通敵者
@@ -951,7 +995,7 @@ CHI_PRC_Infiltration_decisions = {
       #移除後的效果
       set_temp_variable = {
         var = CHI_PRC_Infiltration_timeout_mission_var_temp
-        value = 1
+        value = 2
       }
       CHI_add_Infiltration_growth_time = yes
       set_temp_variable = {
@@ -992,7 +1036,7 @@ CHI_PRC_Infiltration_decisions = {
       #移除後的效果
       set_temp_variable = {
         var = CHI_PRC_Infiltration_timeout_mission_var_temp
-        value = 1
+        value = 3
       }
       CHI_add_Infiltration_growth_time = yes
       set_temp_variable = {
@@ -1033,7 +1077,7 @@ CHI_PRC_Infiltration_decisions = {
       #移除後的效果
       set_temp_variable = {
         var = CHI_PRC_Infiltration_timeout_mission_var_temp
-        value = 1
+        value = 4
       }
       CHI_add_Infiltration_growth_time = yes
       set_temp_variable = {
@@ -1074,7 +1118,7 @@ CHI_PRC_Infiltration_decisions = {
       #移除後的效果
       set_temp_variable = {
         var = CHI_PRC_Infiltration_timeout_mission_var_temp
-        value = 1
+        value = 5
       }
       CHI_add_Infiltration_growth_time = yes
       set_temp_variable = {
@@ -1145,11 +1189,11 @@ CHI_PRC_Infiltration_decisions = {
   }
 }
 
-# 立法院的決策
+# 立法院決議
 CHI_Legislative_Yuan_decisions = {
   CHI_DPP_decisions_divider = {
     icon = GFX_CHI_decision_braker_DPP_Agenda
-    
+
     allowed = {
       original_tag = CHI
     }
@@ -1196,7 +1240,7 @@ CHI_Legislative_Yuan_decisions = {
         }
       }
     }
-    
+
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 30
@@ -1243,7 +1287,7 @@ CHI_Legislative_Yuan_decisions = {
         }
       }
     }
-    
+
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 50
@@ -1304,7 +1348,7 @@ CHI_Legislative_Yuan_decisions = {
         }
       }
     }
-    
+
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 75
@@ -1337,10 +1381,9 @@ CHI_Legislative_Yuan_decisions = {
               level = 1
               instant_build = yes
             }
-            remove_building  = {
+            remove_building = {
               type = nuclear_reactor
               level = 1
-              instant_build = yes
             }
           }
         }
@@ -1351,10 +1394,9 @@ CHI_Legislative_Yuan_decisions = {
               level = 1
               instant_build = yes
             }
-            remove_building  = {
+            remove_building = {
               type = nuclear_reactor
               level = 1
-              instant_build = yes
             }
           }
         }
@@ -1365,10 +1407,9 @@ CHI_Legislative_Yuan_decisions = {
               level = 1
               instant_build = yes
             }
-            remove_building  = {
+            remove_building = {
               type = nuclear_reactor
               level = 1
-              instant_build = yes
             }
           }
         }
@@ -1379,10 +1420,9 @@ CHI_Legislative_Yuan_decisions = {
               level = 1
               instant_build = yes
             }
-            remove_building  = {
+            remove_building = {
               type = nuclear_reactor
               level = 1
-              instant_build = yes
             }
           }
         }
@@ -1420,7 +1460,7 @@ CHI_Legislative_Yuan_decisions = {
         }
       }
     }
-    
+
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 100
@@ -1444,10 +1484,10 @@ CHI_Legislative_Yuan_decisions = {
       PRC_Infiltration_change = yes
     }
   }
- 
-	CHI_KMT_decisions_divider = {
+
+  CHI_KMT_decisions_divider = {
     icon = GFX_CHI_decision_braker_KMT_Agenda
-    
+
     allowed = {
       original_tag = CHI
     }
@@ -1699,10 +1739,10 @@ CHI_Legislative_Yuan_decisions = {
 
     }
   }
-  
-	CHI_TPP_decisions_divider = {
+
+  CHI_TPP_decisions_divider = {
     icon = GFX_CHI_decision_braker_TPP_Agenda
-    
+
     allowed = {
       original_tag = CHI
     }
@@ -1737,7 +1777,7 @@ CHI_Legislative_Yuan_decisions = {
     ai_will_do = {
       base = 10
     }
-    
+
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 45
@@ -1775,7 +1815,7 @@ CHI_Legislative_Yuan_decisions = {
     ai_will_do = {
       base = 10
     }
-    
+
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 45
@@ -1813,7 +1853,7 @@ CHI_Legislative_Yuan_decisions = {
     ai_will_do = {
       base = 10
     }
-    
+
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 100
@@ -1893,7 +1933,7 @@ CHI_Legislative_Yuan_decisions = {
     ai_will_do = {
       base = 10
     }
-    
+
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 75
@@ -1938,5 +1978,647 @@ CHI_Legislative_Yuan_decisions = {
     cost = 50
     days_remove = 10
     days_re_enable = 30
+  }
+}
+
+# 台海戰爭決議
+CHI_taiwan_war_category = {
+  CHI_taiwan_war_mission = {
+    icon = GFX_CHI_taiwan_war_mission
+    activation = {
+      has_war = yes
+      has_global_flag = PRC_ongoing_taiwan_war
+    }
+    allowed = {
+      tag = CHI
+    }
+    available = {
+			PRC = {
+				524 = {
+					is_fully_controlled_by = PRC
+				}
+				1150 = {
+					is_fully_controlled_by = PRC
+				}
+				1149 = {
+					is_fully_controlled_by = PRC
+				}
+				1148 = {
+					is_fully_controlled_by = PRC
+				}
+				648 = {
+					is_fully_controlled_by = PRC
+				}
+			}
+    }
+    priority = 100
+    is_good = no
+    selectable_mission = no
+    days_mission_timeout = 365
+    timeout_effect = {
+      country_event = {
+        id = ROC_CHI.34
+        days = 1
+      }
+    }
+    complete_effect = {
+      custom_effect_tooltip = CHI_taiwan_war_LOSE_tt
+    }
+  }
+
+  War_weariness_mission = {
+    activation = {
+      has_war = yes
+      has_global_flag = PRC_ongoing_taiwan_war
+    }
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      has_war = no
+    }
+    priority = 100
+    is_good = no
+    selectable_mission = no
+    days_mission_timeout = 14
+    timeout_effect = {
+      PDTO_taiwan_war = yes
+      activate_mission = War_weariness_mission
+    }
+  }
+
+  CHI_war_propaganda = {
+    icon = GFX_decision_generic_propaganda_campaigns
+    allowed = {
+      OR = {
+        tag = PRC
+        tag = JAP
+        tag = CHI
+      }
+    }
+    fire_only_once = no
+    cost = 75
+    days_remove = 30
+    days_re_enable = 60
+    modifier = {
+      political_power_factor = 0.25
+      war_support_factor = 0.05
+      industrial_capacity_factory = 0.20
+    }
+    ai_will_do = {
+      base = 10
+    }
+  }
+  CHI_anti_western_proaganda = {
+    icon = GFX_PRC_anti_western
+    allowed = {
+      OR = {
+        TAG = CHI
+        TAG = JAP
+        TAG = AST
+      }
+    }
+    available = {
+      NOT = {
+        has_ideas = CHI_anti_western_proaganda_idea
+      }
+    }
+    fire_only_once = no
+    cost = 75
+    days_remove = 30
+    days_re_enable = 120
+    complete_effect = {
+      every_country = {
+        limit = {
+          is_ally_with = JAP
+        }
+        add_timed_idea = {
+          idea = CHI_anti_western_proaganda_idea
+          days = 30
+        }
+      }
+    }
+    ai_will_do = {
+      base = 10
+    }
+  }
+  # 以下是轟炸決議，雖然叫strike但其实是轟炸的意思
+  CHI_strike_Xiamen = {
+    icon = GFX_PRC_rocket_strike
+    allowed = {
+      OR = {
+        tag = CHI
+        tag = JAP
+        tag = AST
+      }
+    }
+    visible = {
+      CHI = {
+        has_completed_focus = CHI_Coordinating_Allied_Bombing_Operations
+      }
+    }
+    available = {
+      OR = {
+        NOT = {
+          JAP = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+          CHI = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+          AST = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+        }
+      }
+    }
+
+    highlight_states = {
+      highlight_state_targets = {
+        state = 1431
+      }
+    }
+    cost = 30
+    fire_only_once = no
+    days_remove = 7
+    complete_effect = {
+      set_country_flag = PRC_Preparing_airstrike
+    }
+    remove_effect = {
+      clr_country_flag = PRC_Preparing_airstrike
+      custom_effect_tooltip = CHI_strike_Xiamen_tt
+      PRC = {
+        1431 = {
+          damage_building = {
+            type = infrastructure
+            damage = 2
+          }
+          damage_building = {
+            type = industrial_complex
+            damage = 1.5
+          }
+          damage_building = {
+            type = arms_factory
+            damage = 0.5
+          }
+          add_manpower = -2000
+        }
+        damage_units = {
+          state = 1431
+          damage = 0.15
+          org_damage = 0.15
+          str_damage = 0.15
+          ratio = yes
+          army = yes
+          navy = no
+        }
+        add_stability = -0.025
+        add_war_support = 0.025
+      }
+    }
+  }
+  CHI_strike_fuzhou = {
+    icon = GFX_PRC_rocket_strike
+    allowed = {
+      OR = {
+        tag = CHI
+        tag = JAP
+        tag = AST
+      }
+    }
+    visible = {
+      CHI = {
+        has_completed_focus = CHI_Coordinating_Allied_Bombing_Operations
+      }
+    }
+    available = {
+      OR = {
+        NOT = {
+          JAP = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+          CHI = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+          AST = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+        }
+      }
+    }
+
+    highlight_states = {
+      highlight_state_targets = {
+        state = 595
+      }
+    }
+    cost = 30
+    fire_only_once = no
+    days_remove = 7
+    complete_effect = {
+      set_country_flag = PRC_Preparing_airstrike
+    }
+    remove_effect = {
+      clr_country_flag = PRC_Preparing_airstrike
+      custom_effect_tooltip = CHI_strike_fuzhou_tt
+      PRC = {
+        595 = {
+          damage_building = {
+            type = infrastructure
+            damage = 2
+          }
+          damage_building = {
+            type = industrial_complex
+            damage = 1.5
+          }
+          damage_building = {
+            type = arms_factory
+            damage = 0.5
+          }
+          add_manpower = -2000
+        }
+        damage_units = {
+          state = 595
+          damage = 0.15
+          org_damage = 0.15
+          str_damage = 0.15
+          ratio = yes
+          army = yes
+          navy = no
+        }
+        add_stability = -0.025
+        add_war_support = 0.025
+      }
+    }
+  }
+  CHI_strike_quanzhou = {
+    icon = GFX_PRC_rocket_strike
+    allowed = {
+      OR = {
+        tag = CHI
+        tag = JAP
+        tag = AST
+      }
+    }
+    visible = {
+      CHI = {
+        has_completed_focus = CHI_Coordinating_Allied_Bombing_Operations
+      }
+    }
+    available = {
+      OR = {
+        NOT = {
+          JAP = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+          CHI = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+          AST = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+        }
+      }
+    }
+
+    highlight_states = {
+      highlight_state_targets = {
+        state = 1218
+      }
+    }
+    cost = 30
+    fire_only_once = no
+    days_remove = 7
+    complete_effect = {
+      set_country_flag = PRC_Preparing_airstrike
+    }
+    remove_effect = {
+      clr_country_flag = PRC_Preparing_airstrike
+      custom_effect_tooltip = CHI_strike_quanzhou_tt
+      PRC = {
+        1218 = {
+          damage_building = {
+            type = infrastructure
+            damage = 2
+          }
+          damage_building = {
+            type = industrial_complex
+            damage = 1.5
+          }
+          damage_building = {
+            type = arms_factory
+            damage = 0.5
+          }
+          add_manpower = -2000
+        }
+        damage_units = {
+          state = 1218
+          damage = 0.15
+          org_damage = 0.15
+          str_damage = 0.15
+          ratio = yes
+          army = yes
+          navy = no
+        }
+        add_stability = -0.025
+        add_war_support = 0.025
+      }
+    }
+  }
+  CHI_strike_shantou = {
+    icon = GFX_PRC_rocket_strike
+    allowed = {
+      OR = {
+        tag = CHI
+        tag = JAP
+        tag = AST
+      }
+    }
+    visible = {
+      CHI = {
+        has_completed_focus = CHI_Coordinating_Allied_Bombing_Operations
+      }
+    }
+    available = {
+      OR = {
+        NOT = {
+          JAP = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+          CHI = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+          AST = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+        }
+      }
+    }
+
+    highlight_states = {
+      highlight_state_targets = {
+        state = 1206
+      }
+    }
+    cost = 30
+    fire_only_once = no
+    days_remove = 7
+    complete_effect = {
+      set_country_flag = PRC_Preparing_airstrike
+    }
+    remove_effect = {
+      clr_country_flag = PRC_Preparing_airstrike
+      custom_effect_tooltip = CHI_strike_shantou_tt
+      PRC = {
+        1206 = {
+          damage_building = {
+            type = infrastructure
+            damage = 2
+          }
+          damage_building = {
+            type = industrial_complex
+            damage = 1.5
+          }
+          damage_building = {
+            type = arms_factory
+            damage = 0.5
+          }
+          add_manpower = -2000
+        }
+        damage_units = {
+          state = 1206
+          damage = 0.15
+          org_damage = 0.15
+          str_damage = 0.15
+          ratio = yes
+          army = yes
+          navy = no
+        }
+        add_stability = -0.025
+        add_war_support = 0.025
+      }
+    }
+  }
+  CHI_strike_ningbo = {
+    icon = GFX_PRC_rocket_strike
+    allowed = {
+      OR = {
+        tag = CHI
+        tag = JAP
+        tag = AST
+      }
+    }
+    visible = {
+      CHI = {
+        has_completed_focus = CHI_Coordinating_Allied_Bombing_Operations
+      }
+    }
+    available = {
+      OR = {
+        NOT = {
+          JAP = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+          CHI = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+          AST = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+        }
+      }
+    }
+
+    highlight_states = {
+      highlight_state_targets = {
+        state = 596
+      }
+    }
+    cost = 30
+    fire_only_once = no
+    days_remove = 7
+    complete_effect = {
+      set_country_flag = PRC_Preparing_airstrike
+    }
+    remove_effect = {
+      clr_country_flag = PRC_Preparing_airstrike
+      custom_effect_tooltip = CHI_strike_ningbo_tt
+      PRC = {
+        596 = {
+          damage_building = {
+            type = infrastructure
+            damage = 2
+          }
+          damage_building = {
+            type = industrial_complex
+            damage = 1.5
+          }
+          damage_building = {
+            type = arms_factory
+            damage = 0.5
+          }
+          add_manpower = -2000
+        }
+        damage_units = {
+          state = 596
+          damage = 0.15
+          org_damage = 0.15
+          str_damage = 0.15
+          ratio = yes
+          army = yes
+          navy = no
+        }
+        add_stability = -0.025
+        add_war_support = 0.025
+      }
+    }
+  }
+  CHI_strike_shanghai = {
+    icon = GFX_PRC_rocket_strike
+    allowed = {
+      OR = {
+        tag = CHI
+        tag = JAP
+        tag = AST
+      }
+    }
+    visible = {
+      CHI = {
+        has_completed_focus = CHI_Coordinating_Allied_Bombing_Operations
+      }
+    }
+    available = {
+      OR = {
+        NOT = {
+          JAP = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+          CHI = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+          AST = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+        }
+      }
+    }
+
+    highlight_states = {
+      highlight_state_targets = {
+        state = 1215
+      }
+    }
+    cost = 30
+    fire_only_once = no
+    days_remove = 7
+    complete_effect = {
+      set_country_flag = PRC_Preparing_airstrike
+    }
+    remove_effect = {
+      clr_country_flag = PRC_Preparing_airstrike
+      custom_effect_tooltip = CHI_strike_shanghai_tt
+      PRC = {
+        1215 = {
+          damage_building = {
+            type = infrastructure
+            damage = 2
+          }
+          damage_building = {
+            type = industrial_complex
+            damage = 1.5
+          }
+          damage_building = {
+            type = arms_factory
+            damage = 0.5
+          }
+          add_manpower = -2000
+        }
+        damage_units = {
+          state = 1215
+          damage = 0.15
+          org_damage = 0.15
+          str_damage = 0.15
+          ratio = yes
+          army = yes
+          navy = no
+        }
+        add_stability = -0.025
+        add_war_support = 0.025
+      }
+    }
+  }
+  CHI_strike_wenzhou = {
+    icon = GFX_PRC_rocket_strike
+    allowed = {
+      OR = {
+        tag = CHI
+        tag = JAP
+        tag = AST
+      }
+    }
+    visible = {
+      CHI = {
+        has_completed_focus = CHI_Coordinating_Allied_Bombing_Operations
+      }
+    }
+    available = {
+      OR = {
+        NOT = {
+          JAP = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+          CHI = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+          AST = {
+            has_country_flag = PRC_Preparing_airstrike
+          }
+        }
+      }
+    }
+
+    highlight_states = {
+      highlight_state_targets = {
+        state = 1219
+      }
+    }
+    cost = 30
+    fire_only_once = no
+    days_remove = 7
+    complete_effect = {
+      set_country_flag = PRC_Preparing_airstrike
+    }
+    remove_effect = {
+      clr_country_flag = PRC_Preparing_airstrike
+      custom_effect_tooltip = CHI_strike_wenzhou_tt
+      PRC = {
+        1219 = {
+          damage_building = {
+            type = infrastructure
+            damage = 2
+          }
+          damage_building = {
+            type = industrial_complex
+            damage = 1.5
+          }
+          damage_building = {
+            type = arms_factory
+            damage = 0.5
+          }
+          add_manpower = -2000
+        }
+        damage_units = {
+          state = 1219
+          damage = 0.15
+          org_damage = 0.15
+          str_damage = 0.15
+          ratio = yes
+          army = yes
+          navy = no
+        }
+        add_stability = -0.025
+        add_war_support = 0.025
+      }
+    }
   }
 }

@@ -332,5 +332,49 @@ spriteTypes = {
   spriteType = {
     name = "GFX_idea_CHI_population_aging"
     texturefile = "gfx/interface/ideas/CHI/CHI_population_aging.png"
-  }  
+  }
+  spriteType = {
+    name = "GFX_idea_CHI_financial_crisis"
+    texturefile = "gfx/interface/ideas/CHI/CHI_financial_crisis.png"
+  }
+  spriteType = {
+    name = "GFX_idea_CHI_STCC"
+    texturefile = "gfx/interface/ideas/CHI/CHI_STCC.png"
+  }
+  spriteType = {
+    name = "GFX_idea_CHI_Martial_law_declared"
+    texturefile = "gfx/interface/ideas/CHI/CHI_Martial_law_declared.png"
+  }
+  spriteType = {
+    name = "GFX_idea_CHI_AD_idea"
+    texturefile = "gfx/interface/ideas/CHI/CHI_AD_idea.png"
+  }
+  spriteType = {
+    name = "GFX_idea_CHI_Onelifeonthesameisland"
+    texturefile = "gfx/interface/ideas/CHI/CHI_Onelifeonthesameisland.png"
+  }
+  spriteType = {
+    name = "GFX_idea_CHI_Taiwan_the_Bravest"
+    texturefile = "gfx/interface/ideas/CHI/CHI_Taiwan_the_Bravest.png"
+  }
+  spriteType = {
+    name = "GFX_idea_CHI_Coordinating_Allied_Bombing_Operations"
+    texturefile = "gfx/interface/ideas/CHI/CHI_Coordinating_Allied_Bombing_Operations.png"
+  }
+  spriteType = {
+    name = "GFX_idea_CHI_TJ_Technology_Cooperation"
+    texturefile = "gfx/interface/ideas/CHI/CHI_TJ_Technology_Cooperation.png"
+  }
+  spriteType = {
+    name = "GFX_idea_CHI_InvestingAI"
+    texturefile = "gfx/interface/ideas/CHI/CHI_InvestingAI.png"
+  }
+  spriteType = {
+    name = "GFX_idea_CHI_MPFTMO"
+    texturefile = "gfx/interface/ideas/CHI/CHI_MPFTMO.png"
+  }
+  spriteType = {
+    name = "GFX_idea_CHI_Wartime_normal_system"
+    texturefile = "gfx/interface/ideas/CHI/CHI_Wartime_normal_system.png"
+  }
 }

@@ -16,6 +16,19 @@ country_event = {
 }
 
 country_event = {
+  id = ROC_CHI.40
+  title = ROC_CHI.40.t
+  desc = ROC_CHI.40.d
+  picture = ROC_CHI_Event_40
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = ROC_CHI.40.a
+  }
+}
+
+country_event = {
   id = ROC_CHI.41
   title = ROC_CHI.41.t
   desc = ROC_CHI.41.d
@@ -51,19 +64,6 @@ country_event = {
 
   option = {
     name = ROC_CHI.37.a
-  }
-}
-
-country_event = {
-  id = ROC_CHI.35
-  title = ROC_CHI.35.t
-  desc = ROC_CHI.35.d
-  picture = ROC_CHI_Event_35
-  fire_only_once = yes
-  is_triggered_only = yes
-
-  option = {
-    name = ROC_CHI.35.a
   }
 }
 
@@ -3016,243 +3016,6 @@ country_event = {
   }
   option = {
     name = ROC.21.a
-  }
-}
-
-country_event = {
-  #Second Wave of Missile Strikes
-  id = ROC.22
-  title = ROC.22.t
-  desc = ROC.22.d
-  picture = GFX_PRC_rocket_strikes2
-  is_triggered_only = yes
-  fire_only_once = yes
-
-  immediate = {
-    hidden_effect = {
-      if = {
-        limit = {
-          CHI = {
-            is_ai = yes
-          }
-        }
-        add_equipment_to_stockpile = {
-          type = motorized_equipment
-          amount = 400
-        }
-        add_equipment_to_stockpile = {
-          type = train_equipment
-          amount = 40
-        }
-      }
-      if = {
-        limit = {
-          CHI = {	is_ai = yes	}
-          JAP = { is_ai = yes	}
-        }
-        if = {
-          limit = {
-            NOT = {
-              has_template = "Minbing"
-            }
-          }
-          division_template = {
-            name = "Minbing"
-            is_locked = no
-            regiments = {
-              militia = {
-                x = 0
-                y = 0
-              }
-              militia = {
-                x = 0
-                y = 1
-              }
-              militia = {
-                x = 0
-                y = 2
-              }
-              militia = {
-                x = 1
-                y = 0
-              }
-              militia = {
-                x = 1
-                y = 1
-              }
-            }
-            support = {
-              recon = {
-                x = 0
-                y = 0
-              }
-              engineer = {
-                x = 0
-                y = 1
-              }
-            }
-          }
-        }
-        524 = {
-          create_unit = {
-            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-            prioritize_location = 11914
-            id = 1949
-            owner = CHI
-            count = 5
-          }
-        }
-      }
-      if = {
-        limit = {
-          CHI = {
-            is_ai = yes
-          }
-          PRC = {
-            is_ai = no
-          }
-        }
-        if = {
-          limit = {
-            NOT = {
-              has_template = "Minbing"
-            }
-          }
-          division_template = {
-            name = "Minbing"
-            is_locked = no
-            regiments = {
-              militia = {
-                x = 0
-                y = 0
-              }
-              militia = {
-                x = 0
-                y = 1
-              }
-              militia = {
-                x = 0
-                y = 2
-              }
-              militia = {
-                x = 1
-                y = 0
-              }
-              militia = {
-                x = 1
-                y = 1
-              }
-            }
-            support = {
-              recon = {
-                x = 0
-                y = 0
-              }
-              engineer = {
-                x = 0
-                y = 1
-              }
-            }
-          }
-        }
-        random_owned_controlled_state = {
-          create_unit = {
-            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-            id = 1949
-            owner = CHI
-            count = 3
-          }
-        }
-      }
-    }
-  }
-  option = {
-    name = ROC.22.a
-    hidden_effect = {
-      set_country_flag = CHI_taihai_war_superevent
-      scoped_sound_effect = TFR_CHI_ysjxq
-      scoped_play_song = "one_minute_of_silence"
-    }
-    set_country_flag = CHI_taihai_war
-    focus_unlock = yes
-    complete_national_focus = CHI_thenationisinperil
-    add_ideas = CHI_repairs_under_fire_idea
-    activate_mission = CHI_taiwan_war_mission
-    custom_effect_tooltip = PRC_second_wave_missile_strikes_tt
-    damage_units = {
-      state = 1148
-      damage = 0.15
-      org_damage = 0.15
-      str_damage = 0.15
-      ratio = yes
-      army = yes
-      navy = no
-    }
-    damage_units = {
-      state = 1149
-      damage = 0.15
-      org_damage = 0.15
-      str_damage = 0.15
-      ratio = yes
-      army = yes
-      navy = no
-    }
-    damage_units = {
-      state = 1150
-      damage = 0.15
-      org_damage = 0.15
-      str_damage = 0.15
-      ratio = yes
-      army = yes
-      navy = no
-    }
-    damage_units = {
-      state = 524
-      damage = 0.15
-      org_damage = 0.15
-      str_damage = 0.15
-      ratio = yes
-      army = yes
-      navy = no
-    }
-    CHI = {
-      if = {
-        limit = {
-          has_country_leader = {
-            character = CHI_han_kuo_yu_char
-            ruling_only = yes
-          }
-        }
-        set_country_leader_portrait = {
-          ideology = authoritarian_democrat
-          portrait = GFX_portrait_CHI_han_kuo_yu_military
-        }
-        hidden_effect = {
-          add_popularity = {
-            ideology = authoritarian_democrat
-            popularity = 0.4
-          }
-          set_politics = {
-            ruling_party = authoritarian_democrat
-            last_election = "2020.1.11"
-            election_frequency = 48
-            elections_allowed = yes
-          }
-        }
-      }
-      else_if = {
-        limit = {
-          has_country_leader = {
-            character = CHI_tsai_ing_wen_char
-            ruling_only = yes
-          }
-        }
-        set_country_leader_portrait = {
-          ideology = social_liberal
-          portrait = GFX_portrait_CHI_tsai_ing_wen_military
-        }
-      }
-    }
   }
 }
 

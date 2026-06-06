@@ -55,29 +55,6 @@ ideas = {
         land_reinforce_rate = 0.025
       }
     }
-    CHI_InvestingAI = {
-      picture = CHI_InvestingAI
-      traits = {
-        ZZZ_blank_idea_trait
-      }
-      allowed = {
-        always = yes
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-
-      modifier = {
-        political_power_cost = 0.25
-        consumer_goods_factor = 0.15
-        research_speed_factor = 0.05
-        expense_growth_factor = 0.15
-      }
-      on_remove = {
-        CHI_increase_tsmc_idea = yes
-      }
-    }
     CHI_scientists_from_america_idea = {
       picture = SAT_Rule_by_Science_and_Reason
       traits = {
@@ -555,7 +532,7 @@ ideas = {
       }
     }
     CHI_nukee_ke = {
-      picture = GFX_idea_CHI_reintroduce_nuclear
+      picture = CHI_reintroduce_nuclear
       name = CHI_reintroduce_nuclear_dynamic
 
       allowed = {
@@ -573,7 +550,7 @@ ideas = {
       removal_cost = -1
     }
     CHI_nukee_ke1 = {
-      picture = GFX_idea_CHI_reintroduce_nuclear
+      picture = CHI_reintroduce_nuclear
       name = CHI_reintroduce_nuclear_dynamic
 
       allowed = {
@@ -596,7 +573,7 @@ ideas = {
       }
     }
     CHI_nukee_ke2 = {
-      picture = GFX_idea_CHI_reintroduce_nuclear
+      picture = CHI_reintroduce_nuclear
       name = CHI_reintroduce_nuclear_dynamic
 
       allowed = {
@@ -619,7 +596,7 @@ ideas = {
       }
     }
     CHI_nukee_ke3 = {
-      picture = GFX_idea_CHI_reintroduce_nuclear
+      picture = CHI_reintroduce_nuclear
       name = CHI_reintroduce_nuclear_dynamic
 
       allowed = {
@@ -997,7 +974,7 @@ ideas = {
       }
     }
     CHI_LY_of_the_roc_0 = {
-      picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      picture = CHI_LY_of_the_roc_dynamic
       name = CHI_LY_of_the_roc_dynamic
       allowed = {
         always = no
@@ -1015,7 +992,7 @@ ideas = {
 
     }
     CHI_LY_of_the_roc_1 = {
-      picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      picture = CHI_LY_of_the_roc_dynamic
       name = CHI_LY_of_the_roc_dynamic
       allowed = {
         always = no
@@ -1040,7 +1017,7 @@ ideas = {
       }
     }
     CHI_LY_of_the_roc_2 = {
-      picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      picture = CHI_LY_of_the_roc_dynamic
       name = CHI_LY_of_the_roc_dynamic
       allowed = {
         always = no
@@ -1063,7 +1040,7 @@ ideas = {
       }
     }
     CHI_LY_of_the_roc_3 = {
-      picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      picture = CHI_LY_of_the_roc_dynamic
       name = CHI_LY_of_the_roc_dynamic
       allowed = {
         always = no
@@ -1085,7 +1062,7 @@ ideas = {
       }
     }
     CHI_LY_of_the_roc_4 = {
-      picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      picture = CHI_LY_of_the_roc_dynamic
       name = CHI_LY_of_the_roc_dynamic
       allowed = {
         always = no
@@ -1108,7 +1085,7 @@ ideas = {
       }
     }
     CHI_LY_of_the_roc_5 = {
-      picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      picture = CHI_LY_of_the_roc_dynamic
       name = CHI_LY_of_the_roc_dynamic
       allowed = {
         always = no
@@ -1133,7 +1110,7 @@ ideas = {
       }
     }
     CHI_LY_of_the_roc_6 = {
-      picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      picture = CHI_LY_of_the_roc_dynamic
       name = CHI_LY_of_the_roc_dynamic
       allowed = {
         always = no
@@ -1154,7 +1131,7 @@ ideas = {
       }
     }
     CHI_LY_of_the_roc_7 = {
-      picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      picture = CHI_LY_of_the_roc_dynamic
       name = CHI_LY_of_the_roc_dynamic
       allowed = {
         always = no
@@ -1175,7 +1152,7 @@ ideas = {
       }
     }
     CHI_LY_of_the_roc_8 = {
-      picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      picture = CHI_LY_of_the_roc_dynamic
       name = CHI_LY_of_the_roc_dynamic
       allowed = {
         always = no
@@ -1196,7 +1173,7 @@ ideas = {
       }
     }
     CHI_LY_of_the_roc_9 = {
-      picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      picture = CHI_LY_of_the_roc_dynamic
       name = CHI_LY_of_the_roc_dynamic
       allowed = {
         always = no
@@ -1219,7 +1196,7 @@ ideas = {
       }
     }
     CHI_NSM_idea = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      #picture = CHI_LY_of_the_roc_dynamic
       name = CHI_NSM_dynamic
       allowed = {
         always = no
@@ -1237,7 +1214,7 @@ ideas = {
 
     }
     CHI_NSM_idea_1 = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      #picture = CHI_LY_of_the_roc_dynamic
       name = CHI_NSM_dynamic
       allowed = {
         always = no
@@ -1261,7 +1238,7 @@ ideas = {
       }
     }
     CHI_NSM_idea_2 = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      #picture = CHI_LY_of_the_roc_dynamic
       name = CHI_NSM_dynamic
       allowed = {
         always = no
@@ -1283,7 +1260,7 @@ ideas = {
       }
     }
     CHI_NSM_idea_3 = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      #picture = CHI_LY_of_the_roc_dynamic
       name = CHI_NSM_dynamic
       allowed = {
         always = no
@@ -1310,9 +1287,9 @@ ideas = {
         defense_bonus_against = 0.05
       }
     }
-    CHI_AD_idea_1 = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
-      name = CHI_Anticommunist_determination
+    CHI_Coordinating_Allied_Bombing_Operations_idea = {
+      picture = CHI_Coordinating_Allied_Bombing_Operations
+      name = CHI_Coordinating_Allied_Bombing_Operations
       allowed = {
         always = no
       }
@@ -1328,96 +1305,14 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        compliance_growth_on_our_occupied_states = -0.05
-        resistance_growth_on_our_occupied_states = -0.05
-        resistance_target_on_our_occupied_states = 0.05
-        local_intel_to_enemies = -0.1
-      }
-      targeted_modifier = {
-        tag = PRC
-        attack_bonus_against = 0.05
+        air_superiority_efficiency = 0.05
+        air_mission_efficiency = 0.05
+        air_accidents_factor = -0.1
       }
     }
-    CHI_AD_idea_2 = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
-      name = CHI_Anticommunist_determination
-      allowed = {
-        always = no
-      }
-
-      cancel = {
-        is_puppet_of = PRC
-      }
-
-      allowed_civil_war = {
-        always = yes
-      }
-
-      removal_cost = -1
-
-      modifier = {
-        compliance_growth_on_our_occupied_states = -0.10
-        resistance_growth_on_our_occupied_states = -0.10
-        resistance_target_on_our_occupied_states = 0.10
-      }
-      targeted_modifier = {
-        tag = PRC
-        attack_bonus_against = 0.05
-        defense_bonus_against = 0.05
-      }
-    }
-    CHI_STCC_idea = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
-      name = CHI_Strategic_Traffic_Control_Center
-      allowed = {
-        always = no
-      }
-
-      cancel = {
-        is_puppet_of = PRC
-      }
-
-      allowed_civil_war = {
-        always = yes
-      }
-
-      removal_cost = -1
-
-      modifier = {
-        army_speed_factor = 0.05
-        army_retreat_speed_factor = 0.15
-        command_power_cost_factor = -0.10
-        supply_consumption_factor = -0.1
-        max_planning_factor = 0.05
-        strategic_redeployment_speed = 0.2
-      }
-    }
-    CHI_WRA_ideas = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
-      name = CHI_Wartime_resource_allocation
-      allowed = {
-        always = no
-      }
-
-      cancel = {
-        is_puppet_of = PRC
-      }
-
-      allowed_civil_war = {
-        always = yes
-      }
-
-      removal_cost = -1
-
-      modifier = {
-        min_export = -0.35
-        local_resources_factor = 0.10
-        production_lack_of_resource_penalty_factor = -0.25
-      }
-    }
-    CHI_CHI_from_Taiwan_ideas_1 = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
-      name = CHI_from_Taiwan
+    CHI_Taiwan_the_Bravest_ideas_1 = {
+      picture = CHI_Taiwan_the_Bravest
+      name = CHI_Taiwan_the_Bravest
       allowed = {
         always = no
       }
@@ -1437,9 +1332,9 @@ ideas = {
         resistance_growth_on_our_occupied_states = 0.10
       }
     }
-    CHI_CHI_from_Taiwan_ideas_2 = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
-      name = CHI_from_Taiwan
+    CHI_Taiwan_the_Bravest_ideas_2 = {
+      picture = CHI_Taiwan_the_Bravest
+      name = CHI_Taiwan_the_Bravest
       allowed = {
         always = no
       }
@@ -1462,7 +1357,7 @@ ideas = {
       }
     }
     CHI_Defend_Taiwan_ideas = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      #picture = CHI_LY_of_the_roc_dynamic
       name = CHI_Defend_Taiwan_dynamic
       allowed = {
         always = no
@@ -1479,7 +1374,7 @@ ideas = {
       removal_cost = -1
     }
     CHI_Defend_Taiwan_ideas_1 = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      #picture = CHI_LY_of_the_roc_dynamic
       name = CHI_Defend_Taiwan_dynamic
       allowed = {
         always = no
@@ -1502,7 +1397,7 @@ ideas = {
       }
     }
     CHI_Defend_Taiwan_ideas_2 = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+      #picture = CHI_LY_of_the_roc_dynamic
       name = CHI_Defend_Taiwan_dynamic
       allowed = {
         always = no
@@ -1528,109 +1423,6 @@ ideas = {
         weekly_convoys_war_support = 0.01
         monthly_population = -0.01
         local_intel_to_enemies = -0.1
-      }
-    }
-    CHI_MPFTMO_idea = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
-      name = CHI_Mobilize_police_force_to_maintain_order
-      allowed = {
-        always = no
-      }
-
-      cancel = {
-        is_puppet_of = PRC
-      }
-
-      allowed_civil_war = {
-        always = yes
-      }
-
-      removal_cost = -1
-
-      modifier = {
-        stability_factor = 0.05
-        resistance_growth_on_our_occupied_states = -0.15
-        resistance_target_on_our_occupied_states = 0.15
-        garrison_damage = -0.1
-        mobilization_speed = 0.05
-      }
-    }
-    CHI_Wartime_normal_system_idea = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
-      name = CHI_Wartime_normal_system
-      allowed = {
-        always = no
-      }
-
-      cancel = {
-        is_puppet_of = PRC
-      }
-
-      allowed_civil_war = {
-        always = yes
-      }
-
-      removal_cost = -1
-
-      modifier = {
-        stability_factor = -0.10
-        conscription_factor = 0.10
-        industrial_capacity_factory = 0.10
-        production_speed_arms_factory_factor = 0.10
-        repair_speed_arms_factory_factor = 0.25
-        industry_repair_factor = 0.25
-        industry_air_damage_factor = -0.25
-      }
-    }
-    CHI_Martial_law_declared_idea = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
-      name = CHI_Martial_law_declared
-      allowed = {
-        always = no
-      }
-
-      cancel = {
-        is_puppet_of = PRC
-      }
-
-      allowed_civil_war = {
-        always = yes
-      }
-
-      removal_cost = -1
-
-      modifier = {
-        stability_factor = 0.12
-        war_support_factor = 0.15
-        resistance_target = -0.2
-        garrison_damage = -0.15
-        mobilization_speed = 0.12
-        command_power_gain = 0.1
-        political_power_gain = -0.1
-        consumer_goods_factor = 0.05
-      }
-    }
-    CHI_Onelifeonthesameisland_idea = {
-      #picture = GFX_idea_CHI_LY_of_the_roc_dynamic
-      name = CHI_Onelifeonthesameisland
-      allowed = {
-        always = no
-      }
-
-      cancel = {
-        is_puppet_of = PRC
-      }
-
-      allowed_civil_war = {
-        always = yes
-      }
-
-      removal_cost = -1
-
-      modifier = {
-        army_core_attack_factor = 0.15
-        supply_combat_penalties_on_core_factor = -0.05
-        army_core_defence_factor = 0.15
       }
     }
     CHI_ROC_army_taihai = {

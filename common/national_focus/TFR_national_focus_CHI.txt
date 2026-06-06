@@ -281,12 +281,8 @@ focus_tree = {
       }
       set_country_flag = KMT_win_flg
       hidden_effect = {
-        country_event = {
-          id = ROC_CHI.35
-          days = 14
-        }
         remove_dynamic_modifier = {
-          modifier = CHI_taiwanese_independence_movement_idea
+          modifier = CHI_taiwanese_independence_dynamic
         }
         add_dynamic_modifier = {
           modifier = Republic_of_China_dynamic
@@ -2375,7 +2371,10 @@ focus_tree = {
     }
     relative_position_id = Semiconductor_mobilization
     completion_reward = {
-      add_ideas = CHI_scientists_from_america_idea
+      add_timed_idea = {
+        idea = CHI_scientists_from_america_idea
+        days = 180
+      }
     }
   }
   focus = {
@@ -2589,10 +2588,6 @@ focus_tree = {
         add_dynamic_modifier = {
           modifier = CHI_Defend_Taiwan_dynamic
         }
-        country_event = {
-          id = ROC.40
-          days = 40
-        }
         add_to_variable = {
           var = CHI_Defend_Taiwan_army_core_attack_factor
           value = 0.1
@@ -2614,7 +2609,7 @@ focus_tree = {
     icon = GFX_focus_CHI_Mobilize_police_force_to_maintain_order
     x = 2
     y = 1
-    cost = 3.2
+    cost = 2
     available_if_capitulated = yes
     cancelable = no
     ai_will_do = {
@@ -2707,7 +2702,7 @@ focus_tree = {
     icon = GFX_focus_CHI_Wartime_normal_system
     x = 3
     y = 1
-    cost = 3.2
+    cost = 3
     available_if_capitulated = yes
     cancelable = no
     ai_will_do = {
@@ -2735,7 +2730,7 @@ focus_tree = {
     icon = GFX_focus_CHI_Arresting_traitors
     x = 1
     y = 2
-    cost = 3.2
+    cost = 3
     available_if_capitulated = yes
     cancelable = no
     ai_will_do = {
@@ -2805,9 +2800,9 @@ focus_tree = {
     ai_will_do = {
       factor = 1
     }
-    relative_position_id = CHI_Wartime_resource_allocation
+    relative_position_id = CHI_Coordinating_Allied_Bombing_Operations
     prerequisite = {
-      focus = CHI_Wartime_resource_allocation
+      focus = CHI_Coordinating_Allied_Bombing_Operations
     }
     completion_reward = {
       PRC = {
@@ -2830,9 +2825,9 @@ focus_tree = {
     ai_will_do = {
       factor = 1
     }
-    relative_position_id = CHI_Wartime_resource_allocation
+    relative_position_id = CHI_Coordinating_Allied_Bombing_Operations
     prerequisite = {
-      focus = CHI_Wartime_resource_allocation
+      focus = CHI_Coordinating_Allied_Bombing_Operations
     }
     completion_reward = {
       PRC = {
@@ -2849,7 +2844,7 @@ focus_tree = {
     icon = GFX_focus_CHI_Martial_law_declared
     x = -1
     y = 1
-    cost = 3.2
+    cost = 2
     available_if_capitulated = yes
     cancelable = no
     ai_will_do = {
@@ -2868,11 +2863,11 @@ focus_tree = {
   }
   focus = {
     # 台灣尚勇
-    id = CHI_from_Taiwan
-    icon = GFX_focus_CHI_from_Taiwan
+    id = CHI_Taiwan_the_Bravest
+    icon = GFX_focus_CHI_Taiwan_the_Bravest
     x = 2
     y = 0
-    cost = 3.2
+    cost = 3
     available_if_capitulated = yes
     cancelable = no
     ai_will_do = {
@@ -2883,7 +2878,7 @@ focus_tree = {
       focus = CHI_Defend_Taiwan
     }
     completion_reward = {
-      add_ideas = CHI_CHI_from_Taiwan_ideas_1
+      add_ideas = CHI_Taiwan_the_Bravest_ideas_1
       add_power_balance_value = {
         id = CHI_Identity_dispute
         value = 0.1
@@ -2896,7 +2891,7 @@ focus_tree = {
     icon = GFX_focus_CHI_Protect_the_homeland
     x = 0
     y = 4
-    cost = 3.2
+    cost = 5
     available_if_capitulated = yes
     cancelable = no
     ai_will_do = {
@@ -2911,8 +2906,26 @@ focus_tree = {
     }
     completion_reward = {
       swap_ideas = {
-        remove_idea = CHI_CHI_from_Taiwan_ideas_1
-        add_idea = CHI_CHI_from_Taiwan_ideas_2
+        remove_idea = CHI_Taiwan_the_Bravest_ideas_1
+        add_idea = CHI_Taiwan_the_Bravest_ideas_2
+      }
+      if = {
+        limit = {
+          has_idea = CHI_repairs_under_fire_idea
+        }
+        swap_ideas = {
+          remove_idea = CHI_repairs_under_fire_idea
+          add_idea = CHI_repairs_under_fire_1_idea
+        }
+      }
+      else_if = {
+        limit = {
+          has_idea = CHI_repairs_under_fire_1_idea
+        }
+        swap_ideas = {
+          remove_idea = CHI_repairs_under_fire_1_idea
+          add_idea = CHI_repairs_under_fire_2_idea
+        }
       }
     }
   }
@@ -2936,6 +2949,24 @@ focus_tree = {
     completion_reward = {
       add_ideas = CHI_pdto_fuel_shipments_idea
       unlock_decision_tooltip = CHI_JAPANDAST_Military_aid
+      if = {
+        limit = {
+          has_idea = CHI_repairs_under_fire_idea
+        }
+        swap_ideas = {
+          remove_idea = CHI_repairs_under_fire_idea
+          add_idea = CHI_repairs_under_fire_1_idea
+        }
+      }
+      else_if = {
+        limit = {
+          has_idea = CHI_repairs_under_fire_1_idea
+        }
+        swap_ideas = {
+          remove_idea = CHI_repairs_under_fire_1_idea
+          add_idea = CHI_repairs_under_fire_2_idea
+        }
+      }
     }
   }
   focus = {
@@ -3024,8 +3055,8 @@ focus_tree = {
   }
   focus = {
     # 協調盟友轟炸行動
-    id = CHI_Wartime_resource_allocation
-    icon = GFX_focus_CHI_Wartime_resource_allocation
+    id = CHI_Coordinating_Allied_Bombing_Operations
+    icon = GFX_focus_CHI_Coordinating_Allied_Bombing_Operations
     x = 0
     y = 4
     cost = 2
@@ -3042,7 +3073,14 @@ focus_tree = {
       focus = CHI_Strategic_Traffic_Control_Center
     }
     completion_reward = {
-      add_ideas = CHI_WRA_ideas
+      unlock_decision_tooltip = CHI_strike_Xiamen
+      unlock_decision_tooltip = CHI_strike_fuzhou
+      unlock_decision_tooltip = CHI_strike_quanzhou
+      unlock_decision_tooltip = CHI_strike_shantou
+      unlock_decision_tooltip = CHI_strike_ningbo
+      unlock_decision_tooltip = CHI_strike_shanghai
+      unlock_decision_tooltip = CHI_strike_wenzhou
+      add_ideas = CHI_Coordinating_Allied_Bombing_Operations_idea
     }
   }
   focus = {
@@ -3051,7 +3089,7 @@ focus_tree = {
     icon = GFX_focus_CHI_Anticommunist_determination
     x = -2
     y = 0
-    cost = 3.2
+    cost = 3
     available_if_capitulated = yes
     cancelable = no
     ai_will_do = {
@@ -3076,7 +3114,7 @@ focus_tree = {
     icon = GFX_focus_CHI_Recall_conscripts
     x = -2
     y = 1
-    cost = 3.2
+    cost = 3
     available_if_capitulated = yes
     cancelable = no
     ai_will_do = {
@@ -3188,7 +3226,7 @@ focus_tree = {
     icon = GFX_focus_CHI_Temporary_formation_number
     x = -3
     y = 1
-    cost = 3.2
+    cost = 2
     available_if_capitulated = yes
     cancelable = no
     ai_will_do = {
@@ -3293,7 +3331,7 @@ focus_tree = {
     icon = GFX_focus_CHI_Strengthen_coastal_defense
     x = 1
     y = 1
-    cost = 3.2
+    cost = 2
     available_if_capitulated = yes
     cancelable = no
     ai_will_do = {
@@ -3367,7 +3405,7 @@ focus_tree = {
     icon = GFX_focus_CHI_Not_step_back
     x = -1
     y = 2
-    cost = 3.2
+    cost = 3
     available_if_capitulated = yes
     cancelable = no
     ai_will_do = {
@@ -3486,7 +3524,10 @@ focus_tree = {
     icon = GFX_focus_CHI_Fight_to_the_death
     x = 0
     y = 4
-    cost = 3.2
+    cost = 5
+    available = {
+      has_completed_focus = CHI_Anticommunist_determination
+    }
     available_if_capitulated = yes
     cancelable = no
     ai_will_do = {
@@ -3504,6 +3545,24 @@ focus_tree = {
       swap_ideas = {
         remove_idea = CHI_AD_idea_1
         add_idea = CHI_AD_idea_2
+      }
+      if = {
+        limit = {
+          has_idea = CHI_repairs_under_fire_idea
+        }
+        swap_ideas = {
+          remove_idea = CHI_repairs_under_fire_idea
+          add_idea = CHI_repairs_under_fire_1_idea
+        }
+      }
+      else_if = {
+        limit = {
+          has_idea = CHI_repairs_under_fire_1_idea
+        }
+        swap_ideas = {
+          remove_idea = CHI_repairs_under_fire_1_idea
+          add_idea = CHI_repairs_under_fire_2_idea
+        }
       }
     }
   }
@@ -3525,7 +3584,7 @@ focus_tree = {
       focus = CHI_Protect_the_homeland
     }
     prerequisite = {
-      focus = CHI_Wartime_resource_allocation
+      focus = CHI_Coordinating_Allied_Bombing_Operations
     }
     completion_reward = {
       add_ideas = CHI_Onelifeonthesameisland_idea

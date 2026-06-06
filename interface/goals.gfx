@@ -186,8 +186,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/CHI/CHI_Martial_law_declared.png"
 	}
 	spriteType = {
-		name = "GFX_focus_CHI_from_Taiwan"
-		texturefile = "gfx/interface/goals/CHI/CHI_from_Taiwan.png"
+		name = "GFX_focus_CHI_Taiwan_the_Bravest"
+		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_the_Bravest.png"
 	}
 	spriteType = {
 		name = "GFX_focus_CHI_Protect_the_homeland"
@@ -202,8 +202,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/CHI/CHI_Strategic_Traffic_Control_Center.png"
 	}
 	spriteType = {
-		name = "GFX_focus_CHI_Wartime_resource_allocation"
-		texturefile = "gfx/interface/goals/CHI/CHI_Wartime_resource_allocation.png"
+		name = "GFX_focus_CHI_Coordinating_Allied_Bombing_Operations"
+		texturefile = "gfx/interface/goals/CHI/CHI_Coordinating_Allied_Bombing_Operations.png"
 	}
 	spriteType = {
 		name = "GFX_focus_CHI_Anticommunist_determination"

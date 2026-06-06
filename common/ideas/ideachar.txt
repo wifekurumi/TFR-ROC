@@ -15,6 +15,9 @@ ideas = {
         CHI_minister_DPP				#民進黨黨籍
         Black_Fireball				#電火球
       }
+      available = {
+        has_government = social_liberal
+      }
     }
     CHI_eric_chu_hog = {
       #朱立倫
@@ -29,6 +32,9 @@ ideas = {
       traits = {
         CHI_minister_KMT
         behind_the_scenes_financier				#居於幕後的金融專家
+      }
+      available = {
+        has_government = conservative
       }
     }
     CHI_zhang_shanzheng1_hog = {
@@ -45,6 +51,9 @@ ideas = {
         CHI_minister_KMT
         technical_bureaucrat				#技術官僚
       }
+      available = {
+        has_government = conservative
+      }
     }
     CHI_Johnny_Chiang_hog = {
       #江宜樺
@@ -60,6 +69,9 @@ ideas = {
         CHI_minister_KMT
         principled_politician				#堅守底線的政治學者
       }
+      available = {
+        has_government = conservative
+      }
     }
     CHI_wang_jinpyng_hog = {
       #王金平
@@ -74,6 +86,9 @@ ideas = {
       traits = {
         CHI_minister_KMT
         tycoon				#喬王
+      }
+      available = {
+        has_government = conservative
       }
     }
     CHI_chen_chienjen_hog = {
@@ -107,6 +122,9 @@ ideas = {
         CHI_minister_DPP				#民進黨黨籍
         pragmatic_diplomat				#務實的外交家
       }
+      available = {
+        has_government = social_liberal
+      }
     }
     CHI_Lin_Chia_lung_for = {
       #林佳龍
@@ -121,6 +139,9 @@ ideas = {
       traits = {
         CHI_minister_DPP
         well_planned_political_scholar				#規劃完整的政治學者
+      }
+      available = {
+        has_government = social_liberal
       }
     }
     CHI_Chiang_Yi_huah_for = {
@@ -137,6 +158,9 @@ ideas = {
         CHI_minister_KMT
         pragmatic_political_scholar				#腳踏實地的政治學者
       }
+      available = {
+        has_government = conservative
+      }
     }
     CHI_Xia_Liyan_for = {
       #夏立言
@@ -151,6 +175,9 @@ ideas = {
       traits = {
         CHI_minister_KMT
         pragmatic_diplomat				#務實的外交家
+      }
+      available = {
+        has_government = conservative
       }
       on_add = {
         targeted_modifier = {
@@ -172,6 +199,9 @@ ideas = {
       }
       allowed_to_remove = {
         date > 2020.6.1
+      }
+      available = {
+        has_government = social_liberal
       }
       traits = {
         CHI_minister_DPP
@@ -268,6 +298,9 @@ ideas = {
         CHI_minister_KMT
         experienced_engineer				#經驗豐富的工程專家
       }
+      available = {
+        has_government = conservative
+      }
     }
     CHI_Eric_Tseng_eco = {
       #曾銘宗
@@ -282,6 +315,9 @@ ideas = {
       traits = {
         CHI_minister_KMT
         financial_expert				#金融專家
+      }
+      available = {
+        has_government = conservative
       }
     }
     CHI_Chang_Sheng_ho_eco = {
@@ -298,6 +334,9 @@ ideas = {
         CHI_minister_KMT
         cold_fiscal_reformer				#冷酷的財政改革者
       }
+      available = {
+        has_government = conservative
+      }
     }
     CHI_Sean_Chen_eco = {
       #陳冲
@@ -312,6 +351,9 @@ ideas = {
       traits = {
         CHI_minister_KMT
         crisis_to_stability_financial_expert				#轉危為安的金融專家
+      }
+      available = {
+        has_government = conservative
       }
     }
   }
@@ -331,6 +373,9 @@ ideas = {
         CHI_minister_DPP
         media_administrator				#媒體出身的政務官
       }
+      available = {
+        has_government = social_liberal
+      }
     }
     CHI_Lin_You_chang_sec = {
       #林右昌
@@ -346,6 +391,9 @@ ideas = {
         CHI_minister_DPP
         international_exchange_advocate				#國際交流的積極參與者
       }
+      available = {
+        has_government = social_liberal
+      }
     }
     CHI_Chen_Shih_chung_sec = {
       #陳時中
@@ -360,6 +408,9 @@ ideas = {
       traits = {
         CHI_minister_DPP
         public_health_scholar				#公共衛生學者
+      }
+      available = {
+        has_government = social_liberal
       }
     }
     CHI_Miao_Poya_sec = {
@@ -460,6 +511,9 @@ ideas = {
         CHI_minister_KMT
         sports_industry_policy_chief				#競競業業的政策幕僚長
       }
+      available = {
+        has_government = conservative
+      }
     }
     CHI_King_Pu_tsung_sec = {
       #金浦聰
@@ -475,6 +529,9 @@ ideas = {
         CHI_minister_KMT
         exceptional_aide				#能力超群的幕僚長
       }
+      available = {
+        has_government = conservative
+      }
     }
     CHI_Liao_Liao_yi_sec = {
       #廖了以
@@ -489,6 +546,9 @@ ideas = {
       traits = {
         CHI_minister_KMT
         responsible_domestic_expert				#負責的內政專家
+      }
+      available = {
+        has_government = conservative
       }
       on_add = {
         targeted_modifier = {
@@ -528,6 +588,9 @@ ideas = {
           value = -5
         }
         CHI_add_Infiltration_growth_time = yes
+      }
+      available = {
+        has_government = social_liberal
       }
     }
     CHI_Tsa_Mingyen_int = {
@@ -590,6 +653,9 @@ ideas = {
       traits = {
         CHI_minister_DPP
         reformist_official				#改革派官員
+      }
+      available = {
+        has_government = social_liberal
       }
     }
     CHI_Feng_Shihkuan = {
