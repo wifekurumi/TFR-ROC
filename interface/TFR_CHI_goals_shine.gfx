@@ -2255,11 +2255,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_island_of_energy_security_shine"
-		texturefile = "gfx/interface/goals/CHI/GFX_island_of_energy_security.png"
+		name = "GFX_focus_CHI_island_of_energy_security_shine"
+		texturefile = "gfx/interface/goals/CHI/CHI_island_of_energy_security.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHI/GFX_island_of_energy_security.png"
+			animationmaskfile = "gfx/interface/goals/CHI/CHI_island_of_energy_security.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -2272,7 +2272,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHI/GFX_island_of_energy_security.png"
+			animationmaskfile = "gfx/interface/goals/CHI/CHI_island_of_energy_security.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -2287,11 +2287,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_Photovoltaic_panels_everywhere_shine"
-		texturefile = "gfx/interface/goals/CHI/GFX_Photovoltaic_panels_everywhere.png"
+		name = "GFX_focus_CHI_Photovoltaic_panels_everywhere_shine"
+		texturefile = "gfx/interface/goals/CHI/CHI_Photovoltaic_panels_everywhere.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHI/GFX_Photovoltaic_panels_everywhere.png"
+			animationmaskfile = "gfx/interface/goals/CHI/CHI_Photovoltaic_panels_everywhere.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -2304,7 +2304,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHI/GFX_Photovoltaic_panels_everywhere.png"
+			animationmaskfile = "gfx/interface/goals/CHI/CHI_Photovoltaic_panels_everywhere.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

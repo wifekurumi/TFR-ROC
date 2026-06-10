@@ -1308,7 +1308,7 @@ focus_tree = {
   focus = {
     # 無處不在光電板
     id = Photovoltaic_panels_everywhere
-    icon = GFX_Photovoltaic_panels_everywhere
+    icon = GFX_focus_CHI_Photovoltaic_panels_everywhere
     x = 1
     y = 1
     cost = 2
@@ -1334,7 +1334,7 @@ focus_tree = {
   focus = {
     # 能源無虞之島
     id = island_of_energy_security
-    icon = GFX_island_of_energy_security
+    icon = GFX_focus_CHI_island_of_energy_security
     x = 0
     y = 4
     cost = 3

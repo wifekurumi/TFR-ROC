@@ -346,12 +346,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/CHI/CHI_The_power_plant_on_full_fire.png"
 	}
 	spriteType = {
-		name = "GFX_Photovoltaic_panels_everywhere"
-		texturefile = "gfx/interface/goals/CHI/GFX_Photovoltaic_panels_everywhere.png"
+		name = "GFX_focus_CHI_Photovoltaic_panels_everywhere"
+		texturefile = "gfx/interface/goals/CHI/CHI_Photovoltaic_panels_everywhere.png"
 	}
 	spriteType = {
-		name = "GFX_island_of_energy_security"
-		texturefile = "gfx/interface/goals/CHI/GFX_island_of_energy_security.png"
+		name = "GFX_focus_CHI_island_of_energy_security"
+		texturefile = "gfx/interface/goals/CHI/CHI_island_of_energy_security.png"
 	}
 	spriteType = {
 		name = "GFX_focus_CHI_Restart_core_four"
