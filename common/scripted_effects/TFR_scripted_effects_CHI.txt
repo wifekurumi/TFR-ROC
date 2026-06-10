@@ -837,6 +837,7 @@ CHI_influence_SDP_add = {
     value = 0.2
   }
 }
+
 EADI_taiwan_war = {
   if = {
     limit = {
@@ -1072,6 +1073,7 @@ EADI_taiwan_war = {
     }
   }
 }
+
 PDTO_taiwan_war = {
   if = {
     limit = {
@@ -1140,42 +1142,42 @@ PDTO_taiwan_war = {
         var = TH_RGOS
         value = 0.01
       }
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 26}
+#      if = {
+#        limit = {
+#          check_variable = { TWW_VAR = 26}
+#        }
+#        country_event = {id = taiwan.32}
+#      }
+#      if = {
+#        limit = {
+#          check_variable = { TWW_VAR = 25}
+#        }
+#        country_event = {id = ROC_CHI.34}
+#      }
+#      if = {
+#        limit = {
+#          check_variable = { TWW_VAR = 24}
+#        }
+#        country_event = {id = ROC_CHI.33}
+#      }
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 23}
+        }
+        country_event = {id = ROC_CHI.32}
       }
-      country_event = {id = taiwan.32}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 25}
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 22}
+        }
+        country_event = {id = ROC_CHI.20}
       }
-      country_event = {id = ROC_CHI.34}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 24}
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 21}
+        }
+        country_event = {id = ROC_CHI.31}
       }
-      country_event = {id = ROC_CHI.33}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 23}
-      }
-      country_event = {id = ROC_CHI.32}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 22}
-      }
-      country_event = {id = ROC_CHI.20}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 21}
-      }
-      country_event = {id = ROC_CHI.31}
     }
 
     add_to_variable = {
@@ -1212,51 +1214,49 @@ PDTO_taiwan_war = {
       add_to_variable = {
         var = TH_RGOS
         value = 0.01
-      }
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 20}
-      }
-      effect_tooltip = {
-        swap_ideas = {
-          remove_idea = CHI_TaiHai_idea_base
-          add_idea = CHI_TaiHai_idea_base_3
+      }if = {
+        limit = {
+          check_variable = { TWW_VAR = 20}
+        }
+        effect_tooltip = {
+          swap_ideas = {
+            remove_idea = CHI_TaiHai_idea_base
+            add_idea = CHI_TaiHai_idea_base_3
+          }
+        }
+        country_event = {id = ROC_CHI.29}
+        hidden_effect = {
+          add_to_variable = {
+            var = TH_industry_repair_factor
+            value = 0.2
+          }
         }
       }
-      country_event = {id = ROC_CHI.29}
-      hidden_effect = {
-        add_to_variable = {
-          var = TH_industry_repair_factor
-          value = 0.2
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 19}
         }
+        country_event = {id = ROC_CHI.28}
+      }
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 18}
+        }
+        country_event = {id = ROC_CHI.27}
+      }
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 17}
+        }
+        country_event = {id = ROC_CHI.21}
+      }
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 16}
+        }
+        country_event = {id = ROC_CHI.41}
       }
     }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 19}
-      }
-      country_event = {id = ROC_CHI.28}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 18}
-      }
-      country_event = {id = ROC_CHI.27}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 17}
-      }
-      country_event = {id = ROC_CHI.21}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 16}
-      }
-      country_event = {id = ROC_CHI.41}
-    }
-
     add_to_variable = {
       var = TWW_VAR
       value = 1
@@ -1300,48 +1300,47 @@ PDTO_taiwan_war = {
         var = TH_one_to_ten
         value = -0.005
       }
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 15}
-      }
-      country_event = {id = ROC_CHI.40}
-      hidden_effect = {
-        add_to_variable = {
-          var = TH_consumer_goods_factor
-          value = 0.05
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 15}
         }
-        add_to_variable = {
-          var = TH_industry_repair_factor
-          value = 0.2
+        country_event = {id = ROC_CHI.40}
+        hidden_effect = {
+          add_to_variable = {
+            var = TH_consumer_goods_factor
+            value = 0.05
+          }
+          add_to_variable = {
+            var = TH_industry_repair_factor
+            value = 0.2
+          }
         }
       }
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 14}
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 14}
+        }
+        country_event = {id = ROC_CHI.39}
       }
-      country_event = {id = ROC_CHI.39}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 13}
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 13}
+        }
+        country_event = {id = ROC_CHI.17}
       }
-      country_event = {id = ROC_CHI.17}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 12}
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 12}
+        }
+        country_event = {id = ROC_CHI.38}
       }
-      country_event = {id = ROC_CHI.38}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 11}
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 11}
+        }
+        country_event = {id = ROC_CHI.15}
       }
-      country_event = {id = ROC_CHI.15}
     }
-
     add_to_variable = {
       var = TWW_VAR
       value = 1
@@ -1385,89 +1384,88 @@ PDTO_taiwan_war = {
         var = TH_RGOS
         value = 0.01
       }
-
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 10}
-      }
-      country_event = {id = ROC_CHI.18}
-      swap_ideas = {
-        remove_idea = CHI_TaiHai_idea_base
-        add_idea = CHI_TaiHai_idea_base_4
-      }
-      hidden_effect = {
-        add_to_variable = {
-          var = TH_consumer_goods_factor
-          value = 0.05
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 10}
         }
-        add_to_variable = {
-          var = TH_industry_repair_factor
-          value = 0.25
+        country_event = {id = ROC_CHI.18}
+        swap_ideas = {
+          remove_idea = CHI_TaiHai_idea_base
+          add_idea = CHI_TaiHai_idea_base_4
         }
-      }
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 9}
-      }
-      country_event = {id = ROC_CHI.12}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 8}
-      }
-      country_event = {id = ROC_CHI.14}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 7}
-      }
-      country_event = {id = ROC_CHI.11}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 6}
-      }
-      country_event = {id = ROC_CHI.9}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 5}
-      }
-      country_event = {id = ROC_CHI.8}
-      swap_ideas = {
-        remove_idea = CHI_TaiHai_idea_base
-        add_idea = CHI_TaiHai_idea_base_3
-      }
-      hidden_effect = {
-        add_to_variable = {
-          var = TH_consumer_goods_factor
-          value = 0.05
-        }
-        add_to_variable = {
-          var = TH_industry_repair_factor
-          value = 0.2
+        hidden_effect = {
+          add_to_variable = {
+            var = TH_consumer_goods_factor
+            value = 0.05
+          }
+          add_to_variable = {
+            var = TH_industry_repair_factor
+            value = 0.25
+          }
         }
       }
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 4}
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 9}
+        }
+        country_event = {id = ROC_CHI.12}
       }
-      country_event = {id = ROC.40}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 3}
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 8}
+        }
+        country_event = {id = ROC_CHI.14}
       }
-      country_event = {id = ROC_CHI.6}
-    }
-    if = {
-      limit = {
-        check_variable = { TWW_VAR = 2}
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 7}
+        }
+        country_event = {id = ROC_CHI.11}
       }
-      country_event = {id = ROC_CHI.5}
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 6}
+        }
+        country_event = {id = ROC_CHI.9}
+      }
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 5}
+        }
+        country_event = {id = ROC_CHI.8}
+        swap_ideas = {
+          remove_idea = CHI_TaiHai_idea_base
+          add_idea = CHI_TaiHai_idea_base_3
+        }
+        hidden_effect = {
+          add_to_variable = {
+            var = TH_consumer_goods_factor
+            value = 0.05
+          }
+          add_to_variable = {
+            var = TH_industry_repair_factor
+            value = 0.2
+          }
+        }
+      }
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 4}
+        }
+        country_event = {id = ROC.40}
+      }
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 3}
+        }
+        country_event = {id = ROC_CHI.6}
+      }
+      if = {
+        limit = {
+          check_variable = { TWW_VAR = 2}
+        }
+        country_event = {id = ROC_CHI.5}
+      }
     }
     add_to_variable = {
       var = TWW_VAR
@@ -1475,6 +1473,7 @@ PDTO_taiwan_war = {
     }
   }
 }
+
 PDTO2_taiwan_war = {
   if = {
     limit = {

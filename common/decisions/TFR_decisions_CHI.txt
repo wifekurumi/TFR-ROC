@@ -2017,7 +2017,7 @@ CHI_taiwan_war_category = {
     days_mission_timeout = 365
     timeout_effect = {
       country_event = {
-        id = ROC_CHI.34
+        id = ROC_CHI.33
         days = 1
       }
     }
