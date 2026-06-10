@@ -32,18 +32,6 @@ CHI_Identity_dispute = {
 			}
 			on_activate = {
 				custom_effect_tooltip = CHI_Identity_dispute_ROC_side_tt
-				effect_tooltip = {
-					country_event = {
-						id = ROC.91
-						dyas = 3
-					}
-				}
-				effect_tooltip = {
-					country_event = {
-						id = ROC.92
-						dyas = 7
-					}
-				}
 				hidden_effect = {
 					if = {
 						limit = {
@@ -115,14 +103,6 @@ CHI_Identity_dispute = {
 								coalition_partner_var_temp = token:conservative
 							}
 							add_to_coalition = yes
-							country_event = {
-								id = ROC.91
-								dyas = 3
-							}
-							country_event = {
-								id = ROC.92
-								dyas = 7
-							}
 						}
 					}
 				}
