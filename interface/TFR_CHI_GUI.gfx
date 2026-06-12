@@ -14,5 +14,32 @@ spriteTypes = {
 		name = "GFX_MP_base"
 		texturefile = "gfx/interface/taiwan/MP_base.png"
 	}
-	
+	spritetype = {
+		name = "GFX_KORBUTTON"
+		texturefile = "gfx/interface/taiwan/KORBUTTON.png"
+	}
+	spritetype = {
+		name = "GFX_JAPBUTTON"
+		texturefile = "gfx/interface/taiwan/JAPBUTTON.png"
+	}
+	spritetype = {
+		name = "GFX_USABUTTON"
+		texturefile = "gfx/interface/taiwan/USABUTTON.png"
+	}
+	spritetype = {
+		name = "GFX_AIDC"
+		texturefile = "gfx/interface/taiwan/AIDC.png"
+	}
+	spritetype = {
+		name = "GFX_CSBC"
+		texturefile = "gfx/interface/taiwan/CSBC.png"
+	}
+	spritetype = {
+		name = "GFX_NCSIST"
+		texturefile = "gfx/interface/taiwan/NCSIST.png"
+	}
+	spritetype = {
+		name = "GFX_UGC"
+		texturefile = "gfx/interface/taiwan/UGC.png"
+	}	
 }

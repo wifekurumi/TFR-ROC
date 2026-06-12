@@ -1981,6 +1981,136 @@ CHI_Legislative_Yuan_decisions = {
   }
 }
 
+#軍購決議
+CHI_Military_purchasing_cat = {
+  #KOR
+  Buy_weapons_from_KOR = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 1 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 30
+    days_remove = 30
+    days_re_enable = 30
+  }
+  #JAP
+  Buy_weapons_from_JAP = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 2 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 30
+    days_remove = 30
+    days_re_enable = 30
+  }
+  #USA
+  Buy_weapons_from_USA = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 3 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 30
+    days_remove = 30
+    days_re_enable = 30
+  }
+  #NCSIST
+  Buy_weapons_from_NCSIST = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 4 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 30
+    days_remove = 30
+    days_re_enable = 30
+  }
+  #UGC
+  Buy_weapons_from_UGC = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 5 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 30
+    days_remove = 30
+    days_re_enable = 30
+  }
+  #AIDC
+  Buy_weapons_from_AIDC = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 6 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 30
+    days_remove = 30
+    days_re_enable = 30
+  }
+  #CSBC
+  Buy_weapons_from_CSBC = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 7 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 30
+    days_remove = 30
+    days_re_enable = 30
+  }
+
+}
 # 台海戰爭決議
 CHI_taiwan_war_category = {
   CHI_taiwan_war_mission = {

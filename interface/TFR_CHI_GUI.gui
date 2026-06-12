@@ -140,11 +140,66 @@ guitypes = {
 		name = "CHI_Military_purchasing_interface"
 		size = { width = 100%% height = 530 }
 		
-		icontype = {
-			name = "GFX_base"
-			quadtexturesprite = "GFX_Mp_base"
-			position = { x = 0 y = 0 }
-			centerposition = yes
+		containerWindowType = {
+			name = "E"
+			position = { x = 245 y = 265 }
+
+			icontype = {
+				name = "GFX_base"
+				quadtexturesprite = "GFX_MP_base"
+				position = { x = 0 y = 0 }
+				centerposition = yes				
+			}
+
+			buttonType = {
+				name = "KORBUTTON"
+				position = { x = 70 y = -130 }
+				quadTextureSprite = "GFX_KORBUTTON"
+				frame = 1
+				pdx_tooltip = "KORBUTTON_tt"
+			}
+			buttonType = {
+				name = "JAPBUTTON"
+				position = { x = 70 y = -20 }
+				quadTextureSprite = "GFX_JAPBUTTON"
+				frame = 1
+				pdx_tooltip = "JAPBUTTON_tt"
+			}
+			buttonType = {
+				name = "USABUTTON"
+				position = { x = 70 y = 90 }
+				quadTextureSprite = "GFX_USABUTTON"
+				frame = 1
+				pdx_tooltip = "USABUTTON_tt"
+			}
+			buttonType = {
+				name = "NCSIST"
+				position = { x = 70 y = 200 }
+				quadTextureSprite = "GFX_NCSIST"
+				frame = 1
+				pdx_tooltip = "NCSIST_tt"
+			}
+			buttonType = {
+				name = "UGC"
+				position = { x = 110 y = 200 }
+				quadTextureSprite = "GFX_UGC"
+				frame = 1
+				pdx_tooltip = "UGC_tt"
+			}
+			buttonType = {
+				name = "AIDC"
+				position = { x = 150 y = 200 }
+				quadTextureSprite = "GFX_AIDC"
+				frame = 1
+				pdx_tooltip = "AIDC_tt"
+			}
+			buttonType = {
+				name = "CSBC"
+				position = { x = 190 y = 200 }
+				quadTextureSprite = "GFX_CSBC"
+				frame = 1
+				pdx_tooltip = "CSBC_tt"
+			}
 		}
 	}
 }
