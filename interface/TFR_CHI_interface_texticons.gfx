@@ -175,6 +175,27 @@ spriteTypes = {
 		texturefile = "gfx/texticons/banners/CHI/CHI_Military_purchasing_cat.png"
 		legacy_lazy_load = no
 	}
+	#MP
+	spriteType = {
+		name = "GFX_CHI_MP_Icon"
+		texturefile = "gfx/texticons/CHI/CHI_MP_Icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_MP_Icon"
+		texturefile = "gfx/texticons/CHI/KOR_MP_Icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JAP_MP_Icon"
+		texturefile = "gfx/texticons/CHI/JAP_MP_Icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_USA_MP_Icon"
+		texturefile = "gfx/texticons/CHI/USA_MP_Icon.png"
+		legacy_lazy_load = no
+	}
 
 	#Bop
 	spriteType = {

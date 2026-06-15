@@ -1984,7 +1984,7 @@ CHI_Legislative_Yuan_decisions = {
 #軍購決議
 CHI_Military_purchasing_cat = {
   #KOR
-  Buy_weapons_from_KOR = {
+  Buy_light_weapons_from_KOR = {
     allowed = {
       original_tag = CHI
     }
@@ -2000,9 +2000,150 @@ CHI_Military_purchasing_cat = {
     cost = 30
     days_remove = 30
     days_re_enable = 30
+
+    modifier = {
+      misc_expense = 6
+    }
+    complete_effect = {
+      if = {
+        limit = {
+          NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+        }
+        add_opinion_modifier = {
+          target = KOR
+          modifier = CHI_korean_valuable_partners
+        }
+        KOR = {
+          add_opinion_modifier = {
+            target = CHI
+            modifier = CHI_korean_valuable_partners
+          }
+        }
+      }
+    }
+    remove_effect = {
+      add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 2000 producer = KOR }
+      add_equipment_to_stockpile = {type = support_equipment amount = 200 producer = KOR }
+      add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 150 producer = KOR }
+      add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 150 producer = KOR }
+      hidden_effect = {
+        KOR = {
+          set_temp_variable = {
+            var = income_var_temp
+            value = 6
+          }
+          add_income_with_inflation = yes
+        }
+      }
+    }
+  }
+  Buy_heavy_weapons_from_KOR = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 1 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 30
+    days_remove = 50
+    days_re_enable = 30
+
+    modifier = {
+      misc_expense = 8
+    }
+    complete_effect = {
+      if = {
+        limit = {
+          NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+        }
+        add_opinion_modifier = {
+          target = KOR
+          modifier = CHI_korean_valuable_partners
+        }
+        KOR = {
+          add_opinion_modifier = {
+            target = CHI
+            modifier = CHI_korean_valuable_partners
+          }
+        }
+      }
+    }
+    remove_effect = {
+      add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 200 producer = KOR }
+      add_equipment_to_stockpile = {type = modern_tank_destroyer_equipment_1 amount = 50 producer = KOR }
+      add_equipment_to_stockpile = {type = motorized_rocket_equipment amount = 50 producer = KOR }
+      add_equipment_to_stockpile = {type = spaa_equipment_1 amount = 50 producer = KOR }
+      hidden_effect = {
+        KOR = {
+          set_temp_variable = {
+            var = income_var_temp
+            value = 8
+          }
+          add_income_with_inflation = yes
+        }
+      }
+    }
+  }
+  Buy_motorized_equipment_from_KOR = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 1 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 40
+    days_remove = 75
+    days_re_enable = 30
+
+    modifier = {
+      misc_expense = 10
+    }
+    complete_effect = {
+      if = {
+        limit = {
+          NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+        }
+        add_opinion_modifier = {
+          target = KOR
+          modifier = CHI_korean_valuable_partners
+        }
+        KOR = {
+          add_opinion_modifier = {
+            target = CHI
+            modifier = CHI_korean_valuable_partners
+          }
+        }
+      }
+    }
+    remove_effect = {
+      add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 200 producer = KOR }
+      add_equipment_to_stockpile = {type = mechanized_equipment_1 amount = 100 producer = KOR }
+      add_equipment_to_stockpile = {type = light_mechanized_equipment_1 amount = 100 producer = KOR }
+      hidden_effect = {
+        KOR = {
+          set_temp_variable = {
+            var = income_var_temp
+            value = 10
+          }
+          add_income_with_inflation = yes
+        }
+      }
+    }
   }
   #JAP
-  Buy_weapons_from_JAP = {
+  Buy_light_weapons_from_JAP = {
     allowed = {
       original_tag = CHI
     }
@@ -2018,9 +2159,209 @@ CHI_Military_purchasing_cat = {
     cost = 30
     days_remove = 30
     days_re_enable = 30
+    modifier = {
+      misc_expense = 6
+    }
+    complete_effect = {
+      if = {
+        limit = {
+          NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+        }
+        add_opinion_modifier = {
+          target = JAP
+          modifier = CHI_korean_valuable_partners
+        }
+        JAP = {
+          add_opinion_modifier = {
+            target = CHI
+            modifier = CHI_korean_valuable_partners
+          }
+        }
+      }
+    }
+    remove_effect = {
+      add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 2000 producer = JAP }
+      add_equipment_to_stockpile = {type = support_equipment amount = 200 producer = JAP }
+      add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 150 producer = JAP }
+      add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 150 producer = JAP }
+      hidden_effect = {
+        JAP = {
+          set_temp_variable = {
+            var = income_var_temp
+            value = 6
+          }
+          add_income_with_inflation = yes
+        }
+      }
+    }
+  }
+  Buy_heavy_weapons_from_JAP = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 2 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 30
+    days_remove = 50
+    days_re_enable = 30
+    modifier = {
+      misc_expense = 8
+    }
+    complete_effect = {
+      if = {
+        limit = {
+          NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+        }
+        add_opinion_modifier = {
+          target = JAP
+          modifier = CHI_korean_valuable_partners
+        }
+        JAP = {
+          add_opinion_modifier = {
+            target = CHI
+            modifier = CHI_korean_valuable_partners
+          }
+        }
+      }
+    }
+    remove_effect = {
+      add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 200 producer = JAP }
+      add_equipment_to_stockpile = {type = modern_tank_destroyer_equipment_1 amount = 50 producer = JAP }
+      add_equipment_to_stockpile = {type = motorized_rocket_equipment amount = 50 producer = JAP }
+      add_equipment_to_stockpile = {type = spaa_equipment_1 amount = 50 producer = JAP }
+      hidden_effect = {
+        JAP = {
+          set_temp_variable = {
+            var = income_var_temp
+            value = 8
+          }
+          add_income_with_inflation = yes
+        }
+      }
+    }
+  }
+  Buy_motorized_equipment_from_JAP = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 2 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 40
+    days_remove = 75
+    days_re_enable = 30
+
+    modifier = {
+      misc_expense = 8
+    }
+    complete_effect = {
+      if = {
+        limit = {
+          NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+        }
+        add_opinion_modifier = {
+          target = JAP
+          modifier = CHI_korean_valuable_partners
+        }
+        JAP = {
+          add_opinion_modifier = {
+            target = CHI
+            modifier = CHI_korean_valuable_partners
+          }
+        }
+      }
+    }
+    remove_effect = {
+      add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 200 producer = JAP }
+      add_equipment_to_stockpile = {type = mechanized_equipment_2 amount = 100 producer = JAP }
+      add_equipment_to_stockpile = {type = light_mechanized_equipment_2 amount = 100 producer = JAP }
+      hidden_effect = {
+        JAP = {
+          set_temp_variable = {
+            var = income_var_temp
+            value = 8
+          }
+          add_income_with_inflation = yes
+        }
+      }
+    }
+  }
+  Buy_tank_from_JAP = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 2 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 45
+    days_remove = 100
+    days_re_enable = 30
+    modifier = {
+      misc_expense = 16
+    }
+    complete_effect = {
+      if = {
+        limit = {
+          NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+        }
+        add_opinion_modifier = {
+          target = JAP
+          modifier = CHI_korean_valuable_partners
+        }
+        JAP = {
+          add_opinion_modifier = {
+            target = CHI
+            modifier = CHI_korean_valuable_partners
+          }
+        }
+      }
+    }
+    remove_effect = {
+      add_equipment_to_stockpile = { type = mechanized_equipment_2 amount = 125 producer = JAP }
+      add_equipment_to_stockpile = {
+        type = modern_tank_chassis_1
+        amount = 50
+        producer = JAP
+      }
+      else = {
+        add_equipment_to_stockpile = {
+          type = modern_tank_equipment_1
+          amount = 50
+          producer = JAP
+        }
+      }
+      hidden_effect = {
+        JAP = {
+          set_temp_variable = {
+            var = income_var_temp
+            value = 16
+          }
+          add_income_with_inflation = yes
+        }
+      }
+    }
   }
   #USA
-  Buy_weapons_from_USA = {
+  Buy_light_weapons_from_USA = {
     allowed = {
       original_tag = CHI
     }
@@ -2036,6 +2377,251 @@ CHI_Military_purchasing_cat = {
     cost = 30
     days_remove = 30
     days_re_enable = 30
+    modifier = {
+      misc_expense = 6
+    }
+    complete_effect = {
+      if = {
+        limit = {
+          NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+        }
+        add_opinion_modifier = {
+          target = USA
+          modifier = CHI_korean_valuable_partners
+        }
+        USA = {
+          add_opinion_modifier = {
+            target = CHI
+            modifier = CHI_korean_valuable_partners
+          }
+        }
+      }
+    }
+    remove_effect = {
+      add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 2000 producer = USA }
+      add_equipment_to_stockpile = {type = support_equipment amount = 200 producer = USA }
+      add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 150 producer = USA }
+      add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 150 producer = USA }
+      hidden_effect = {
+        USA = {
+          set_temp_variable = {
+            var = income_var_temp
+            value = 6
+          }
+          add_income_with_inflation = yes
+        }
+      }
+    }
+  }
+  Buy_heavy_weapons_from_USA = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 3 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 30
+    days_remove = 50
+    days_re_enable = 30
+    modifier = {
+      misc_expense = 8
+    }
+    complete_effect = {
+      if = {
+        limit = {
+          NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+        }
+        add_opinion_modifier = {
+          target = USA
+          modifier = CHI_korean_valuable_partners
+        }
+        USA = {
+          add_opinion_modifier = {
+            target = CHI
+            modifier = CHI_korean_valuable_partners
+          }
+        }
+      }
+    }
+    remove_effect = {
+      add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 200 producer = USA }
+      add_equipment_to_stockpile = {type = modern_tank_destroyer_equipment_1 amount = 50 producer = USA }
+      add_equipment_to_stockpile = {type = motorized_rocket_equipment amount = 50 producer = USA }
+      add_equipment_to_stockpile = {type = spaa_equipment_1 amount = 50 producer = USA }
+      hidden_effect = {
+        USA = {
+          set_temp_variable = {
+            var = income_var_temp
+            value = 8
+          }
+          add_income_with_inflation = yes
+        }
+      }
+    }
+  }
+  Buy_motorized_equipment_from_USA = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 3 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 40
+    days_remove = 75
+    days_re_enable = 30
+    modifier = {
+      misc_expense = 8
+    }
+    complete_effect = {
+      if = {
+        limit = {
+          NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+        }
+        add_opinion_modifier = {
+          target = USA
+          modifier = CHI_korean_valuable_partners
+        }
+        USA = {
+          add_opinion_modifier = {
+            target = CHI
+            modifier = CHI_korean_valuable_partners
+          }
+        }
+      }
+    }
+    remove_effect = {
+      add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 200 producer = USA }
+      add_equipment_to_stockpile = {type = mechanized_equipment_2 amount = 100 producer = USA }
+      add_equipment_to_stockpile = {type = light_mechanized_equipment_2 amount = 100 producer = USA }
+      hidden_effect = {
+        USA = {
+          set_temp_variable = {
+            var = income_var_temp
+            value = 8
+          }
+          add_income_with_inflation = yes
+        }
+      }
+    }
+  }
+  Buy_tank_from_USA = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 3 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 45
+    days_remove = 100
+    days_re_enable = 30
+    modifier = {
+      misc_expense = 16
+    }
+    complete_effect = {
+      if = {
+        limit = {
+          NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+        }
+        add_opinion_modifier = {
+          target = USA
+          modifier = CHI_korean_valuable_partners
+        }
+        USA = {
+          add_opinion_modifier = {
+            target = CHI
+            modifier = CHI_korean_valuable_partners
+          }
+        }
+      }
+    }
+    remove_effect = {
+      add_equipment_to_stockpile = { type = mechanized_equipment_2 amount = 125 producer = USA }
+      add_equipment_to_stockpile = {
+        type = modern_tank_chassis_1
+        amount = 50
+        producer = USA
+      }
+      hidden_effect = {
+        USA = {
+          set_temp_variable = {
+            var = income_var_temp
+            value = 16
+          }
+          add_income_with_inflation = yes
+        }
+      }
+    }
+  }
+  Buy_fighter_from_USA = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 3 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 60
+    days_remove = 100
+    days_re_enable = 30
+    modifier = {
+      misc_expense = 32
+    }
+    complete_effect = {
+      if = {
+        limit = {
+          NOT = {has_opinion_modifier = CHI_korean_valuable_partners}
+        }
+        add_opinion_modifier = {
+          target = USA
+          modifier = CHI_korean_valuable_partners
+        }
+        USA = {
+          add_opinion_modifier = {
+            target = CHI
+            modifier = CHI_korean_valuable_partners
+          }
+        }
+      }
+    }
+    remove_effect = {
+      add_equipment_to_stockpile = {
+        type = small_plane_airframe_2
+        amount = 40
+        producer = USA
+      }
+      hidden_effect = {
+        USA = {
+          set_temp_variable = {
+            var = income_var_temp
+            value = 32
+          }
+          add_income_with_inflation = yes
+        }
+      }
+    }
   }
   #NCSIST
   Buy_weapons_from_NCSIST = {
@@ -2109,12 +2695,11 @@ CHI_Military_purchasing_cat = {
     days_remove = 30
     days_re_enable = 30
   }
-
 }
+
 # 台海戰爭決議
 CHI_taiwan_war_category = {
   CHI_taiwan_war_mission = {
-    icon = GFX_CHI_taiwan_war_mission
     activation = {
       has_war = yes
       has_global_flag = PRC_ongoing_taiwan_war
@@ -2761,9 +3346,6 @@ CHI_test_of_will = {
 
     allowed = {
       original_tag = CHI
-    }
-
-    visible = {
     }
 
     available = {

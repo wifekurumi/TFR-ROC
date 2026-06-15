@@ -1247,6 +1247,20 @@
  CHI_TaiHai_dynamic: "台海戰爭"
 
  CHI_Military_purchasing_cat: "對外軍購"
+ Buy_light_weapons_from_KOR: "向§P[KOR.getname]§!購買輕武器£GFX_KOR_MP_Icon "
+ Buy_heavy_weapons_from_KOR: "向§P[KOR.getname]§!購買重武器£GFX_KOR_MP_Icon "
+ Buy_motorized_equipment_from_KOR: "向§P[KOR.getname]§!購買卡車及步兵戰車£GFX_KOR_MP_Icon "
+ 
+ Buy_light_weapons_from_JAP: "向§9[JAP.getname]§!購買輕武器£GFX_JAP_MP_Icon "
+ Buy_heavy_weapons_from_JAP: "向§9[JAP.getname]§!購買重武器£GFX_JAP_MP_Icon "
+ Buy_motorized_equipment_from_JAP: "向§9[JAP.getname]§!購買卡車及步兵戰車£GFX_JAP_MP_Icon "
+ Buy_tank_from_JAP: "向§9[JAP.getname]§!購買坦克£GFX_JAP_MP_Icon "
+ 
+ Buy_light_weapons_from_USA: "向§3[USA.getname]§!購買輕武器£GFX_USA_MP_Icon "
+ Buy_heavy_weapons_from_USA: "向§3[USA.getname]§!購買重武器£GFX_USA_MP_Icon "
+ Buy_motorized_equipment_from_USA: "向§3[USA.getname]§!購買卡車及步兵戰車£GFX_USA_MP_Icon "
+ Buy_tank_from_USA: "向§3[USA.getname]§!購買坦克£GFX_USA_MP_Icon "
+ Buy_fighter_from_USA: "向§3[USA.getname]§!購買戰鬥機£GFX_USA_MP_Icon "
  
  CHI_Han_Post_war: "天地可破、熱情不破"
  CHI_Post_war_review_status_quo: "檢討現狀"
