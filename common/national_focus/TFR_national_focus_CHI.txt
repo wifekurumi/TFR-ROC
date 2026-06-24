@@ -2325,7 +2325,7 @@ focus_tree = {
     #半導體產業動員
     id = Semiconductor_mobilization
     icon = GFX_focus_CHI_Semiconductor_mobilization
-    cost = 5
+    cost = 2  
     x = 2
     y = 1
     available = {
