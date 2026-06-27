@@ -39,8 +39,8 @@ focus_tree = {
 		} 
 	}
 	focus = {
-		id = CHI_Yijiangshan_lesson
-		icon = GFX_focus_CHI_Yijiangshan_lesson
+		id = CHI_shining_spear_and_iron_horses
+		icon = GFX_focus_CHI_shining_spear_and_iron_horses
 		cost = 2
 		relative_position_id = CHI_dont_forget_homeland
 		x = 0
@@ -48,131 +48,29 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_centralized_military_command
 			focus = CHI_modern_whampoa
-		} 
-	}
-	focus = {
-		id = CHI_shining_spear_and_iron_horses
-		icon = GFX_focus_CHI_shining_spear_and_iron_horses
-		cost = 2
-		relative_position_id = CHI_Yijiangshan_lesson
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = CHI_Yijiangshan_lesson
-		} 
-	}
-	focus = {
-		id = CHI_CM13_program
-		icon = GFX_focus_CHI_CM13_program
-		cost = 2
-		relative_position_id = CHI_shining_spear_and_iron_horses
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = CHI_shining_spear_and_iron_horses
-		} 
-	}
-	focus = {
-		id = CHI_Brave_Warrior
-		icon = GFX_focus_CHI_Brave_Warrior
-		cost = 2
-		relative_position_id = CHI_shining_spear_and_iron_horses
-		x = 1
-		y = 1
-		prerequisite = {
-			focus = CHI_shining_spear_and_iron_horses
-		} 
-	}
-	focus = {
-		id = CHI_analyze_M1A2
-		icon = GFX_focus_CHI_analyze_M1A2
-		cost = 2
-		relative_position_id = CHI_CM13_program
-		x = 0
-		y = 1
-        mutually_exclusive = {
-            focus = CHI_request_allies_tank_tech_support
-			focus = modify_PLA_tanks
-        }
-		prerequisite = {
-			focus = CHI_CM13_program
-		} 
-	}
-	focus = {
-		id = CHI_request_allies_tank_tech_support
-		icon = GFX_focus_CHI_request_allies_tank_tech_support
-		cost = 2
-		relative_position_id = CHI_CM13_program
-		x = 1
-		y = 1
-        mutually_exclusive = {
-            focus = CHI_analyze_M1A2
-			focus = modify_PLA_tanks
-        }
-		prerequisite = {
-			focus = CHI_CM13_program
-		} 
-	}
-	focus = {
-		id = CHI_modify_PLA_tanks
-		icon = GFX_focus_CHI_modify_PLA_tanks
-		cost = 2
-		relative_position_id = CHI_CM13_program
-		x = -1
-		y = 1
-        mutually_exclusive = {
-            focus = CHI_analyze_M1A2
-			focus = modify_request_allies_tank_tech_support
-        }
-		prerequisite = {
-			focus = CHI_CM13_program
 		} 
 	}
 	focus = {
 		id = CHI_painful_lesson_of_drones
 		icon = GFX_focus_CHI_painful_lesson_of_drones
 		cost = 2
-		relative_position_id = CHI_analyze_M1A2
+		relative_position_id = CHI_shining_spear_and_iron_horses
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = CHI_request_allies_tank_tech_support
-            focus = CHI_analyze_M1A2
-			focus = modify_PLA_tanks
-		} 
-	}
-	focus = {
-		id = CHI_Gordon_island_experience
-		icon = GFX_focus_CHI_Gordon_island_experience
-		cost = 2
-		relative_position_id = CHI_dont_forget_homeland
-		x = 1
-		y = 2
-		prerequisite = {
-			focus = CHI_centralized_military_command
-			focus = CHI_modern_whampoa
-		} 
-	}
-	focus = {
-		id = CHI_barracks_is_his_happy_home
-		icon = GFX_focus_CHI_barracks_is_his_happy_home
-		cost = 2
-		relative_position_id = CHI_Gordon_island_experience
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = CHI_Gordon_island_experience
+			focus = shining_spear_and_iron_horses
 		} 
 	}
 	focus = {
 		id = CHI_reform_combined_logistics_command
 		icon = GFX_focus_CHI_reform_combined_logistics_command
 		cost = 2
-		relative_position_id = CHI_Gordon_island_experience
-		x = 1
+		relative_position_id = CHI_centralized_military_command
+		x = 0
 		y = 1
 		prerequisite = {
-			focus = CHI_Gordon_island_experience
+			focus = CHI_centralized_military_command
+			focus = CHI_modern_whampoa
 		} 
 	}
 	focus = {
@@ -187,9 +85,10 @@ focus_tree = {
 		} 
 	}
 	focus = {
-		id = CHI_Camaraderie_Diligence_Sincerity
-		icon = GFX_focus_CHI_Camaraderie_Diligence_Sincerity
+		id = CHI_new_whampoa_spirits
+		icon = GFX_focus_CHI_new_whampoa_spirits
 		cost = 2
+		relative_pos
 		relative_position_id = CHI_dont_forget_homeland
 		x = -1
 		y = 2
@@ -202,44 +101,24 @@ focus_tree = {
 		id = CHI_unity_of_knowledge_and action
 		icon = GFX_focus_CHI_unity_of_knowledge_and action
 		cost = 2
-		relative_position_id = CHI_Camaraderie_Diligence_Sincerity
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = CHI_Camaraderie_Diligence_Sincerity
-		} 
-	}
-	focus = {
-		id = CHI_military_drone_piloting_skills
-		icon = GFX_focus_CHI_military_drone_piloting_skills
-		cost = 2
-		relative_position_id = CHI_unity_of_knowledge_and action
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = CHI_unity_of_knowledge_and action
-		} 
-	}
-	focus = {
-		id = CHI_new_whampoa_spirits
-		icon = GFX_focus_CHI_new_whampoa_spirits
-		cost = 2
-		relative_position_id = CHI_Camaraderie_Diligence_Sincerity
-		x = -1
-		y = 1
-		prerequisite = {
-			focus = CHI_Camaraderie_Diligence_Sincerity
-		} 
-	}
-	focus = {
-		id = CHI_strike_the_enemy_at_a_stroke
-		icon = GFX_focus_CHI_strike_the_enemy_at_a_stroke
-		cost = 2
 		relative_position_id = CHI_new_whampoa_spirits
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = CHI_new_whampoa_spirits
+		} 
+	}
+	focus = {
+		id = CHI_Camaraderie_Diligence_Sincerity
+		icon = GFX_focus_CHI_Camaraderie_Diligence_Sincerity
+		cost = 2
+		relative_position_id = CHI_painful_lesson_of_drones
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = CHI_unity_of_knowledge_and action
+			focus = painful_lesson_of_drones
+			focus = CHI_military_railway_underground
 		} 
 	}
 	focus = {
@@ -299,17 +178,6 @@ focus_tree = {
 		} 
 	}
 	focus = {
-		id = CHI_expand_marine corps
-		icon = GFX_focus_CHI_expand_marine corps
-		cost = 2
-		relative_position_id = CHI_making_great_achievements_on_beachhead
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = CHI_making_great_achievements_on_beachhead
-		} 
-	}
-	focus = {
 		id = CHI_spirit_reaches_to_rainbow
 		icon = GFX_focus_CHI_spirit_reaches_to_rainbow
 		cost = 2
@@ -332,25 +200,14 @@ focus_tree = {
 		} 
 	}
 	focus = {
-		id = CHI_camel_hump_bombing_training
-		icon = GFX_focus_CHI_camel_hump_bombing_training
-		cost = 2
-		relative_position_id = CHI_need_of_talent
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = CHI_need_of_talent
-		} 
-	}
-	focus = {
 		id = CHI_carry_forward_the_inspiration_of_our_airman
 		icon = GFX_focus_CHI_carry_forward_the_inspiration_of_our_airman
 		cost = 2
-		relative_position_id = CHI_camel_hump_bombing_training
+		relative_position_id = CHI_forming_air_force_political_warfare_command
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = CHI_camel_hump_bombing_training
+			focus = CHI_forming_air_force_political_warfare_command
 		} 
 	}
 	focus = {
@@ -358,7 +215,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_strengthen_anti_corruption_measures
 		cost = 2
 		relative_position_id = CHI_need_of_talent
-		x = -1
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = CHI_need_of_talent
@@ -398,17 +255,6 @@ focus_tree = {
 		} 
 	}
 	focus = {
-		id = CHI_Modernize_brave_eagle
-		icon = GFX_focus_CHI_Modernize_brave_eagle
-		cost = 2
-		relative_position_id = CHI_american_fighters_reverse_enginnering
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = CHI_american_fighters_reverse_enginnering
-		} 
-	}
-	focus = {
 		id = CHI_funds_college
 		icon = GFX_focus_CHI_funds_college
 		cost = 2
@@ -442,22 +288,22 @@ focus_tree = {
         }
 		prerequisite = {
 			focus = CHI_Air_force_special_allowance
-			focus = CHI_Modernize_brave_eagle
+			focus = CHI_american_fighters_reverse_enginnering
 		} 
 	}
 	focus = {
 		id = CHI_sino_japanese_fighter_cooperation_program
 		icon = GFX_focus_CHI_
 		cost = 2
-		relative_position_id = CHI_Modernize_brave_eagle
+		relative_position_id = CHI_american_fighters_reverse_enginnering
 		x = 0
-		y = 1
+		y = 2
         mutually_exclusive = {
             focus = CHI_relauch_ADF_project
         }
 		prerequisite = {
 			focus = CHI_Air_force_special_allowance
-			focus = CHI_Modernize_brave_eagle
+			focus = CHI_american_fighters_reverse_enginnering
 		} 
 	}
 }
