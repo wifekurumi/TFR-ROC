@@ -1243,6 +1243,7 @@
  CHI_KMT_decisions_divider: ""
  CHI_KMT_decisions_divider_desc: "\n\n\n£GFX_CHI_KMT_decisions_divider_pr\n\n\n\n\n\n\n\"時代考驗青年，青年創造時代 ——蔣經國\""
  
+
  CHI_taiwan_war_LOSE_tt: "§Rㄏㄏ全完了§!"
  CHI_TaiHai_dynamic: "台海戰爭"
 
@@ -1262,6 +1263,11 @@
  Buy_tank_from_USA: "向§3[USA.getname]§!購買坦克£GFX_USA_MP_Icon "
  Buy_fighter_from_USA: "向§3[USA.getname]§!購買戰鬥機£GFX_USA_MP_Icon "
  
+ Increase_infantry_research_funding: "§3中科院§! - 增加步兵裝備研究經費"
+ Increase_armored_research_funding: "§3中科院§! - 增加裝甲車研究經費"
+ Increase_vehicle_research_funding: "§3中科院§! - 增加載具研究經費"
+ Increase_fighter_research_funding: "§3中科院§! - 增加戰鬥機裝備研究經費"
+ Increase_ship_research_funding: "§3中科院§! - 增加戰艦裝備研究經費"
  CHI_Han_Post_war: "天地可破、熱情不破"
  CHI_Post_war_review_status_quo: "檢討現狀"
  CHI_Pork_Rice: "不能只有一碗"

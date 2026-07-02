@@ -2624,7 +2624,7 @@ CHI_Military_purchasing_cat = {
     }
   }
   #NCSIST
-  Buy_weapons_from_NCSIST = {
+  Increase_infantry_research_funding = {
     allowed = {
       original_tag = CHI
     }
@@ -2638,8 +2638,171 @@ CHI_Military_purchasing_cat = {
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 30
-    days_remove = 30
+    days_remove = 100
     days_re_enable = 30
+
+    modifier = {
+      misc_expense = 8
+    }
+
+    complete_effect = {
+      mio:CHI_NCSIST_organization = {
+        add_mio_funds = 200
+      }
+    }
+
+    remove_effect = {
+      add_tech_bonus = {
+        name = Improve_infantry_equipment
+        bonus = 1
+        uses = 1
+        category = infantry_weapons
+      }
+    }
+  }
+  Increase_armored_research_funding = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 4 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 30
+    days_remove = 100
+    days_re_enable = 30
+
+    modifier = {
+      misc_expense = 8
+    }
+
+    complete_effect = {
+      mio:CHI_NCSIST_organization = {
+        add_mio_funds = 200
+      }
+    }
+
+    remove_effect = {
+      add_tech_bonus = {
+        name = Improve_infantry_equipment
+        bonus = 1
+        uses = 1
+        category = infantry_weapons
+      }
+    }
+  }
+  Increase_vehicle_research_funding = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 4 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 30
+    days_remove = 100
+    days_re_enable = 30
+
+    modifier = {
+      misc_expense = 8
+    }
+
+    complete_effect = {
+      mio:CHI_NCSIST_organization = {
+        add_mio_funds = 200
+      }
+    }
+
+    remove_effect = {
+      add_tech_bonus = {
+        name = Improve_infantry_equipment
+        bonus = 1
+        uses = 1
+        category = infantry_weapons
+      }
+    }
+  }
+  Increase_fighter_research_funding = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 4 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 30
+    days_remove = 100
+    days_re_enable = 30
+
+    modifier = {
+      misc_expense = 8
+    }
+
+    complete_effect = {
+      mio:CHI_NCSIST_organization = {
+        add_mio_funds = 200
+      }
+    }
+
+    remove_effect = {
+      add_tech_bonus = {
+        name = Improve_infantry_equipment
+        bonus = 1
+        uses = 1
+        category = infantry_weapons
+      }
+    }
+  }
+  Increase_ship_research_funding = {
+    allowed = {
+      original_tag = CHI
+    }
+    visible = {
+      OR = {
+        check_variable = { CHI_MP_dec_visible = 4 }
+        is_ai = yes
+      }
+    }
+
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 30
+    days_remove = 100
+    days_re_enable = 30
+
+    modifier = {
+      misc_expense = 8
+    }
+
+    complete_effect = {
+      mio:CHI_NCSIST_organization = {
+        add_mio_funds = 200
+      }
+    }
+
+    remove_effect = {
+      add_tech_bonus = {
+        name = Improve_infantry_equipment
+        bonus = 1
+        uses = 1
+        category = infantry_weapons
+      }
+    }
   }
   #UGC
   Buy_weapons_from_UGC = {
