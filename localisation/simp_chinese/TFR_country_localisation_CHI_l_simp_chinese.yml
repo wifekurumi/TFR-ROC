@@ -551,6 +551,28 @@
  PDTO_unity_4_desc: ""
  PDTO_unity_5: "太约团结度极高"
  PDTO_unity_5_desc: ""
+ CHI_Military_purchasing_cat: "對外軍購"
+ Buy_light_weapons_from_KOR: "向§P[KOR.getname]§!購買輕武器£GFX_KOR_MP_Icon "
+ Buy_heavy_weapons_from_KOR: "向§P[KOR.getname]§!購買重武器£GFX_KOR_MP_Icon "
+ Buy_motorized_equipment_from_KOR: "向§P[KOR.getname]§!購買卡車及步兵戰車£GFX_KOR_MP_Icon "
+ 
+ Buy_light_weapons_from_JAP: "向§9[JAP.getname]§!購買輕武器£GFX_JAP_MP_Icon "
+ Buy_heavy_weapons_from_JAP: "向§9[JAP.getname]§!購買重武器£GFX_JAP_MP_Icon "
+ Buy_motorized_equipment_from_JAP: "向§9[JAP.getname]§!購買卡車及步兵戰車£GFX_JAP_MP_Icon "
+ Buy_tank_from_JAP: "向§9[JAP.getname]§!購買坦克£GFX_JAP_MP_Icon "
+ 
+ Buy_light_weapons_from_USA: "向§3[USA.getname]§!購買輕武器£GFX_USA_MP_Icon "
+ Buy_heavy_weapons_from_USA: "向§3[USA.getname]§!購買重武器£GFX_USA_MP_Icon "
+ Buy_motorized_equipment_from_USA: "向§3[USA.getname]§!購買卡車及步兵戰車£GFX_USA_MP_Icon "
+ Buy_tank_from_USA: "向§3[USA.getname]§!購買坦克£GFX_USA_MP_Icon "
+ Buy_fighter_from_USA: "向§3[USA.getname]§!購買戰鬥機£GFX_USA_MP_Icon "
+
+ Increase_infantry_research_funding: "§3中科院§! - 增加步兵裝備研究經費"
+ Increase_armored_research_funding: "§3中科院§! - 增加裝甲車研究經費"
+ Increase_vehicle_research_funding: "§3中科院§! - 增加載具研究經費"
+ Increase_fighter_research_funding: "§3中科院§! - 增加戰鬥機裝備研究經費"
+ Increase_ship_research_funding: "§3中科院§! - 增加戰艦裝備研究經費"
+
  CHI_thenationisinperil: "國家危難之時"
  CHI_thenationisinperil_desc: ":長久以來籠罩在海峽上空的緊張陰影，終於化為現實。對岸的軍事行動不再只是威嚇與演訓，飛彈、戰機與艦隊正實際威脅著我們的家園。城市進入警戒狀態，後備動員與戰備部署同步展開，社會從日常節奏迅速轉入戰時體制。這不再是外交與政治的問題，而是關乎生存與意志的考驗，在國家危難之時，分歧與猶豫已沒有空間。"
  CHI_Anticommunist_determination: "反共決心"
@@ -1568,3 +1590,4 @@
  CHI_tuva_problem_desc: ""
  CHI_begonia_leaf_desc: ""
 #}
+

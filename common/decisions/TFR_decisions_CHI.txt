@@ -66,25 +66,25 @@ CHI_debug = {
     complete_effect = {
       # 掃描全世界所有其他國家
       every_other_country = {
-          limit = {
-              is_major = no 
-              has_war = no 
-              capital_scope = {
-                  is_on_continent = south_america
-              }
-              NOT = { tag = URG }
+        limit = {
+          is_major = no
+          has_war = no
+          capital_scope = {
+            is_on_continent = south_america
           }
-          # 在吞併之前，掃描目標國家的每一個州，強制給予核心
-          every_owned_state = {
-              add_core_of = URG
+          NOT = { tag = URG }
+        }
+        # 在吞併之前，掃描目標國家的每一個州，強制給予核心
+        every_owned_state = {
+          add_core_of = URG
+        }
+        # 執行吞併並蒸發軍隊
+        URG = {
+          annex_country = {
+            target = PREV
+            transfer_troops = no
           }
-          # 執行吞併並蒸發軍隊
-          URG = {
-              annex_country = { 
-                  target = PREV 
-                  transfer_troops = no 
-              }
-          }
+        }
       }
     }
   }
@@ -99,29 +99,29 @@ CHI_debug = {
     complete_effect = {
       # 掃描全世界所有其他國家
       every_other_country = {
-          limit = {
-              has_war = no 
-              NOT = {tag = UKR}
-              NOT = {tag = NOV}
-              NOT = {tag = DPR}
-              NOT = {tag = FRA}
-              NOT = {tag = GER}
-              NOT = {tag = SOV}
-              capital_scope = {
-                  is_on_continent = europe
-              }
-              NOT = {tag = LUX}
+        limit = {
+          has_war = no
+          NOT = {tag = UKR}
+          NOT = {tag = NOV}
+          NOT = {tag = DPR}
+          NOT = {tag = FRA}
+          NOT = {tag = GER}
+          NOT = {tag = SOV}
+          capital_scope = {
+            is_on_continent = europe
           }
-          every_owned_state = {
-              add_core_of = LUX
+          NOT = {tag = LUX}
+        }
+        every_owned_state = {
+          add_core_of = LUX
+        }
+        # 執行吞併並蒸發軍隊
+        LUX = {
+          annex_country = {
+            target = PREV
+            transfer_troops = no
           }
-          # 執行吞併並蒸發軍隊
-          LUX = {
-              annex_country = { 
-                  target = PREV 
-                  transfer_troops = no 
-              }
-          }
+        }
       }
     }
   }
@@ -136,24 +136,24 @@ CHI_debug = {
     complete_effect = {
       # 掃描全世界所有其他國家
       every_other_country = {
-          limit = {
-              is_major = no 
-              has_war = no 
-              capital_scope = {
-                  is_on_continent = africa
-              }
-              NOT = { tag = EQG }
+        limit = {
+          is_major = no
+          has_war = no
+          capital_scope = {
+            is_on_continent = africa
           }
-          every_owned_state = {
-              add_core_of = EQG
+          NOT = { tag = EQG }
+        }
+        every_owned_state = {
+          add_core_of = EQG
+        }
+        # 執行吞併並蒸發軍隊
+        EQG = {
+          annex_country = {
+            target = PREV
+            transfer_troops = no
           }
-          # 執行吞併並蒸發軍隊
-          EQG = {
-              annex_country = { 
-                  target = PREV 
-                  transfer_troops = no 
-              }
-          }
+        }
       }
     }
   }
@@ -168,29 +168,29 @@ CHI_debug = {
     complete_effect = {
       # 掃描全世界所有其他國家
       every_other_country = {
-          limit = {
-              is_major = no 
-              has_war = no 
-              capital_scope = {
-                  is_on_continent = asia
-              }
-              NOT = { tag = NEP }
-              NOT = { tag = MON }
-              NOT = { tag = KOR }
-              NOT = { tag = PRK }
-              NOT = { tag = HKN }
-              NOT = { tag = MCU }
+        limit = {
+          is_major = no
+          has_war = no
+          capital_scope = {
+            is_on_continent = asia
           }
-          every_owned_state = {
-              add_core_of = NEP
+          NOT = { tag = NEP }
+          NOT = { tag = MON }
+          NOT = { tag = KOR }
+          NOT = { tag = PRK }
+          NOT = { tag = HKN }
+          NOT = { tag = MCU }
+        }
+        every_owned_state = {
+          add_core_of = NEP
+        }
+        # 執行吞併並蒸發軍隊
+        NEP = {
+          annex_country = {
+            target = PREV
+            transfer_troops = no
           }
-          # 執行吞併並蒸發軍隊
-          NEP = {
-              annex_country = { 
-                  target = PREV 
-                  transfer_troops = no 
-              }
-          }
+        }
       }
     }
   }
@@ -205,24 +205,24 @@ CHI_debug = {
     complete_effect = {
       # 掃描全世界所有其他國家
       every_other_country = {
-          limit = {
-              is_major = no 
-              has_war = no 
-              capital_scope = {
-                  is_on_continent = middle_east
-              }
-              NOT = { tag = NEP }
+        limit = {
+          is_major = no
+          has_war = no
+          capital_scope = {
+            is_on_continent = middle_east
           }
-          every_owned_state = {
-              add_core_of = NEP
+          NOT = { tag = NEP }
+        }
+        every_owned_state = {
+          add_core_of = NEP
+        }
+        # 執行吞併並蒸發軍隊
+        NEP = {
+          annex_country = {
+            target = PREV
+            transfer_troops = no
           }
-          # 執行吞併並蒸發軍隊
-          NEP = {
-              annex_country = { 
-                  target = PREV 
-                  transfer_troops = no 
-              }
-          }
+        }
       }
     }
   }
@@ -286,6 +286,22 @@ CHI_debug = {
     visible = { always = yes }
     available = { always = yes }
     complete_effect = {CHI={load_focus_tree = P4_CHI_Han}}
+    set_country_flag = P4_CHI_Han_unlock
+  }
+  load_P4HKY = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {CHI={load_focus_tree = P4_CHI_Han}}
+    set_country_flag = P4_CHI_Han_unlock
+  }
+  load_CHI_2nd_election = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {CHI={load_focus_tree = CHI_2nd_election}}
     set_country_flag = P4_CHI_Han_unlock
   }
 }
