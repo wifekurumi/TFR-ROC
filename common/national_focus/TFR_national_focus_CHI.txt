@@ -892,6 +892,15 @@ focus_tree = {
     }
     completion_reward = {
       custom_effect_tooltip = border_closure_effect
+
+      add_days_mission_timeout = {
+        mission = Epidemic_is_getting_worse
+        days = 25
+      }
+      
+      unlock_decision_tooltip = CHI_Block_PRC_tourists
+      unlock_decision_tooltip = CHI_Block_US_tourists
+      unlock_decision_tooltip = CHI_Block_JAP_tourists
     }
     relative_position_id = NHCC_Expand
   }

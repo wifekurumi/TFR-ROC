@@ -758,7 +758,12 @@
  CHI_distribute_masks: "發放口罩"
  CHI_Quarantine_foreign_tourists: "隔離境外遊客"
  CHI_Announce_guidance: "公布指導"
- CHI_small_blockade: "實施小規模封鎖"
+ CHI_small_blockade: "小規模封鎖"
+ CHI_Blockade_of_Hospital: "封鎖醫院"
+ CHI_Block_tourists: "封鎖了我們的遊客!"
+ CHI_Block_PRC_tourists: "禁止@PRC§R中國§!遊客進入"
+ CHI_Block_US_tourists: "禁止@USA§2美國§!遊客進入"
+ CHI_Block_JAP_tourists: "禁止@JAP§9日本§!遊客進入"
  Buying_vaccine_on_JAP: "向@JAP日本§C購買疫苗§!"
  Buying_vaccine_on_USA: "向@USA美國§C購買疫苗§!"
  Buying_vaccine_on_PRC: "向@PRC中國§C購買疫苗§!"
@@ -778,7 +783,7 @@
  Speed_up_return_to_normal_state: "加速回到正常狀態"
  Investigate_illegal_political_organizations: "清查非法政治組織"
  Investigate_senior_military_officials: "在軍隊中搜索通敵者"
-
+ border_closure_effect: "§C我們將關閉海關§!"
  #決議
  CHI_Infiltration_tt: "中共滲透"
  CHI_Infiltration_dece_tt: "進度: §R[?CHI:CHI_PRC_Infiltration_progress]%§!\n\n§Y對我們的影響:§!\n£GFX_defence_core_texticon 核心領土防禦: [?CHI_PRC_Infiltration_buff|+%1]\n£GFX_attack_core_texticon 核心領土攻擊: [?CHI_PRC_Infiltration_buff|+%1]"

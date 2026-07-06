@@ -756,6 +756,97 @@ CHI_NHCC_decisions = {
       add_stability = -0.1
     }
   }
+  CHI_Block_PRC_tourists = {
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      has_completed_focus = island_of_democracy
+      has_country_flag = Handling_epidemic
+    }
+    visible = {
+      has_completed_focus = island_of_democracy
+      NOT = {
+        has_country_flag = cancel_covid_mission
+      }
+    }
+    fire_only_once = yes
+    cost = 15
+    days_remove = 15
+    complete_effect = {
+      add_days_mission_timeout = {
+        mission = Epidemic_is_getting_worse
+        days = 25
+      }
+
+      PRC = {
+        add_opinion_modifier = {
+          target = CHI
+          modifier = CHI_Block_tourists
+        }
+      }
+    }
+  }
+  CHI_Block_US_tourists = {
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      has_completed_focus = island_of_democracy
+      has_country_flag = Handling_epidemic
+    }
+    visible = {
+      has_completed_focus = island_of_democracy
+      NOT = {
+        has_country_flag = cancel_covid_mission
+      }
+    }
+    fire_only_once = yes
+    cost = 15
+    days_remove = 15
+    complete_effect = {
+      add_days_mission_timeout = {
+        mission = Epidemic_is_getting_worse
+        days = 20
+      }
+      USA = {
+        add_opinion_modifier = {
+          target = CHI
+          modifier = CHI_Block_tourists
+        }
+      }
+    }
+  }
+  CHI_Block_JAP_tourists = {
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      has_completed_focus = island_of_democracy
+      has_country_flag = Handling_epidemic
+    }
+    visible = {
+      has_completed_focus = island_of_democracy
+      NOT = {
+        has_country_flag = cancel_covid_mission
+      }
+    }
+    fire_only_once = yes
+    cost = 15
+    days_remove = 15
+    complete_effect = {
+      add_days_mission_timeout = {
+        mission = Epidemic_is_getting_worse
+        days = 15
+      }
+      JAP = {
+        add_opinion_modifier = {
+          target = CHI
+          modifier = CHI_Block_tourists
+        }
+      }
+    }
+  }
   #購買疫苗
   Buying_vaccine_on_JAP = {
     icon = Buying_vaccine
