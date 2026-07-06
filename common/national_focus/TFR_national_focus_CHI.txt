@@ -35,10 +35,10 @@ focus_tree = {
       }
     }
   }
-	#DPP{
+  #DPP{
   focus = {
     id = Taiwan_will_win
-    x = 3
+    x = 0
     y = 1
     cost = 5
     icon = GFX_focus_CHI_Taiwan_will_win
@@ -47,6 +47,9 @@ focus_tree = {
     # 2020，台灣要贏
     ai_will_do = {
       factor = 1
+    }
+    allow_branch = {
+      has_country_flag = DPP_win_flg
     }
     available = {
       is_completed_by_event = yes
@@ -73,7 +76,7 @@ focus_tree = {
   }
   focus = {
     id = four_persistences
-    x = -1
+    x = -4
     y = 1
     cost = 3
     icon = GFX_focus_CHI_four_persistences
@@ -110,7 +113,7 @@ focus_tree = {
   }
   focus = {
     id = Support_Black_Bear_Academy
-    x = 1
+    x = 0
     y = 1
     cost = 3
     icon = GFX_focus_CHI_Support_Black_Bear_Academy
@@ -133,7 +136,7 @@ focus_tree = {
   }
   focus = {
     id = forward_planning
-    x = 3
+    x = 4
     y = 1
     cost = 3
     icon = GFX_focus_CHI_forward_planning
@@ -161,7 +164,7 @@ focus_tree = {
   }
   focus = {
     id = Continue_transform_justice
-    x = 2
+    x = -3
     y = 2
     cost = 3
     icon = GFX_focus_CHI_Continue_transform_justice
@@ -272,10 +275,10 @@ focus_tree = {
     relative_position_id = Taiwan_will_win
   }
   #}
-	#KMT{
+  #KMT{
   focus = {
     id = Taiwan_safe_people_rich
-    x = -3
+    x = 0
     y = 1
     cost = 5
     icon = GFX_focus_CHI_Taiwan_safe_people_rich
@@ -284,6 +287,9 @@ focus_tree = {
     # 台灣安全，人民有錢
     ai_will_do = {
       factor = 1
+    }
+    allow_branch = {
+      has_country_flag = KMT_win_flg
     }
     available = {
       is_completed_by_event = yes
@@ -305,7 +311,6 @@ focus_tree = {
         add_ideas = Republic_of_China_idea
         remove_ideas = CHII_taiwanese_independence_movement_idea1
       }
-      set_country_flag = KMT_win_flg
       hidden_effect = {
         remove_dynamic_modifier = {
           modifier = CHI_taiwanese_independence_dynamic
@@ -331,7 +336,7 @@ focus_tree = {
   }
   focus = {
     id = Taiwan_makes_fortune
-    x = 1
+    x = 4
     y = 1
     cost = 3
     icon = GFX_focus_CHI_Taiwan_makes_fortune
@@ -363,7 +368,7 @@ focus_tree = {
   }
   focus = {
     id = Expand_intelligence_system
-    x = -1
+    x = 0
     y = 1
     cost = 3
     icon = GFX_focus_CHI_Expand_intelligence_system
@@ -389,7 +394,7 @@ focus_tree = {
   }
   focus = {
     id = Whistleblower_Protection_Act
-    x = -3
+    x = -4
     y = 1
     cost = 3
     icon = GFX_focus_CHI_Whistleblower_Protection_Act
@@ -493,7 +498,7 @@ focus_tree = {
   }
   focus = {
     id = Based_in_Taiwan
-    x = -2
+    x = -3
     y = 2
     cost = 3
     icon = GFX_focus_CHI_Based_in_Taiwan
@@ -539,16 +544,19 @@ focus_tree = {
     relative_position_id = Taiwan_safe_people_rich
   }
   #}
-	#中間{
+  #中間{
   focus = {
     id = Responding_the_epidemic
-    x = -1
-    y = 1
+    x = 2
+    y = 2
     cost = 1
     icon = GFX_focus_CHI_Responding_the_epidemic
     continue_if_invalid = no
     cancel_if_invalid = yes
     # 應對疫情
+    allow_branch = {
+      has_country_flag = covid_happen
+    }
     available = {
       has_country_flag = covid_happen
     }
@@ -556,7 +564,8 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = CHI_election
+      focus = Taiwan_safe_people_rich
+      focus = Taiwan_will_win
     }
     completion_reward = {
       add_political_power = -15
@@ -566,21 +575,25 @@ focus_tree = {
   }
   focus = {
     id = Coping_with_the_oil_crisis
-    x = 1
-    y = 1
+    x = -2
+    y = 2
     cost = 1
     icon = GFX_focus_CHI_Coping_with_the_oil_crisis
     continue_if_invalid = no
     cancel_if_invalid = yes
     # 應對石油危機
+    allow_branch = {
+      has_country_flag = CHI_has_oil_crash1
+    }
+    prerequisite = {
+      focus = Taiwan_safe_people_rich
+      focus = Taiwan_will_win
+    }
     available = {
       has_country_flag = CHI_has_oil_crash1
     }
     ai_will_do = {
       factor = 1
-    }
-    prerequisite = {
-      focus = CHI_election
     }
     completion_reward = {
       add_political_power = -15
@@ -592,8 +605,8 @@ focus_tree = {
   }
   focus = {
     id = Defense_Strategy_White_Paper
-    x = 0
-    y = 2
+    x = 3
+    y = 3
     cost = 3
     icon = GFX_focus_CHI_Defense_Strategy_White_Paper
     continue_if_invalid = no
@@ -614,11 +627,15 @@ focus_tree = {
     ai_will_do = {
       factor = 1
     }
-    prerequisite = {
-      focus = Responding_the_epidemic
+    allow_branch = {
+      OR = {
+        has_country_flag = DPP_win_flg
+        has_country_flag = KMT_win_flg
+      }
     }
     prerequisite = {
-      focus = Coping_with_the_oil_crisis
+      focus = Taiwan_safe_people_rich
+      focus = Taiwan_will_win
     }
     completion_reward = {
       add_political_power = -15
@@ -647,7 +664,8 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Defense_Strategy_White_Paper
+      focus = Based_in_Taiwan
+      focus = Continue_transform_justice
     }
     prerequisite = {
       focus = We_are_already_independent_country
@@ -733,16 +751,19 @@ focus_tree = {
     relative_position_id = CHI_election
   }
   #}
-	#防疫{
+  #防疫{
   focus = {
     id = NHCC_Expand
     x = 11
-    y = 0
+    y = 1
     cost = 3
     icon = GFX_focus_CHI_NHCC_Expand
     continue_if_invalid = no
     cancel_if_invalid = yes
     # 應對疫情
+    prerequisite = {
+      focus = CHI_election
+    }
     allow_branch = {
       has_country_flag = covid_happen
     }
@@ -897,7 +918,7 @@ focus_tree = {
         mission = Epidemic_is_getting_worse
         days = 25
       }
-      
+
       unlock_decision_tooltip = CHI_Block_PRC_tourists
       unlock_decision_tooltip = CHI_Block_US_tourists
       unlock_decision_tooltip = CHI_Block_JAP_tourists
@@ -1020,16 +1041,19 @@ focus_tree = {
     relative_position_id = Isolate_patient
   }
   #}
-	#石油危機國策{
+  #石油危機國策{
   focus = {
     id = third_oil_crisis
-    x = -13
-    y = 0
+    x = -11
+    y = 1
     cost = 1
     icon = GFX_focus_CHI_third_oil_crisis
     continue_if_invalid = no
     cancel_if_invalid = yes
     # 第四次石油危機
+    prerequisite = {
+      focus = CHI_election
+    }
     allow_branch = {
       has_country_flag = CHI_has_oil_crash1
     }
@@ -1046,7 +1070,7 @@ focus_tree = {
   }
   focus = {
     id = Unleashing_strategic_oil_reserves
-    x = -3
+    x = 3
     y = 1
     cost = 2
     icon = GFX_focus_CHI_Unleashing_strategic_oil_reserves
@@ -1165,6 +1189,26 @@ focus_tree = {
     relative_position_id = Unleashing_strategic_oil_reserves
   }
   focus = {
+    id = Operation_Desert
+    x = 1
+    y = 3
+    cost = 2
+    icon = GFX_focus_CHI_Technology_exchange_exchange_for_oil
+    continue_if_invalid = no
+    cancel_if_invalid = yes
+    # 以技術交流換取石油
+    ai_will_do = {
+      factor = 1
+    }
+    prerequisite = {
+      focus = Find_alternative_sources
+    }
+    completion_reward = {
+      CHI_oil_crash_idea = yes
+    }
+    relative_position_id = Unleashing_strategic_oil_reserves
+  }
+  focus = {
     id = Electricity_prices_freeze_and_rise
     x = 0
     y = 2
@@ -1190,7 +1234,7 @@ focus_tree = {
   }
   focus = {
     id = Accelerating_the_energy_transition
-    x = 3
+    x = -3
     y = 1
     cost = 2
     icon = GFX_focus_CHI_Accelerating_the_energy_transition
@@ -1469,7 +1513,6 @@ focus_tree = {
       }
       hidden_effect = {
         clr_country_flag = CHI_has_oil_crash1
-        focus_unlock = yes
         if = {
           limit = {
             has_ideas = CHI_oil_crash10
@@ -1499,16 +1542,19 @@ focus_tree = {
     relative_position_id = third_oil_crisis
   }
   #}
-	#軍事線{
+  #軍事線{
   focus = {
     id = Rectify_weakening_military_preparedness
     x = 10
-    y = 0
+    y = -1
     cost = 2
     icon = GFX_Rectify_weakening_military_preparedness
     continue_if_invalid = no
     cancel_if_invalid = yes
     # 整治武備廢弛
+    prerequisite = {
+      focus = Defense_Strategy_White_Paper
+    }
     allow_branch = {
       has_country_flag = CHIMilitarreform
     }
@@ -2223,10 +2269,10 @@ focus_tree = {
     relative_position_id = Prepare_special_budget
   }
   #}
-	#金融危機{
+  #金融危機{
   focus = {
     id = Pacific_War
-    x = -6
+    x = -4
     y = 5
     cost = 1
     icon = GFX_focus_CHI_Pacific_War
@@ -2618,6 +2664,32 @@ focus_tree = {
       }
     }
     relative_position_id = Semiconductor_mobilization
+  }
+  focus = {
+    id = Intervene_American_Civil_War
+    x = 0
+    y = 2
+    cost = 3
+    icon = GFX_focus_Recruiting_US_refugee_talent
+    continue_if_invalid = no
+    cancel_if_invalid = yes
+    #招募美國難民人才
+    available = {
+      has_completed_focus = Japan_Science_Technology_Industry_Cooperation
+    }
+    prerequisite = {
+      focus = Recruiting_US_refugee_talent
+    }
+    prerequisite = {
+      focus = Introduce_scientific_training_standards
+    }
+    completion_reward = {
+      add_timed_idea = {
+        idea = CHI_scientists_from_america_idea
+        days = 180
+      }
+    }
+    relative_position_id = Recruiting_US_refugee_talent
   }
   focus = {
     id = Out_the_storm
@@ -3882,5 +3954,5 @@ focus_tree = {
     }
     relative_position_id = CHI_thenationisinperil
   }
-	#}
+  #}
 }
