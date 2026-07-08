@@ -291,6 +291,92 @@ country_event = {
     }
   }
 }
+
+country_event = {
+  id = CHI.101
+  title = CHI.101.t
+  desc = CHI.101.d
+  picture = CHI_Event_101
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.101.a
+  }
+}
+
+country_event = {
+  id = CHI.102
+  title = CHI.102.t
+  desc = CHI.102.d
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.102.a
+  }
+}
+
+country_event = {
+  id = CHI.103
+  title = CHI.103.t
+  desc = CHI.103.d
+  picture = CHI_Event_103
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.103.a
+    custom_effect_tooltip = CHI_unlock_reconstruction_tt
+    set_country_flag = CHI_reconstruction_flg
+    complete_national_focus = CHI_Emergency_reconstruction_begins
+    focus_unlock = yes
+  }
+}
+
+country_event = {
+  id = CHI.104
+  title = CHI.104.t
+  desc = CHI.104.d
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.104.a
+  }
+}
+
+country_event = {
+  id = CHI.105
+  title = CHI.105.t
+  desc = CHI.105.d
+  picture = CHI_Event_105
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.105.a
+  }
+}
+
+country_event = {
+  id = CHI.106
+  title = CHI.106.t
+  desc = CHI.106.d
+  picture = CHI_Event_106
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.106.a
+  }
+}
+
+country_event = {
+  id = CHI.107
+  title = CHI.107.t
+  desc = CHI.107.d
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.107.a
+  }
+}
+
 country_event = {
   id = taiwan_temp_skeleton.1
   title = taiwan_temp_skeleton.1.t
