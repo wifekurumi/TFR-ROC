@@ -333,7 +333,7 @@ country_event = {
     }
     random_owned_controlled_state = {
       create_unit = {
-        division = "name = \"反共志愿军\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+        division = "name = \"反共志願军\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
         id = 1949
         owner = CHI
         count = 2
@@ -615,7 +615,7 @@ country_event = {
     }
     random_owned_controlled_state = {
       create_unit = {
-        division = "name = \"黑熊学院民兵\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+        division = "name = \"黑熊學院民兵\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
         id = 1949
         owner = CHI
         count = 2
