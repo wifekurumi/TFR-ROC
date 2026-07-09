@@ -338,25 +338,14 @@ country_event = {
   desc = CHI.104.d
   fire_only_once = yes
   is_triggered_only = yes
-  immediate = {
-    hidden_effect = {
-      country_event = {
-        id = CHI.107
-        days = 3
-      }
-    }
-  }
   option = {
     name = CHI.104.a
-<<<<<<< Updated upstream
-=======
     hidden_effect = {
       country_event = {
         id = CHI.107
         days = 3
       }
     }
->>>>>>> Stashed changes
   }
 }
 
@@ -390,134 +379,18 @@ country_event = {
   desc = CHI.107.d
   fire_only_once = yes
   is_triggered_only = yes
-  immediate = {
-    hidden_effect = {
-      country_event = {
-        id = CHI.110
-        days = 3
-      }
-    }
-  }
   option = {
     name = CHI.107.a
-<<<<<<< Updated upstream
-=======
     hidden_effect = {
       country_event = {
         id = CHI.110
         days = 3
       }
     }
->>>>>>> Stashed changes
   }
 }
 
 country_event = {
-  id = CHI.110
-  title = CHI.110.t
-  desc = CHI.110.d
-  fire_only_once = yes
-  is_triggered_only = yes
-  immediate = {
-    hidden_effect = {
-      country_event = {
-        id = CHI.111
-        days = 3
-      }
-    }
-  }
-  option = {
-    name = CHI.110.a
-  }
-}
-
-country_event = {
-  id = CHI.111
-  title = CHI.111.t
-  desc = CHI.111.d
-  fire_only_once = yes
-  is_triggered_only = yes
-  immediate = {
-    hidden_effect = {
-      country_event = {
-        id = CHI.121
-        days = 2
-      }
-    }
-  }
-  option = {
-    name = CHI.111.a
-  }
-}
-
-country_event = {
-  id = CHI.121
-  title = CHI.121.t
-  desc = CHI.121.d
-  fire_only_once = yes
-  is_triggered_only = yes
-  immediate = {
-    hidden_effect = {
-      country_event = {
-        id = CHI.130
-        days = 2
-      }
-    }
-  }
-  option = {
-    name = CHI.130.a
-  }
-}
-
-country_event = {
-  id = CHI.130
-  title = CHI.130.t
-  desc = CHI.130.d
-  fire_only_once = yes
-  is_triggered_only = yes
-  immediate = {
-    hidden_effect = {
-      country_event = {
-        id = CHI.141
-        days = 1
-      }
-
-    }
-  }
-  option = {
-    name = CHI.141.a
-  }
-}
-
-country_event = {
-  id = CHI.141
-  title = CHI.141.t
-  desc = CHI.141.d
-  fire_only_once = yes
-  is_triggered_only = yes
-  immediate = {
-    hidden_effect = {
-      set_politics = {
-        ruling_party = conservative
-        last_election = "2024.1.11"
-        election_frequency = 48
-        elections_allowed = yes
-      }
-      load_focus_tree = P2_CHI_KMT
-      set_country_flag = 2nd_HKY_win_flg
-      focus_unlock = yes
-    }
-  }
-  option = {
-    name = CHI.141.a
-    custom_effect_tooltip = P2HKY_unlock_tt
-  }
-}
-
-
-country_event = {
-<<<<<<< Updated upstream
-=======
   id = CHI.110
   title = CHI.110.t
   desc = CHI.110.d
@@ -558,7 +431,7 @@ country_event = {
   fire_only_once = yes
   is_triggered_only = yes
   option = {
-    name = CHI.130.a
+    name = CHI.121.a
     hidden_effect = {
       country_event = {
         id = CHI.130
@@ -575,7 +448,7 @@ country_event = {
   fire_only_once = yes
   is_triggered_only = yes
   option = {
-    name = CHI.141.a
+    name = CHI.130.a
     hidden_effect = {
       country_event = {
         id = CHI.141
@@ -610,7 +483,6 @@ country_event = {
 
 
 country_event = {
->>>>>>> Stashed changes
   id = taiwan_temp_skeleton.1
   title = taiwan_temp_skeleton.1.t
   desc = taiwan_temp_skeleton.1.d
